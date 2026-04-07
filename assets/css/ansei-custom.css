@@ -1,8 +1,9 @@
 /* ANSEI PRIME — Custom CSS | Journal 3.1.8 + OpenCart 3.0.3.8 | 2026/04/07 */
 /* ===== Modules ===== */
-@import url('./product.css');
-@import url('./account.css');
+@import url('https://cdn.jsdelivr.net/gh/cupcatstw-wq/ansei-prime-assets@main/assets/css/product.css');
+@import url('https://cdn.jsdelivr.net/gh/cupcatstw-wq/ansei-prime-assets@main/assets/css/account.css');
 
+/* ===== 原本 CSS ===== */
 /* 1. Header / Footer / 導覽 */
 .mobile-logo-wrapper #logo {
     overflow: visible !important
