@@ -188,20 +188,41 @@
 /* P-4. 分類頁（Category Header） */
 /* ======================================== */
 
-/* h1 標題下方間距縮小 */
+/* h1 標題下方間距 */
 #product-category #content h1.page-title {
     margin-bottom: 16px !important;
 }
 
-/* 品牌區塊外層間距 */
+/* 品牌區塊外層 */
 #product-category #content .category-description {
     margin-top: 0;
     margin-bottom: 0;
 }
 
-/* 品牌內容容器置中 */
+/* 品牌內容容器 */
 #product-category #content .category-description .category-text {
     text-align: center;
+}
+
+/* category-text 內所有 <p> 預設 margin 歸零 */
+#product-category #content .category-description .category-text p {
+    margin: 0 !important;
+    padding: 0;
+}
+
+/* 空白 <p> 完全隱藏 */
+#product-category #content .category-description .category-text p:empty {
+    display: none !important;
+}
+
+/* 含圖片的 <p>：banner 下方間距 */
+#product-category #content .category-description .category-text p:has(img) {
+    margin-bottom: 20px !important;
+}
+
+/* 含文字的 <p>：文字下方間距（到商品列） */
+#product-category #content .category-description .category-text p:has(span) {
+    margin-bottom: 48px !important;
 }
 
 /* Banner 圖片樣式 */
@@ -213,19 +234,7 @@
     margin: 0 auto;
 }
 
-/* 含圖片的 <p>：banner → 文字間距 */
-#product-category #content .category-description .category-text p:has(img) {
-    margin: 0 0 20px !important;
-    padding: 0;
-}
-
-/* 含文字的 <p>：文字 → 商品間距 */
-#product-category #content .category-description .category-text p:has(span) {
-    margin: 0 0 48px !important;
-    padding: 0;
-}
-
-/* 品牌說明文字樣式 */
+/* 品牌說明文字 */
 #product-category #content .category-description .category-text p > span {
     display: block;
     max-width: 680px;
