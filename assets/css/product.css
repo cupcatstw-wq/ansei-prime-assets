@@ -223,7 +223,7 @@
 /* Banner 圖片樣式 */
 #product-category #content .category-description .category-text p > img {
     width: 100% !important;
-    max-width: 560px;
+    max-width: 980px;    /* 調這個數值控制桌機大小 */
     border-radius: 16px;
     display: block;
     margin: 0 auto;
@@ -244,6 +244,14 @@
 #product-category #content .main-products-wrapper,
 #product-category #content .main-products {
     margin-top: 0;
+}
+
+/* 手機版 banner 全寬 */
+@media (max-width: 767px) {
+    #product-category #content .category-description .category-text p > img {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
 }
 
 /* ======================================== */
