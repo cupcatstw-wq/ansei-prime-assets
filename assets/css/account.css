@@ -1,6 +1,6 @@
 /* ===== Account Pages ===== */
 /* 會員共用 */
-/* 5. 會員頁共用標題/輸入框 */
+/* A-1. 會員頁共用標題/輸入框 */
 #account-login h1,
 #account-register h1,
 #account-forgotten h1,
@@ -83,7 +83,7 @@
     box-shadow: 0 0 0 1000px #fff inset !important
 }
 
-/* 6. Login */
+/* A-2. Login */
 #account-login {
     max-width: 980px;
     margin: 0 auto
@@ -176,7 +176,7 @@
     float: none !important
 }
 
-/* 7. Register */
+/* A-3. Register */
 #account-register {
     max-width: 980px;
     margin: 0 auto
@@ -342,7 +342,7 @@
     box-shadow: none !important
 }
 
-/* 8. Forgotten Password */
+/* A-4. Forgotten Password */
 #account-forgotten {
     max-width: 980px;
     margin: 0 auto
@@ -381,7 +381,7 @@
     text-align: center
 }
 
-/* 9. Reset Password */
+/* A-5. Reset Password */
 #account-reset {
     max-width: 980px;
     margin: 0 auto
@@ -437,7 +437,7 @@
     margin-left: auto !important
 }
 
-/* 10. Success / Logout */
+/* A-6. Success / Logout */
 #account-success,
 #account-logout,
 #common-success {
@@ -468,7 +468,7 @@
     align-self: flex-start
 }
 
-/* 11. Order / Wishlist */
+/* A-7. Order / Wishlist */
 #account-order,
 #account-wishlist {
     max-width: 980px;
@@ -530,7 +530,7 @@
     background: rgba(200, 169, 106, 0.04)
 }
 
-/* 12. Address */
+/* A-8. Address */
 #account-address,
 #account-address-form {
     max-width: 980px;
@@ -910,7 +910,7 @@ body[class*="route-account-address-edit"] .btn:active {
     text-decoration: none !important
 }
 
-/* 13. Newsletter/Edit/Download/Return/Recurring/Reward/Affiliate/Tracking */
+/* A-9. Newsletter/Edit/Download/Return/Recurring/Reward/Affiliate/Tracking */
 #account-newsletter,
 #account-edit,
 #account-download,
