@@ -189,31 +189,44 @@
 /* P-4. 分類頁（Category Header） */
 /* ======================================== */
 
-/* 整個品牌區塊 */
+/* 品牌區塊 */
 #product-category #content .category-description {
     margin-top: 32px;
-    margin-bottom: 48px;
+    margin-bottom: 0;
 }
 
-/* 橫幅圖片 */
-#product-category #content .category-description img {
-    width: 100%;
+/* 品牌內容容器 */
+#product-category #content .category-description .category-text {
+    text-align: center;
+}
+
+/* 品牌橫幅圖片 */
+#product-category #content .category-description .category-text p > img {
+    width: 100% !important;
+    max-width: 860px;
     border-radius: 16px;
     display: block;
-    margin-bottom: 28px;  /* ← 圖片與文字距離 */
+    margin: 0 auto 28px;
 }
 
 /* 品牌文字 */
-#product-category #content .category-description p {
-    text-align: center;
+#product-category #content .category-description .category-text p > span {
+    display: block;
+    max-width: 680px;
+    margin: 0 auto;
     color: #9A9A9A;
-    font-size: 13px;
+    font-size: 13px !important;
     letter-spacing: 0.12em;
     line-height: 2;
-    margin-bottom: 40px; /* ← 文字與商品距離 */
 }
 
-/* 商品區 */
+/* 品牌區與商品區距離 */
+#product-category #content .category-description .category-text p {
+    margin: 0 0 40px !important;
+}
+
+/* 商品區上方間距 */
+#product-category #content .main-products-wrapper,
 #product-category #content .main-products {
-    margin-top: 0; /* 交給上面控制 */
+    margin-top: 0;
 }
