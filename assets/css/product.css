@@ -189,12 +189,30 @@
 /* P-4. 分類頁（Category Header） */
 /* ======================================== */
 
-/* 隱藏分類圖片（系統預設） */
-#product-category #content .category-image {
-    display: none !important;
+/* ======================================== */
+/* P-6. 分類頁（品牌橫幅） */
+/* ======================================== */
+
+/* 品牌橫幅圖片 */
+#product-category #content .category-description img {
+    width: 100%;
+    border-radius: 16px;
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 24px;
 }
 
-/* 橫幅貼齊 */
-#product-category #content .category-description {
-    margin-top: 0;
+/* 品牌一句話 */
+#product-category #content .category-description p {
+    text-align: center;
+    color: #9A9A9A;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    line-height: 1.9;
+    margin: 0 0 32px;
+}
+
+/* 商品區上方間距 */
+#product-category #content .main-products {
+    margin-top: 20px;
 }
