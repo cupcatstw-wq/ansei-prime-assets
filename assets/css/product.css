@@ -1,5 +1,5 @@
 /* ===== Product Page ===== */
-/* 15. 商品頁描述 */
+/* P-1. 商品頁描述 */
 .product-product #tab-description {
     max-width: 760px;
     margin: 40px auto;
@@ -34,7 +34,7 @@
     display: none
 }
 
-/* 17. 分類頁列表模式 */
+/* P-2. 分類頁列表模式 */
 .main-products.product-list .product-thumb {
     display: flex !important;
     flex-direction: row !important;
@@ -152,7 +152,7 @@
     padding: 0 !important
 }
 
-/* 18. 商品詳情頁 */
+/* P-3. 商品詳情頁 */
 #product-product .title.page-title {
     border-bottom: none !important;
     padding-bottom: 0 !important
