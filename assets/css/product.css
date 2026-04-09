@@ -191,7 +191,7 @@
 
 /* 品牌區塊外層間距 */
 #product-category #content .category-description {
-    margin-top: 32px;
+    margin-top: 8px;      /* 縮小 h1 到 banner 的距離 */
     margin-bottom: 0;
 }
 
@@ -200,7 +200,7 @@
     text-align: center;
 }
 
-/* Banner 圖片：下方留白拉開與文字距離 */
+/* Banner 圖片樣式 */
 #product-category #content .category-description .category-text p > img {
     width: 100% !important;
     max-width: 860px;
@@ -209,15 +209,15 @@
     margin: 0 auto;
 }
 
-/* 含圖片的 <p>：底部加間距 */
+/* 含圖片的 <p>：底部間距（banner → 文字） */
 #product-category #content .category-description .category-text p:has(img) {
-    margin: 0 0 28px !important;
+    margin: 0 0 20px !important;
     padding: 0;
 }
 
-/* 含文字的 <p>：底部加間距拉開與商品距離 */
+/* 含文字的 <p>：底部間距（文字 → 商品） */
 #product-category #content .category-description .category-text p:has(span) {
-    margin: 0 0 48px !important;
+    margin: 0 0 40px !important;
     padding: 0;
 }
 
@@ -232,7 +232,7 @@
     line-height: 2;
 }
 
-/* 商品區上方間距歸零（由文字 p 的 margin 控制） */
+/* 商品區上方間距歸零 */
 #product-category #content .main-products-wrapper,
 #product-category #content .main-products {
     margin-top: 0;
