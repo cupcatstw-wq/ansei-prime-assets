@@ -210,11 +210,6 @@
     padding: 0;
 }
 
-/* 消除空白 <p>（可能含空白字元，:empty 不可靠） */
-#product-category #content .category-description .category-text p:not(:has(img)):not(:has(span)) {
-    display: none !important;
-}
-
 /* 含圖片的 <p>：banner 下方間距 */
 #product-category #content .category-description .category-text p:has(img) {
     margin-bottom: 20px !important;
