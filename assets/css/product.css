@@ -223,7 +223,7 @@
 /* Banner 圖片樣式 */
 #product-category #content .category-description .category-text p > img {
     width: 100% !important;
-    max-width: 1050px;
+    max-width: 560px;
     border-radius: 16px;
     display: block;
     margin: 0 auto;
