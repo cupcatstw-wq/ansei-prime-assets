@@ -253,7 +253,7 @@ body.ansei-page-ready.popup-open {
     content: none !important
 }
 
-/* 14. 聯絡我們 */
+/* 5. 聯絡我們 */
 #information-contact #content {
     max-width: 1120px;
     margin: 0 auto;
@@ -456,7 +456,7 @@ body.ansei-page-ready.popup-open {
 }
 
 
-/* 16. 產品列表工具列 */
+/* 6. 產品列表工具列 */
 .products-filter .compare-total,
 .products-filter a[href*="compare"],
 #content .compare-total {
@@ -604,7 +604,7 @@ body.ansei-page-ready.popup-open {
     display: none !important
 }
 
-/* 19. 首頁分類區 */
+/* 7. 首頁分類區 */
 .common-home .category-grid .category-layout,
 .common-home .category-grid .category-layout .caption,
 .common-home .category-grid .category-layout .name {
@@ -672,7 +672,7 @@ body.ansei-page-ready.popup-open {
     transform: translateY(-4px) !important
 }
 
-/* 20. 三大品牌價值 */
+/* 8. 三大品牌價值 */
 .module-info_blocks .info-block {
     flex-direction: row !important;
     align-items: flex-start !important;
@@ -700,7 +700,7 @@ body.ansei-page-ready.popup-open {
     line-height: 1.7 !important
 }
 
-/* 21. 分類導購區 */
+/* 9. 分類導購區 */
 .module-categories .category-thumb .image {
     border-radius: 16px !important;
     overflow: hidden !important
