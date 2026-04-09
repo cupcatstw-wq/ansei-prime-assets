@@ -189,33 +189,31 @@
 /* P-4. 分類頁（Category Header） */
 /* ======================================== */
 
-/* 品牌橫幅區塊 */
+/* 整個品牌區塊 */
 #product-category #content .category-description {
-    margin-top: 28px;
-    margin-bottom: 40px;
+    margin-top: 32px;
+    margin-bottom: 48px;
 }
 
-/* 品牌橫幅圖片 */
+/* 橫幅圖片 */
 #product-category #content .category-description img {
     width: 100%;
-    max-width: 860px;
     border-radius: 16px;
     display: block;
-    margin: 0 auto 28px;
+    margin-bottom: 28px;  /* ← 圖片與文字距離 */
 }
 
-/* 品牌一句話 */
+/* 品牌文字 */
 #product-category #content .category-description p {
-    max-width: 680px;
-    margin: 0 auto;
     text-align: center;
     color: #9A9A9A;
     font-size: 13px;
     letter-spacing: 0.12em;
     line-height: 2;
+    margin-bottom: 40px; /* ← 文字與商品距離 */
 }
 
-/* 商品區上方間距 */
+/* 商品區 */
 #product-category #content .main-products {
-    margin-top: 32px;
+    margin-top: 0; /* 交給上面控制 */
 }
