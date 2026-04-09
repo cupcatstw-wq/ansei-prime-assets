@@ -245,3 +245,26 @@
 #product-category #content .main-products {
     margin-top: 0;
 }
+
+/* ======================================== */
+/* P-5. 空分類頁提示 */
+/* ======================================== */
+
+/* 整體區塊置中留白 */
+#product-category #content .main-products-wrapper {
+    text-align: center;
+    padding: 60px 20px 80px;
+}
+
+/* 「抱歉」提示文字 */
+#product-category #content .main-products-wrapper > p {
+    color: #9A9A9A;
+    font-size: 14px;
+    letter-spacing: 0.12em;
+    margin-bottom: 32px !important;
+}
+
+/* 「繼續」按鈕區塊 */
+#product-category #content .main-products-wrapper .buttons {
+    justify-content: center;
+}
