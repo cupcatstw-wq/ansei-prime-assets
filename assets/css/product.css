@@ -189,27 +189,39 @@
 /* P-4. 分類頁（Category Header） */
 /* ======================================== */
 
-/* 品牌區塊 */
+/* 品牌區塊外層間距 */
 #product-category #content .category-description {
     margin-top: 32px;
     margin-bottom: 0;
 }
 
-/* 品牌內容容器 */
+/* 品牌內容容器置中 */
 #product-category #content .category-description .category-text {
     text-align: center;
 }
 
-/* 品牌橫幅圖片 */
+/* Banner 圖片：下方留白拉開與文字距離 */
 #product-category #content .category-description .category-text p > img {
     width: 100% !important;
     max-width: 860px;
     border-radius: 16px;
     display: block;
-    margin: 0 auto 28px;
+    margin: 0 auto;
 }
 
-/* 品牌文字 */
+/* 含圖片的 <p>：底部加間距 */
+#product-category #content .category-description .category-text p:has(img) {
+    margin: 0 0 28px !important;
+    padding: 0;
+}
+
+/* 含文字的 <p>：底部加間距拉開與商品距離 */
+#product-category #content .category-description .category-text p:has(span) {
+    margin: 0 0 48px !important;
+    padding: 0;
+}
+
+/* 品牌說明文字樣式 */
 #product-category #content .category-description .category-text p > span {
     display: block;
     max-width: 680px;
@@ -220,12 +232,7 @@
     line-height: 2;
 }
 
-/* 品牌區與商品區距離 */
-#product-category #content .category-description .category-text p {
-    margin: 0 0 60px !important;
-}
-
-/* 商品區上方間距 */
+/* 商品區上方間距歸零（由文字 p 的 margin 控制） */
 #product-category #content .main-products-wrapper,
 #product-category #content .main-products {
     margin-top: 0;
