@@ -210,8 +210,8 @@
     padding: 0;
 }
 
-/* 空白 <p> 完全隱藏 */
-#product-category #content .category-description .category-text p:empty {
+/* 消除空白 <p>（可能含空白字元，:empty 不可靠） */
+#product-category #content .category-description .category-text p:not(:has(img)):not(:has(span)) {
     display: none !important;
 }
 
