@@ -312,3 +312,17 @@
 #product-product [class*="side-products"] {
     display: none !important
 }
+
+/* ======================================== */
+/* P-4. 分類頁（Category Header 控制） */
+/* ======================================== */
+
+/* 隱藏分類圖片（系統預設） */
+#product-category #content .category-image {
+  display: none !important;
+}
+
+/* 橫幅貼齊 */
+#product-category #content .category-description {
+  margin-top: 0;
+}
