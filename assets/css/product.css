@@ -281,67 +281,36 @@
 /* P-6. 品牌信任區（Trust Bar）*/
 /* ======================================== */
 
-.route-common-home .module-info_blocks-321 .module-body {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    flex-direction: row !important;
+.module-info_blocks-321 .module-body {
     border-top: 1px solid #C8C3BC !important;
     border-bottom: 1px solid #C8C3BC !important;
-    padding: 0 !important;
-    margin: 0 !important;
 }
 
-.route-common-home .module-info_blocks-321 .module-item {
-    flex: 0 0 25% !important;
-    max-width: 25% !important;
-    min-width: 0 !important;
-    box-sizing: border-box !important;
+.module-info_blocks-321 .module-item {
     border-right: 1px solid #C8C3BC !important;
+    text-align: center !important;
 }
 
-.route-common-home .module-info_blocks-321 .module-item:last-child {
+.module-info_blocks-321 .module-item:last-child {
     border-right: none !important;
 }
 
-.route-common-home .module-info_blocks-321 .info-block {
-    flex-direction: column !important;
-    align-items: center !important;
+.module-info_blocks-321 .info-block {
     text-align: center !important;
     padding: 36px 20px !important;
+    align-items: center !important;
 }
 
-.route-common-home .module-info_blocks-321 .info-block-title {
+.module-info_blocks-321 .info-block-title {
     font-size: 11px !important;
     letter-spacing: 0.2em !important;
     color: #222222 !important;
     font-weight: 600 !important;
     margin-bottom: 10px !important;
-    text-align: center !important;
-    display: block !important;
 }
 
-.route-common-home .module-info_blocks-321 .info-block-text {
+.module-info_blocks-321 .info-block-text {
     font-size: 12px !important;
     color: #9A9A9A !important;
-    letter-spacing: 0.05em !important;
     line-height: 1.8 !important;
-    text-align: center !important;
-    display: block !important;
-}
-
-/* 手機單欄 */
-@media (max-width: 767px) {
-    .route-common-home .module-info_blocks-321 .module-body {
-        flex-wrap: wrap !important;
-        flex-direction: column !important;
-    }
-    .route-common-home .module-info_blocks-321 .module-item {
-        flex: 0 0 100% !important;
-        max-width: 100% !important;
-        border-right: none !important;
-        border-bottom: 1px solid #C8C3BC !important;
-    }
-    .route-common-home .module-info_blocks-321 .module-item:last-child {
-        border-bottom: none !important;
-    }
 }
