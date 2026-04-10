@@ -3,8 +3,9 @@
 @import url('https://cdn.jsdelivr.net/gh/cupcatstw-wq/ansei-prime-assets@main/assets/css/product.css');
 @import url('https://cdn.jsdelivr.net/gh/cupcatstw-wq/ansei-prime-assets@main/assets/css/account.css');
 
-/* ===== 原本 CSS ===== */
-/* 1. Header / Footer / 導覽 */
+/* ======================================== */
+/*  1. Header / Footer / 導覽
+/* ======================================== */
 .mobile-logo-wrapper #logo {
     overflow: visible !important
 }
@@ -46,7 +47,9 @@ footer .module ul li {
     color: #C8A96A !important
 }
 
-/* 2. Scroll Top */
+/* ======================================== */
+/* 2. Scroll Top
+/* ======================================== */
 .scroll-top {
     position: fixed !important;
     right: 24px !important;
@@ -122,7 +125,9 @@ footer .module ul li {
     stroke: #6E6358
 }
 
-/* 3. Typography / Alert / 遮罩 */
+/* ======================================== */
+/* 3. Typography / Alert / 遮罩
+/* ======================================== */
 .ansei-link {
     color: #C8A96A;
     font-weight: 500;
@@ -175,7 +180,9 @@ body.ansei-page-ready.popup-open {
     padding-right: 0 !important
 }
 
-/* 4. 全域 Button */
+/* ======================================== */
+/* 4. 全域 Button
+/* ======================================== */
 #content .btn-danger,
 #content a.btn-danger,
 #content button.btn-danger {
@@ -253,7 +260,9 @@ body.ansei-page-ready.popup-open {
     content: none !important
 }
 
-/* 5. 聯絡我們 */
+/* ======================================== */
+/* 5. 聯絡我們*/
+/* ======================================== */
 #information-contact #content {
     max-width: 1120px;
     margin: 0 auto;
@@ -455,8 +464,9 @@ body.ansei-page-ready.popup-open {
     line-height: 1.5
 }
 
-
-/* 6. 產品列表工具列 */
+/* ======================================== */
+/* 6. 產品列表工具列*/
+/* ======================================== */
 .products-filter .compare-total,
 .products-filter a[href*="compare"],
 #content .compare-total {
@@ -604,7 +614,9 @@ body.ansei-page-ready.popup-open {
     display: none !important
 }
 
-/* 7. 首頁分類區 */
+/* ======================================== */
+/* 7. 首頁分類區*/
+/* ======================================== */
 .common-home .category-grid .category-layout,
 .common-home .category-grid .category-layout .caption,
 .common-home .category-grid .category-layout .name {
@@ -672,7 +684,9 @@ body.ansei-page-ready.popup-open {
     transform: translateY(-4px) !important
 }
 
-/* 8. 三大品牌價值 */
+/* ======================================== */
+/* 8. 三大品牌價值*/
+/* ======================================== */
 .module-info_blocks .info-block {
     flex-direction: row !important;
     align-items: flex-start !important;
@@ -700,7 +714,9 @@ body.ansei-page-ready.popup-open {
     line-height: 1.7 !important
 }
 
-/* 9. 分類導購區 */
+/* ======================================== */
+/* 9. 分類導購區*/
+/* ======================================== */
 .module-categories .category-thumb .image {
     border-radius: 16px !important;
     overflow: hidden !important
@@ -731,7 +747,45 @@ body.ansei-page-ready.popup-open {
     display: none !important
 }
 
-/* 22. Mobile ≤767px */
+
+/* ======================================== */
+/* 10. 品牌信任區（Trust Bar）*/
+/* ======================================== */
+.module-info_blocks-321 .module-body {
+    border-top: 1px solid #C8C3BC !important;
+    border-bottom: 1px solid #C8C3BC !important;
+}
+
+.module-info_blocks-321 .module-item {
+    border-right: 1px solid #C8C3BC !important;
+    text-align: center !important;
+}
+
+.module-info_blocks-321 .module-item:last-child {
+    border-right: none !important;
+}
+
+.module-info_blocks-321 .info-block {
+    text-align: center !important;
+    padding: 36px 20px !important;
+    align-items: center !important;
+}
+
+.module-info_blocks-321 .info-block-title {
+    font-size: 11px !important;
+    letter-spacing: 0.2em !important;
+    color: #222222 !important;
+    font-weight: 600 !important;
+    margin-bottom: 10px !important;
+}
+
+.module-info_blocks-321 .info-block-text {
+    font-size: 12px !important;
+    color: #9A9A9A !important;
+    line-height: 1.8 !important;
+}
+
+/* 11. Mobile ≤767px */
 @media (max-width: 767px) {
     footer .grid-col-1 {
         width: 100% !important;
