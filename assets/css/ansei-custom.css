@@ -676,18 +676,28 @@ body.ansei-page-ready.popup-open {
         flex: none !important
     }
 
-    /* Trust Bar 手機單欄 */
-    .module-info_blocks-321 .module-body {
-        flex-wrap: wrap !important;
-        flex-direction: column !important
-    }
-    .module-info_blocks-321 .module-item {
-        flex: 0 0 100% !important;
-        max-width: 100% !important;
-        border-right: none !important;
-        border-bottom: 1px solid #C8C3BC !important
-    }
-    .module-info_blocks-321 .module-item:last-child { border-bottom: none !important }
+    /* Trust Bar 手機單欄 + 左金線 */
+.module-info_blocks-321 .module-body {
+    flex-direction: column !important
+}
+.module-info_blocks-321 .module-item {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    border-right: none !important;
+    border-bottom: 1px solid #C8C3BC !important;
+    border-left: 2px solid rgba(200, 169, 106, 0.45) !important
+}
+.module-info_blocks-321 .module-item:last-child {
+    border-bottom: none !important
+}
+.module-info_blocks-321 .info-block {
+    padding: 24px 20px 24px 24px !important;
+    text-align: left !important
+}
+.module-info_blocks-321 .info-block-content {
+    align-items: flex-start !important;
+    text-align: left !important
+}
 
     /* 分類導購 */
     .module-categories .category-grid { flex-direction: column !important }
@@ -915,21 +925,4 @@ body.ansei-page-ready.popup-open {
     #content .pagination > li > span {
         min-width: 38px; min-height: 38px; margin-right: 3px
     }
-
-    /* Trust Bar 手機單欄 */
-.module-info_blocks-321 .module-body {
-    flex-direction: column !important
-}
-.module-info_blocks-321 .module-item {
-    flex: 0 0 100% !important;
-    max-width: 100% !important;
-    border-right: none !important;
-    border-bottom: 1px solid #C8C3BC !important
-}
-.module-info_blocks-321 .module-item:last-child {
-    border-bottom: none !important
-}
-.module-info_blocks-321 .info-block {
-    padding: 28px 20px !important
-}
 }
