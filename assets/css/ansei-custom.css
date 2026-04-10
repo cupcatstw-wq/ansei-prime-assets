@@ -601,45 +601,67 @@ body.ansei-page-ready.popup-open {
 /* ======================================== */
 /* 10. 品牌信任區（Trust Bar #321）         */
 /* ======================================== */
+.module-info_blocks-321 {
+    margin-top: 0 !important
+}
 .module-info_blocks-321 .module-body {
-    border-top: 1px solid #C8C3BC !important;
-    border-bottom: 1px solid #C8C3BC !important
+    border-top: 1px solid #D8D2CA !important;
+    border-bottom: 1px solid #D8D2CA !important;
+    background: transparent !important;
+    padding-top: 14px !important;
+    padding-bottom: 14px !important
 }
 .module-info_blocks-321 .module-item {
-    border-right: 1px solid #C8C3BC !important;
+    position: relative !important;
+    border-right: 1px solid #D8D2CA !important;
     text-align: center !important;
-    transition: background .22s ease !important
+    background: transparent !important;
+    transition: background .22s ease, transform .22s ease !important
 }
 .module-info_blocks-321 .module-item:last-child {
     border-right: none !important
 }
 .module-info_blocks-321 .module-item:hover {
-    background: #F7F5F2 !important
+    background: #FAF8F5 !important
 }
 .module-info_blocks-321 .info-block {
-    padding: 40px 24px !important;
+    padding: 36px 24px !important;
     text-align: center !important
 }
 .module-info_blocks-321 .info-block-content {
+    display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
-    text-align: center !important
+    text-align: center !important;
+    min-height: 108px !important
 }
 .module-info_blocks-321 .info-block-title {
-    font-size: 11px !important;
-    letter-spacing: 0.18em !important;
-    text-transform: uppercase !important;
+    display: block !important;
+    margin-bottom: 14px !important;
     color: #222222 !important;
+    font-size: 12px !important;
     font-weight: 600 !important;
-    margin-bottom: 10px !important;
-    display: block !important
+    line-height: 1.6 !important;
+    letter-spacing: 0.22em !important;
+    text-transform: uppercase !important
+}
+.module-info_blocks-321 .info-block-title::after {
+    content: "" !important;
+    display: block !important;
+    width: 26px !important;
+    height: 1px !important;
+    margin: 10px auto 0 !important;
+    background: rgba(200, 169, 106, 0.72) !important
 }
 .module-info_blocks-321 .info-block-text {
-    font-size: 12px !important;
-    color: #9A9A9A !important;
-    line-height: 1.8 !important;
-    display: block !important
+    display: block !important;
+    max-width: 210px !important;
+    margin: 0 auto !important;
+    color: #8E8E8E !important;
+    font-size: 13px !important;
+    line-height: 1.95 !important;
+    letter-spacing: 0.01em !important
 }
 
 /* ======================================== */
@@ -664,28 +686,47 @@ body.ansei-page-ready.popup-open {
         flex: none !important
     }
 
-    /* Trust Bar 手機單欄 + 左金線 */
+    /* Trust Bar 手機單欄 */
+    .module-info_blocks-321 .module-body {
+        border-top: 1px solid #D8D2CA !important;
+        border-bottom: 1px solid #D8D2CA !important;
+        padding-top: 8px !important;
+        padding-bottom: 8px !important
+    }
     .module-info_blocks-321 .module-item {
         border-right: none !important;
-        border-bottom: 1px solid #C8C3BC !important;
-        border-left: 2px solid rgba(200, 169, 106, 0.45) !important
+        border-bottom: none !important;
+        border-left: 2px solid rgba(200, 169, 106, 0.38) !important;
+        margin-bottom: 16px !important;
+        background: #FCFBF9 !important
     }
     .module-info_blocks-321 .module-item:last-child {
-        border-bottom: none !important
+        margin-bottom: 0 !important
     }
     .module-info_blocks-321 .info-block {
-        padding: 24px 20px 24px 24px !important;
+        padding: 24px 20px !important;
         text-align: left !important
     }
     .module-info_blocks-321 .info-block-content {
         align-items: flex-start !important;
-        text-align: left !important
+        text-align: left !important;
+        min-height: auto !important
     }
     .module-info_blocks-321 .info-block-title {
-        text-align: left !important
+        margin-bottom: 12px !important;
+        text-align: left !important;
+        font-size: 11px !important;
+        letter-spacing: 0.18em !important
+    }
+    .module-info_blocks-321 .info-block-title::after {
+        margin: 10px 0 0 !important
     }
     .module-info_blocks-321 .info-block-text {
-        text-align: left !important
+        max-width: none !important;
+        margin: 0 !important;
+        text-align: left !important;
+        font-size: 13px !important;
+        line-height: 1.9 !important
     }
 
     /* 分類導購 */
