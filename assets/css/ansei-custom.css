@@ -601,14 +601,10 @@ body.ansei-page-ready.popup-open {
 /* ======================================== */
 /* 10. 品牌信任區（Trust Bar #321）         */
 /* ======================================== */
-
-/* 上下分隔線 */
 .module-info_blocks-321 .module-body {
     border-top: 1px solid #C8C3BC !important;
     border-bottom: 1px solid #C8C3BC !important
 }
-
-/* 每欄右側分隔線 */
 .module-info_blocks-321 .module-item {
     border-right: 1px solid #C8C3BC !important;
     text-align: center !important;
@@ -617,13 +613,9 @@ body.ansei-page-ready.popup-open {
 .module-info_blocks-321 .module-item:last-child {
     border-right: none !important
 }
-
-/* hover 微亮（桌機） */
 .module-info_blocks-321 .module-item:hover {
     background: #F7F5F2 !important
 }
-
-/* 內容排列 */
 .module-info_blocks-321 .info-block {
     padding: 40px 24px !important;
     text-align: center !important
@@ -634,8 +626,6 @@ body.ansei-page-ready.popup-open {
     justify-content: center !important;
     text-align: center !important
 }
-
-/* 標題 */
 .module-info_blocks-321 .info-block-title {
     font-size: 11px !important;
     letter-spacing: 0.18em !important;
@@ -645,8 +635,6 @@ body.ansei-page-ready.popup-open {
     margin-bottom: 10px !important;
     display: block !important
 }
-
-/* 說明文字 */
 .module-info_blocks-321 .info-block-text {
     font-size: 12px !important;
     color: #9A9A9A !important;
@@ -677,27 +665,27 @@ body.ansei-page-ready.popup-open {
     }
 
     /* Trust Bar 手機單欄 + 左金線 */
-.module-info_blocks-321 .module-body {
-    flex-direction: column !important
-}
-.module-info_blocks-321 .module-item {
-    flex: 0 0 100% !important;
-    max-width: 100% !important;
-    border-right: none !important;
-    border-bottom: 1px solid #C8C3BC !important;
-    border-left: 2px solid rgba(200, 169, 106, 0.45) !important
-}
-.module-info_blocks-321 .module-item:last-child {
-    border-bottom: none !important
-}
-.module-info_blocks-321 .info-block {
-    padding: 24px 20px 24px 24px !important;
-    text-align: left !important
-}
-.module-info_blocks-321 .info-block-content {
-    align-items: flex-start !important;
-    text-align: left !important
-}
+    .module-info_blocks-321 .module-body {
+        flex-direction: column !important
+    }
+    .module-info_blocks-321 .module-item {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        border-right: none !important;
+        border-bottom: 1px solid #C8C3BC !important;
+        border-left: 2px solid rgba(200, 169, 106, 0.45) !important
+    }
+    .module-info_blocks-321 .module-item:last-child {
+        border-bottom: none !important
+    }
+    .module-info_blocks-321 .info-block {
+        padding: 24px 20px 24px 24px !important;
+        text-align: left !important
+    }
+    .module-info_blocks-321 .info-block-content {
+        align-items: flex-start !important;
+        text-align: left !important
+    }
 
     /* 分類導購 */
     .module-categories .category-grid { flex-direction: column !important }
