@@ -281,41 +281,47 @@
 /* P-6. 品牌信任區（Trust Bar）*/
 /* ======================================== */
 
-/* 強制桌機 4 欄 */
-#common-home .info-blocks-items {
+/* 強制 4 欄橫排 */
+#common-home .module-info_blocks .module-body {
     display: flex !important;
     flex-wrap: wrap !important;
 }
 
-/* 每欄 25% 寬、置中 */
-#common-home .info-block-item {
+/* 每欄 25% */
+#common-home .module-info_blocks .module-item {
     flex: 0 0 25% !important;
     max-width: 25% !important;
-    text-align: center !important;
-    padding: 32px 16px !important;
     box-sizing: border-box !important;
 }
 
+/* 內容置中 */
+#common-home .module-info_blocks .info-block {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 32px 16px !important;
+}
+
 /* Text 1 標題 */
-#common-home .info-block-text-1 {
+#common-home .module-info_blocks .info-block-title {
     font-size: 13px !important;
-    letter-spacing: 0.2em;
-    color: #222222;
-    font-weight: 600;
-    margin-bottom: 8px;
+    letter-spacing: 0.2em !important;
+    color: #222222 !important;
+    font-weight: 600 !important;
+    margin-bottom: 8px !important;
 }
 
 /* Text 2 說明文字 */
-#common-home .info-block-text-2 {
+#common-home .module-info_blocks .info-block-text {
     font-size: 12px !important;
-    color: #9A9A9A;
-    letter-spacing: 0.08em;
-    line-height: 1.8;
+    color: #9A9A9A !important;
+    letter-spacing: 0.08em !important;
+    line-height: 1.8 !important;
 }
 
 /* 手機單欄 */
 @media (max-width: 767px) {
-    #common-home .info-block-item {
+    #common-home .module-info_blocks .module-item {
         flex: 0 0 100% !important;
         max-width: 100% !important;
     }
