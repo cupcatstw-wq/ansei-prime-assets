@@ -281,20 +281,27 @@
 /* P-6. 品牌信任區（Trust Bar）*/
 /* ======================================== */
 
-/* module-body 強制橫排不換行 */
+/* 外層背景與上下間距 */
 #common-home .module-info_blocks .module-body {
     display: flex !important;
     flex-wrap: nowrap !important;
-    width: 100% !important;
+    border-top: 1px solid #ECE8E2;
+    border-bottom: 1px solid #ECE8E2;
+    padding: 0 !important;
 }
 
-/* 每個 item 強制 25% */
+/* 每欄樣式 */
 #common-home .module-info_blocks .module-item {
     flex: 0 0 25% !important;
     max-width: 25% !important;
-    width: 25% !important;
-    box-sizing: border-box !important;
     min-width: 0 !important;
+    box-sizing: border-box !important;
+    border-right: 1px solid #ECE8E2;
+}
+
+/* 最後一欄不要右邊線 */
+#common-home .module-info_blocks .module-item:last-child {
+    border-right: none;
 }
 
 /* 內容置中 */
@@ -302,36 +309,25 @@
     flex-direction: column !important;
     align-items: center !important;
     text-align: center !important;
-    padding: 32px 12px !important;
+    padding: 36px 20px !important;
 }
 
 /* Text 1 標題 */
 #common-home .module-info_blocks .info-block-title {
-    font-size: 12px !important;
-    letter-spacing: 0.15em !important;
+    font-size: 11px !important;
+    letter-spacing: 0.2em !important;
     color: #222222 !important;
     font-weight: 600 !important;
-    margin-bottom: 8px !important;
+    margin-bottom: 10px !important;
     white-space: nowrap !important;
 }
 
 /* Text 2 說明文字 */
 #common-home .module-info_blocks .info-block-text {
-    font-size: 11px !important;
+    font-size: 12px !important;
     color: #9A9A9A !important;
     letter-spacing: 0.05em !important;
     line-height: 1.8 !important;
-}
-.module-info_blocks-321 .module-body {
-    -ms-flex-wrap: nowrap !important;
-    flex-wrap: nowrap !important;
-}
-
-.module-info_blocks-321 .module-item {
-    flex: 0 0 25% !important;
-    max-width: 25% !important;
-    min-width: 0 !important;
-    box-sizing: border-box !important;
 }
 
 /* 手機單欄 */
@@ -342,6 +338,10 @@
     #common-home .module-info_blocks .module-item {
         flex: 0 0 100% !important;
         max-width: 100% !important;
-        width: 100% !important;
+        border-right: none;
+        border-bottom: 1px solid #ECE8E2;
+    }
+    #common-home .module-info_blocks .module-item:last-child {
+        border-bottom: none;
     }
 }
