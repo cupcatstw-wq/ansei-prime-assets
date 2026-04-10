@@ -737,65 +737,51 @@ body.ansei-page-ready.popup-open {
     }
 
     /* Trust Bar 手機重設計 */
-    .module-info_blocks-321 .module-body {
+     .module-info_blocks-321 .module-body {
         display: flex !important;
         flex-direction: column !important;
-        gap: 12px !important;
+        gap: 20px !important;
         border: none !important;
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
-        background: transparent !important
+        padding: 0 !important;
+        background: transparent !important;
     }
+
     .module-info_blocks-321 .module-item {
-        border: 1px solid #E6E0D8 !important;
-        border-left: 3px solid rgba(200, 169, 106, 0.42) !important;
-        border-right: 1px solid #E6E0D8 !important;
-        border-bottom: 1px solid #E6E0D8 !important;
-        border-radius: 18px !important;
+        border: none !important;
+        background: transparent !important;
         margin: 0 !important;
-        background: linear-gradient(180deg, #FCFBF9 0%, #FFFFFF 100%) !important;
-        box-shadow: 0 6px 18px rgba(0, 0, 0, .035) !important;
-        overflow: hidden !important
+        padding: 0 !important;
+        box-shadow: none !important;
     }
-    .module-info_blocks-321 .module-item:last-child {
-        margin-bottom: 0 !important
-    }
+
     .module-info_blocks-321 .info-block {
-        padding: 18px 18px 18px 16px !important;
-        text-align: left !important
-    }
-    .module-info_blocks-321 .info-block-content {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: flex-start !important;
+        padding: 0 !important;
         text-align: left !important;
-        min-height: auto !important
     }
+
+    .module-info_blocks-321 .info-block-content {
+        display: block !important;
+        text-align: left !important;
+    }
+
     .module-info_blocks-321 .info-block-title {
-        margin-bottom: 8px !important;
-        color: #222222 !important;
-        font-size: 12px !important;
-        font-weight: 600 !important;
-        line-height: 1.55 !important;
+        font-size: 13px !important;
         letter-spacing: 0.10em !important;
-        text-transform: uppercase !important;
-        text-align: left !important
+        margin-bottom: 6px !important;
     }
+
     .module-info_blocks-321 .info-block-title::after {
         content: "" !important;
         display: block !important;
-        width: 22px !important;
+        width: 20px !important;
         height: 1px !important;
-        margin: 8px 0 0 !important;
-        background: rgba(200, 169, 106, 0.68) !important
+        margin: 6px 0 0 !important;
+        background: rgba(200,169,106,0.6) !important;
     }
+
     .module-info_blocks-321 .info-block-text {
-        max-width: none !important;
-        margin: 0 !important;
-        color: #8A8A8A !important;
         font-size: 13px !important;
-        line-height: 1.85 !important;
-        text-align: left !important
+        line-height: 1.9 !important;
     }
 
     /* 分類導購 */
