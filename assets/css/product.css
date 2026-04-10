@@ -322,6 +322,17 @@
     letter-spacing: 0.05em !important;
     line-height: 1.8 !important;
 }
+.module-info_blocks-321 .module-body {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+}
+.module-info_blocks-321 .module-item {
+    flex: 0 0 25% !important;
+    max-width: 25% !important;
+    width: 25% !important;
+    min-width: 0 !important;
+    display: block !important;
+}
 
 /* 手機單欄 */
 @media (max-width: 767px) {
