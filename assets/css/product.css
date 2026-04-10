@@ -281,35 +281,38 @@
 /* P-6. 品牌信任區（Trust Bar）*/
 /* ======================================== */
 
-/* 外層背景與上下間距 */
+/* 上下細線 */
 #common-home .module-info_blocks .module-body {
     display: flex !important;
     flex-wrap: nowrap !important;
-    border-top: 1px solid #ECE8E2;
-    border-bottom: 1px solid #ECE8E2;
+    border-top: 1px solid #D8D3CC  !important;
+    border-bottom: 1px solid #D8D3CC  !important;
     padding: 0 !important;
+    margin: 0 !important;
 }
 
-/* 每欄樣式 */
+/* 每欄右側分隔線 */
 #common-home .module-info_blocks .module-item {
     flex: 0 0 25% !important;
     max-width: 25% !important;
     min-width: 0 !important;
     box-sizing: border-box !important;
-    border-right: 1px solid #ECE8E2;
+    border-right: 1px solid #D8D3CC  !important;
 }
 
-/* 最後一欄不要右邊線 */
 #common-home .module-info_blocks .module-item:last-child {
-    border-right: none;
+    border-right: none !important;
 }
 
 /* 內容置中 */
-#common-home .module-info_blocks .info-block {
+#common-home .module-info_blocks .info-block,
+#common-home .module-info_blocks .info-block-content {
     flex-direction: column !important;
     align-items: center !important;
     text-align: center !important;
-    padding: 36px 20px !important;
+    justify-content: center !important;
+    padding: 36px 24px !important;
+    width: 100% !important;
 }
 
 /* Text 1 標題 */
@@ -319,7 +322,8 @@
     color: #222222 !important;
     font-weight: 600 !important;
     margin-bottom: 10px !important;
-    white-space: nowrap !important;
+    text-align: center !important;
+    display: block !important;
 }
 
 /* Text 2 說明文字 */
@@ -328,6 +332,8 @@
     color: #9A9A9A !important;
     letter-spacing: 0.05em !important;
     line-height: 1.8 !important;
+    text-align: center !important;
+    display: block !important;
 }
 
 /* 手機單欄 */
@@ -338,10 +344,10 @@
     #common-home .module-info_blocks .module-item {
         flex: 0 0 100% !important;
         max-width: 100% !important;
-        border-right: none;
-        border-bottom: 1px solid #ECE8E2;
+        border-right: none !important;
+        border-bottom: 1px solid #ECE8E2 !important;
     }
     #common-home .module-info_blocks .module-item:last-child {
-        border-bottom: none;
+        border-bottom: none !important;
     }
 }
