@@ -281,7 +281,7 @@
 /* P-6. 品牌信任區（Trust Bar）*/
 /* ======================================== */
 
-#common-home .module-info_blocks-321 .module-body {
+.route-common-home .module-info_blocks-321 .module-body {
     display: flex !important;
     flex-wrap: nowrap !important;
     flex-direction: row !important;
@@ -291,7 +291,7 @@
     margin: 0 !important;
 }
 
-#common-home .module-info_blocks-321 .module-item {
+.route-common-home .module-info_blocks-321 .module-item {
     flex: 0 0 25% !important;
     max-width: 25% !important;
     min-width: 0 !important;
@@ -299,18 +299,18 @@
     border-right: 1px solid #C8C3BC !important;
 }
 
-#common-home .module-info_blocks-321 .module-item:last-child {
+.route-common-home .module-info_blocks-321 .module-item:last-child {
     border-right: none !important;
 }
 
-#common-home .module-info_blocks-321 .info-block {
+.route-common-home .module-info_blocks-321 .info-block {
     flex-direction: column !important;
     align-items: center !important;
     text-align: center !important;
     padding: 36px 20px !important;
 }
 
-#common-home .module-info_blocks-321 .info-block-title {
+.route-common-home .module-info_blocks-321 .info-block-title {
     font-size: 11px !important;
     letter-spacing: 0.2em !important;
     color: #222222 !important;
@@ -320,7 +320,7 @@
     display: block !important;
 }
 
-#common-home .module-info_blocks-321 .info-block-text {
+.route-common-home .module-info_blocks-321 .info-block-text {
     font-size: 12px !important;
     color: #9A9A9A !important;
     letter-spacing: 0.05em !important;
@@ -331,17 +331,17 @@
 
 /* 手機單欄 */
 @media (max-width: 767px) {
-    #common-home .module-info_blocks-321 .module-body {
+    .route-common-home .module-info_blocks-321 .module-body {
         flex-wrap: wrap !important;
         flex-direction: column !important;
     }
-    #common-home .module-info_blocks-321 .module-item {
+    .route-common-home .module-info_blocks-321 .module-item {
         flex: 0 0 100% !important;
         max-width: 100% !important;
         border-right: none !important;
         border-bottom: 1px solid #C8C3BC !important;
     }
-    #common-home .module-info_blocks-321 .module-item:last-child {
+    .route-common-home .module-info_blocks-321 .module-item:last-child {
         border-bottom: none !important;
     }
 }
