@@ -671,6 +671,7 @@ body.ansei-page-ready.popup-open {
     .module-info_blocks-321 .module-item {
         flex: 0 0 100% !important;
         max-width: 100% !important;
+        width: 100% !important;
         border-right: none !important;
         border-bottom: 1px solid #C8C3BC !important;
         border-left: 2px solid rgba(200, 169, 106, 0.45) !important
@@ -680,11 +681,23 @@ body.ansei-page-ready.popup-open {
     }
     .module-info_blocks-321 .info-block {
         padding: 24px 20px 24px 24px !important;
-        text-align: left !important
+        text-align: left !important;
+        width: 100% !important;
+        box-sizing: border-box !important
     }
     .module-info_blocks-321 .info-block-content {
         align-items: flex-start !important;
-        text-align: left !important
+        text-align: left !important;
+        width: 100% !important
+    }
+    .module-info_blocks-321 .info-block-title {
+        white-space: nowrap !important;
+        letter-spacing: 0.12em !important
+    }
+    .module-info_blocks-321 .info-block-text {
+        white-space: normal !important;
+        word-break: normal !important;
+        overflow-wrap: break-word !important
     }
 
     /* 分類導購 */
