@@ -915,4 +915,21 @@ body.ansei-page-ready.popup-open {
     #content .pagination > li > span {
         min-width: 38px; min-height: 38px; margin-right: 3px
     }
+
+    /* Trust Bar 手機單欄 */
+.module-info_blocks-321 .module-body {
+    flex-direction: column !important
+}
+.module-info_blocks-321 .module-item {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    border-right: none !important;
+    border-bottom: 1px solid #C8C3BC !important
+}
+.module-info_blocks-321 .module-item:last-child {
+    border-bottom: none !important
+}
+.module-info_blocks-321 .info-block {
+    padding: 28px 20px !important
+}
 }
