@@ -1,54 +1,33 @@
-/* ANSEI PRIME — Custom CSS | Journal 3.1.8 + OpenCart 3.0.3.8 | 2026/04/07 */
+/* ANSEI PRIME — Custom CSS | Journal 3.1.8 + OpenCart 3.0.3.8 | 2026/04/10 */
+
 /* ===== Modules ===== */
 @import url('https://cdn.jsdelivr.net/gh/cupcatstw-wq/ansei-prime-assets@main/assets/css/product.css');
 @import url('https://cdn.jsdelivr.net/gh/cupcatstw-wq/ansei-prime-assets@main/assets/css/account.css');
 
 /* ======================================== */
-/*  1. Header / Footer / 導覽
+/* 1. Header / Footer / 導覽               */
 /* ======================================== */
-.mobile-logo-wrapper #logo {
-    overflow: visible !important
-}
-
+.mobile-logo-wrapper #logo { overflow: visible !important }
 .mobile-logo-wrapper #logo a img {
     height: 48px !important;
     width: auto !important;
     max-height: 48px !important
 }
-
 footer .module a {
     display: inline-block;
     padding: 6px 0;
     color: #555555;
     transition: color .2s ease
 }
-
-footer .module a:hover {
-    color: #C8A96A
-}
-
-footer .module ul li {
-    margin-bottom: 8px
-}
-
-.j-menu .collapse .menu-item .links-text {
-    padding-left: 20px !important
-}
-
-.j-menu .collapse .collapse .menu-item .links-text {
-    padding-left: 45px !important
-}
-
-.j-menu .collapse .collapse .collapse .menu-item .links-text {
-    padding-left: 70px !important
-}
-
-.j-menu .menu-item a:hover {
-    color: #C8A96A !important
-}
+footer .module a:hover { color: #C8A96A }
+footer .module ul li { margin-bottom: 8px }
+.j-menu .collapse .menu-item .links-text { padding-left: 20px !important }
+.j-menu .collapse .collapse .menu-item .links-text { padding-left: 45px !important }
+.j-menu .collapse .collapse .collapse .menu-item .links-text { padding-left: 70px !important }
+.j-menu .menu-item a:hover { color: #C8A96A !important }
 
 /* ======================================== */
-/* 2. Scroll Top
+/* 2. Scroll Top                           */
 /* ======================================== */
 .scroll-top {
     position: fixed !important;
@@ -75,30 +54,23 @@ footer .module ul li {
     font-size: 0 !important;
     overflow: hidden
 }
-
-.scroll-top>i,
-.scroll-top>span {
-    display: none !important
-}
-
+.scroll-top > i,
+.scroll-top > span { display: none !important }
 .scroll-top.is-visible {
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto
 }
-
 .scroll-top:hover {
     background: rgba(232, 226, 218, 0.88) !important;
     border-color: rgba(180, 168, 152, 0.70) !important;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12) !important;
     transform: translateY(-2px)
 }
-
 .scroll-top:active {
     transform: translateY(0px) !important;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important
 }
-
 .scroll-top svg {
     display: block !important;
     width: 18px !important;
@@ -111,7 +83,6 @@ footer .module ul li {
     padding: 0 !important;
     flex-shrink: 0
 }
-
 .scroll-top svg path {
     stroke: #9A8E7E;
     stroke-width: 1.8;
@@ -120,49 +91,17 @@ footer .module ul li {
     fill: none;
     transition: stroke .22s ease
 }
-
-.scroll-top:hover svg path {
-    stroke: #6E6358
-}
+.scroll-top:hover svg path { stroke: #6E6358 }
 
 /* ======================================== */
-/* 3. Typography / Alert / 遮罩
+/* 3. Typography / Alert / 遮罩            */
 /* ======================================== */
-.ansei-link {
-    color: #C8A96A;
-    font-weight: 500;
-    text-decoration: none
-}
-
-.ansei-link:hover {
-    color: #B89655;
-    text-decoration: underline
-}
-
-.alert-danger {
-    background: #F5EDED;
-    color: #8B4A4A;
-    border: 1px solid #DEC8C8
-}
-
-.alert-success {
-    background: #EEF5F0;
-    color: #4F6F57;
-    border: 1px solid #D7E6DB
-}
-
-.alert-warning {
-    background: #F8F5EC;
-    color: #8A6D3B;
-    border: 1px solid #EADFC8
-}
-
-small,
-.help-block,
-.text-secondary {
-    color: #9A9A9A
-}
-
+.ansei-link { color: #C8A96A; font-weight: 500; text-decoration: none }
+.ansei-link:hover { color: #B89655; text-decoration: underline }
+.alert-danger { background: #F5EDED; color: #8B4A4A; border: 1px solid #DEC8C8 }
+.alert-success { background: #EEF5F0; color: #4F6F57; border: 1px solid #D7E6DB }
+.alert-warning { background: #F8F5EC; color: #8A6D3B; border: 1px solid #EADFC8 }
+small, .help-block, .text-secondary { color: #9A9A9A }
 body.ansei-page-ready .modal-backdrop,
 body.ansei-page-ready .popup-backdrop,
 body.ansei-page-ready .j-overlay,
@@ -173,7 +112,6 @@ body.ansei-page-ready .loading-mask {
     visibility: hidden !important;
     pointer-events: none !important
 }
-
 body.ansei-page-ready.modal-open,
 body.ansei-page-ready.popup-open {
     overflow: auto !important;
@@ -181,7 +119,7 @@ body.ansei-page-ready.popup-open {
 }
 
 /* ======================================== */
-/* 4. 全域 Button
+/* 4. 全域 Button                          */
 /* ======================================== */
 #content .btn-danger,
 #content a.btn-danger,
@@ -191,7 +129,6 @@ body.ansei-page-ready.popup-open {
     color: #666;
     border-radius: 12px
 }
-
 #content .btn-danger:hover,
 #content a.btn-danger:hover,
 #content button.btn-danger:hover {
@@ -199,7 +136,6 @@ body.ansei-page-ready.popup-open {
     border-color: #8a8480;
     color: #333
 }
-
 .ansei-actions a.btn:active,
 .ansei-actions a.btn:focus,
 #information-contact button[type="submit"]:active,
@@ -211,7 +147,6 @@ body.ansei-page-ready.popup-open {
     color: #333 !important;
     text-decoration: none !important
 }
-
 #content .btn.disabled,
 #content .btn[disabled],
 #content button.btn[disabled],
@@ -226,9 +161,8 @@ body.ansei-page-ready.popup-open {
     transform: none;
     pointer-events: none
 }
-
-#content .pagination>li>a,
-#content .pagination>li>span {
+#content .pagination > li > a,
+#content .pagination > li > span {
     min-width: 40px;
     min-height: 40px;
     padding: 0 12px;
@@ -242,33 +176,27 @@ body.ansei-page-ready.popup-open {
     margin: 0 4px 6px 0;
     transition: background .22s ease, border-color .22s ease, color .22s ease
 }
-
-#content .pagination>li>a:hover,
-#content .pagination>li>span:hover,
-#content .pagination>.active>a,
-#content .pagination>.active>span {
+#content .pagination > li > a:hover,
+#content .pagination > li > span:hover,
+#content .pagination > .active > a,
+#content .pagination > .active > span {
     background: #F3EEE7;
     border-color: rgba(200, 169, 106, .58);
     color: #222
 }
-
 #account-login .btn::after,
 #account-register .btn::after,
 #account-forgotten .btn::after,
-#information-contact .btn::after {
-    display: none !important;
-    content: none !important
-}
+#information-contact .btn::after { display: none !important; content: none !important }
 
 /* ======================================== */
-/* 5. 聯絡我們*/
+/* 5. 聯絡我們                             */
 /* ======================================== */
 #information-contact #content {
     max-width: 1120px;
     margin: 0 auto;
     padding: 12px 0 40px
 }
-
 #information-contact h1,
 #information-contact .title.page-title,
 #information-contact .page-title h1 {
@@ -277,7 +205,6 @@ body.ansei-page-ready.popup-open {
     font-size: 44px;
     margin: 10px 0 26px
 }
-
 #information-contact .module-body form.form-horizontal,
 #information-contact form.form-horizontal {
     background: #F7F6F4;
@@ -286,7 +213,6 @@ body.ansei-page-ready.popup-open {
     box-shadow: 0 10px 28px rgba(0, 0, 0, .05);
     padding: 30px 26px
 }
-
 #information-contact .module-body .title,
 #information-contact .module-body legend,
 #information-contact .module-body h3.title,
@@ -298,7 +224,6 @@ body.ansei-page-ready.popup-open {
     padding-bottom: 10px;
     border-bottom: 1px solid rgba(200, 169, 106, .35)
 }
-
 #information-contact form.form-horizontal fieldset {
     display: grid;
     grid-template-columns: 160px minmax(0, 1fr);
@@ -308,12 +233,8 @@ body.ansei-page-ready.popup-open {
     padding: 0;
     border: 0
 }
-
-#information-contact form.form-horizontal .form-group {
-    display: contents
-}
-
-#information-contact form.form-horizontal .form-group>label.col-sm-2.control-label {
+#information-contact form.form-horizontal .form-group { display: contents }
+#information-contact form.form-horizontal .form-group > label.col-sm-2.control-label {
     grid-column: 1;
     color: #555;
     font-size: 15px;
@@ -326,15 +247,13 @@ body.ansei-page-ready.popup-open {
     max-width: none;
     float: none
 }
-
-#information-contact form.form-horizontal .form-group>.col-sm-10 {
+#information-contact form.form-horizontal .form-group > .col-sm-10 {
     grid-column: 2;
     width: auto;
     max-width: none;
     padding: 0;
     float: none
 }
-
 #information-contact form.form-horizontal input[type="text"],
 #information-contact form.form-horizontal input[type="email"],
 #information-contact form.form-horizontal input[type="tel"],
@@ -353,29 +272,20 @@ body.ansei-page-ready.popup-open {
     padding: 10px 14px;
     box-shadow: none
 }
-
 #information-contact form.form-horizontal textarea {
     min-height: 150px;
     line-height: 1.7;
     resize: vertical
 }
-
 #information-contact form.form-horizontal input:focus,
 #information-contact form.form-horizontal textarea:focus,
 #information-contact form.form-horizontal select:focus {
     border-color: rgba(200, 169, 106, .65);
     box-shadow: 0 0 0 3px rgba(200, 169, 106, .10)
 }
-
 #information-contact form.form-horizontal input::placeholder,
-#information-contact form.form-horizontal textarea::placeholder {
-    color: #9A9A9A
-}
-
-#information-contact .required {
-    color: #C8A96A
-}
-
+#information-contact form.form-horizontal textarea::placeholder { color: #9A9A9A }
+#information-contact .required { color: #C8A96A }
 #information-contact form.form-horizontal .text-danger {
     grid-column: 2;
     display: block;
@@ -384,12 +294,8 @@ body.ansei-page-ready.popup-open {
     color: #9A9A9A;
     margin: -2px 0 12px
 }
-
 #information-contact form.form-horizontal .has-error input,
-#information-contact form.form-horizontal .has-error textarea {
-    border-color: #E3DCD2
-}
-
+#information-contact form.form-horizontal .has-error textarea { border-color: #E3DCD2 }
 #information-contact form.form-horizontal .buttons,
 #information-contact form.form-horizontal .pull-right,
 #information-contact form.form-horizontal .text-right {
@@ -397,7 +303,6 @@ body.ansei-page-ready.popup-open {
     float: none !important;
     margin-top: 26px
 }
-
 #information-contact .btn,
 #information-contact .btn-primary,
 #information-contact button,
@@ -415,7 +320,6 @@ body.ansei-page-ready.popup-open {
     box-shadow: 0 4px 14px rgba(0, 0, 0, .05);
     transition: all .22s ease
 }
-
 #information-contact .btn:hover,
 #information-contact .btn-primary:hover,
 #information-contact button:hover,
@@ -425,7 +329,6 @@ body.ansei-page-ready.popup-open {
     color: #222;
     transform: translateY(-1px)
 }
-
 #information-contact .btn:active,
 #information-contact .btn:focus,
 #information-contact .btn-primary:active,
@@ -440,13 +343,8 @@ body.ansei-page-ready.popup-open {
     box-shadow: none !important;
     outline: none !important
 }
-
 #information-contact button:focus-visible,
-#information-contact .btn:focus-visible {
-    outline: none !important;
-    box-shadow: none !important
-}
-
+#information-contact .btn:focus-visible { outline: none !important; box-shadow: none !important }
 #information-contact .our-location,
 #information-contact .panel.our-location {
     border-radius: 22px;
@@ -455,7 +353,6 @@ body.ansei-page-ready.popup-open {
     box-shadow: 0 10px 28px rgba(0, 0, 0, .05);
     background: #F7F6F4
 }
-
 #information-contact .ansei-field-error {
     display: block;
     margin-top: 5px;
@@ -465,14 +362,11 @@ body.ansei-page-ready.popup-open {
 }
 
 /* ======================================== */
-/* 6. 產品列表工具列*/
+/* 6. 產品列表工具列                        */
 /* ======================================== */
 .products-filter .compare-total,
 .products-filter a[href*="compare"],
-#content .compare-total {
-    display: none !important
-}
-
+#content .compare-total { display: none !important }
 #input-sort,
 .input-group.per-page select,
 .select-group select {
@@ -491,7 +385,6 @@ body.ansei-page-ready.popup-open {
     font-size: 13px !important;
     box-shadow: none !important
 }
-
 #input-sort:focus,
 .input-group.per-page select:focus,
 .select-group select:focus {
@@ -499,7 +392,6 @@ body.ansei-page-ready.popup-open {
     box-shadow: 0 0 0 3px rgba(180, 168, 152, .10) !important;
     outline: none !important
 }
-
 .select-group .input-group-addon,
 .select-group label.input-group-addon {
     background: transparent !important;
@@ -508,15 +400,13 @@ body.ansei-page-ready.popup-open {
     font-size: 13px !important;
     padding-right: 6px !important
 }
-
 .products-filter .filter-group,
-#content .products-filter>div {
+#content .products-filter > div {
     border: none !important;
     box-shadow: none !important;
     background: transparent !important;
     margin-bottom: 20px !important
 }
-
 .main-products-wrapper .products-filter {
     display: flex !important;
     align-items: center !important;
@@ -531,13 +421,11 @@ body.ansei-page-ready.popup-open {
     max-height: 56px !important;
     overflow: visible !important
 }
-
 .products-filter {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     margin-bottom: 0 !important
 }
-
 .main-products-wrapper .products-filter .grid-list {
     display: flex !important;
     align-items: center !important;
@@ -545,7 +433,6 @@ body.ansei-page-ready.popup-open {
     margin: 0 !important;
     padding: 0 !important
 }
-
 .main-products-wrapper .products-filter .grid-list .view-btn {
     width: 32px !important;
     height: 32px !important;
@@ -560,14 +447,12 @@ body.ansei-page-ready.popup-open {
     transition: all .2s ease !important;
     box-shadow: none !important
 }
-
 .main-products-wrapper .products-filter .grid-list .view-btn:hover,
 .main-products-wrapper .products-filter .grid-list .view-btn.active {
     border-color: rgba(180, 168, 152, .6) !important;
     color: #555 !important;
     background: #F7F5F2 !important
 }
-
 .main-products-wrapper .products-filter .select-group {
     display: flex !important;
     align-items: center !important;
@@ -575,14 +460,12 @@ body.ansei-page-ready.popup-open {
     margin: 0 0 0 auto !important;
     padding: 0 !important
 }
-
 .main-products-wrapper .products-filter .select-group .input-group {
     display: flex !important;
     align-items: center !important;
     margin: 0 !important;
     height: 34px !important
 }
-
 .main-products-wrapper .products-filter .select-group .input-group-addon {
     background: transparent !important;
     border: none !important;
@@ -593,52 +476,41 @@ body.ansei-page-ready.popup-open {
     line-height: 1 !important;
     white-space: nowrap !important
 }
-
 .main-products-wrapper .main-products.product-grid,
 .main-products-wrapper .main-products.product-list {
     margin-top: 16px !important;
     padding-top: 0 !important
 }
-
 .product-grid:not(.swiper-wrapper),
 .isotope-grid,
 .module-products-list .product-list:not(.swiper-wrapper) {
     margin-top: 0 !important;
     padding-top: 0 !important
 }
-
 .main-products-wrapper .products-filter .grid-list .view-btn .tooltip,
-#btn-grid-view+.tooltip,
-#btn-list-view+.tooltip,
-.main-products-wrapper .products-filter .grid-list .compare-btn {
-    display: none !important
-}
+#btn-grid-view + .tooltip,
+#btn-list-view + .tooltip,
+.main-products-wrapper .products-filter .grid-list .compare-btn { display: none !important }
 
 /* ======================================== */
-/* 7. 首頁分類區*/
+/* 7. 首頁分類區                            */
 /* ======================================== */
 .common-home .category-grid .category-layout,
 .common-home .category-grid .category-layout .caption,
-.common-home .category-grid .category-layout .name {
-    text-align: center !important
-}
-
+.common-home .category-grid .category-layout .name { text-align: center !important }
 .common-home .category-grid .category-layout .image {
     display: flex !important;
     justify-content: center !important
 }
-
 .common-home .category-grid .category-layout .image a {
     display: flex !important;
     justify-content: center !important;
     width: 100% !important
 }
-
 .common-home .category-grid .category-layout .image img {
     display: block !important;
     margin: 0 auto !important
 }
-
 .common-home .category-grid .category-layout .caption .name,
 .common-home .category-grid .category-layout .caption .name a {
     display: block !important;
@@ -655,11 +527,7 @@ body.ansei-page-ready.popup-open {
     text-decoration: none !important;
     text-align: center !important
 }
-
-.common-home .category-grid .category-layout:hover .caption .name a {
-    color: #C8A96A !important
-}
-
+.common-home .category-grid .category-layout:hover .caption .name a { color: #C8A96A !important }
 .common-home .category-grid .category-layout .button-group,
 .common-home .category-grid .category-layout .button-group *,
 .common-home .category-grid .category-layout .btn,
@@ -675,62 +543,48 @@ body.ansei-page-ready.popup-open {
     overflow: hidden !important;
     border: 0 !important
 }
-
-.common-home .category-grid .category-layout {
-    transition: transform .3s ease !important
-}
-
-.common-home .category-grid .category-layout:hover {
-    transform: translateY(-4px) !important
-}
+.common-home .category-grid .category-layout { transition: transform .3s ease !important }
+.common-home .category-grid .category-layout:hover { transform: translateY(-4px) !important }
 
 /* ======================================== */
-/* 8. 三大品牌價值*/
+/* 8. 三大品牌價值（排除 Trust Bar #321）   */
 /* ======================================== */
-.module-info_blocks .info-block {
+.module-info_blocks:not(.module-info_blocks-321) .info-block {
     flex-direction: row !important;
     align-items: flex-start !important;
     text-align: left !important;
     padding: 0 30px !important;
     gap: 14px !important
 }
-
-.module-info_blocks .info-block-content {
+.module-info_blocks:not(.module-info_blocks-321) .info-block-content {
     display: flex !important;
     flex-direction: column !important
 }
-
-.module-info_blocks .info-block-title {
+.module-info_blocks:not(.module-info_blocks-321) .info-block-title {
     font-size: 16px !important;
     font-weight: 600 !important;
     color: #222 !important;
     margin-bottom: 8px !important;
     line-height: 1.4 !important
 }
-
-.module-info_blocks .info-block-text {
+.module-info_blocks:not(.module-info_blocks-321) .info-block-text {
     font-size: 14px !important;
     color: #888 !important;
     line-height: 1.7 !important
 }
 
 /* ======================================== */
-/* 9. 分類導購區*/
+/* 9. 分類導購區                            */
 /* ======================================== */
 .module-categories .category-thumb .image {
     border-radius: 16px !important;
     overflow: hidden !important
 }
-
 .module-categories .caption {
     background: transparent !important;
     position: relative !important
 }
-
-.module-categories .caption .name {
-    background: transparent !important
-}
-
+.module-categories .caption .name { background: transparent !important }
 .module-categories .caption .name a {
     background: transparent !important;
     color: #555 !important;
@@ -742,149 +596,117 @@ body.ansei-page-ready.popup-open {
     margin-top: 10px !important;
     display: block !important
 }
-
-.module-categories .button-group {
-    display: none !important
-}
-
+.module-categories .button-group { display: none !important }
 
 /* ======================================== */
-/* 10. 品牌信任區（Trust Bar）*/
+/* 10. 品牌信任區（Trust Bar #321）         */
 /* ======================================== */
 .module-info_blocks-321 .module-body {
     border-top: 1px solid #C8C3BC !important;
-    border-bottom: 1px solid #C8C3BC !important;
+    border-bottom: 1px solid #C8C3BC !important
 }
-
 .module-info_blocks-321 .module-item {
     border-right: 1px solid #C8C3BC !important;
-    text-align: center !important;
+    text-align: center !important
 }
-
-.module-info_blocks-321 .module-item:last-child {
-    border-right: none !important;
-}
-
+.module-info_blocks-321 .module-item:last-child { border-right: none !important }
 .module-info_blocks-321 .info-block {
-    text-align: center !important;
-    padding: 36px 20px !important;
+    flex-direction: column !important;
     align-items: center !important;
+    text-align: center !important;
+    padding: 36px 20px !important
 }
-
 .module-info_blocks-321 .info-block-title {
     font-size: 11px !important;
     letter-spacing: 0.2em !important;
     color: #222222 !important;
     font-weight: 600 !important;
     margin-bottom: 10px !important;
+    display: block !important
 }
-
 .module-info_blocks-321 .info-block-text {
     font-size: 12px !important;
     color: #9A9A9A !important;
     line-height: 1.8 !important;
+    display: block !important
 }
 
-/* 11. Mobile ≤767px */
+/* ======================================== */
+/* 11. Mobile ≤767px                       */
+/* ======================================== */
 @media (max-width: 767px) {
-    footer .grid-col-1 {
-        width: 100% !important;
-        margin-bottom: 20px
-    }
-
+    /* Footer */
+    footer .grid-col-1 { width: 100% !important; margin-bottom: 20px }
     footer .grid-col-2,
     footer .grid-col-3,
-    footer .grid-col-4 {
-        width: 50% !important
-    }
+    footer .grid-col-4 { width: 50% !important }
+    footer .grid-col-4 { margin-top: 16px }
 
-    footer .grid-col-4 {
-        margin-top: 16px
-    }
-
-    .module-info_blocks .module-body {
+    /* 三大品牌價值（排除 Trust Bar） */
+    .module-info_blocks:not(.module-info_blocks-321) .module-body {
         flex-direction: column !important
     }
-
-    .module-info_blocks .module-body .module-item {
-        padding-bottom: 24px !important
-    }
-
-    .module-info_blocks .module-body .module-item {
+    .module-info_blocks:not(.module-info_blocks-321) .module-body .module-item {
+        padding-bottom: 24px !important;
         width: 100% !important;
         max-width: 100% !important;
         flex: none !important
     }
 
-    .module-categories .category-grid {
+    /* Trust Bar 手機單欄 */
+    .module-info_blocks-321 .module-body {
+        flex-wrap: wrap !important;
         flex-direction: column !important
     }
+    .module-info_blocks-321 .module-item {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        border-right: none !important;
+        border-bottom: 1px solid #C8C3BC !important
+    }
+    .module-info_blocks-321 .module-item:last-child { border-bottom: none !important }
 
+    /* 分類導購 */
+    .module-categories .category-grid { flex-direction: column !important }
     .module-categories .category-grid .category-layout {
         width: 100% !important;
         max-width: 100% !important
     }
-
     .module-categories .caption .name a {
         white-space: normal !important;
         overflow: visible !important;
         text-overflow: unset !important
     }
 
-    #account-login h1,
-    #account-register h1,
-    #account-forgotten h1,
-    #account-success h1,
-    #account-logout h1,
-    #common-success h1,
-    #account-order h1,
-    #account-wishlist h1,
-    #account-address h1,
-    #account-address-form h1,
-    #account-newsletter h1,
-    #account-edit h1,
-    #account-download h1,
-    #account-return h1,
-    #account-password h1,
-    #account-reset h1,
-    #account-recurring h1,
-    #account-reward h1,
-    #account-affiliate h1,
-    #account-tracking h1,
-    #information-contact h1,
-    #information-contact .page-title h1 {
-        font-size: 32px
-    }
+    /* 會員頁標題 */
+    #account-login h1, #account-register h1, #account-forgotten h1,
+    #account-success h1, #account-logout h1, #common-success h1,
+    #account-order h1, #account-wishlist h1, #account-address h1,
+    #account-address-form h1, #account-newsletter h1, #account-edit h1,
+    #account-download h1, #account-return h1, #account-password h1,
+    #account-reset h1, #account-recurring h1, #account-reward h1,
+    #account-affiliate h1, #account-tracking h1,
+    #information-contact h1, #information-contact .page-title h1 { font-size: 32px }
 
-    #account-login #content,
-    #account-register #content,
-    #account-forgotten #content,
-    #account-success #content,
-    #account-logout #content,
-    #common-success #content,
-    #account-order #content,
-    #account-wishlist #content,
-    #account-address #content,
-    #account-address-form #content,
-    #account-newsletter #content,
-    #account-edit #content,
-    #account-password #content,
-    #account-reset #content,
-    #account-affiliate #content,
-    #account-tracking #content,
-    #information-contact #content {
+    /* 會員頁內容左右padding */
+    #account-login #content, #account-register #content, #account-forgotten #content,
+    #account-success #content, #account-logout #content, #common-success #content,
+    #account-order #content, #account-wishlist #content, #account-address #content,
+    #account-address-form #content, #account-newsletter #content, #account-edit #content,
+    #account-password #content, #account-reset #content, #account-affiliate #content,
+    #account-tracking #content, #information-contact #content {
         padding-left: 16px;
         padding-right: 16px
     }
 
+    /* Login */
     #account-login .login-box {
         display: flex !important;
         flex-direction: column !important;
         gap: 20px !important
     }
-
-    #account-login .login-box>.col-sm-6,
-    #account-login .login-box>[class*="col-"] {
+    #account-login .login-box > .col-sm-6,
+    #account-login .login-box > [class*="col-"] {
         width: 100% !important;
         max-width: 100% !important;
         flex: none !important;
@@ -893,344 +715,181 @@ body.ansei-page-ready.popup-open {
         padding-right: 0 !important;
         margin-bottom: 0 !important
     }
-
     #account-login .login-box .well {
         width: 100% !important;
         min-height: auto !important;
         padding: 24px 18px !important;
         border-radius: 16px !important
     }
-
-    #account-login .login-box .well form {
-        display: block !important;
-        height: auto !important
-    }
-
+    #account-login .login-box .well form { display: block !important; height: auto !important }
     #account-login .login-box .well .buttons,
     #account-login .login-box .well .pull-right,
     #account-login .login-box .well .text-right {
         margin-top: 20px !important;
         padding-top: 0 !important
     }
+    #account-login .btn { width: 100% !important; min-width: 100% !important }
 
-    #account-login .btn {
-        width: 100% !important;
-        min-width: 100% !important
-    }
-
-    #account-register #content>form,
-    #account-register form,
-    #account-forgotten #content>form,
-    #account-forgotten form,
-    #account-forgotten .well,
-    #account-forgotten .card,
-    #account-forgotten #content>div:not(.alert):not(.breadcrumb):not(.buttons),
+    /* 卡片圓角縮小 */
+    #account-register #content > form, #account-register form,
+    #account-forgotten #content > form, #account-forgotten form,
+    #account-forgotten .well, #account-forgotten .card,
+    #account-forgotten #content > div:not(.alert):not(.breadcrumb):not(.buttons),
     #account-success #content.ansei-success-card,
     #account-logout #content.ansei-success-card,
     #common-success #content.ansei-success-card,
-    #account-password #content>form,
-    #account-password form,
-    #account-reset #content>form,
-    #account-reset form,
-    #account-newsletter #content>form,
-    #account-newsletter form,
-    #account-edit #content>form,
-    #account-edit form,
-    #account-affiliate #content>form,
-    #account-affiliate form,
-    #account-tracking #content>form,
-    #account-tracking form,
-    #account-tracking #content>div:not(.breadcrumb),
+    #account-password #content > form, #account-password form,
+    #account-reset #content > form, #account-reset form,
+    #account-newsletter #content > form, #account-newsletter form,
+    #account-edit #content > form, #account-edit form,
+    #account-affiliate #content > form, #account-affiliate form,
+    #account-tracking #content > form, #account-tracking form,
+    #account-tracking #content > div:not(.breadcrumb),
     #information-contact .module-body form.form-horizontal,
-    #information-contact form.form-horizontal {
-        padding: 24px 18px;
-        border-radius: 16px
-    }
+    #information-contact form.form-horizontal { padding: 24px 18px; border-radius: 16px }
+    #account-download #content, #account-return #content,
+    #account-recurring #content { padding: 24px 18px; border-radius: 16px }
+    #account-reward #content { padding-left: 16px; padding-right: 16px }
+    #account-reward #content > .row, #account-reward #content > p,
+    #account-reward #content > .table-responsive,
+    #account-reward #content > .table { padding: 24px 18px; border-radius: 16px }
 
-    #account-download #content,
-    #account-return #content,
-    #account-recurring #content {
-        padding: 24px 18px;
-        border-radius: 16px
-    }
-
-    #account-reward #content {
-        padding-left: 16px;
-        padding-right: 16px
-    }
-
-    #account-reward #content>.row,
-    #account-reward #content>p,
-    #account-reward #content>.table-responsive,
-    #account-reward #content>.table {
-        padding: 24px 18px;
-        border-radius: 16px
-    }
-
-    #account-register .buttons {
-        gap: 24px;
-        align-items: stretch
-    }
-
-    #account-register .buttons .pull-right {
-        text-align: left !important
-    }
-
+    /* Register */
+    #account-register .buttons { gap: 24px; align-items: stretch }
+    #account-register .buttons .pull-right { text-align: left !important }
     #account-register .buttons .btn,
     #account-register .buttons input[type="submit"],
     #account-register .buttons button,
     #account-forgotten .btn,
-    .ansei-actions .btn {
-        width: 100%;
-        min-width: 100%
-    }
+    .ansei-actions .btn { width: 100%; min-width: 100% }
+    #account-register input[name="telephone"] { max-width: 100% }
+    #account-register .telephone-format-tip { font-size: 11px; line-height: 1.7 }
 
-    #account-register input[name="telephone"] {
-        max-width: 100%
-    }
-
-    #account-register .telephone-format-tip {
-        font-size: 11px;
-        line-height: 1.7
-    }
-
-    #account-password .buttons,
-    #account-reset .buttons,
-    #account-newsletter .buttons {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 12px
-    }
-
-    #account-password .buttons .pull-left,
-    #account-password .buttons .pull-right,
-    #account-reset .buttons .pull-left,
-    #account-reset .buttons .pull-right,
+    /* Password / Reset / Newsletter buttons */
+    #account-password .buttons, #account-reset .buttons,
+    #account-newsletter .buttons { flex-direction: column; align-items: stretch; gap: 12px }
+    #account-password .buttons .pull-left, #account-password .buttons .pull-right,
+    #account-reset .buttons .pull-left, #account-reset .buttons .pull-right,
     #account-newsletter .buttons .pull-left,
-    #account-newsletter .buttons .pull-right {
-        width: 100%;
-        margin: 0 !important
-    }
+    #account-newsletter .buttons .pull-right { width: 100%; margin: 0 !important }
 
+    /* Order / Wishlist */
     #account-order #content.ansei-page-card,
-    #account-wishlist #content.ansei-page-card {
-        padding: 20px 14px;
-        border-radius: 16px
+    #account-wishlist #content.ansei-page-card { padding: 20px 14px; border-radius: 16px }
+    #account-order .table thead, #account-wishlist .table thead { display: none }
+    #account-order .table tbody td, #account-wishlist .table tbody td {
+        display: block; padding: 6px 4px; border-bottom: none; font-size: 13px
     }
-
-    #account-order .table thead,
-    #account-wishlist .table thead {
-        display: none
+    #account-order .table tbody tr, #account-wishlist .table tbody tr {
+        display: block; border-bottom: 1px solid #EEE9E2; padding: 12px 0
     }
+    #account-order .table tbody tr:last-child td,
+    #account-wishlist .table tbody tr:last-child td { border-bottom: none }
 
-    #account-order .table tbody td,
-    #account-wishlist .table tbody td {
-        display: block;
-        padding: 6px 4px;
-        border-bottom: none;
-        font-size: 13px
+    /* Address */
+    #account-address #content > p {
+        border-radius: 16px 16px 0 0; padding: 24px 18px 14px; font-size: 14px
     }
-
-    #account-order .table tbody tr,
-    #account-wishlist .table tbody tr {
-        display: block;
-        border-bottom: 1px solid #EEE9E2;
-        padding: 12px 0
+    #account-address #content > .buttons,
+    #account-address #content > .table-responsive + .buttons,
+    #account-address #content > .table-bordered + .buttons,
+    #account-address #content > .table + .buttons,
+    #account-address #content > p + .buttons {
+        border-radius: 0 0 16px 16px; padding: 16px 18px 22px;
+        flex-direction: column; align-items: stretch; gap: 12px
     }
-
-    #account-order .table tbody tr:last-child,
-    #account-wishlist .table tbody tr:last-child {
-        border-bottom: none
+    #account-address #content > .table-responsive,
+    #account-address #content > .table-bordered,
+    #account-address #content > .table {
+        border-radius: 16px 16px 0 0; padding: 20px 14px 12px
     }
-
-    #account-address #content>p {
-        border-radius: 16px 16px 0 0;
-        padding: 24px 18px 14px;
-        font-size: 14px
-    }
-
-    #account-address #content>.buttons,
-    #account-address #content>.table-responsive+.buttons,
-    #account-address #content>.table-bordered+.buttons,
-    #account-address #content>.table+.buttons,
-    #account-address #content>p+.buttons {
-        border-radius: 0 0 16px 16px;
-        padding: 16px 18px 22px;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 12px
-    }
-
-    #account-address #content>.table-responsive,
-    #account-address #content>.table-bordered,
-    #account-address #content>.table {
-        border-radius: 16px 16px 0 0;
-        padding: 20px 14px 12px
-    }
-
-    #account-address .btn,
-    #account-address a.btn,
-    #account-address button.btn,
-    #account-address input.btn {
-        width: 100%
-    }
-
-    #account-address .table thead {
-        display: none
-    }
-
+    #account-address .btn, #account-address a.btn,
+    #account-address button.btn, #account-address input.btn { width: 100% }
+    #account-address .table thead { display: none }
     #account-address .table tbody td {
-        display: block;
-        padding: 6px 4px;
-        border-bottom: none;
-        font-size: 13px
+        display: block; padding: 6px 4px; border-bottom: none; font-size: 13px
     }
-
     #account-address .table tbody tr {
-        display: block;
-        border-bottom: 1px solid #EEE9E2;
-        padding: 12px 0
+        display: block; border-bottom: 1px solid #EEE9E2; padding: 12px 0
     }
-
-    #account-address .table tbody tr:last-child {
-        border-bottom: none
-    }
-
-    #account-address #content>form.form-horizontal,
-    #account-address-form #content>form.form-horizontal,
-    #account-address-form form.form-horizontal,
-    #account-address-form .form-horizontal,
-    body[class*="route-account-address-add"] #content>form.form-horizontal,
+    #account-address .table tbody tr:last-child { border-bottom: none }
+    #account-address #content > form.form-horizontal,
+    #account-address-form #content > form.form-horizontal,
+    #account-address-form form.form-horizontal, #account-address-form .form-horizontal,
+    body[class*="route-account-address-add"] #content > form.form-horizontal,
     body[class*="route-account-address-add"] form.form-horizontal,
-    body[class*="route-account-address-edit"] #content>form.form-horizontal,
+    body[class*="route-account-address-edit"] #content > form.form-horizontal,
     body[class*="route-account-address-edit"] form.form-horizontal {
-        padding: 24px 18px;
-        border-radius: 16px
+        padding: 24px 18px; border-radius: 16px
     }
-
-    #account-address .form-group,
-    #account-address-form .form-group,
+    #account-address .form-group, #account-address-form .form-group,
     body[class*="route-account-address-add"] .form-group,
-    body[class*="route-account-address-edit"] .form-group {
-        margin-bottom: 16px
-    }
-
-    #account-address #content>form.form-horizontal .buttons,
+    body[class*="route-account-address-edit"] .form-group { margin-bottom: 16px }
+    #account-address #content > form.form-horizontal .buttons,
     #account-address-form .buttons,
     body[class*="route-account-address-add"] .buttons,
     body[class*="route-account-address-edit"] .buttons {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 12px;
-        margin-top: 22px
+        flex-direction: column; align-items: stretch; gap: 12px; margin-top: 22px
     }
-
-    #account-address #content>form.form-horizontal .buttons .pull-left,
-    #account-address #content>form.form-horizontal .buttons .pull-right,
-    #account-address-form .buttons .pull-left,
-    #account-address-form .buttons .pull-right,
+    #account-address #content > form.form-horizontal .buttons .pull-left,
+    #account-address #content > form.form-horizontal .buttons .pull-right,
+    #account-address-form .buttons .pull-left, #account-address-form .buttons .pull-right,
     body[class*="route-account-address-add"] .buttons .pull-left,
     body[class*="route-account-address-add"] .buttons .pull-right,
     body[class*="route-account-address-edit"] .buttons .pull-left,
     body[class*="route-account-address-edit"] .buttons .pull-right {
-        width: 100%;
-        margin: 0 !important
+        width: 100%; margin: 0 !important
     }
-
-    #account-address .col-sm-2,
-    #account-address .col-sm-10,
-    #account-address .col-sm-12,
-    #account-address .col-md-2,
-    #account-address .col-md-10,
-    #account-address .col-md-12,
-    #account-address-form .col-sm-2,
-    #account-address-form .col-sm-10,
-    #account-address-form .col-sm-12,
-    #account-address-form .col-md-2,
-    #account-address-form .col-md-10,
-    #account-address-form .col-md-12,
+    #account-address .col-sm-2, #account-address .col-sm-10, #account-address .col-sm-12,
+    #account-address .col-md-2, #account-address .col-md-10, #account-address .col-md-12,
+    #account-address-form .col-sm-2, #account-address-form .col-sm-10,
+    #account-address-form .col-sm-12, #account-address-form .col-md-2,
+    #account-address-form .col-md-10, #account-address-form .col-md-12,
     body[class*="route-account-address-add"] .col-sm-2,
     body[class*="route-account-address-add"] .col-sm-10,
     body[class*="route-account-address-add"] .col-sm-12,
     body[class*="route-account-address-edit"] .col-sm-2,
     body[class*="route-account-address-edit"] .col-sm-10,
     body[class*="route-account-address-edit"] .col-sm-12 {
-        width: 100% !important;
-        max-width: 100% !important;
-        float: none !important
+        width: 100% !important; max-width: 100% !important; float: none !important
     }
-
-    #account-address .control-label,
-    #account-address-form .control-label,
+    #account-address .control-label, #account-address-form .control-label,
     body[class*="route-account-address-add"] .control-label,
-    body[class*="route-account-address-edit"] .control-label {
-        margin-bottom: 6px
+    body[class*="route-account-address-edit"] .control-label { margin-bottom: 6px }
+
+    /* Contact */
+    #information-contact form.form-horizontal fieldset { display: block }
+    #information-contact form.form-horizontal .form-group { display: block; margin-bottom: 10px }
+    #information-contact form.form-horizontal .form-group > label.col-sm-2.control-label {
+        display: block; width: 100%; max-width: none; line-height: 1.5; margin-bottom: 6px
+    }
+    #information-contact form.form-horizontal .form-group > .col-sm-10 {
+        width: 100%; max-width: none
+    }
+    #information-contact form.form-horizontal .text-danger { margin: 4px 0 12px }
+    #information-contact .btn, #information-contact .btn-primary,
+    #information-contact button, #information-contact input[type="submit"] {
+        width: 100%; max-width: 220px
     }
 
-    #information-contact form.form-horizontal fieldset {
-        display: block
-    }
+    /* 商品頁 */
+    #product-product #content { padding-left: 20px !important; padding-right: 20px !important }
 
-    #information-contact form.form-horizontal .form-group {
-        display: block;
-        margin-bottom: 10px
-    }
-
-    #information-contact form.form-horizontal .form-group>label.col-sm-2.control-label {
-        display: block;
-        width: 100%;
-        max-width: none;
-        line-height: 1.5;
-        margin-bottom: 6px
-    }
-
-    #information-contact form.form-horizontal .form-group>.col-sm-10 {
-        width: 100%;
-        max-width: none
-    }
-
-    #information-contact form.form-horizontal .text-danger {
-        margin: 4px 0 12px
-    }
-
-    #information-contact .btn,
-    #information-contact .btn-primary,
-    #information-contact button,
-    #information-contact input[type="submit"] {
-        width: 100%;
-        max-width: 220px
-    }
-
-    #product-product #content {
-        padding-left: 20px !important;
-        padding-right: 20px !important
-    }
-
+    /* 商品列表 */
     .main-products.product-list .product-thumb {
-        flex-direction: column !important;
-        gap: 14px !important;
-        padding: 18px !important
+        flex-direction: column !important; gap: 14px !important; padding: 18px !important
     }
-
     .main-products.product-list .product-thumb .image {
-        flex: none !important;
-        max-width: 100% !important;
-        width: 100% !important
+        flex: none !important; max-width: 100% !important; width: 100% !important
     }
-
-    .main-products.product-list .product-thumb .image a {
-        min-height: 180px !important
-    }
-
+    .main-products.product-list .product-thumb .image a { min-height: 180px !important }
     .main-products.product-list .product-thumb .caption {
-        padding: 0 !important;
-        width: 100% !important
+        padding: 0 !important; width: 100% !important
     }
 
-    #content .pagination>li>a,
-    #content .pagination>li>span {
-        min-width: 38px;
-        min-height: 38px;
-        margin-right: 3px
+    /* 分頁 */
+    #content .pagination > li > a,
+    #content .pagination > li > span {
+        min-width: 38px; min-height: 38px; margin-right: 3px
     }
 }
