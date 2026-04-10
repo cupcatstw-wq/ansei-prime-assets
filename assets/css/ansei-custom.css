@@ -600,6 +600,7 @@ body.ansei-page-ready.popup-open {
 
 /* ======================================== */
 /* 10. 品牌信任區（Trust Bar #321）         */
+/* 字級與三大價值統一版本                   */
 /* ======================================== */
 .module-info_blocks-321 {
     margin-top: 0 !important
@@ -616,7 +617,7 @@ body.ansei-page-ready.popup-open {
     border-right: 1px solid #D8D2CA !important;
     text-align: center !important;
     background: transparent !important;
-    transition: background .22s ease, transform .22s ease !important
+    transition: background .22s ease !important
 }
 .module-info_blocks-321 .module-item:last-child {
     border-right: none !important
@@ -625,7 +626,7 @@ body.ansei-page-ready.popup-open {
     background: #FAF8F5 !important
 }
 .module-info_blocks-321 .info-block {
-    padding: 36px 24px !important;
+    padding: 34px 22px !important;
     text-align: center !important
 }
 .module-info_blocks-321 .info-block-content {
@@ -634,34 +635,40 @@ body.ansei-page-ready.popup-open {
     align-items: center !important;
     justify-content: center !important;
     text-align: center !important;
-    min-height: 108px !important
+    min-height: 100px !important
 }
+
+/* ✅ 關鍵：標題統一（跟三大價值一致） */
 .module-info_blocks-321 .info-block-title {
     display: block !important;
-    margin-bottom: 14px !important;
+    margin-bottom: 10px !important;
     color: #222222 !important;
-    font-size: 12px !important;
+    font-size: 14px !important;       /* ← 原本12 改14 */
     font-weight: 600 !important;
-    line-height: 1.6 !important;
-    letter-spacing: 0.22em !important;
+    line-height: 1.5 !important;
+    letter-spacing: 0.12em !important; /* ← 原本0.22 降低 */
     text-transform: uppercase !important
 }
+
+/* 金線保留但縮短 */
 .module-info_blocks-321 .info-block-title::after {
     content: "" !important;
     display: block !important;
-    width: 26px !important;
+    width: 22px !important;
     height: 1px !important;
-    margin: 10px auto 0 !important;
-    background: rgba(200, 169, 106, 0.72) !important
+    margin: 8px auto 0 !important;
+    background: rgba(200, 169, 106, 0.7) !important
 }
+
+/* ✅ 關鍵：內文統一 */
 .module-info_blocks-321 .info-block-text {
     display: block !important;
-    max-width: 210px !important;
+    max-width: 220px !important;
     margin: 0 auto !important;
-    color: #8E8E8E !important;
-    font-size: 13px !important;
-    line-height: 1.95 !important;
-    letter-spacing: 0.01em !important
+    color: #888888 !important;        /* ← 跟你系統一致 */
+    font-size: 14px !important;       /* ← 原本13 改14 */
+    line-height: 1.9 !important;
+    letter-spacing: 0.02em !important
 }
 
 /* ======================================== */
@@ -712,19 +719,15 @@ body.ansei-page-ready.popup-open {
         text-align: left !important;
         min-height: auto !important
     }
+    /* Trust Bar 手機字級統一 */
     .module-info_blocks-321 .info-block-title {
-        margin-bottom: 12px !important;
-        text-align: left !important;
-        font-size: 11px !important;
-        letter-spacing: 0.18em !important
+        font-size: 13px !important;
+        letter-spacing: 0.10em !important
     }
     .module-info_blocks-321 .info-block-title::after {
         margin: 10px 0 0 !important
     }
     .module-info_blocks-321 .info-block-text {
-        max-width: none !important;
-        margin: 0 !important;
-        text-align: left !important;
         font-size: 13px !important;
         line-height: 1.9 !important
     }
