@@ -666,17 +666,25 @@ body.ansei-page-ready.popup-open {
 
     /* Trust Bar 手機單欄 + 左金線 */
     .module-info_blocks-321 .module-body {
-        flex-direction: column !important
+        flex-direction: column !important;
+        flex-wrap: wrap !important
     }
-    .module-info_blocks-321 .module-item {
-        flex: 0 0 100% !important;
-        max-width: 100% !important;
+    .module-info_blocks-321 .module-item,
+    .module-info_blocks-321 .module-item.module-item-1,
+    .module-info_blocks-321 .module-item.module-item-2,
+    .module-info_blocks-321 .module-item.module-item-3,
+    .module-info_blocks-321 .module-item.module-item-4 {
         width: 100% !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+        flex: 0 0 100% !important;
         border-right: none !important;
         border-bottom: 1px solid #C8C3BC !important;
-        border-left: 2px solid rgba(200, 169, 106, 0.45) !important
+        border-left: 2px solid rgba(200, 169, 106, 0.45) !important;
+        box-sizing: border-box !important
     }
-    .module-info_blocks-321 .module-item:last-child {
+    .module-info_blocks-321 .module-item:last-child,
+    .module-info_blocks-321 .module-item.module-item-4 {
         border-bottom: none !important
     }
     .module-info_blocks-321 .info-block {
@@ -691,7 +699,7 @@ body.ansei-page-ready.popup-open {
         width: 100% !important
     }
     .module-info_blocks-321 .info-block-title {
-        white-space: nowrap !important;
+        white-space: normal !important;
         letter-spacing: 0.12em !important
     }
     .module-info_blocks-321 .info-block-text {
