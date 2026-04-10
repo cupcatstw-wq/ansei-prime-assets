@@ -665,49 +665,27 @@ body.ansei-page-ready.popup-open {
     }
 
     /* Trust Bar 手機單欄 + 左金線 */
-    .module-info_blocks-321 .module-body {
-        display: block !important
-    }
-    .module-info_blocks-321 .module-item,
-    .module-info_blocks-321 .module-item.module-item-1,
-    .module-info_blocks-321 .module-item.module-item-2,
-    .module-info_blocks-321 .module-item.module-item-3,
-    .module-info_blocks-321 .module-item.module-item-4 {
-        display: block !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        min-width: 0 !important;
+    .module-info_blocks-321 .module-item {
         border-right: none !important;
         border-bottom: 1px solid #C8C3BC !important;
-        border-left: 2px solid rgba(200, 169, 106, 0.45) !important;
-        box-sizing: border-box !important
+        border-left: 2px solid rgba(200, 169, 106, 0.45) !important
     }
-    .module-info_blocks-321 .module-item:last-child,
-    .module-info_blocks-321 .module-item.module-item-4 {
+    .module-info_blocks-321 .module-item:last-child {
         border-bottom: none !important
     }
     .module-info_blocks-321 .info-block {
-        display: block !important;
         padding: 24px 20px 24px 24px !important;
-        text-align: left !important;
-        width: 100% !important;
-        box-sizing: border-box !important
+        text-align: left !important
     }
     .module-info_blocks-321 .info-block-content {
-        display: block !important;
-        width: 100% !important;
+        align-items: flex-start !important;
         text-align: left !important
     }
     .module-info_blocks-321 .info-block-title {
-        display: block !important;
-        text-align: left !important;
-        white-space: normal !important
+        text-align: left !important
     }
     .module-info_blocks-321 .info-block-text {
-        display: block !important;
-        text-align: left !important;
-        white-space: normal !important;
-        word-break: normal !important
+        text-align: left !important
     }
 
     /* 分類導購 */
