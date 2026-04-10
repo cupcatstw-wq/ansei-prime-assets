@@ -281,17 +281,20 @@
 /* P-6. 品牌信任區（Trust Bar）*/
 /* ======================================== */
 
-/* 強制 4 欄橫排 */
+/* module-body 強制橫排不換行 */
 #common-home .module-info_blocks .module-body {
     display: flex !important;
-    flex-wrap: wrap !important;
+    flex-wrap: nowrap !important;
+    width: 100% !important;
 }
 
-/* 每欄 25% */
+/* 每個 item 強制 25% */
 #common-home .module-info_blocks .module-item {
     flex: 0 0 25% !important;
     max-width: 25% !important;
+    width: 25% !important;
     box-sizing: border-box !important;
+    min-width: 0 !important;
 }
 
 /* 內容置中 */
@@ -299,30 +302,35 @@
     flex-direction: column !important;
     align-items: center !important;
     text-align: center !important;
-    padding: 32px 16px !important;
+    padding: 32px 12px !important;
 }
 
 /* Text 1 標題 */
 #common-home .module-info_blocks .info-block-title {
-    font-size: 13px !important;
-    letter-spacing: 0.2em !important;
+    font-size: 12px !important;
+    letter-spacing: 0.15em !important;
     color: #222222 !important;
     font-weight: 600 !important;
     margin-bottom: 8px !important;
+    white-space: nowrap !important;
 }
 
 /* Text 2 說明文字 */
 #common-home .module-info_blocks .info-block-text {
-    font-size: 12px !important;
+    font-size: 11px !important;
     color: #9A9A9A !important;
-    letter-spacing: 0.08em !important;
+    letter-spacing: 0.05em !important;
     line-height: 1.8 !important;
 }
 
 /* 手機單欄 */
 @media (max-width: 767px) {
+    #common-home .module-info_blocks .module-body {
+        flex-wrap: wrap !important;
+    }
     #common-home .module-info_blocks .module-item {
         flex: 0 0 100% !important;
         max-width: 100% !important;
+        width: 100% !important;
     }
 }
