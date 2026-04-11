@@ -675,7 +675,7 @@ body.ansei-page-ready.popup-open {
     /* ===== Trust Bar 手機單欄，保持置中 ===== */
     .module-info_blocks-321 .module-body {
         flex-direction: column !important;
-        gap: 32px !important;
+        gap: 40px !important;
         padding: 0 !important
     }
     .module-info_blocks-321 .module-item {
