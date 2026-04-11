@@ -726,5 +726,17 @@ body.ansei-page-ready.popup-open {
         line-height: 1.9 !important;
         margin: 0 !important;
     }
-
+    /* Footer 手機版堆疊 */
+    footer .grid-cols {
+      flex-wrap: wrap !important;
+    }
+    footer .grid-col {
+      width: 100% !important;
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+      margin-bottom: 28px !important;
+    }
+    footer .grid-col:last-child {
+      margin-bottom: 0 !important;
+    }
 }
