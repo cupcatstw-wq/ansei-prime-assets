@@ -707,7 +707,8 @@ body.ansei-page-ready.popup-open {
     .module-info_blocks-321 .info-block-text {
         font-size: 13px !important;
         line-height: 1.9 !important;
-        margin: 0 !important
+        margin: 0 !important;
+        max-width: 100% !important
     }
 
     /* ===== 三大品牌價值手機單欄 ===== */
