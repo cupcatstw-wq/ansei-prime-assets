@@ -673,22 +673,24 @@ body.ansei-page-ready.popup-open {
     }
     footer .grid-cols { flex-wrap: wrap !important }
 
-    /* ===== Trust Bar 手機單欄 ===== */
+    /* ===== Trust Bar 手機單欄，保持置中 ===== */
     .module-info_blocks-321 .module-body {
         flex-direction: column !important;
         gap: 18px !important;
         padding: 0 !important
     }
-    .module-info_blocks-321 .module-item { margin: 0 !important; padding: 0 !important }
-    /* 手機左右留白，避免文字頂邊 */
+    .module-info_blocks-321 .module-item {
+        margin: 0 !important;
+        padding: 0 !important;
+        text-align: center !important
+    }
     .module-info_blocks-321 .info-block {
-        padding: 0 16px !important;
-        text-align: left !important
+        padding: 0 !important;
+        text-align: center !important
     }
     .module-info_blocks-321 .info-block-content {
-        display: block !important;
-        text-align: left !important;
-        min-height: auto !important
+        align-items: center !important;
+        text-align: center !important
     }
     .module-info_blocks-321 .info-block-title {
         font-size: 13px !important;
@@ -697,11 +699,10 @@ body.ansei-page-ready.popup-open {
         letter-spacing: 0.08em !important;
         margin: 0 0 6px !important
     }
-    /* 手機移除金線 */
-    .module-info_blocks-321 .info-block-title::before,
+    /* 手機保留金線 */
     .module-info_blocks-321 .info-block-title::after {
-        content: none !important;
-        display: none !important
+        content: "" !important;
+        display: block !important
     }
     .module-info_blocks-321 .info-block-text {
         font-size: 13px !important;
