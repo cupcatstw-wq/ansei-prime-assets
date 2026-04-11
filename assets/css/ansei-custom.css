@@ -495,24 +495,24 @@ body.ansei-page-ready.popup-open {
 /* ======================================== */
 /* 7. 首頁分類區                            */
 /* ======================================== */
-.common-home .category-grid .category-layout,
-.common-home .category-grid .category-layout .caption,
-.common-home .category-grid .category-layout .name { text-align: center !important }
-.common-home .category-grid .category-layout .image {
+.category-grid .category-layout,
+.category-grid .category-layout .caption,
+.category-grid .category-layout .name { text-align: center !important }
+.category-grid .category-layout .image {
     display: flex !important;
     justify-content: center !important
 }
-.common-home .category-grid .category-layout .image a {
+.category-grid .category-layout .image a {
     display: flex !important;
     justify-content: center !important;
     width: 100% !important
 }
-.common-home .category-grid .category-layout .image img {
+.category-grid .category-layout .image img {
     display: block !important;
     margin: 0 auto !important
 }
-.common-home .category-grid .category-layout .caption .name,
-.common-home .category-grid .category-layout .caption .name a {
+.category-grid .category-layout .caption .name,
+.category-grid .category-layout .caption .name a {
     display: block !important;
     background: transparent !important;
     background-image: none !important;
@@ -527,11 +527,11 @@ body.ansei-page-ready.popup-open {
     text-decoration: none !important;
     text-align: center !important
 }
-.common-home .category-grid .category-layout:hover .caption .name a { color: #C8A96A !important }
-.common-home .category-grid .category-layout .button-group,
-.common-home .category-grid .category-layout .button-group *,
-.common-home .category-grid .category-layout .btn,
-.common-home .category-grid .category-layout .btn-view-more {
+.category-grid .category-layout:hover .caption .name a { color: #C8A96A !important }
+.category-grid .category-layout .button-group,
+.category-grid .category-layout .button-group *,
+.category-grid .category-layout .btn,
+.category-grid .category-layout .btn-view-more {
     display: none !important;
     visibility: hidden !important;
     opacity: 0 !important;
@@ -543,8 +543,8 @@ body.ansei-page-ready.popup-open {
     overflow: hidden !important;
     border: 0 !important
 }
-.common-home .category-grid .category-layout { transition: transform .3s ease !important }
-.common-home .category-grid .category-layout:hover { transform: translateY(-4px) !important }
+.category-grid .category-layout { transition: transform .3s ease !important }
+.category-grid .category-layout:hover { transform: translateY(-4px) !important }
 
 /* ======================================== */
 /* 8. 三大品牌價值（排除 Trust Bar #321）   */
@@ -680,7 +680,11 @@ body.ansei-page-ready.popup-open {
         padding: 0 !important
     }
     .module-info_blocks-321 .module-item { margin: 0 !important; padding: 0 !important }
-    .module-info_blocks-321 .info-block { padding: 0 !important; text-align: left !important }
+    /* 手機左右留白，避免文字頂邊 */
+    .module-info_blocks-321 .info-block {
+        padding: 0 16px !important;
+        text-align: left !important
+    }
     .module-info_blocks-321 .info-block-content {
         display: block !important;
         text-align: left !important;
