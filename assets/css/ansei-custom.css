@@ -573,6 +573,30 @@ body.ansei-page-ready.popup-open {
     line-height: 1.7 !important
 }
 
+/* 品牌三大價值手機版堆疊 */
+.module-info_blocks-320 .module-body {
+  flex-direction: column !important;
+  gap: 28px !important;
+}
+.module-info_blocks-320 .module-item {
+  width: 100% !important;
+  flex: 0 0 100% !important;
+}
+.module-info_blocks-320 .info-block {
+  padding: 0 !important;
+  text-align: left !important;
+}
+.module-info_blocks-320 .info-block-title {
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  color: #222 !important;
+  margin-bottom: 8px !important;
+}
+.module-info_blocks-320 .info-block-text {
+  font-size: 14px !important;
+  color: #888 !important;
+  line-height: 1.8 !important;
+}
 /* ======================================== */
 /* 9. 分類導購區                            */
 /* ======================================== */
