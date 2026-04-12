@@ -401,16 +401,14 @@
 }
 .module-products .product-thumb .button-group { display: none !important; }
 
-
 /* 按鈕置中（桌機+手機都適用）*/
 #product-product .product-info .button-group-page {
     display: flex !important;
     justify-content: center !important;
 }
 #product-product .product-info .product-details .buttons-wrapper {
-    width: auto !important;
+    width: fit-content !important;
     margin: 0 auto !important;
-    justify-content: center !important;
 }
 
 /* ======================================== */
