@@ -655,58 +655,53 @@ body.ansei-page-ready.popup-open {
 @media (max-width: 767px) {
     
     /* ===== Footer：手機版重新排列 ===== */
-    footer .grid-cols {
+    footer .grid-row-1 .grid-cols {
         display: flex !important;
         flex-wrap: wrap !important;
         align-items: flex-start !important;
     }
-    footer .grid-cols > .grid-col {
+    footer .grid-row-1 .grid-cols > .grid-col {
         box-sizing: border-box !important;
+        padding-left: 6px !important;
+        padding-right: 6px !important;
     }
 
-    /* ANSEI PRIME（第三排） */
-    footer .grid-cols > .grid-col-1 {
+    /* ANSEI PRIME（第三排，100%） */
+    footer .grid-row-1 .grid-cols > .grid-col-1 {
         width: 100% !important;
         flex: 0 0 100% !important;
         max-width: 100% !important;
         order: 4 !important;
-        padding-left: 6px !important;
-        padding-right: 6px !important;
         margin-bottom: 0 !important;
     }
 
-    /* 產品分類（第二排） */
-    footer .grid-cols > .grid-col-2 {
+    /* 產品分類（第二排，100%） */
+    footer .grid-row-1 .grid-cols > .grid-col-2 {
         width: 100% !important;
         flex: 0 0 100% !important;
         max-width: 100% !important;
         order: 3 !important;
-        padding-left: 6px !important;
-        padding-right: 6px !important;
     }
 
-    /* 客戶服務（第一排右） */
-    footer .grid-cols > .grid-col-3 {
+    /* 客戶服務（第一排右，50%） */
+    footer .grid-row-1 .grid-cols > .grid-col-3 {
         width: 50% !important;
         flex: 0 0 50% !important;
         max-width: 50% !important;
         order: 2 !important;
-        padding-left: 6px !important;
-        padding-right: 6px !important;
+        margin-top: 0 !important;
     }
 
-    /* 會員專區（第一排左） */
-    footer .grid-cols > .grid-col-4 {
+    /* 會員專區（第一排左，50%） */
+    footer .grid-row-1 .grid-cols > .grid-col-4 {
         width: 50% !important;
         flex: 0 0 50% !important;
         max-width: 50% !important;
         order: 1 !important;
-        padding-left: 6px !important;
-        padding-right: 6px !important;
         margin-top: 0 !important;
     }
 
-    /* 欄名標題加深、縮小間距 */
+    /* 欄名標題加深 */
     footer .module h3,
     footer .module h4,
     footer .module h5,
