@@ -446,10 +446,13 @@
         flex: 1 1 auto !important;
     }
     /* 收藏按鈕同排 */
-    #product-product .wishlist-compare {
-        display: flex !important;
-        gap: 8px !important;
+    #product-product .button-group-page .buttons-wrapper {
+        flex-wrap: nowrap !important;
+        align-items: center !important;
+    }
+    #product-product .button-group-page .wishlist-compare {
         width: auto !important;
+        flex: 0 0 auto !important;
     }
     #product-product .wishlist-compare .btn {
         flex: 1 !important;
