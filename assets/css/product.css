@@ -491,4 +491,18 @@
     .module-products .product-thumb .caption h4 a { font-size: 13px !important; }
     .module-products .product-thumb .caption .price { font-size: 13px !important; }
 
+    /* 手機版按鈕置中同排 */
+    @media (max-width: 767px) {
+    #product-product .product-info .product-details .buttons-wrapper {
+        width: auto !important;
+        flex-wrap: nowrap !important;
+        justify-content: center !important;
+        margin: 0 !important;
+    }
+    #product-product .product-info .button-group-page {
+        display: flex !important;
+        justify-content: center !important;
+        padding: 8px 16px !important;
+    }
+}
 }
