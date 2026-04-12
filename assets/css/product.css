@@ -162,9 +162,12 @@
 }
 
 /* span 容器攤平 */
-#product-product .stepper > span {
+#product-product .stepper > span,
+#product-product .stepper span {
     position: static !important;
     display: contents !important;
+    width: auto !important;
+    height: auto !important;
 }
 
 /* + 按鈕 */
