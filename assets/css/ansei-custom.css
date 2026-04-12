@@ -653,7 +653,7 @@ body.ansei-page-ready.popup-open {
 /* 11. Mobile ≤767px                       */
 /* ======================================== */
 @media (max-width: 767px) {
-
+    
     /* ===== Footer：手機版重新排列 ===== */
     footer .grid-cols {
         display: flex !important;
