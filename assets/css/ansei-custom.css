@@ -646,8 +646,7 @@ body.ansei-page-ready.popup-open {
 .module-info_blocks-321 .info-block-text {
     color: #888888 !important;
     font-size: 14px !important;
-    line-height: 1.9 !important;
-    max-width: 220px
+    line-height: 1.9 !important;   
 }
 
 /* ======================================== */
@@ -676,7 +675,7 @@ body.ansei-page-ready.popup-open {
     /* ===== Trust Bar 手機單欄，保持置中 ===== */
     .module-info_blocks-321 .module-body {
         flex-direction: column !important;
-        gap: 18px !important;
+        gap: 40px !important;
         padding: 0 !important
     }
     .module-info_blocks-321 .module-item {
@@ -707,7 +706,8 @@ body.ansei-page-ready.popup-open {
     .module-info_blocks-321 .info-block-text {
         font-size: 13px !important;
         line-height: 1.9 !important;
-        margin: 0 !important
+        margin: 0 !important;
+        max-width: 100% !important
     }
 
     /* ===== 三大品牌價值手機單欄 ===== */
