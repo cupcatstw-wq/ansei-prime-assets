@@ -311,6 +311,37 @@
     border-bottom: .5px solid #ECE8E2 !important;
 }
 
+/* 強制覆蓋 Journal product-page.scss 的 stepper span 寬度 */
+#product-product .product-info .stepper > span i,
+#product-product .button-group-page .stepper > span i,
+#product-product .stepper-group .stepper > span i {
+    width: 36px !important;
+    height: 40px !important;
+    min-width: 36px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 0 !important;
+    background: #fff !important;
+    cursor: pointer !important;
+}
+#product-product .product-info .stepper > span i.fa-angle-up::after,
+#product-product .button-group-page .stepper > span i.fa-angle-up::after,
+#product-product .stepper-group .stepper > span i.fa-angle-up::after {
+    content: '+' !important;
+    font-size: 18px !important;
+    color: #555 !important;
+    font-family: inherit !important;
+}
+#product-product .product-info .stepper > span i.fa-angle-down::after,
+#product-product .button-group-page .stepper > span i.fa-angle-down::after,
+#product-product .stepper-group .stepper > span i.fa-angle-down::after {
+    content: '−' !important;
+    font-size: 18px !important;
+    color: #555 !important;
+    font-family: inherit !important;
+}
+
 /* ======================================== */
 /* P-4. 分類頁（Category Header） */
 /* ======================================== */
