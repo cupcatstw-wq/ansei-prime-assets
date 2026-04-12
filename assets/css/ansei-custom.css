@@ -654,71 +654,129 @@ body.ansei-page-ready.popup-open {
 /* ======================================== */
 @media (max-width: 767px) {
 
-    /* ===== Footer：欄1單行，欄2+3各50%，欄4單行 ===== */
-    footer .grid-col-1 {
-        width: 100% !important;
-        flex: 0 0 100% !important;
-        margin-bottom: 20px !important
+    /* ===== Footer：手機改單欄重排 ===== */
+    footer .grid-cols {
+        display: flex !important;
+        flex-wrap: wrap !important;
     }
+    footer .grid-col-1,
     footer .grid-col-2,
-    footer .grid-col-3 {
-        width: 50% !important;
-        flex: 0 0 50% !important
-    }
+    footer .grid-col-3,
     footer .grid-col-4 {
         width: 100% !important;
         flex: 0 0 100% !important;
-        margin-top: 16px !important
+        padding-left: 4px !important;
+        padding-right: 4px !important;
     }
-    footer .grid-cols { flex-wrap: wrap !important }
+    footer .grid-col-1 {
+        order: 4 !important;
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    footer .grid-col-2 {
+        order: 3 !important;
+    }
+    footer .grid-col-3 {
+        order: 2 !important;
+    }
+    footer .grid-col-4 {
+        order: 1 !important;
+        margin-top: 0 !important;
+    }
+    footer .grid-col-1 .module,
+    footer .grid-col-2 .module,
+    footer .grid-col-3 .module,
+    footer .grid-col-4 .module {
+        padding: 0 0 18px !important;
+        margin: 0 0 18px !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
+    }
+    footer .grid-col-1 .module {
+        border-bottom: none !important;
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    footer .module .module-title,
+    footer .module h3,
+    footer .module h4,
+    footer .module h5 {
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+        letter-spacing: 0.12em !important;
+        color: #222222 !important;
+        margin: 0 0 12px !important;
+        font-weight: 600 !important;
+        text-align: left !important;
+    }
+    footer .module ul {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    footer .module ul li {
+        margin: 0 0 6px !important;
+        list-style: none !important;
+    }
+    footer .module a {
+        display: block !important;
+        padding: 6px 0 !important;
+        font-size: 13px !important;
+        line-height: 1.8 !important;
+        letter-spacing: 0.04em !important;
+        color: #777777 !important;
+        text-align: left !important;
+    }
+    footer .module p,
+    footer .module .social,
+    footer .module .social-icons {
+        text-align: left !important;
+    }
 
     /* ===== Trust Bar 手機單欄，保持置中 ===== */
     .module-info_blocks-321 .module-body {
         flex-direction: column !important;
         gap: 40px !important;
-        padding: 0 !important
+        padding: 0 !important;
     }
     .module-info_blocks-321 .module-item {
         margin: 0 !important;
         padding: 0 !important;
-        text-align: center !important
+        text-align: center !important;
     }
     .module-info_blocks-321 .info-block {
         padding: 0 !important;
-        text-align: center !important
+        text-align: center !important;
     }
     .module-info_blocks-321 .info-block-content {
         align-items: center !important;
-        text-align: center !important
+        text-align: center !important;
     }
     .module-info_blocks-321 .info-block-title {
         font-size: 13px !important;
         font-weight: 600 !important;
         line-height: 1.6 !important;
         letter-spacing: 0.08em !important;
-        margin: 0 0 6px !important
+        margin: 0 0 6px !important;
     }
-    /* 手機保留金線 */
     .module-info_blocks-321 .info-block-title::after {
         content: "" !important;
-        display: block !important
+        display: block !important;
     }
     .module-info_blocks-321 .info-block-text {
         font-size: 13px !important;
         line-height: 1.9 !important;
         margin: 0 !important;
-        max-width: 100% !important
+        max-width: 100% !important;
     }
 
     /* ===== 三大品牌價值手機單欄 ===== */
     .module-info_blocks:not(.module-info_blocks-321) .module-body {
-        flex-direction: column !important
+        flex-direction: column !important;
     }
     .module-info_blocks:not(.module-info_blocks-321) .module-body .module-item {
         padding-bottom: 24px !important;
         width: 100% !important;
         max-width: 100% !important;
-        flex: none !important
+        flex: none !important;
     }
 
     /* ===== 會員頁標題 ===== */
@@ -730,7 +788,9 @@ body.ansei-page-ready.popup-open {
     #account-reset h1, #account-recurring h1, #account-reward h1,
     #account-affiliate h1, #account-tracking h1,
     #information-contact h1,
-    #information-contact .page-title h1 { font-size: 32px }
+    #information-contact .page-title h1 {
+        font-size: 32px;
+    }
 
     /* ===== 會員頁左右 padding ===== */
     #account-login #content, #account-register #content, #account-forgotten #content,
@@ -739,13 +799,16 @@ body.ansei-page-ready.popup-open {
     #account-address-form #content, #account-newsletter #content, #account-edit #content,
     #account-password #content, #account-reset #content, #account-affiliate #content,
     #account-tracking #content,
-    #information-contact #content { padding-left: 16px; padding-right: 16px }
+    #information-contact #content {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 
     /* ===== Login ===== */
     #account-login .login-box {
         display: flex !important;
         flex-direction: column !important;
-        gap: 20px !important
+        gap: 20px !important;
     }
     #account-login .login-box > .col-sm-6,
     #account-login .login-box > [class*="col-"] {
@@ -755,22 +818,28 @@ body.ansei-page-ready.popup-open {
         float: none !important;
         padding-left: 0 !important;
         padding-right: 0 !important;
-        margin-bottom: 0 !important
+        margin-bottom: 0 !important;
     }
     #account-login .login-box .well {
         width: 100% !important;
         min-height: auto !important;
         padding: 24px 18px !important;
-        border-radius: 16px !important
+        border-radius: 16px !important;
     }
-    #account-login .login-box .well form { display: block !important; height: auto !important }
+    #account-login .login-box .well form {
+        display: block !important;
+        height: auto !important;
+    }
     #account-login .login-box .well .buttons,
     #account-login .login-box .well .pull-right,
     #account-login .login-box .well .text-right {
         margin-top: 20px !important;
-        padding-top: 0 !important
+        padding-top: 0 !important;
     }
-    #account-login .btn { width: 100% !important; min-width: 100% !important }
+    #account-login .btn {
+        width: 100% !important;
+        min-width: 100% !important;
+    }
 
     /* ===== 卡片圓角縮小 ===== */
     #account-register #content > form, #account-register form,
@@ -788,68 +857,128 @@ body.ansei-page-ready.popup-open {
     #account-tracking #content > form, #account-tracking form,
     #account-tracking #content > div:not(.breadcrumb),
     #information-contact .module-body form.form-horizontal,
-    #information-contact form.form-horizontal { padding: 24px 18px; border-radius: 16px }
+    #information-contact form.form-horizontal {
+        padding: 24px 18px;
+        border-radius: 16px;
+    }
     #account-download #content, #account-return #content,
-    #account-recurring #content { padding: 24px 18px; border-radius: 16px }
-    #account-reward #content { padding-left: 16px; padding-right: 16px }
+    #account-recurring #content {
+        padding: 24px 18px;
+        border-radius: 16px;
+    }
+    #account-reward #content {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 
     /* ===== Register ===== */
-    #account-register .buttons { gap: 24px; align-items: stretch }
-    #account-register .buttons .pull-right { text-align: left !important }
+    #account-register .buttons {
+        gap: 24px;
+        align-items: stretch;
+    }
+    #account-register .buttons .pull-right {
+        text-align: left !important;
+    }
     #account-register .buttons .btn,
     #account-register .buttons input[type="submit"],
     #account-register .buttons button,
     #account-forgotten .btn,
-    .ansei-actions .btn { width: 100%; min-width: 100% }
-    #account-register input[name="telephone"] { max-width: 100% }
-    #account-register .telephone-format-tip { font-size: 11px; line-height: 1.7 }
+    .ansei-actions .btn {
+        width: 100%;
+        min-width: 100%;
+    }
+    #account-register input[name="telephone"] {
+        max-width: 100%;
+    }
+    #account-register .telephone-format-tip {
+        font-size: 11px;
+        line-height: 1.7;
+    }
 
     /* ===== Password / Reset / Newsletter ===== */
     #account-password .buttons, #account-reset .buttons,
-    #account-newsletter .buttons { flex-direction: column; align-items: stretch; gap: 12px }
+    #account-newsletter .buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
     #account-password .buttons .pull-left, #account-password .buttons .pull-right,
     #account-reset .buttons .pull-left, #account-reset .buttons .pull-right,
     #account-newsletter .buttons .pull-left,
-    #account-newsletter .buttons .pull-right { width: 100%; margin: 0 !important }
+    #account-newsletter .buttons .pull-right {
+        width: 100%;
+        margin: 0 !important;
+    }
 
     /* ===== Order / Wishlist ===== */
     #account-order #content.ansei-page-card,
-    #account-wishlist #content.ansei-page-card { padding: 20px 14px; border-radius: 16px }
-    #account-order .table thead, #account-wishlist .table thead { display: none }
+    #account-wishlist #content.ansei-page-card {
+        padding: 20px 14px;
+        border-radius: 16px;
+    }
+    #account-order .table thead, #account-wishlist .table thead {
+        display: none;
+    }
     #account-order .table tbody td, #account-wishlist .table tbody td {
-        display: block; padding: 6px 4px; border-bottom: none; font-size: 13px
+        display: block;
+        padding: 6px 4px;
+        border-bottom: none;
+        font-size: 13px;
     }
     #account-order .table tbody tr, #account-wishlist .table tbody tr {
-        display: block; border-bottom: 1px solid #EEE9E2; padding: 12px 0
+        display: block;
+        border-bottom: 1px solid #EEE9E2;
+        padding: 12px 0;
     }
     #account-order .table tbody tr:last-child td,
-    #account-wishlist .table tbody tr:last-child td { border-bottom: none }
+    #account-wishlist .table tbody tr:last-child td {
+        border-bottom: none;
+    }
 
     /* ===== Address ===== */
     #account-address #content > p {
-        border-radius: 16px 16px 0 0; padding: 24px 18px 14px; font-size: 14px
+        border-radius: 16px 16px 0 0;
+        padding: 24px 18px 14px;
+        font-size: 14px;
     }
     #account-address #content > .buttons,
     #account-address #content > .table-responsive + .buttons,
     #account-address #content > .table-bordered + .buttons,
     #account-address #content > .table + .buttons,
     #account-address #content > p + .buttons {
-        border-radius: 0 0 16px 16px; padding: 16px 18px 22px;
-        flex-direction: column; align-items: stretch; gap: 12px
+        border-radius: 0 0 16px 16px;
+        padding: 16px 18px 22px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
     }
     #account-address #content > .table-responsive,
     #account-address #content > .table-bordered,
-    #account-address #content > .table { border-radius: 16px 16px 0 0; padding: 20px 14px 12px }
+    #account-address #content > .table {
+        border-radius: 16px 16px 0 0;
+        padding: 20px 14px 12px;
+    }
     #account-address .btn, #account-address a.btn,
-    #account-address button.btn, #account-address input.btn { width: 100% }
-    #account-address .table thead { display: none }
+    #account-address button.btn, #account-address input.btn {
+        width: 100%;
+    }
+    #account-address .table thead {
+        display: none;
+    }
     #account-address .table tbody td {
-        display: block; padding: 6px 4px; border-bottom: none; font-size: 13px
+        display: block;
+        padding: 6px 4px;
+        border-bottom: none;
+        font-size: 13px;
     }
     #account-address .table tbody tr {
-        display: block; border-bottom: 1px solid #EEE9E2; padding: 12px 0
+        display: block;
+        border-bottom: 1px solid #EEE9E2;
+        padding: 12px 0;
     }
-    #account-address .table tbody tr:last-child { border-bottom: none }
+    #account-address .table tbody tr:last-child {
+        border-bottom: none;
+    }
     #account-address #content > form.form-horizontal,
     #account-address-form #content > form.form-horizontal,
     #account-address-form form.form-horizontal,
@@ -857,16 +986,22 @@ body.ansei-page-ready.popup-open {
     body[class*="route-account-address-add"] form.form-horizontal,
     body[class*="route-account-address-edit"] #content > form.form-horizontal,
     body[class*="route-account-address-edit"] form.form-horizontal {
-        padding: 24px 18px; border-radius: 16px
+        padding: 24px 18px;
+        border-radius: 16px;
     }
     #account-address .form-group, #account-address-form .form-group,
     body[class*="route-account-address-add"] .form-group,
-    body[class*="route-account-address-edit"] .form-group { margin-bottom: 16px }
+    body[class*="route-account-address-edit"] .form-group {
+        margin-bottom: 16px;
+    }
     #account-address #content > form.form-horizontal .buttons,
     #account-address-form .buttons,
     body[class*="route-account-address-add"] .buttons,
     body[class*="route-account-address-edit"] .buttons {
-        flex-direction: column; align-items: stretch; gap: 12px; margin-top: 22px
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        margin-top: 22px;
     }
     #account-address #content > form.form-horizontal .buttons .pull-left,
     #account-address #content > form.form-horizontal .buttons .pull-right,
@@ -876,7 +1011,8 @@ body.ansei-page-ready.popup-open {
     body[class*="route-account-address-add"] .buttons .pull-right,
     body[class*="route-account-address-edit"] .buttons .pull-left,
     body[class*="route-account-address-edit"] .buttons .pull-right {
-        width: 100%; margin: 0 !important
+        width: 100%;
+        margin: 0 !important;
     }
     #account-address .col-sm-2, #account-address .col-sm-10, #account-address .col-sm-12,
     #account-address .col-md-2, #account-address .col-md-10, #account-address .col-md-12,
@@ -889,43 +1025,76 @@ body.ansei-page-ready.popup-open {
     body[class*="route-account-address-edit"] .col-sm-2,
     body[class*="route-account-address-edit"] .col-sm-10,
     body[class*="route-account-address-edit"] .col-sm-12 {
-        width: 100% !important; max-width: 100% !important; float: none !important
+        width: 100% !important;
+        max-width: 100% !important;
+        float: none !important;
     }
     #account-address .control-label, #account-address-form .control-label,
     body[class*="route-account-address-add"] .control-label,
-    body[class*="route-account-address-edit"] .control-label { margin-bottom: 6px }
+    body[class*="route-account-address-edit"] .control-label {
+        margin-bottom: 6px;
+    }
 
     /* ===== Contact ===== */
-    #information-contact form.form-horizontal fieldset { display: block }
-    #information-contact form.form-horizontal .form-group { display: block; margin-bottom: 10px }
+    #information-contact form.form-horizontal fieldset {
+        display: block;
+    }
+    #information-contact form.form-horizontal .form-group {
+        display: block;
+        margin-bottom: 10px;
+    }
     #information-contact form.form-horizontal .form-group > label.col-sm-2.control-label {
-        display: block; width: 100%; max-width: none; line-height: 1.5; margin-bottom: 6px
+        display: block;
+        width: 100%;
+        max-width: none;
+        line-height: 1.5;
+        margin-bottom: 6px;
     }
     #information-contact form.form-horizontal .form-group > .col-sm-10 {
-        width: 100%; max-width: none
+        width: 100%;
+        max-width: none;
     }
-    #information-contact form.form-horizontal .text-danger { margin: 4px 0 12px }
+    #information-contact form.form-horizontal .text-danger {
+        margin: 4px 0 12px;
+    }
     #information-contact .btn, #information-contact .btn-primary,
     #information-contact button,
-    #information-contact input[type="submit"] { width: 100%; max-width: 220px }
+    #information-contact input[type="submit"] {
+        width: 100%;
+        max-width: 220px;
+    }
 
     /* ===== 商品頁 ===== */
-    #product-product #content { padding-left: 20px !important; padding-right: 20px !important }
+    #product-product #content {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
 
     /* ===== 商品列表 ===== */
     .main-products.product-list .product-thumb {
-        flex-direction: column !important; gap: 14px !important; padding: 18px !important
+        flex-direction: column !important;
+        gap: 14px !important;
+        padding: 18px !important;
     }
     .main-products.product-list .product-thumb .image {
-        flex: none !important; max-width: 100% !important; width: 100% !important
+        flex: none !important;
+        max-width: 100% !important;
+        width: 100% !important;
     }
-    .main-products.product-list .product-thumb .image a { min-height: 180px !important }
+    .main-products.product-list .product-thumb .image a {
+        min-height: 180px !important;
+    }
     .main-products.product-list .product-thumb .caption {
-        padding: 0 !important; width: 100% !important
+        padding: 0 !important;
+        width: 100% !important;
     }
 
     /* ===== 分頁 ===== */
     #content .pagination > li > a,
-    #content .pagination > li > span { min-width: 38px; min-height: 38px; margin-right: 3px }
+    #content .pagination > li > span {
+        min-width: 38px;
+        min-height: 38px;
+        margin-right: 3px;
+    }
 
 }
