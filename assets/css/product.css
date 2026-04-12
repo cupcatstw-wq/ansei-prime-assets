@@ -214,6 +214,17 @@
     line-height: 1 !important;
 }
 
+/* 覆蓋 Journal product-page.scss stepper 寬度 */
+#product-product .product-info .button-group-page .stepper span i.fa-angle-up,
+#product-product .product-info .button-group-page .stepper span i.fa-angle-down {
+    width: 36px !important;
+    height: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 0 !important;
+}
+
 /* hover 金色 */
 #product-product .stepper > span i.fa-angle-up:hover::after,
 #product-product .stepper > span i.fa-angle-down:hover::after { color: #C8A96A !important; }
@@ -299,7 +310,6 @@
     border-top: .5px solid #ECE8E2 !important;
     border-bottom: .5px solid #ECE8E2 !important;
 }
-
 
 /* ======================================== */
 /* P-4. 分類頁（Category Header） */
