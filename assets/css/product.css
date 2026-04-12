@@ -223,7 +223,7 @@
 /* Banner 圖片樣式 */
 #product-category #content .category-description .category-text p > img {
     width: 100% !important;
-    max-width: 980px;    /* 調這個數值控制桌機大小 */
+    max-width: 980px;
     border-radius: 16px;
     display: block;
     margin: 0 auto;
@@ -275,4 +275,134 @@
 /* 「繼續」按鈕區塊 */
 #product-category #content .main-products-wrapper .buttons {
     justify-content: center;
+}
+
+
+/* ======================================== */
+/* P-6. 首頁精選商品卡片                   */
+/* ======================================== */
+
+/* 卡片容器 */
+.module-products .product-thumb {
+    border: .5px solid #ECE8E2 !important;
+    border-radius: 16px !important;
+    background: #fff !important;
+    box-shadow: none !important;
+    overflow: hidden !important;
+    transition: border-color .22s ease, box-shadow .22s ease !important;
+    height: 100% !important;
+}
+
+/* hover */
+.module-products .product-thumb:hover {
+    border-color: rgba(200, 169, 106, .35) !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .06) !important;
+}
+
+/* 圖片區 */
+.module-products .product-thumb .image a {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #FAFAF9 !important;
+    padding: 20px !important;
+    min-height: 200px !important;
+}
+
+.module-products .product-thumb .image img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+}
+
+/* 文字區 */
+.module-products .product-thumb .caption {
+    padding: 14px 16px 16px !important;
+}
+
+/* 商品名稱 */
+.module-products .product-thumb .caption h4 {
+    margin: 0 0 6px !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: unset !important;
+    line-height: 1.5 !important;
+}
+
+.module-products .product-thumb .caption h4 a {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: #222 !important;
+    letter-spacing: .02em !important;
+    text-decoration: none !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: unset !important;
+    display: block !important;
+}
+
+.module-products .product-thumb .caption h4 a:hover {
+    color: #C8A96A !important;
+}
+
+/* 分隔線 */
+.module-products .product-thumb .caption .price-container,
+.module-products .product-thumb .caption .price {
+    border-top: .5px solid #ECE8E2 !important;
+    padding-top: 10px !important;
+    margin-top: 8px !important;
+}
+
+/* 價格 */
+.module-products .product-thumb .caption .price {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    color: #555 !important;
+}
+
+/* 特價 */
+.module-products .product-thumb .caption .price-new {
+    color: #C8A96A !important;
+    font-weight: 500 !important;
+}
+
+/* 原價 */
+.module-products .product-thumb .caption .price-old {
+    font-size: 12px !important;
+    color: #9A9A9A !important;
+    text-decoration: line-through !important;
+    margin-left: 4px !important;
+}
+
+/* 隱藏加入購物車、比較、收藏按鈕 */
+.module-products .product-thumb .button-group {
+    display: none !important;
+}
+
+/* ======================================== */
+/* P-6 Mobile ≤767px                       */
+/* ======================================== */
+@media (max-width: 767px) {
+
+    /* 圖片區高度縮小 */
+    .module-products .product-thumb .image a {
+        min-height: 150px !important;
+        padding: 14px !important;
+    }
+
+    /* 文字區 padding 縮小 */
+    .module-products .product-thumb .caption {
+        padding: 12px 12px 14px !important;
+    }
+
+    /* 名稱字體縮小 */
+    .module-products .product-thumb .caption h4 a {
+        font-size: 13px !important;
+    }
+
+    /* 價格字體縮小 */
+    .module-products .product-thumb .caption .price {
+        font-size: 13px !important;
+    }
+
 }
