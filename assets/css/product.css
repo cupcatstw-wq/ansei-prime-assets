@@ -432,25 +432,35 @@
         height: 44px !important;
     }
 
+    /* 手機版按鈕排列 */
+    #product-product .buttons-wrapper {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        align-items: center !important;
+        gap: 8px !important;
+    }
+    #product-product .stepper-group {
+        flex: 0 0 auto !important;
+    }
+    #product-product #button-cart {
+        flex: 1 1 auto !important;
+    }
+    /* 收藏按鈕同排 */
+    #product-product .wishlist-compare {
+        display: flex !important;
+        gap: 8px !important;
+        width: auto !important;
+    }
+    #product-product .wishlist-compare .btn {
+        flex: 1 !important;
+    }
+
     /* 隱藏類似商品（手機） */
     #product-product .related-products,
     #product-product .products-related,
     #product-product .module-side_products,
     #product-product [class*="side_products"],
     #product-product [class*="side-products"] { display: none !important; }
-
-    /* 商品介紹 accordion 黑線改淡 */
-    #product-product .product-tabs,
-    #product-product .blocks-tabs,
-    #product-product [class*="blocks-tabs"] {
-        border-top: .5px solid #ECE8E2 !important;
-        border-bottom: none !important;
-    }
-    #product-product .product-tabs .tab-container,
-    #product-product .tab-container {
-        border: none !important;
-        border-bottom: .5px solid #ECE8E2 !important;
-    }
 
     /* 分類列表卡片 */
     .main-products.product-list .product-thumb {
