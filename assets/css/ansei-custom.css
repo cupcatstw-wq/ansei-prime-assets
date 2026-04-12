@@ -654,48 +654,55 @@ body.ansei-page-ready.popup-open {
 /* ======================================== */
 @media (max-width: 767px) {
     
-    /* ===== Footer：手機版重新排列 + 縮小間距 ===== */   
+    /* ===== Footer：手機版重新排列 ===== */
     footer .grid-cols {
         display: flex !important;
         flex-wrap: wrap !important;
     }
+    footer .grid-cols > .grid-col {
+        box-sizing: border-box !important;
+    }
 
-    /* ANSEI PRIME（最後一排） */
-    footer .grid-col-1 {
+    /* ANSEI PRIME（第三排） */
+    footer .grid-cols > .grid-col-1 {
         width: 100% !important;
         flex: 0 0 100% !important;
+        max-width: 100% !important;
         order: 4 !important;
-        margin-bottom: 0 !important;
         padding-left: 6px !important;
         padding-right: 6px !important;
+        margin-bottom: 0 !important;
     }
 
     /* 產品分類（第二排） */
-    footer .grid-col-2 {
+    footer .grid-cols > .grid-col-2 {
         width: 100% !important;
         flex: 0 0 100% !important;
+        max-width: 100% !important;
         order: 3 !important;
         padding-left: 6px !important;
         padding-right: 6px !important;
     }
 
-    /* 會員專區（第一排左） */
-    footer .grid-col-3 {
+    /* 客戶服務（第一排右） */
+    footer .grid-cols > .grid-col-3 {
         width: 50% !important;
         flex: 0 0 50% !important;
-        order: 1 !important;
+        max-width: 50% !important;
+        order: 2 !important;
         padding-left: 6px !important;
         padding-right: 6px !important;
     }
 
-    /* 客戶服務（第一排右） */
-    footer .grid-col-4 {
+    /* 會員專區（第一排左） */
+    footer .grid-cols > .grid-col-4 {
         width: 50% !important;
         flex: 0 0 50% !important;
-        order: 2 !important;
-        margin-top: 0 !important;
+        max-width: 50% !important;
+        order: 1 !important;
         padding-left: 6px !important;
         padding-right: 6px !important;
+        margin-top: 0 !important;
     }
 
     /* 壓縮手機 footer 項目間距 */
