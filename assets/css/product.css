@@ -153,23 +153,63 @@
     padding-bottom: 0 !important;
 }
 
-/* 數量控制 */
+/* 數量控制：stepper 外框 */
 #product-product .stepper {
     display: inline-flex !important;
     align-items: center !important;
     height: 40px !important;
-    border: 1px solid rgba(212, 207, 201, 1) !important;
+    border: 1px solid #d4cfc9 !important;
     border-radius: 12px !important;
     background: #fff !important;
+    overflow: hidden !important;
 }
 
-#product-product .stepper input#product-quantity {
+/* 數量輸入框 */
+#product-product .stepper input#product-quantity,
+#product-product .stepper input[type="number"] {
     width: 44px !important;
     height: 40px !important;
     border: none !important;
+    border-left: 1px solid #d4cfc9 !important;
+    border-right: 1px solid #d4cfc9 !important;
     text-align: center !important;
     font-size: 14px !important;
     color: #222 !important;
+    background: #fff !important;
+    -moz-appearance: textfield !important;
+    appearance: textfield !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* 隱藏瀏覽器原生上下箭頭 */
+#product-product .stepper input[type="number"]::-webkit-outer-spin-button,
+#product-product .stepper input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0 !important;
+}
+
+/* — 和 + 按鈕 */
+#product-product .stepper .stepper-down,
+#product-product .stepper .stepper-up {
+    width: 36px !important;
+    height: 40px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 16px !important;
+    color: #888 !important;
+    background: #fff !important;
+    border: none !important;
+    cursor: pointer !important;
+    transition: color .2s ease, background .2s ease !important;
+    flex-shrink: 0 !important;
+}
+
+#product-product .stepper .stepper-down:hover,
+#product-product .stepper .stepper-up:hover {
+    color: #222 !important;
+    background: #F7F5F2 !important;
 }
 
 /* 分隔線 */
@@ -178,11 +218,33 @@
     margin: 32px 0 !important;
 }
 
-/* 相關商品隱藏 */
+/* 隱藏類似商品 */
 #product-product .related-products,
-#product-product .products-related {
+#product-product .products-related,
+#product-product .module-related_products {
     display: none !important;
 }
+
+/* 隱藏商品介紹/評論 tab 列 */
+#product-product .product-tabs .nav-tabs,
+#product-product .nav.nav-tabs {
+    display: none !important;
+}
+
+/* tab 內容直接顯示，不需要點擊 */
+#product-product .product-tabs .tab-content .tab-pane,
+#product-product .tab-content .tab-pane {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* 隱藏商品評論區塊 */
+#product-product #tab-review,
+#product-product .product-tabs #tab-review {
+    display: none !important;
+}
+
 
 /* ======================================== */
 /* P-4. 分類頁（Category Header） */
@@ -345,16 +407,11 @@
     color: #C8A96A !important;
 }
 
-/* 分隔線 */
-.module-products .product-thumb .caption .price-container,
+/* 價格上方分隔線 */
 .module-products .product-thumb .caption .price {
     border-top: .5px solid #ECE8E2 !important;
     padding-top: 10px !important;
     margin-top: 8px !important;
-}
-
-/* 價格 */
-.module-products .product-thumb .caption .price {
     font-size: 14px !important;
     font-weight: 400 !important;
     color: #555 !important;
