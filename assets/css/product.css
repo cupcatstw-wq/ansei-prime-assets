@@ -236,13 +236,14 @@
     margin: 32px 0 !important;
 }
 
-/* 隱藏類似商品 */
+/* 隱藏類似商品 + tab 模組 */
 #product-product .related-products,
 #product-product .products-related,
 #product-product .module-side_products,
 #product-product [class*="side_products"],
 #product-product [class*="side-products"],
-#product-product .module-blocks-48 { display: none !important; }
+#product-product .module-blocks-48,
+#product-product .tabs-container { display: none !important; }
 
 /* 商品額外資訊標題線 */
 #product-product .product_extra .title.module-title {
