@@ -2,7 +2,6 @@
 /* P-1. 商品頁（Product Description） */
 /* ======================================== */
 
-/* 商品描述區 */
 .product-product #tab-description {
     max-width: 760px;
     margin: 40px auto;
@@ -236,7 +235,7 @@
     margin: 32px 0 !important;
 }
 
-/* 隱藏類似商品、tab 模組、評論 */
+/* 隱藏類似商品、tab 模組 */
 #product-product .related-products,
 #product-product .products-related,
 #product-product .module-side_products,
@@ -282,12 +281,22 @@
     box-shadow: none !important;
 }
 
-/* tab 內容直接顯示（保留商品介紹內容） */
+/* tab 內容直接顯示 */
 #product-product .tab-content .tab-pane {
     display: block !important;
     opacity: 1 !important;
     visibility: visible !important;
 }
+
+/* 商品介紹 accordion 線改淡 */
+#product-product .product-tabs .tab-title,
+#product-product .blocks-tabs .tab-title,
+#product-product .accordion-title,
+#product-product [class*="tab-title"] {
+    border-top: .5px solid #ECE8E2 !important;
+    border-bottom: .5px solid #ECE8E2 !important;
+}
+
 
 /* ======================================== */
 /* P-4. 分類頁（Category Header） */
@@ -347,7 +356,6 @@
 /* P-6. 首頁精選商品卡片                   */
 /* ======================================== */
 
-/* 卡片容器 */
 .module-products .product-thumb {
     border: .5px solid #ECE8E2 !important;
     border-radius: 16px !important;
@@ -361,8 +369,6 @@
     border-color: rgba(200,169,106,.35) !important;
     box-shadow: 0 8px 24px rgba(0,0,0,.06) !important;
 }
-
-/* 圖片區 */
 .module-products .product-thumb .image a {
     display: flex !important;
     align-items: center !important;
@@ -376,11 +382,7 @@
     height: auto !important;
     object-fit: contain !important;
 }
-
-/* 文字區 */
 .module-products .product-thumb .caption { padding: 14px 16px 16px !important; }
-
-/* 商品名稱不截斷 */
 .module-products .product-thumb .caption h4 {
     margin: 0 0 6px !important;
     white-space: normal !important;
@@ -400,8 +402,6 @@
     display: block !important;
 }
 .module-products .product-thumb .caption h4 a:hover { color: #C8A96A !important; }
-
-/* 價格 */
 .module-products .product-thumb .caption .price {
     border-top: .5px solid #ECE8E2 !important;
     padding-top: 10px !important;
@@ -420,20 +420,57 @@
     text-decoration: line-through !important;
     margin-left: 4px !important;
 }
-
-/* 隱藏按鈕群組 */
 .module-products .product-thumb .button-group { display: none !important; }
 
 
 /* ======================================== */
-/* P-6 Mobile ≤767px                       */
+/* Mobile ≤767px                           */
 /* ======================================== */
 @media (max-width: 767px) {
 
-    /* 商品詳情頁 padding */
+    /* 商品頁 padding */
     #product-product #content {
+        padding-top: 24px !important;
+        padding-bottom: 40px !important;
         padding-left: 20px !important;
         padding-right: 20px !important;
+    }
+
+    /* 數量 stepper 手機版 */
+    #product-product .stepper {
+        height: 44px !important;
+        border-radius: 10px !important;
+    }
+    #product-product .stepper input#product-quantity {
+        height: 44px !important;
+        width: 40px !important;
+        min-width: 40px !important;
+        font-size: 15px !important;
+    }
+    #product-product .stepper > span i.fa-angle-up,
+    #product-product .stepper > span i.fa-angle-down {
+        width: 38px !important;
+        height: 44px !important;
+    }
+
+    /* 隱藏類似商品（手機） */
+    #product-product .related-products,
+    #product-product .products-related,
+    #product-product .module-side_products,
+    #product-product [class*="side_products"],
+    #product-product [class*="side-products"] { display: none !important; }
+
+    /* 商品介紹 accordion 黑線改淡 */
+    #product-product .product-tabs,
+    #product-product .blocks-tabs,
+    #product-product [class*="blocks-tabs"] {
+        border-top: .5px solid #ECE8E2 !important;
+        border-bottom: none !important;
+    }
+    #product-product .product-tabs .tab-container,
+    #product-product .tab-container {
+        border: none !important;
+        border-bottom: .5px solid #ECE8E2 !important;
     }
 
     /* 分類列表卡片 */
