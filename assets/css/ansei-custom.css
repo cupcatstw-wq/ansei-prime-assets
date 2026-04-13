@@ -19,6 +19,11 @@ footer .module a {
     color: #555555;
     transition: color .2s ease
 }
+footer .grid-col-1 .subtitle {
+    line-height: 1.9 !important;
+    color: #888;
+    font-size: 14px
+}
 footer .module a:hover { color: #C8A96A }
 footer .module ul li { margin-bottom: 8px }
 .j-menu .collapse .menu-item .links-text { padding-left: 20px !important }
