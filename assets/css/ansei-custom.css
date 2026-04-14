@@ -38,8 +38,8 @@ footer .module ul li { margin-bottom: 8px }
     position: fixed !important;
     right: 24px !important;
     left: auto !important;
-    bottom: 24px !important;
-    z-index: 999;
+    bottom: 80px !important;
+    z-index: 99999 !important;
     width: 46px !important;
     height: 46px !important;
     cursor: pointer;
