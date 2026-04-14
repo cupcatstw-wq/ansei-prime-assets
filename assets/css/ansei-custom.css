@@ -63,9 +63,9 @@ footer .module ul li { margin-bottom: 8px }
 .scroll-top > i,
 .scroll-top > span { display: none !important }
 .scroll-top.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    pointer-events: auto !important
 }
 .scroll-top:hover {
     background: rgba(232, 226, 218, 0.88) !important;
