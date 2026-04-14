@@ -5,7 +5,7 @@
 @import url('https://cdn.jsdelivr.net/gh/cupcatstw-wq/ansei-prime-assets@main/assets/css/account.css');
 
 /* ======================================== */
-/* 1. Header / Footer / 導覽               */
+/* 1. Header / Footer / 導覽                */
 /* ======================================== */
 .mobile-logo-wrapper #logo { overflow: visible !important }
 .mobile-logo-wrapper #logo a img {
@@ -32,14 +32,14 @@ footer .module ul li { margin-bottom: 8px }
 .j-menu .menu-item a:hover { color: #C8A96A !important }
 
 /* ======================================== */
-/* 2. Scroll Top                           */
+/* 2. Scroll Top (GoTop) - 修正商品頁消失    */
 /* ======================================== */
 .scroll-top {
     position: fixed !important;
     right: 24px !important;
     left: auto !important;
     bottom: 24px !important;
-    z-index: 99999 !important;
+    z-index: 999999 !important; /* 提高層級，確保不被商品頁元素遮擋 */
     width: 46px !important;
     height: 46px !important;
     cursor: pointer;
@@ -55,7 +55,7 @@ footer .module ul li { margin-bottom: 8px }
     transition: opacity .35s ease, transform .35s ease, background .22s ease, border-color .22s ease, box-shadow .22s ease;
     padding: 0 !important;
     margin: 0 !important;
-    display: block !important;
+    display: block !important; /* 強制顯示，防止被隱藏 */
     line-height: 1 !important;
     font-size: 0 !important;
     overflow: hidden
@@ -65,7 +65,8 @@ footer .module ul li { margin-bottom: 8px }
 .scroll-top.is-visible {
     opacity: 1 !important;
     transform: translateY(0) !important;
-    pointer-events: auto !important
+    pointer-events: auto !important;
+    visibility: visible !important
 }
 .scroll-top:hover {
     background: rgba(232, 226, 218, 0.88) !important;
@@ -108,7 +109,7 @@ footer .module ul li { margin-bottom: 8px }
 }
 
 /* ======================================== */
-/* 3. Typography / Alert / 遮罩            */
+/* 3. Typography / Alert / 遮罩             */
 /* ======================================== */
 .ansei-link { color: #C8A96A; font-weight: 500; text-decoration: none }
 .ansei-link:hover { color: #B89655; text-decoration: underline }
@@ -133,7 +134,7 @@ body.ansei-page-ready.popup-open {
 }
 
 /* ======================================== */
-/* 4. 全域 Button                          */
+/* 4. 全域 Button                           */
 /* ======================================== */
 #content .btn-danger,
 #content a.btn-danger,
@@ -183,7 +184,6 @@ body.ansei-page-ready.popup-open {
     border-radius: 12px;
     border: 1px solid #DDD7CF;
     background: #fff;
-    color: #555;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -204,7 +204,7 @@ body.ansei-page-ready.popup-open {
 #information-contact .btn::after { display: none !important; content: none !important }
 
 /* ======================================== */
-/* 5. 聯絡我們                             */
+/* 5. 聯絡我們                              */
 /* ======================================== */
 #information-contact #content {
     max-width: 1120px;
@@ -664,10 +664,22 @@ body.ansei-page-ready.popup-open {
 }
 
 /* ======================================== */
-/* 11. Mobile ≤767px                       */
+/* 11. Mobile ≤767px                        */
 /* ======================================== */
 @media (max-width: 767px) {
     
+    /* GoTop 手機版位置 (針對商品頁調整，避開購物欄位) */
+    .scroll-top { 
+        bottom: 90px !important; 
+        right: 16px !important;
+        opacity: 0;
+        display: block !important; /* 強制在手機版顯示 */
+    }
+    .scroll-top.is-visible { 
+        opacity: 1 !important; 
+        visibility: visible !important;
+    }
+
    /* ===== Footer：手機版間距壓縮 + 標題顏色 ===== */
     footer .module ul {
         margin: 0 !important;
@@ -1071,6 +1083,4 @@ body.ansei-page-ready.popup-open {
         min-height: 38px;
         margin-right: 3px;
     }
-    /* ===== GoTop 手機版位置 ===== */
-    .scroll-top { bottom: 80px !important; }
 }
