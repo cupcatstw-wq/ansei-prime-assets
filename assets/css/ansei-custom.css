@@ -38,7 +38,7 @@ footer .module ul li { margin-bottom: 8px }
     position: fixed !important;
     right: 24px !important;
     left: auto !important;
-    bottom: 80px !important;
+    bottom: 24px !important;
     z-index: 99999 !important;
     width: 46px !important;
     height: 46px !important;
@@ -98,6 +98,14 @@ footer .module ul li { margin-bottom: 8px }
     transition: stroke .22s ease
 }
 .scroll-top:hover svg path { stroke: #6E6358 }
+.scroll-top.scroll-top-active,
+.scroll-top.is-visible.scroll-top-active {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+    pointer-events: auto !important;
+    transform: translateY(0) !important;
+}
 
 /* ======================================== */
 /* 3. Typography / Alert / 遮罩            */
@@ -1063,5 +1071,6 @@ body.ansei-page-ready.popup-open {
         min-height: 38px;
         margin-right: 3px;
     }
-
+    /* ===== GoTop 手機版位置 ===== */
+    .scroll-top { bottom: 80px !important; }
 }
