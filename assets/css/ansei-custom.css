@@ -37,6 +37,7 @@ footer .module ul li { margin-bottom: 8px }
 .scroll-top {
     position: fixed !important;
     right: 24px !important;
+    left: auto !important;
     bottom: 24px !important;
     z-index: 999;
     width: 46px !important;
