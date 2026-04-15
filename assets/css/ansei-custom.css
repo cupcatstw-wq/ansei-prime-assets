@@ -715,16 +715,16 @@ body.ansei-page-ready.popup-open {
     }
     
     /* Footer 手機版標題獨立一行 */
-    footer .module .module-title,
-    footer .module h3,
-    footer .module h4,
-    footer .module h5 {
+    footer .grid-col .module-title {
         display: block !important;
         width: 100% !important;
+        float: none !important;
     }
-    footer .module ul {
+    footer .grid-col .links,
+    footer .grid-col ul {
         display: block !important;
         width: 100% !important;
+        clear: both !important;
     }
     
     /* ===== Trust Bar 手機單欄，保持置中 ===== */
