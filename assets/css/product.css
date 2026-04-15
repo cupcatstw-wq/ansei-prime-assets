@@ -140,7 +140,7 @@
 #product-product .stepper > span {
     display: contents !important;
 }
-#product-product .stepper input#product-quantity.form-control {
+#product-product .product-info .stepper input#product-quantity.form-control {
     order: 2 !important;
     width: 44px !important;
     min-width: 44px !important;
