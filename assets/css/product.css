@@ -1,7 +1,6 @@
 /* ======================================== */
 /* P-1. 商品頁（Product Description） */
 /* ======================================== */
-
 .product-product #tab-description {
     max-width: 760px;
     margin: 40px auto;
@@ -19,16 +18,12 @@
 }
 .product-product #tab-description ul { padding-left: 18px; margin-bottom: 16px; }
 .product-product #tab-description li { margin-bottom: 6px; }
-
 /* 隱藏庫存/型號 label */
 .product-info .product-stats .list-unstyled .product-stock.in-stock b,
 .product-info .product-stats .list-unstyled .product-model b { display: none; }
-
-
 /* ======================================== */
 /* P-2. 分類頁（Product List） */
 /* ======================================== */
-
 .main-products.product-list .product-thumb {
     display: flex !important;
     flex-direction: row !important;
@@ -113,7 +108,6 @@
     text-decoration: line-through !important;
     margin-left: 6px !important;
 }
-
 /* ======================================== */
 /* P-3. 商品詳情（Product Detail）          */
 /* ======================================== */
@@ -225,7 +219,6 @@
 #product-product .stepper > span i.fa-angle-down:hover::after {
     color: #C8A96A !important;
 }
-
 /* 商品頁 content padding */
 #product-product #content {
     padding-top: 48px !important;
@@ -241,19 +234,18 @@
     border-top: .5px solid #ECE8E2 !important;
     margin: 32px 0 !important;
 }
-/* 隱藏類似商品、tab 模組 */
+/* 隱藏類似商品、評論、tab 模組 */
 #product-product .related-products,
 #product-product .products-related,
 #product-product .module-side_products,
 #product-product [class*="side_products"],
 #product-product [class*="side-products"],
 #product-product .module-blocks-48,
-#product-product .module-blocks-48 .tabs-container,
-#product-product .module-blocks-48 .nav-tabs,
-#product-product .module-blocks-48 .tab-content,
 #product-product .tabs-container,
 #product-product .nav.nav-tabs,
-#product-product #tab-review { display: none !important; }
+#product-product #tab-review,
+#product-product .product-tabs,
+#product-product .blocks-tabs { display: none !important; }
 /* 商品額外資訊標題線 */
 #product-product .product_extra .title.module-title {
     position: relative !important;
@@ -284,25 +276,15 @@
     border-top: 1px solid rgba(212,207,201,1) !important;
     box-shadow: none !important;
 }
-/* tab 內容直接顯示 */
-#product-product .tab-content .tab-pane {
-    display: block !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-}
 /* 商品介紹 accordion 線改淡 */
-#product-product .product-tabs .tab-title,
-#product-product .blocks-tabs .tab-title,
 #product-product .accordion-title,
 #product-product [class*="tab-title"] {
     border-top: .5px solid #ECE8E2 !important;
     border-bottom: .5px solid #ECE8E2 !important;
 }
-
 /* ======================================== */
 /* P-4. 分類頁（Category Header） */
 /* ======================================== */
-
 #product-category #content h1.page-title { margin-bottom: 16px !important; }
 #product-category #content .category-description { margin-top: 0; margin-bottom: 0; }
 #product-category #content .category-description .category-text { text-align: center; }
@@ -327,19 +309,15 @@
 }
 #product-category #content .main-products-wrapper,
 #product-category #content .main-products { margin-top: 0; }
-
 @media (max-width: 767px) {
     #product-category #content .category-description .category-text p > img {
         max-width: 100% !important;
         width: 100% !important;
     }
 }
-
-
 /* ======================================== */
 /* P-5. 空分類頁提示 */
 /* ======================================== */
-
 #product-category #content .main-products-wrapper {
     text-align: center;
     padding: 60px 20px 80px;
@@ -351,12 +329,9 @@
     margin-bottom: 32px !important;
 }
 #product-category #content .main-products-wrapper .buttons { justify-content: center; }
-
-
 /* ======================================== */
 /* P-6. 首頁精選商品卡片                   */
 /* ======================================== */
-
 .module-products .product-thumb {
     border: .5px solid #ECE8E2 !important;
     border-radius: 16px !important;
@@ -422,7 +397,6 @@
     margin-left: 4px !important;
 }
 .module-products .product-thumb .button-group { display: none !important; }
-
 /* 按鈕置中（桌機+手機都適用）*/
 #product-product .product-info .button-group-page {
     display: flex !important;
@@ -432,12 +406,10 @@
     width: fit-content !important;
     margin: 0 auto !important;
 }
-
 /* ======================================== */
 /* Mobile ≤767px                           */
 /* ======================================== */
 @media (max-width: 767px) {
-
     /* 商品頁 padding */
     #product-product #content {
         padding-top: 24px !important;
@@ -445,14 +417,14 @@
         padding-left: 20px !important;
         padding-right: 20px !important;
     }
-
     /* 數量 stepper 手機版 */
     #product-product .stepper {
         height: 44px !important;
         width: 120px !important;
         border-radius: 10px !important;
     }
-    #product-product .stepper input#product-quantity.form-control {
+    #product-product .product-info .product-details .stepper-group .stepper input#product-quantity.form-control,
+    #product-product .product-info .button-group-page .stepper-group .stepper input#product-quantity.form-control {
         height: 44px !important;
         width: 44px !important;
         left: 38px !important;
@@ -462,7 +434,6 @@
         width: 38px !important;
         height: 44px !important;
     }
-
     /* 手機版按鈕排列 */
     #product-product .button-group-page {
         padding: 8px 16px !important;
@@ -492,14 +463,12 @@
         flex: 0 0 auto !important;
         margin: 0 !important;
     }
-
     /* 隱藏類似商品（手機） */
     #product-product .related-products,
     #product-product .products-related,
     #product-product .module-side_products,
     #product-product [class*="side_products"],
     #product-product [class*="side-products"] { display: none !important; }
-
     /* 分類列表卡片 */
     .main-products.product-list .product-thumb {
         flex-direction: column !important;
@@ -516,7 +485,6 @@
         padding: 0 !important;
         width: 100% !important;
     }
-
     /* 精選商品卡片 */
     .module-products .product-thumb .image a {
         min-height: 150px !important;
@@ -525,5 +493,4 @@
     .module-products .product-thumb .caption { padding: 12px 12px 14px !important; }
     .module-products .product-thumb .caption h4 a { font-size: 13px !important; }
     .module-products .product-thumb .caption .price { font-size: 13px !important; }
-
 }
