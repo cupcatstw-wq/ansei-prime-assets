@@ -714,6 +714,19 @@ body.ansei-page-ready.popup-open {
         display: none !important;
     }
     
+    /* Footer 手機版標題獨立一行 */
+    footer .module .module-title,
+    footer .module h3,
+    footer .module h4,
+    footer .module h5 {
+        display: block !important;
+        width: 100% !important;
+    }
+    footer .module ul {
+        display: block !important;
+        width: 100% !important;
+    }
+    
     /* ===== Trust Bar 手機單欄，保持置中 ===== */
     .module-info_blocks-321 .module-body {
         flex-direction: column !important;
