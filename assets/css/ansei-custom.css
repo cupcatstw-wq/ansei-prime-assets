@@ -715,16 +715,20 @@ body.ansei-page-ready.popup-open {
     }
     
     /* Footer 手機版標題獨立一行 */
-    footer .grid-col .module-title {
-        display: block !important;
-        width: 100% !important;
-        float: none !important;
+    footer .title-wrapper {
+        display: flex !important;
+        flex-direction: column !important;
     }
-    footer .grid-col .links,
-    footer .grid-col ul {
+    footer .title-wrapper h3 {
         display: block !important;
         width: 100% !important;
-        clear: both !important;
+    }
+    footer .title-wrapper .subtitle {
+        display: block !important;
+        width: 100% !important;
+    }
+    footer .title-wrapper .title-divider {
+        display: none !important;
     }
     
     /* ===== Trust Bar 手機單欄，保持置中 ===== */
