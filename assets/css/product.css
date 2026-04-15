@@ -149,16 +149,20 @@
     align-items: center !important;
     pointer-events: none !important;
 }
-#product-product .stepper input#product-quantity.form-control {
+#product-product .product-info .product-details .stepper-group .stepper input#product-quantity.form-control,
+#product-product .product-info .button-group-page .stepper-group .stepper input#product-quantity.form-control {
     position: absolute !important;
     left: 36px !important;
     top: 0 !important;
     width: 44px !important;
     height: 40px !important;
     padding: 0 !important;
-    border: none !important;
+    border-width: 0 !important;
     border-left: 1px solid rgba(212,207,201,1) !important;
     border-right: 1px solid rgba(212,207,201,1) !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    border-style: solid !important;
     border-radius: 0 !important;
     text-align: center !important;
     font-size: 14px !important;
