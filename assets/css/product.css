@@ -245,14 +245,14 @@
     opacity: 1 !important;
 }
 /* 隱藏類似商品、評論、tab 模組 */
-.product-product .product-blocks-bottom.grid-rows,
-.product-product [class*="product-blocks-"][class*="grid-rows"],
-.product-product .module-side_products,
-.product-product .module-body.side-products-tabs,
-.product-product .nav.nav-tabs,
-.product-product #tab-review,
-.product-product .product-tabs,
-.product-product .blocks-tabs { display: none !important; }
+body.product-product .product-blocks-bottom,
+body.product-product .product-blocks-244,
+body.product-product .module-side_products,
+body.product-product .module-body.side-products-tabs,
+body.product-product .nav.nav-tabs,
+body.product-product #tab-review,
+body.product-product .product-tabs,
+body.product-product .blocks-tabs { display: none !important; }
 /* 商品額外資訊標題線 */
 .product-product .product_extra .title.module-title {
     position: relative !important;
