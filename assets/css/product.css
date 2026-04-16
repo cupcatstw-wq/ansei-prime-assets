@@ -1,5 +1,5 @@
 /* ======================================== */
-/* P-1. 商品頁（Product Description） */
+/* P-1. 商品頁（Product Description）       */
 /* ======================================== */
 .product-product #tab-description {
     max-width: 760px;
@@ -22,7 +22,7 @@
 .product-info .product-stats .list-unstyled .product-stock.in-stock b,
 .product-info .product-stats .list-unstyled .product-model b { display: none; }
 /* ======================================== */
-/* P-2. 分類頁（Product List） */
+/* P-2. 分類頁（Product List）              */
 /* ======================================== */
 .main-products.product-list .product-thumb {
     display: flex !important;
@@ -226,13 +226,19 @@
     padding-left: 60px !important;
     padding-right: 40px !important;
 }
-/* 分隔線 */
+/* 分隔線 - 顏色修正為暖灰，隱藏偽元素裝飾 */
 #product-product .product-blocks hr::after,
 #product-product .product-blocks hr::before { display: none !important; content: none !important; }
 #product-product .product-blocks hr {
     border: none !important;
     border-top: .5px solid #ECE8E2 !important;
     margin: 32px 0 !important;
+}
+/* 商品頁所有 hr 統一暖灰色 */
+#product-product hr {
+    border: none !important;
+    border-top: 1px solid #e8e4df !important;
+    opacity: 1 !important;
 }
 /* 隱藏類似商品、評論、tab 模組 */
 #product-product .related-products,
@@ -282,8 +288,17 @@
     border-top: .5px solid #ECE8E2 !important;
     border-bottom: .5px solid #ECE8E2 !important;
 }
+/* 按鈕置中（桌機+手機都適用）*/
+#product-product .product-info .button-group-page {
+    display: flex !important;
+    justify-content: center !important;
+}
+#product-product .product-info .product-details .buttons-wrapper {
+    width: fit-content !important;
+    margin: 0 auto !important;
+}
 /* ======================================== */
-/* P-4. 分類頁（Category Header） */
+/* P-4. 分類頁（Category Header）           */
 /* ======================================== */
 #product-category #content h1.page-title { margin-bottom: 16px !important; }
 #product-category #content .category-description { margin-top: 0; margin-bottom: 0; }
@@ -316,7 +331,7 @@
     }
 }
 /* ======================================== */
-/* P-5. 空分類頁提示 */
+/* P-5. 空分類頁提示                        */
 /* ======================================== */
 #product-category #content .main-products-wrapper {
     text-align: center;
@@ -330,7 +345,7 @@
 }
 #product-category #content .main-products-wrapper .buttons { justify-content: center; }
 /* ======================================== */
-/* P-6. 首頁精選商品卡片                   */
+/* P-6. 首頁精選商品卡片                    */
 /* ======================================== */
 .module-products .product-thumb {
     border: .5px solid #ECE8E2 !important;
@@ -397,17 +412,8 @@
     margin-left: 4px !important;
 }
 .module-products .product-thumb .button-group { display: none !important; }
-/* 按鈕置中（桌機+手機都適用）*/
-#product-product .product-info .button-group-page {
-    display: flex !important;
-    justify-content: center !important;
-}
-#product-product .product-info .product-details .buttons-wrapper {
-    width: fit-content !important;
-    margin: 0 auto !important;
-}
 /* ======================================== */
-/* Mobile ≤767px                           */
+/* Mobile ≤767px                            */
 /* ======================================== */
 @media (max-width: 767px) {
     /* 商品頁 padding */
