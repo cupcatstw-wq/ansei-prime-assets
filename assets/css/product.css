@@ -245,7 +245,8 @@
     opacity: 1 !important;
 }
 /* 隱藏類似商品、評論、tab 模組 */
-.product-product .product-blocks-bottom,
+.product-product .product-blocks-bottom.grid-rows,
+.product-product [class*="product-blocks-"][class*="grid-rows"],
 .product-product .module-side_products,
 .product-product .module-body.side-products-tabs,
 .product-product .nav.nav-tabs,
