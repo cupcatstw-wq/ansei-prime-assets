@@ -219,6 +219,10 @@
 .product-product .stepper > span i.fa-angle-down:hover::after {
     color: #C8A96A !important;
 }
+/* 隱藏 stepper-group 黑色 outline */
+.product-product .stepper-group {
+    outline: none !important;
+}
 /* 商品頁 content padding */
 .product-product #content {
     padding-top: 48px !important;
