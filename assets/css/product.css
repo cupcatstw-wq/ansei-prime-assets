@@ -245,8 +245,8 @@
     opacity: 1 !important;
 }
 /* 隱藏類似商品、評論、tab 模組 */
-#content .product-blocks-244,
-#content .product-blocks-bottom {
+html body #content .product-blocks-244,
+html body #content .product-blocks-bottom {
     display: none !important;
 }
 /* 商品額外資訊標題線 */
