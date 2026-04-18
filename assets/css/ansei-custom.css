@@ -711,8 +711,7 @@ body.ansei-page-ready.popup-open {
         line-height: 1.4 !important;
     }
     footer .title-divider { display: none !important }
-    footer .title-module .subtitle br { line-height: 0.4em !important; font-size: 0 !important }
-    
+        
     /* Footer 手機版標題獨立一行 */
     footer .title-module h3 {
         display: block !important;
