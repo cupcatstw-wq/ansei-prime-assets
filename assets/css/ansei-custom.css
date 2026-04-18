@@ -611,12 +611,15 @@ body.ansei-page-ready.popup-open {
 .module-info_blocks-321 { margin-top: 0 !important }
 .module-info_blocks-321 .module-body {
     display: flex !important;
+    flex-wrap: wrap !important;
     justify-content: space-between !important;
     padding: 20px 0 !important
 }
 .module-info_blocks-321 .module-item {
-    flex: 1 !important;
-    text-align: center !important
+    flex: 0 0 50% !important; /* ← 桌機 2x2 */
+    max-width: 50% !important;
+    text-align: center !important;
+    margin-bottom: 24px !important
 }
 .module-info_blocks-321 .info-block { padding: 0 !important }
 .module-info_blocks-321 .info-block-content {
