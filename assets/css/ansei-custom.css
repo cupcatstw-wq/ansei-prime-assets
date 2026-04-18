@@ -675,8 +675,7 @@ body.ansei-page-ready.popup-open {
     .scroll-top.is-visible { 
         opacity: 1 !important; 
     }
-
-   /* ===== Footer：手機版間距壓縮 + 標題顏色 ===== */
+    /* ===== Footer：手機版間距壓縮 + 標題顏色 ===== */
     footer .module ul {
         margin: 0 !important;
         padding: 0 !important;
@@ -711,6 +710,7 @@ body.ansei-page-ready.popup-open {
         line-height: 1.4 !important;
     }
     footer .title-divider { display: none !important }
+    footer .title-module .subtitle br { font-size: 0 !important; line-height: 0.3em !important } /* ← 新增：壓縮 br 間距 */
         
     /* Footer 手機版標題獨立一行 */
     footer .title-module h3 {
@@ -765,7 +765,6 @@ body.ansei-page-ready.popup-open {
         margin: 0 !important;
         max-width: 100% !important;
     }
-
     /* ===== 三大品牌價值手機單欄 ===== */
     .module-info_blocks:not(.module-info_blocks-321) .module-body {
         flex-direction: column !important;
@@ -776,7 +775,6 @@ body.ansei-page-ready.popup-open {
         max-width: 100% !important;
         flex: none !important;
     }
-
     /* ===== 會員頁標題 ===== */
     #account-login h1, #account-register h1, #account-forgotten h1,
     #account-success h1, #account-logout h1, #common-success h1,
@@ -789,7 +787,6 @@ body.ansei-page-ready.popup-open {
     #information-contact .page-title h1 {
         font-size: 32px;
     }
-
     /* ===== 會員頁左右 padding ===== */
     #account-login #content, #account-register #content, #account-forgotten #content,
     #account-success #content, #account-logout #content, #common-success #content,
@@ -801,7 +798,6 @@ body.ansei-page-ready.popup-open {
         padding-left: 16px;
         padding-right: 16px;
     }
-
     /* ===== Login ===== */
     #account-login .login-box {
         display: flex !important;
@@ -838,7 +834,6 @@ body.ansei-page-ready.popup-open {
         width: 100% !important;
         min-width: 100% !important;
     }
-
     /* ===== 卡片圓角縮小 ===== */
     #account-register #content > form, #account-register form,
     #account-forgotten #content > form, #account-forgotten form,
@@ -868,7 +863,6 @@ body.ansei-page-ready.popup-open {
         padding-left: 16px;
         padding-right: 16px;
     }
-
     /* ===== Register ===== */
     #account-register .buttons {
         gap: 24px;
@@ -892,7 +886,6 @@ body.ansei-page-ready.popup-open {
         font-size: 11px;
         line-height: 1.7;
     }
-
     /* ===== Password / Reset / Newsletter ===== */
     #account-password .buttons, #account-reset .buttons,
     #account-newsletter .buttons {
@@ -907,7 +900,6 @@ body.ansei-page-ready.popup-open {
         width: 100%;
         margin: 0 !important;
     }
-
     /* ===== Order / Wishlist ===== */
     #account-order #content.ansei-page-card,
     #account-wishlist #content.ansei-page-card {
@@ -932,7 +924,6 @@ body.ansei-page-ready.popup-open {
     #account-wishlist .table tbody tr:last-child td {
         border-bottom: none;
     }
-
     /* ===== Address ===== */
     #account-address #content > p {
         border-radius: 16px 16px 0 0;
@@ -1032,7 +1023,6 @@ body.ansei-page-ready.popup-open {
     body[class*="route-account-address-edit"] .control-label {
         margin-bottom: 6px;
     }
-
     /* ===== Contact ===== */
     #information-contact form.form-horizontal fieldset {
         display: block;
@@ -1061,13 +1051,11 @@ body.ansei-page-ready.popup-open {
         width: 100%;
         max-width: 220px;
     }
-
     /* ===== 商品頁 ===== */
     #product-product #content {
         padding-left: 20px !important;
         padding-right: 20px !important;
     }
-
     /* ===== 商品列表 ===== */
     .main-products.product-list .product-thumb {
         flex-direction: column !important;
@@ -1086,7 +1074,6 @@ body.ansei-page-ready.popup-open {
         padding: 0 !important;
         width: 100% !important;
     }
-
     /* ===== 分頁 ===== */
     #content .pagination > li > a,
     #content .pagination > li > span {
