@@ -863,10 +863,13 @@ body.ansei-page-ready.popup-open {
     #account-register .buttons .btn,
     #account-register .buttons input[type="submit"],
     #account-register .buttons button,
-    #account-forgotten .btn,
     .ansei-actions .btn {
         width: 100%;
         min-width: 100%;
+    }
+    #account-forgotten .btn {
+        width: auto !important;
+        min-width: 108px !important;
     }
     #account-register input[name="telephone"] {
         max-width: 100%;
