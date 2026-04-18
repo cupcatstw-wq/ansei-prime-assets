@@ -878,9 +878,8 @@ body.ansei-page-ready.popup-open {
         font-size: 11px;
         line-height: 1.7;
     }
-    /* ===== Password / Reset / Newsletter ===== */
-    #account-password .buttons, #account-reset .buttons,
-    #account-newsletter .buttons {
+    /* ===== Password / Reset ===== */
+    #account-password .buttons, #account-reset .buttons {
         flex-direction: column;
         align-items: stretch;
         gap: 12px;
@@ -890,8 +889,11 @@ body.ansei-page-ready.popup-open {
         width: 100%;
         margin: 0 !important;
     }
+    /* ===== Newsletter ===== */
     #account-newsletter .buttons {
+        flex-direction: column;
         align-items: center !important;
+        gap: 12px;
     }
     #account-newsletter .buttons .pull-right {
         width: auto !important;
