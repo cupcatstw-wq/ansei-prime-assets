@@ -361,6 +361,8 @@ body.ansei-page-ready.popup-open {
     color: #8B4A4A;
     line-height: 1.5
 }
+/* 聯絡我們：資訊項目間距 */
+.module-info_blocks-194 .module-item { margin-bottom: 12px !important; }
 /* ======================================== */
 /* 6. 產品列表工具列                        */
 /* ======================================== */
