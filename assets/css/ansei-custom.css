@@ -1,9 +1,7 @@
 /* ANSEI PRIME — Custom CSS | Journal 3.1.8 + OpenCart 3.0.3.8 | 2026/04/14 */
-
 /* ===== Modules ===== */
 @import url('https://cdn.jsdelivr.net/gh/cupcatstw-wq/ansei-prime-assets@main/assets/css/product.css');
 @import url('https://cdn.jsdelivr.net/gh/cupcatstw-wq/ansei-prime-assets@main/assets/css/account.css');
-
 /* ======================================== */
 /* 1. Header / Footer / 導覽                */
 /* ======================================== */
@@ -16,7 +14,8 @@
 footer .module a {
     display: inline-block;
     padding: 6px 0;
-    color: #555555;
+    color: 
+#555555;
     transition: color .2s ease
 }
 footer .grid-col-1 .subtitle {
@@ -24,13 +23,14 @@ footer .grid-col-1 .subtitle {
     color: #888;
     font-size: 14px
 }
-footer .module a:hover { color: #C8A96A }
+footer .module a:hover { color: 
+#C8A96A }
 footer .module ul li { margin-bottom: 8px }
 .j-menu .collapse .menu-item .links-text { padding-left: 20px !important }
 .j-menu .collapse .collapse .menu-item .links-text { padding-left: 45px !important }
 .j-menu .collapse .collapse .collapse .menu-item .links-text { padding-left: 70px !important }
-.j-menu .menu-item a:hover { color: #C8A96A !important }
-
+.j-menu .menu-item a:hover { color: 
+#C8A96A !important }
 /* ======================================== */
 /* 2. Scroll Top (GoTop) - 商品頁強制顯示機制 */
 /* ======================================== */
@@ -93,24 +93,37 @@ footer .module ul li { margin-bottom: 8px }
     flex-shrink: 0
 }
 .scroll-top svg path {
-    stroke: #9A8E7E;
+    stroke: 
+#9A8E7E;
     stroke-width: 1.8;
     stroke-linecap: round;
     stroke-linejoin: round;
     fill: none;
     transition: stroke .22s ease
 }
-.scroll-top:hover svg path { stroke: #6E6358 }
-
+.scroll-top:hover svg path { stroke: 
+#6E6358 }
 /* ======================================== */
 /* 3. Typography / Alert / 遮罩             */
 /* ======================================== */
-.ansei-link { color: #C8A96A; font-weight: 500; text-decoration: none }
-.ansei-link:hover { color: #B89655; text-decoration: underline }
-.alert-danger { background: #F5EDED; color: #8B4A4A; border: 1px solid #DEC8C8 }
-.alert-success { background: #EEF5F0; color: #4F6F57; border: 1px solid #D7E6DB }
-.alert-warning { background: #F8F5EC; color: #8A6D3B; border: 1px solid #EADFC8 }
-small, .help-block, .text-secondary { color: #9A9A9A }
+.ansei-link { color: 
+#C8A96A; font-weight: 500; text-decoration: none }
+.ansei-link:hover { color: 
+#B89655; text-decoration: underline }
+.alert-danger { background: 
+#F5EDED; color: 
+#8B4A4A; border: 1px solid 
+#DEC8C8 }
+.alert-success { background: 
+#EEF5F0; color: 
+#4F6F57; border: 1px solid 
+#D7E6DB }
+.alert-warning { background: 
+#F8F5EC; color: 
+#8A6D3B; border: 1px solid 
+#EADFC8 }
+small, .help-block, .text-secondary { color: 
+#9A9A9A }
 body.ansei-page-ready .modal-backdrop,
 body.ansei-page-ready .popup-backdrop,
 body.ansei-page-ready .j-overlay,
@@ -126,7 +139,6 @@ body.ansei-page-ready.popup-open {
     overflow: auto !important;
     padding-right: 0 !important
 }
-
 /* ======================================== */
 /* 4. 全域 Button                           */
 /* ======================================== */
@@ -134,7 +146,8 @@ body.ansei-page-ready.popup-open {
 #content a.btn-danger,
 #content button.btn-danger {
     background: #fff;
-    border: 1.5px solid #d4cfc9;
+    border: 1.5px solid 
+#d4cfc9;
     color: #666;
     border-radius: 12px
 }
@@ -142,7 +155,8 @@ body.ansei-page-ready.popup-open {
 #content a.btn-danger:hover,
 #content button.btn-danger:hover {
     background: #fff;
-    border-color: #8a8480;
+    border-color: 
+#8a8480;
     color: #333
 }
 .ansei-actions a.btn:active,
@@ -151,8 +165,10 @@ body.ansei-page-ready.popup-open {
 #information-contact button[type="submit"]:focus,
 #information-contact input[type="submit"]:active,
 #information-contact input[type="submit"]:focus {
-    background: #f5f3f0 !important;
-    border-color: #8a8480 !important;
+    background: 
+#f5f3f0 !important;
+    border-color: 
+#8a8480 !important;
     color: #333 !important;
     text-decoration: none !important
 }
@@ -161,9 +177,12 @@ body.ansei-page-ready.popup-open {
 #content button.btn[disabled],
 #content input[disabled],
 #product-product #button-cart[disabled] {
-    background: #F3F1ED;
-    border-color: #E3DDD4;
-    color: #9A9A9A;
+    background: 
+#F3F1ED;
+    border-color: 
+#E3DDD4;
+    color: 
+#9A9A9A;
     box-shadow: none;
     cursor: not-allowed;
     opacity: .72;
@@ -176,7 +195,8 @@ body.ansei-page-ready.popup-open {
     min-height: 40px;
     padding: 0 12px;
     border-radius: 12px;
-    border: 1px solid #DDD7CF;
+    border: 1px solid 
+#DDD7CF;
     background: #fff;
     display: inline-flex;
     align-items: center;
@@ -188,7 +208,8 @@ body.ansei-page-ready.popup-open {
 #content .pagination > li > span:hover,
 #content .pagination > .active > a,
 #content .pagination > .active > span {
-    background: #F3EEE7;
+    background: 
+#F3EEE7;
     border-color: rgba(200, 169, 106, .58);
     color: #222
 }
@@ -196,7 +217,6 @@ body.ansei-page-ready.popup-open {
 #account-register .btn::after,
 #account-forgotten .btn::after,
 #information-contact .btn::after { display: none !important; content: none !important }
-
 /* ======================================== */
 /* 5. 聯絡我們                              */
 /* ======================================== */
@@ -215,8 +235,10 @@ body.ansei-page-ready.popup-open {
 }
 #information-contact .module-body form.form-horizontal,
 #information-contact form.form-horizontal {
-    background: #F7F6F4;
-    border: 1px solid #E5E2DC;
+    background: 
+#F7F6F4;
+    border: 1px solid 
+#E5E2DC;
     border-radius: 22px;
     box-shadow: 0 10px 28px rgba(0, 0, 0, .05);
     padding: 30px 26px
@@ -271,7 +293,8 @@ body.ansei-page-ready.popup-open {
 #information-contact form.form-horizontal .form-control {
     width: 100%;
     min-height: 44px;
-    border: 1px solid #DDD7CF;
+    border: 1px solid 
+#DDD7CF;
     border-radius: 12px;
     background: #fff;
     color: #333 !important;
@@ -292,18 +315,22 @@ body.ansei-page-ready.popup-open {
     box-shadow: 0 0 0 3px rgba(200, 169, 106, .10)
 }
 #information-contact form.form-horizontal input::placeholder,
-#information-contact form.form-horizontal textarea::placeholder { color: #9A9A9A }
-#information-contact .required { color: #C8A96A }
+#information-contact form.form-horizontal textarea::placeholder { color: 
+#9A9A9A }
+#information-contact .required { color: 
+#C8A96A }
 #information-contact form.form-horizontal .text-danger {
     grid-column: 2;
     display: block;
     font-size: 12px;
     line-height: 1.6;
-    color: #9A9A9A;
+    color: 
+#9A9A9A;
     margin: -2px 0 12px
 }
 #information-contact form.form-horizontal .has-error input,
-#information-contact form.form-horizontal .has-error textarea { border-color: #E3DCD2 }
+#information-contact form.form-horizontal .has-error textarea { border-color: 
+#E3DCD2 }
 #information-contact form.form-horizontal .buttons,
 #information-contact form.form-horizontal .pull-right,
 #information-contact form.form-horizontal .text-right {
@@ -322,7 +349,8 @@ body.ansei-page-ready.popup-open {
     height: 46px;
     padding: 0 24px;
     border-radius: 12px;
-    border: 1.5px solid #d4cfc9;
+    border: 1.5px solid 
+#d4cfc9;
     background: #fff;
     color: #666;
     box-shadow: 0 4px 14px rgba(0, 0, 0, .05);
@@ -332,7 +360,8 @@ body.ansei-page-ready.popup-open {
 #information-contact .btn-primary:hover,
 #information-contact button:hover,
 #information-contact input[type="submit"]:hover {
-    background: #f8f5f0;
+    background: 
+#f8f5f0;
     border-color: rgba(200, 169, 106, .58);
     color: #222;
     transform: translateY(-1px)
@@ -345,8 +374,10 @@ body.ansei-page-ready.popup-open {
 #information-contact button:focus,
 #information-contact input[type="submit"]:active,
 #information-contact input[type="submit"]:focus {
-    background: #f5f3f0 !important;
-    border-color: #8a8480 !important;
+    background: 
+#f5f3f0 !important;
+    border-color: 
+#8a8480 !important;
     color: #333 !important;
     box-shadow: none !important;
     outline: none !important
@@ -357,18 +388,20 @@ body.ansei-page-ready.popup-open {
 #information-contact .panel.our-location {
     border-radius: 22px;
     overflow: hidden;
-    border: 1px solid #E5E2DC;
+    border: 1px solid 
+#E5E2DC;
     box-shadow: 0 10px 28px rgba(0, 0, 0, .05);
-    background: #F7F6F4
+    background: 
+#F7F6F4
 }
 #information-contact .ansei-field-error {
     display: block;
     margin-top: 5px;
     font-size: 12px;
-    color: #8B4A4A;
+    color: 
+#8B4A4A;
     line-height: 1.5
 }
-
 /* ======================================== */
 /* 6. 產品列表工具列                        */
 /* ======================================== */
@@ -380,7 +413,8 @@ body.ansei-page-ready.popup-open {
 .select-group select {
     height: 34px !important;
     padding: 0 28px 0 12px !important;
-    border: 1px solid #E2DDD6 !important;
+    border: 1px solid 
+#E2DDD6 !important;
     border-radius: 8px !important;
     background-color: #fff !important;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2 4L6 8L10 4' stroke='%239A8E7E' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E") !important;
@@ -421,8 +455,10 @@ body.ansei-page-ready.popup-open {
     justify-content: space-between !important;
     padding: 10px 0 !important;
     margin: 0 !important;
-    border-top: 1px solid #EEEAE4 !important;
-    border-bottom: 1px solid #EEEAE4 !important;
+    border-top: 1px solid 
+#EEEAE4 !important;
+    border-bottom: 1px solid 
+#EEEAE4 !important;
     gap: 12px !important;
     box-sizing: border-box !important;
     height: 56px !important;
@@ -444,10 +480,12 @@ body.ansei-page-ready.popup-open {
 .main-products-wrapper .products-filter .grid-list .view-btn {
     width: 32px !important;
     height: 32px !important;
-    border: 1px solid #E2DDD6 !important;
+    border: 1px solid 
+#E2DDD6 !important;
     border-radius: 8px !important;
     background: transparent !important;
-    color: #9A9A9A !important;
+    color: 
+#9A9A9A !important;
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -459,7 +497,8 @@ body.ansei-page-ready.popup-open {
 .main-products-wrapper .products-filter .grid-list .view-btn.active {
     border-color: rgba(180, 168, 152, .6) !important;
     color: #555 !important;
-    background: #F7F5F2 !important
+    background: 
+#F7F5F2 !important
 }
 .main-products-wrapper .products-filter .select-group {
     display: flex !important;
@@ -499,7 +538,6 @@ body.ansei-page-ready.popup-open {
 #btn-grid-view + .tooltip,
 #btn-list-view + .tooltip,
 .main-products-wrapper .products-filter .grid-list .compare-btn { display: none !important }
-
 /* ======================================== */
 /* 7. 首頁分類區                            */
 /* ======================================== */
@@ -535,7 +573,8 @@ body.ansei-page-ready.popup-open {
     text-decoration: none !important;
     text-align: center !important
 }
-.category-grid .category-layout:hover .caption .name a { color: #C8A96A !important }
+.category-grid .category-layout:hover .caption .name a { color: 
+#C8A96A !important }
 .category-grid .category-layout .button-group,
 .category-grid .category-layout .button-group *,
 .category-grid .category-layout .btn,
@@ -553,7 +592,6 @@ body.ansei-page-ready.popup-open {
 }
 .category-grid .category-layout { transition: transform .3s ease !important }
 .category-grid .category-layout:hover { transform: translateY(-4px) !important }
-
 /* ======================================== */
 /* 8. 三大品牌價值（排除 Trust Bar #321）   */
 /* ======================================== */
@@ -580,7 +618,6 @@ body.ansei-page-ready.popup-open {
     color: #888 !important;
     line-height: 1.7 !important
 }
-
 /* ======================================== */
 /* 9. 分類導購區                            */
 /* ======================================== */
@@ -605,7 +642,6 @@ body.ansei-page-ready.popup-open {
     display: block !important
 }
 .module-categories .button-group { display: none !important }
-
 /* ======================================== */
 /* 10. 品牌信任區（Trust Bar #321）         */
 /* ======================================== */
@@ -635,7 +671,8 @@ body.ansei-page-ready.popup-open {
     align-items: center !important
 }
 .module-info_blocks-321 .info-block-title {
-    color: #222222 !important;
+    color: 
+#222222 !important;
     font-size: 14px !important;
     font-weight: 600 !important;
     letter-spacing: 0.10em !important;
@@ -652,16 +689,16 @@ body.ansei-page-ready.popup-open {
     background: rgba(200, 169, 106, 0.6) !important
 }
 .module-info_blocks-321 .info-block-text {
-    color: #888888 !important;
+    color: 
+#888888 !important;
     font-size: 14px !important;
     line-height: 1.9 !important;   
 }
-
 /* ======================================== */
 /* 11. Mobile ≤767px                        */
 /* ======================================== */
 @media (max-width: 767px) {
-    
+
     /* GoTop 手機版位置 (強化定位，確保不被底部按鈕遮擋) */
     #product-product .scroll-top,
     .scroll-top { 
@@ -675,7 +712,7 @@ body.ansei-page-ready.popup-open {
     .scroll-top.is-visible { 
         opacity: 1 !important; 
     }
-    /* ===== Footer：手機版間距壓縮 + 標題顏色 ===== */
+   /* ===== Footer：手機版間距壓縮 + 標題顏色 ===== */
     footer .module ul {
         margin: 0 !important;
         padding: 0 !important;
@@ -694,7 +731,8 @@ body.ansei-page-ready.popup-open {
         color: #888 !important;
     }
     footer .module a:hover {
-        color: #C8A96A !important;
+        color: 
+#C8A96A !important;
     }
     footer .module h3,
     footer .module h4,
@@ -709,9 +747,10 @@ body.ansei-page-ready.popup-open {
         padding-bottom: 0 !important;
         line-height: 1.4 !important;
     }
-    footer .title-divider { display: none !important }
-    footer .title-module .subtitle br { font-size: 0 !important; line-height: 0.3em !important } /* ← 新增：壓縮 br 間距 */
-        
+    footer .title-divider {
+        display: none !important;
+    }
+
     /* Footer 手機版標題獨立一行 */
     footer .title-module h3 {
         display: block !important;
@@ -728,7 +767,7 @@ body.ansei-page-ready.popup-open {
         display: block !important;
         width: 100% !important;
     }
-    
+
     /* ===== Trust Bar 手機單欄，保持置中 ===== */
     .module-info_blocks-321 .module-body {
         flex-direction: column !important;
@@ -917,7 +956,8 @@ body.ansei-page-ready.popup-open {
     }
     #account-order .table tbody tr, #account-wishlist .table tbody tr {
         display: block;
-        border-bottom: 1px solid #EEE9E2;
+        border-bottom: 1px solid 
+#EEE9E2;
         padding: 12px 0;
     }
     #account-order .table tbody tr:last-child td,
@@ -962,7 +1002,8 @@ body.ansei-page-ready.popup-open {
     }
     #account-address .table tbody tr {
         display: block;
-        border-bottom: 1px solid #EEE9E2;
+        border-bottom: 1px solid 
+#EEE9E2;
         padding: 12px 0;
     }
     #account-address .table tbody tr:last-child {
