@@ -683,7 +683,7 @@ body.ansei-page-ready.popup-open {
         list-style: none !important;
     }
     footer .module ul li {
-        margin-bottom: 0 !important;
+        margin-bottom: 6px !important;
         padding: 0 !important;
         line-height: 1 !important;
     }
