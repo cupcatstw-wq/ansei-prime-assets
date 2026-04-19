@@ -611,13 +611,13 @@ body[class*="route-account-address-edit"] h1 {
 #account-address .table tbody tr:last-child td {
     border-bottom: none
 }
-#account-address .table.table-hover > tbody > tr:hover > td,
-#account-address .table.table-hover > tbody > tr:hover > th {
-    background-color: transparent !important
+#account-address #content .table.table-hover > tbody > tr:hover > td,
+#account-address #content .table.table-hover > tbody > tr:hover > th {
+    background-color: #F7F6F4 !important
 }
 #account-address .table tbody tr:active td,
 #account-address .table tbody tr:active th {
-    background-color: transparent !important
+    background-color: #F7F6F4 !important
 }
 #account-address .table tbody tr {
     -webkit-tap-highlight-color: transparent
