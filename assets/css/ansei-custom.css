@@ -992,6 +992,7 @@ body.ansei-page-ready.popup-open {
         font-size: 13px;
         color: #444;
         line-height: 1.6
+        background: #F7F6F4
     }
     #account-address .table tbody td.text-left,
     #account-address .table tbody td.text-right {
