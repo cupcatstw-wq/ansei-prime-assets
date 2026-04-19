@@ -982,14 +982,14 @@ body.ansei-page-ready.popup-open {
     #account-address .table tbody tr:last-child {
         border-bottom: none
     }
-    #account-address .table tbody td {
+   #account-address .table tbody td {
         display: block;
         border-bottom: none;
         padding: 0;
         font-size: 13px;
         color: #444;
         line-height: 1.6;
-        background: #F7F6F4
+        background: #F7F6F4 !important
     }
     #account-address .table tbody td.text-left {
         margin-bottom: 10px
