@@ -1,7 +1,6 @@
 /* ===== Account Pages ===== */
-/* 會員共用 */
 /* ======================================== */
-/* A-1. 會員頁共用標題/輸入框                 */
+/* A-1. 會員頁共用標題/輸入框               */
 /* ======================================== */
 #account-login h1,
 #account-register h1,
@@ -79,7 +78,6 @@
     -webkit-text-fill-color: #333 !important;
     box-shadow: 0 0 0 1000px #fff inset !important
 }
-
 /* ======================================== */
 /* A-2. Login                               */
 /* ======================================== */
@@ -112,11 +110,9 @@
     width: 100%;
     min-height: 400px;
     padding: 30px 26px;
-    border: 1px solid 
-#E5E2DC;
+    border: 1px solid #E5E2DC;
     border-radius: 22px;
-    background: 
-#F7F6F4;
+    background: #F7F6F4;
     box-shadow: 0 10px 28px rgba(0, 0, 0, .05);
     display: flex;
     flex-direction: column
@@ -150,8 +146,7 @@
 }
 #account-login .forgotten-password:hover,
 #account-login a[href*="forgotten"]:hover {
-    color: 
-#C8A96A
+    color: #C8A96A
 }
 #account-login .buttons {
     margin-top: auto;
@@ -164,7 +159,6 @@
     text-align: center;
     float: none !important
 }
-
 /* ======================================== */
 /* A-3. Register                            */
 /* ======================================== */
@@ -221,24 +215,12 @@
 #account-register .login-link:hover {
     color: #B89655
 }
-#account-register .account-lastname {
-    order: 1
-}
-#account-register .account-firstname {
-    order: 2
-}
-#account-register .account-email {
-    order: 3
-}
-#account-register .account-telephone {
-    order: 4
-}
-#account-register .account-password {
-    order: 5
-}
-#account-register .account-confirm {
-    order: 6
-}
+#account-register .account-lastname { order: 1 }
+#account-register .account-firstname { order: 2 }
+#account-register .account-email { order: 3 }
+#account-register .account-telephone { order: 4 }
+#account-register .account-password { order: 5 }
+#account-register .account-confirm { order: 6 }
 #account-register input[name="telephone"] {
     max-width: 260px
 }
@@ -261,9 +243,7 @@
     color: #9A9A9A;
     width: 100%
 }
-#account-register .telephone-format-tip .example {
-    color: #888
-}
+#account-register .telephone-format-tip .example { color: #888 }
 #account-register .telephone-format-tip .highlight {
     color: #C8A96A;
     font-weight: 500
@@ -338,10 +318,8 @@
 #account-forgotten .well,
 #account-forgotten .card,
 #account-forgotten #content>div:not(.alert):not(.breadcrumb):not(.buttons) {
-    background: 
-#F7F6F4;
-    border: 1px solid 
-#E5E2DC;
+    background: #F7F6F4;
+    border: 1px solid #E5E2DC;
     border-radius: 22px;
     box-shadow: 0 10px 28px rgba(0, 0, 0, .05);
     padding: 34px 30px
@@ -353,7 +331,6 @@
     margin-top: 26px;
     text-align: center
 }
-
 /* ======================================== */
 /* A-5. Reset Password                      */
 /* ======================================== */
@@ -374,10 +351,8 @@
 }
 #account-reset #content>form,
 #account-reset form {
-    background: 
-#F7F6F4;
-    border: 1px solid 
-#E5E2DC;
+    background: #F7F6F4;
+    border: 1px solid #E5E2DC;
     border-radius: 22px;
     box-shadow: 0 10px 28px rgba(0, 0, 0, .05);
     padding: 34px 30px
@@ -392,21 +367,15 @@
     justify-content: space-between;
     gap: 14px;
     padding-top: 10px;
-    border-top: 1px solid 
-#ECE7DF
+    border-top: 1px solid #ECE7DF
 }
 #account-reset .buttons .pull-left,
 #account-reset .buttons .pull-right {
     float: none !important;
     margin: 0 !important
 }
-#account-reset .buttons .pull-left {
-    margin-right: auto !important
-}
-#account-reset .buttons .pull-right {
-    margin-left: auto !important
-}
-
+#account-reset .buttons .pull-left { margin-right: auto !important }
+#account-reset .buttons .pull-right { margin-left: auto !important }
 /* ======================================== */
 /* A-6. Success / Logout                    */
 /* ======================================== */
@@ -429,17 +398,14 @@
     max-width: 760px;
     margin: 0 auto 40px;
     padding: 40px 32px;
-    background: 
-#F7F6F4;
-    border: 1px solid 
-#E5E2DC;
+    background: #F7F6F4;
+    border: 1px solid #E5E2DC;
     border-radius: 22px;
     box-shadow: 0 10px 28px rgba(0, 0, 0, .05);
     text-align: center;
     height: fit-content;
     align-self: flex-start
 }
-
 /* ======================================== */
 /* A-7. Order / Wishlist                    */
 /* ======================================== */
@@ -460,10 +426,8 @@
     max-width: 900px;
     margin: 0 auto 40px;
     padding: 32px 30px;
-    background: 
-#F7F6F4;
-    border: 1px solid 
-#E5E2DC;
+    background: #F7F6F4;
+    border: 1px solid #E5E2DC;
     border-radius: 22px;
     box-shadow: 0 10px 28px rgba(0, 0, 0, .05);
     height: fit-content;
@@ -476,8 +440,7 @@
 }
 #account-order .table thead th,
 #account-wishlist .table thead th {
-    border-bottom: 1px solid 
-#E5E2DC;
+    border-bottom: 1px solid #E5E2DC;
     color: #888;
     font-size: 13px;
     font-weight: 500;
@@ -485,8 +448,7 @@
 }
 #account-order .table tbody td,
 #account-wishlist .table tbody td {
-    border-bottom: 1px solid 
-#EEE9E2;
+    border-bottom: 1px solid #EEE9E2;
     padding: 14px 12px;
     color: #444;
     font-size: 14px;
@@ -500,7 +462,6 @@
 #account-wishlist .table tbody tr:hover td {
     background: rgba(200, 169, 106, 0.04)
 }
-
 /* ======================================== */
 /* A-8. Address                             */
 /* ======================================== */
@@ -531,8 +492,8 @@ body[class*="route-account-address-edit"] h1 {
 #account-address #content>.table-bordered,
 #account-address #content>.table {
     background: #F7F6F4;
-    border: 1px solid #E5E2DC;
-    border-bottom: 0;
+    border: 1px solid #E5E2DC !important;
+    border-bottom: 0 !important;
     border-radius: 22px 22px 0 0;
     box-shadow: 0 10px 28px rgba(0, 0, 0, .05);
     margin-bottom: 0
@@ -562,8 +523,8 @@ body[class*="route-account-address-edit"] h1 {
     justify-content: space-between;
     gap: 14px;
     background: #F7F6F4;
-    border: 1px solid #E5E2DC;
-    border-top: 0;
+    border: 1px solid #E5E2DC !important;
+    border-top: 0 !important;
     border-radius: 0 0 22px 22px;
     box-shadow: 0 10px 28px rgba(0, 0, 0, .05);
     padding: 18px 30px 28px;
@@ -647,14 +608,18 @@ body[class*="route-account-address-edit"] h1 {
     font-size: 14px;
     vertical-align: middle
 }
-#account-address .table tbody tr:last-child td {
-    border-bottom: none
-}
+#account-address .table tbody tr:last-child td { border-bottom: none }
 #account-address .table tbody tr:hover td {
     background: rgba(200, 169, 106, 0.04)
 }
-#account-address .table td.text-right {
-    text-align: center !important
+#account-address .table tbody td.text-left { width: auto }
+#account-address .table tbody td.text-right {
+    width: 1%;
+    white-space: nowrap;
+    text-align: right !important
+}
+#account-address .table tbody td.text-right .btn {
+    margin: 0 0 0 8px
 }
 #account-address .table .btn,
 #account-address .table a.btn {
@@ -663,12 +628,7 @@ body[class*="route-account-address-edit"] h1 {
     min-width: auto !important;
     height: 38px;
     padding: 0 16px;
-    font-size: 13px;
-    margin: 3px auto
-}
-#account-address .table .btn:last-child,
-#account-address .table a.btn:last-child {
-    margin-bottom: 0
+    font-size: 13px
 }
 #account-address #content>form.form-horizontal,
 body[class*="route-account-address-add"] #content>form.form-horizontal,
@@ -902,94 +862,6 @@ body[class*="route-account-address-edit"] .btn:active {
     outline: none !important;
     text-decoration: none !important
 }
-@media (max-width: 767px) {
-    #account-address #content>.buttons,
-    #account-address #content>.buttons.clearfix,
-    #account-address #content>.table-responsive+.buttons,
-    #account-address #content>.table-responsive+.buttons.clearfix,
-    #account-address #content>.table-bordered+.buttons,
-    #account-address #content>.table+.buttons,
-    #account-address #content>p+.buttons {
-        flex-direction: row !important;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        padding: 16px 20px 20px;
-        gap: 10px
-    }
-    #account-address #content>.buttons .pull-left,
-    #account-address #content>.buttons.clearfix .pull-left,
-    #account-address #content>.table-responsive+.buttons .pull-left,
-    #account-address #content>.table-responsive+.buttons.clearfix .pull-left,
-    #account-address #content>.table-bordered+.buttons .pull-left,
-    #account-address #content>.table+.buttons .pull-left,
-    #account-address #content>p+.buttons .pull-left {
-        order: 1
-    }
-    #account-address #content>.buttons .pull-right,
-    #account-address #content>.buttons.clearfix .pull-right,
-    #account-address #content>.table-responsive+.buttons .pull-right,
-    #account-address #content>.table-responsive+.buttons.clearfix .pull-right,
-    #account-address #content>.table-bordered+.buttons .pull-right,
-    #account-address #content>.table+.buttons .pull-right,
-    #account-address #content>p+.buttons .pull-right {
-        order: 2
-    }
-    #account-address #content>.buttons .pull-left .btn,
-    #account-address #content>.buttons .pull-right .btn,
-    #account-address #content>.buttons.clearfix .pull-left .btn,
-    #account-address #content>.buttons.clearfix .pull-right .btn,
-    #account-address #content>.table-responsive+.buttons .pull-left .btn,
-    #account-address #content>.table-responsive+.buttons .pull-right .btn,
-    #account-address #content>.table-responsive+.buttons.clearfix .pull-left .btn,
-    #account-address #content>.table-responsive+.buttons.clearfix .pull-right .btn,
-    #account-address #content>.table-bordered+.buttons .pull-left .btn,
-    #account-address #content>.table-bordered+.buttons .pull-right .btn,
-    #account-address #content>.table+.buttons .pull-left .btn,
-    #account-address #content>.table+.buttons .pull-right .btn,
-    #account-address #content>p+.buttons .pull-left .btn,
-    #account-address #content>p+.buttons .pull-right .btn {
-        display: inline-flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        height: 46px !important;
-        min-height: 46px !important;
-        line-height: 46px !important;
-        width: auto !important;
-        min-width: 108px !important;
-        padding: 0 22px !important
-    }
-    #account-address .table td.text-right .btn,
-    #account-address .table td.text-right a.btn {
-        display: inline-flex !important;
-        width: auto !important;
-        min-width: auto !important;
-        max-width: none !important
-    }
-    #account-address .btn,
-    #account-address a.btn,
-    #account-address button.btn,
-    #account-address input.btn {
-        width: auto !important;
-        min-width: 100px !important
-    }
-    body[class*="route-account-address-add"] .buttons,
-    body[class*="route-account-address-edit"] .buttons {
-        flex-direction: row !important;
-        justify-content: space-between !important
-    }
-    body[class*="route-account-address-add"] .btn,
-    body[class*="route-account-address-edit"] .btn {
-        display: inline-flex !important;
-        align-items: center !important;
-        height: 46px !important;
-        min-height: 46px !important;
-        line-height: 46px !important;
-        width: auto !important;
-        min-width: 100px !important
-    }
-}
-
 /* =================================================================================== */
 /* A-9. Newsletter/Edit/Download/Return/Recurring/Reward/Affiliate/Tracking/Password   */
 /* =================================================================================== */
@@ -1090,9 +962,7 @@ body[class*="route-account-address-edit"] .btn:active {
     font-weight: 600;
     color: #222
 }
-#account-password .form-group {
-    margin-bottom: 20px
-}
+#account-password .form-group { margin-bottom: 20px }
 #account-newsletter .buttons,
 #account-affiliate .buttons,
 #account-tracking .buttons,
@@ -1133,9 +1003,7 @@ body[class*="route-account-address-edit"] .btn:active {
     font-size: 14px;
     font-weight: 500
 }
-#account-newsletter .form-group {
-    margin-bottom: 20px
-}
+#account-newsletter .form-group { margin-bottom: 20px }
 #account-tracking .btn,
 #account-tracking a.btn,
 #account-tracking button.btn {
