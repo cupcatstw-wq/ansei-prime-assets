@@ -608,12 +608,16 @@ body[class*="route-account-address-edit"] h1 {
     font-size: 14px;
     vertical-align: middle
 }
-#account-address .table tbody tr:last-child td { border-bottom: none }
-#account-address .table.table-hover tbody tr:hover td,
-#account-address .table.table-hover tbody tr:hover th {
-    background: transparent !important
+#account-address .table tbody tr:last-child td {
+    border-bottom: none
 }
-#account-address .table tbody td.text-left { width: auto }
+#account-address .table.table-hover > tbody > tr:hover > td,
+#account-address .table.table-hover > tbody > tr:hover > th {
+    background-color: transparent !important
+}
+#account-address .table tbody td.text-left {
+    width: auto
+}
 #account-address .table tbody td.text-right {
     width: 1%;
     white-space: nowrap;
