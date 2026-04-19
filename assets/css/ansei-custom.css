@@ -982,6 +982,9 @@ body.ansei-page-ready.popup-open {
     #account-address .table tbody tr:last-child {
         border-bottom: none
     }
+    #account-address .table tbody tr:hover td {
+        background: transparent !important
+    }
     #account-address .table tbody td {
         display: block;
         border-bottom: none;
