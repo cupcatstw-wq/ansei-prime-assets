@@ -931,45 +931,71 @@ body.ansei-page-ready.popup-open {
     #account-address #content > p {
         border-radius: 16px 16px 0 0;
         padding: 24px 18px 14px;
-        font-size: 14px;
+        font-size: 14px
     }
     #account-address #content > .buttons,
+    #account-address #content > .buttons.clearfix,
     #account-address #content > .table-responsive + .buttons,
+    #account-address #content > .table-responsive + .buttons.clearfix,
     #account-address #content > .table-bordered + .buttons,
     #account-address #content > .table + .buttons,
     #account-address #content > p + .buttons {
         border-radius: 0 0 16px 16px;
         padding: 16px 18px 22px;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 12px;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        gap: 10px
+    }
+    #account-address #content > .buttons .pull-left .btn,
+    #account-address #content > .buttons .pull-right .btn,
+    #account-address #content > .buttons.clearfix .pull-left .btn,
+    #account-address #content > .buttons.clearfix .pull-right .btn,
+    #account-address #content > .table-responsive + .buttons .pull-left .btn,
+    #account-address #content > .table-responsive + .buttons .pull-right .btn,
+    #account-address #content > .table-responsive + .buttons.clearfix .pull-left .btn,
+    #account-address #content > .table-responsive + .buttons.clearfix .pull-right .btn {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        height: 46px !important;
+        min-height: 46px !important;
+        line-height: 1 !important;
+        width: auto !important;
+        min-width: 108px !important;
+        padding: 0 22px !important
     }
     #account-address #content > .table-responsive,
     #account-address #content > .table-bordered,
     #account-address #content > .table {
         border-radius: 16px 16px 0 0;
-        padding: 20px 14px 12px;
-    }
-    #account-address .btn, #account-address a.btn,
-    #account-address button.btn, #account-address input.btn {
-        width: 100%;
+        padding: 20px 14px 12px
     }
     #account-address .table thead {
-        display: none;
+        display: none
     }
     #account-address .table tbody td {
         display: block;
         padding: 6px 4px;
         border-bottom: none;
-        font-size: 13px;
+        font-size: 13px
     }
     #account-address .table tbody tr {
         display: block;
         border-bottom: 1px solid #EEE9E2;
-        padding: 12px 0;
+        padding: 12px 0
     }
     #account-address .table tbody tr:last-child {
-        border-bottom: none;
+        border-bottom: none
+    }
+    #account-address .table td.text-right {
+        text-align: right !important
+    }
+    #account-address .table td.text-right .btn,
+    #account-address .table td.text-right a.btn {
+        display: inline-flex !important;
+        width: auto !important;
+        min-width: auto !important
     }
     #account-address #content > form.form-horizontal,
     #account-address-form #content > form.form-horizontal,
@@ -979,21 +1005,23 @@ body.ansei-page-ready.popup-open {
     body[class*="route-account-address-edit"] #content > form.form-horizontal,
     body[class*="route-account-address-edit"] form.form-horizontal {
         padding: 24px 18px;
-        border-radius: 16px;
+        border-radius: 16px
     }
-    #account-address .form-group, #account-address-form .form-group,
+    #account-address .form-group,
+    #account-address-form .form-group,
     body[class*="route-account-address-add"] .form-group,
     body[class*="route-account-address-edit"] .form-group {
-        margin-bottom: 16px;
+        margin-bottom: 16px
     }
     #account-address #content > form.form-horizontal .buttons,
     #account-address-form .buttons,
     body[class*="route-account-address-add"] .buttons,
     body[class*="route-account-address-edit"] .buttons {
-        flex-direction: column;
-        align-items: stretch;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
         gap: 12px;
-        margin-top: 22px;
+        margin-top: 22px
     }
     #account-address #content > form.form-horizontal .buttons .pull-left,
     #account-address #content > form.form-horizontal .buttons .pull-right,
@@ -1003,8 +1031,26 @@ body.ansei-page-ready.popup-open {
     body[class*="route-account-address-add"] .buttons .pull-right,
     body[class*="route-account-address-edit"] .buttons .pull-left,
     body[class*="route-account-address-edit"] .buttons .pull-right {
-        width: 100%;
-        margin: 0 !important;
+        width: auto !important;
+        margin: 0 !important
+    }
+    #account-address #content > form.form-horizontal .buttons .pull-left .btn,
+    #account-address #content > form.form-horizontal .buttons .pull-right .btn,
+    #account-address-form .buttons .pull-left .btn,
+    #account-address-form .buttons .pull-right .btn,
+    body[class*="route-account-address-add"] .buttons .pull-left .btn,
+    body[class*="route-account-address-add"] .buttons .pull-right .btn,
+    body[class*="route-account-address-edit"] .buttons .pull-left .btn,
+    body[class*="route-account-address-edit"] .buttons .pull-right .btn {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        height: 46px !important;
+        min-height: 46px !important;
+        line-height: 1 !important;
+        width: auto !important;
+        min-width: 100px !important;
+        padding: 0 22px !important
     }
     #account-address .col-sm-2, #account-address .col-sm-10, #account-address .col-sm-12,
     #account-address .col-md-2, #account-address .col-md-10, #account-address .col-md-12,
@@ -1019,12 +1065,13 @@ body.ansei-page-ready.popup-open {
     body[class*="route-account-address-edit"] .col-sm-12 {
         width: 100% !important;
         max-width: 100% !important;
-        float: none !important;
+        float: none !important
     }
-    #account-address .control-label, #account-address-form .control-label,
+    #account-address .control-label,
+    #account-address-form .control-label,
     body[class*="route-account-address-add"] .control-label,
     body[class*="route-account-address-edit"] .control-label {
-        margin-bottom: 6px;
+        margin-bottom: 6px
     }
     /* ===== Contact ===== */
     #information-contact form.form-horizontal fieldset {
