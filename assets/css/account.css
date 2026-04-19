@@ -656,13 +656,22 @@ body[class*="route-account-address-edit"] h1 {
 #account-address .table tbody tr:hover td {
     background: rgba(200, 169, 106, 0.04)
 }
+#account-address .table td.text-right {
+    text-align: center !important
+}
 #account-address .table .btn,
 #account-address .table a.btn {
-    min-width: auto !important;
+    display: block !important;
     width: auto !important;
+    min-width: auto !important;
     height: 38px;
     padding: 0 16px;
-    font-size: 13px
+    font-size: 13px;
+    margin: 0 auto 6px
+}
+#account-address .table .btn:last-child,
+#account-address .table a.btn:last-child {
+    margin-bottom: 0
 }
 #account-address #content>form.form-horizontal,
 body[class*="route-account-address-add"] #content>form.form-horizontal,
@@ -740,6 +749,13 @@ body[class*="route-account-address-edit"] .form-control {
     font-size: 14px;
     padding: 10px 14px;
     box-shadow: none
+}
+#account-address select,
+#account-address-form select,
+body[class*="route-account-address-add"] select,
+body[class*="route-account-address-edit"] select {
+    padding-right: 36px;
+    appearance: auto
 }
 #account-address input::placeholder,
 #account-address textarea::placeholder,
@@ -926,6 +942,16 @@ body[class*="route-account-address-edit"] .btn:active {
     #account-address a.btn,
     #account-address button.btn,
     #account-address input.btn {
+        width: auto !important;
+        min-width: 100px !important
+    }
+    body[class*="route-account-address-add"] .buttons,
+    body[class*="route-account-address-edit"] .buttons {
+        flex-direction: row !important;
+        justify-content: space-between !important
+    }
+    body[class*="route-account-address-add"] .btn,
+    body[class*="route-account-address-edit"] .btn {
         width: auto !important;
         min-width: 100px !important
     }
