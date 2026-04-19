@@ -990,6 +990,10 @@ body.ansei-page-ready.popup-open {
         color: #444;
         line-height: 1.6
     }
+    #account-address .table tbody td.text-left,
+    #account-address .table tbody td.text-right {
+        background: transparent !important
+    }
     #account-address .table tbody td.text-left {
         margin-bottom: 10px
     }
