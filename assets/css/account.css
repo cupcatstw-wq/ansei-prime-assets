@@ -49,8 +49,7 @@
 #account-affiliate select,
 #account-tracking input[type="text"],
 #account-tracking input[type="url"] {
-    border: 1px solid 
-#DDD7CF;
+    border: 1px solid #DDD7CF;
     border-radius: 12px;
     background: #fff;
     color: #333 !important;
