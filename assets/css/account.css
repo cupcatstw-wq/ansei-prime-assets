@@ -680,16 +680,8 @@ body[class*="route-account-address-edit"] h1 {
 #account-address .table tbody tr:hover td {
     background: rgba(200, 169, 106, 0.04)
 }
-#account-address .table tbody td.text-left {
-    width: auto
-}
-#account-address .table tbody td.text-right {
-    width: 1%;
-    white-space: nowrap;
-    text-align: right !important
-}
-#account-address .table tbody td.text-right .btn {
-    margin: 0 0 0 8px
+#account-address .table td.text-right {
+    text-align: center !important
 }
 #account-address .table .btn,
 #account-address .table a.btn {
@@ -698,7 +690,12 @@ body[class*="route-account-address-edit"] h1 {
     min-width: auto !important;
     height: 38px;
     padding: 0 16px;
-    font-size: 13px
+    font-size: 13px;
+    margin: 3px auto
+}
+#account-address .table .btn:last-child,
+#account-address .table a.btn:last-child {
+    margin-bottom: 0
 }
 #account-address #content>form.form-horizontal,
 body[class*="route-account-address-add"] #content>form.form-horizontal,
