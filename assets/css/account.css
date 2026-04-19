@@ -631,6 +631,30 @@ body[class*="route-account-address-edit"] h1 {
 #account-address #content>p+.buttons .pull-right {
     margin-left: auto !important
 }
+#account-address #content>.buttons .pull-left .btn,
+#account-address #content>.buttons .pull-right .btn,
+#account-address #content>.buttons.clearfix .pull-left .btn,
+#account-address #content>.buttons.clearfix .pull-right .btn,
+#account-address #content>.table-responsive+.buttons .pull-left .btn,
+#account-address #content>.table-responsive+.buttons .pull-right .btn,
+#account-address #content>.table-responsive+.buttons.clearfix .pull-left .btn,
+#account-address #content>.table-responsive+.buttons.clearfix .pull-right .btn,
+#account-address #content>.table-bordered+.buttons .pull-left .btn,
+#account-address #content>.table-bordered+.buttons .pull-right .btn,
+#account-address #content>.table+.buttons .pull-left .btn,
+#account-address #content>.table+.buttons .pull-right .btn,
+#account-address #content>p+.buttons .pull-left .btn,
+#account-address #content>p+.buttons .pull-right .btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 46px !important;
+    min-height: 46px !important;
+    width: auto !important;
+    min-width: 108px !important;
+    padding: 0 22px !important;
+    line-height: 1 !important
+}
 #account-address .table {
     width: 100%;
     margin-bottom: 0;
@@ -661,13 +685,13 @@ body[class*="route-account-address-edit"] h1 {
 }
 #account-address .table .btn,
 #account-address .table a.btn {
-    display: block !important;
+    display: inline-flex !important;
     width: auto !important;
     min-width: auto !important;
     height: 38px;
     padding: 0 16px;
     font-size: 13px;
-    margin: 0 auto 6px
+    margin: 3px auto
 }
 #account-address .table .btn:last-child,
 #account-address .table a.btn:last-child {
@@ -938,6 +962,30 @@ body[class*="route-account-address-edit"] .btn:active {
     #account-address #content>p+.buttons .pull-right {
         order: 2
     }
+    #account-address #content>.buttons .pull-left .btn,
+    #account-address #content>.buttons .pull-right .btn,
+    #account-address #content>.buttons.clearfix .pull-left .btn,
+    #account-address #content>.buttons.clearfix .pull-right .btn,
+    #account-address #content>.table-responsive+.buttons .pull-left .btn,
+    #account-address #content>.table-responsive+.buttons .pull-right .btn,
+    #account-address #content>.table-responsive+.buttons.clearfix .pull-left .btn,
+    #account-address #content>.table-responsive+.buttons.clearfix .pull-right .btn,
+    #account-address #content>.table-bordered+.buttons .pull-left .btn,
+    #account-address #content>.table-bordered+.buttons .pull-right .btn,
+    #account-address #content>.table+.buttons .pull-left .btn,
+    #account-address #content>.table+.buttons .pull-right .btn,
+    #account-address #content>p+.buttons .pull-left .btn,
+    #account-address #content>p+.buttons .pull-right .btn {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        height: 46px !important;
+        min-height: 46px !important;
+        width: auto !important;
+        min-width: 108px !important;
+        padding: 0 22px !important;
+        line-height: 1 !important
+    }
     #account-address .btn,
     #account-address a.btn,
     #account-address button.btn,
@@ -953,7 +1001,10 @@ body[class*="route-account-address-edit"] .btn:active {
     body[class*="route-account-address-add"] .btn,
     body[class*="route-account-address-edit"] .btn {
         width: auto !important;
-        min-width: 100px !important
+        min-width: 100px !important;
+        height: 46px !important;
+        display: inline-flex !important;
+        align-items: center !important
     }
 }
 
