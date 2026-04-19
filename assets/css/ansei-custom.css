@@ -702,7 +702,6 @@ body.ansei-page-ready.popup-open {
     footer .title-divider {
         display: none !important;
     }
-    /* Footer 手機版標題獨立一行 */
     footer .title-module h3 {
         display: block !important;
         width: 100% !important;
@@ -958,12 +957,13 @@ body.ansei-page-ready.popup-open {
         display: inline-flex !important;
         align-items: center !important;
         justify-content: center !important;
-        height: 46px !important;
-        min-height: 46px !important;
+        height: 40px !important;
+        min-height: 40px !important;
         line-height: 1 !important;
         width: auto !important;
-        min-width: 108px !important;
-        padding: 0 22px !important
+        min-width: 88px !important;
+        padding: 0 16px !important;
+        font-size: 14px !important
     }
     #account-address #content > .table-responsive,
     #account-address #content > .table-bordered,
@@ -974,32 +974,36 @@ body.ansei-page-ready.popup-open {
     #account-address .table thead {
         display: none
     }
-    #account-address .table tbody td {
-    display: block;
-    padding: 6px 4px;
-    border-bottom: none;
-    font-size: 13px
-    }
-    #account-address .table tbody td.text-right {
-        text-align: right !important;
-        padding-right: 0
-    }
     #account-address .table tbody tr {
         display: block;
-        border-bottom: 1px solid #EEE9E2;
-        padding: 12px 0
+        padding: 14px 0;
+        border-bottom: 1px solid #EEE9E2
     }
     #account-address .table tbody tr:last-child {
         border-bottom: none
     }
-    #account-address .table td.text-right {
+    #account-address .table tbody td {
+        display: block;
+        border-bottom: none;
+        padding: 0;
+        font-size: 13px;
+        color: #444;
+        line-height: 1.6
+    }
+    #account-address .table tbody td.text-left {
+        margin-bottom: 10px
+    }
+    #account-address .table tbody td.text-right {
         text-align: right !important
     }
     #account-address .table td.text-right .btn,
     #account-address .table td.text-right a.btn {
         display: inline-flex !important;
         width: auto !important;
-        min-width: auto !important
+        min-width: auto !important;
+        height: 36px !important;
+        padding: 0 14px !important;
+        font-size: 13px !important
     }
     #account-address #content > form.form-horizontal,
     #account-address-form #content > form.form-horizontal,
@@ -1049,12 +1053,13 @@ body.ansei-page-ready.popup-open {
         display: inline-flex !important;
         align-items: center !important;
         justify-content: center !important;
-        height: 46px !important;
-        min-height: 46px !important;
+        height: 40px !important;
+        min-height: 40px !important;
         line-height: 1 !important;
         width: auto !important;
-        min-width: 100px !important;
-        padding: 0 22px !important
+        min-width: 88px !important;
+        padding: 0 16px !important;
+        font-size: 14px !important
     }
     #account-address .col-sm-2, #account-address .col-sm-10, #account-address .col-sm-12,
     #account-address .col-md-2, #account-address .col-md-10, #account-address .col-md-12,
