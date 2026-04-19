@@ -624,10 +624,10 @@ body[class*="route-account-address-edit"] h1 {
     justify-content: center !important;
     height: 46px !important;
     min-height: 46px !important;
+    line-height: 1 !important;
     width: auto !important;
     min-width: 108px !important;
-    padding: 0 22px !important;
-    line-height: 1 !important
+    padding: 0 22px !important
 }
 #account-address .table {
     width: 100%;
@@ -955,10 +955,17 @@ body[class*="route-account-address-edit"] .btn:active {
         justify-content: center !important;
         height: 46px !important;
         min-height: 46px !important;
+        line-height: 46px !important;
         width: auto !important;
         min-width: 108px !important;
-        padding: 0 22px !important;
-        line-height: 1 !important
+        padding: 0 22px !important
+    }
+    #account-address .table td.text-right .btn,
+    #account-address .table td.text-right a.btn {
+        display: inline-flex !important;
+        width: auto !important;
+        min-width: auto !important;
+        max-width: none !important
     }
     #account-address .btn,
     #account-address a.btn,
@@ -974,11 +981,13 @@ body[class*="route-account-address-edit"] .btn:active {
     }
     body[class*="route-account-address-add"] .btn,
     body[class*="route-account-address-edit"] .btn {
-        width: auto !important;
-        min-width: 100px !important;
-        height: 46px !important;
         display: inline-flex !important;
-        align-items: center !important
+        align-items: center !important;
+        height: 46px !important;
+        min-height: 46px !important;
+        line-height: 46px !important;
+        width: auto !important;
+        min-width: 100px !important
     }
 }
 
