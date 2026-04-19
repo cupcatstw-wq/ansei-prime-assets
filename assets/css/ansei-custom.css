@@ -941,7 +941,7 @@ body.ansei-page-ready.popup-open {
     #account-address #content > .table + .buttons,
     #account-address #content > p + .buttons {
         border-radius: 0 0 16px 16px;
-        padding: 16px 18px 22px;
+        padding: 14px 16px 18px;
         flex-direction: row !important;
         justify-content: space-between !important;
         align-items: center !important;
