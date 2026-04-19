@@ -615,6 +615,13 @@ body[class*="route-account-address-edit"] h1 {
 #account-address .table.table-hover > tbody > tr:hover > th {
     background-color: transparent !important
 }
+#account-address .table tbody tr:active td,
+#account-address .table tbody tr:active th {
+    background-color: transparent !important
+}
+#account-address .table tbody tr {
+    -webkit-tap-highlight-color: transparent
+}
 #account-address .table tbody td.text-left {
     width: auto
 }
