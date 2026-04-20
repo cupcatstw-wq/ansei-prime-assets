@@ -946,6 +946,17 @@ body.ansei-page-ready.popup-open {
         align-items: center !important;
         gap: 10px
     }
+    #account-address #content > .buttons .pull-left,
+    #account-address #content > .buttons .pull-right,
+    #account-address #content > .buttons.clearfix .pull-left,
+    #account-address #content > .buttons.clearfix .pull-right,
+    #account-address #content > .table-responsive + .buttons .pull-left,
+    #account-address #content > .table-responsive + .buttons .pull-right,
+    #account-address #content > .table-responsive + .buttons.clearfix .pull-left,
+    #account-address #content > .table-responsive + .buttons.clearfix .pull-right {
+        float: none !important;
+        margin: 0 !important
+    }
     #account-address #content > .buttons .pull-left .btn,
     #account-address #content > .buttons .pull-right .btn,
     #account-address #content > .buttons.clearfix .pull-left .btn,
@@ -982,14 +993,19 @@ body.ansei-page-ready.popup-open {
     #account-address .table tbody tr:last-child {
         border-bottom: none
     }
+    #account-address .table tbody td,
+    #account-address .table tbody td.text-left,
+    #account-address .table tbody td.text-right {
+        background: transparent !important;
+        background-color: transparent !important
+    }
     #account-address .table tbody td {
         display: block;
         border-bottom: none;
         padding: 0;
         font-size: 13px;
         color: #444;
-        line-height: 1.6;
-        background: transparent !important
+        line-height: 1.6
     }
     #account-address .table tbody td.text-left {
         margin-bottom: 20px
@@ -1003,6 +1019,8 @@ body.ansei-page-ready.popup-open {
     #account-address .table td.text-right .btn,
     #account-address .table td.text-right a.btn {
         display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
         width: auto !important;
         min-width: auto !important;
         height: 36px !important;
@@ -1085,34 +1103,6 @@ body.ansei-page-ready.popup-open {
     body[class*="route-account-address-add"] .control-label,
     body[class*="route-account-address-edit"] .control-label {
         margin-bottom: 6px
-    }
-    /* ===== Contact ===== */
-    #information-contact form.form-horizontal fieldset {
-        display: block;
-    }
-    #information-contact form.form-horizontal .form-group {
-        display: block;
-        margin-bottom: 10px;
-    }
-    #information-contact form.form-horizontal .form-group > label.col-sm-2.control-label {
-        display: block;
-        width: 100%;
-        max-width: none;
-        line-height: 1.5;
-        margin-bottom: 6px;
-    }
-    #information-contact form.form-horizontal .form-group > .col-sm-10 {
-        width: 100%;
-        max-width: none;
-    }
-    #information-contact form.form-horizontal .text-danger {
-        margin: 4px 0 12px;
-    }
-    #information-contact .btn, #information-contact .btn-primary,
-    #information-contact button,
-    #information-contact input[type="submit"] {
-        width: 100%;
-        max-width: 220px;
     }
     /* ===== 商品頁 ===== */
     #product-product #content {
