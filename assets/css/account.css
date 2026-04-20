@@ -919,7 +919,10 @@ body[class*="route-account-address-edit"] .btn:active {
         display: flex !important;
         align-items: center !important;
         float: none !important;
-        margin: 0 !important
+        margin: 0 !important;
+        width: auto !important;
+        max-width: none !important;
+        flex: 0 0 auto !important
     }
     #account-address #content > .buttons .btn,
     #account-address #content > .buttons.clearfix .btn,
