@@ -955,7 +955,9 @@ body.ansei-page-ready.popup-open {
     #account-address #content > .table-responsive + .buttons.clearfix .pull-left,
     #account-address #content > .table-responsive + .buttons.clearfix .pull-right {
         float: none !important;
-        margin: 0 !important
+        margin: 0 !important;
+        display: flex !important;
+        align-items: center !important
     }
     #account-address #content > .buttons .pull-left .btn,
     #account-address #content > .buttons .pull-right .btn,
@@ -1002,6 +1004,7 @@ body.ansei-page-ready.popup-open {
         border-bottom: none;
         border-left: none !important;
         border-right: none !important;
+        border-top: none !important;
         padding: 0;
         font-size: 13px;
         color: #444;
@@ -1013,9 +1016,13 @@ body.ansei-page-ready.popup-open {
         margin-bottom: 20px
     }
     #account-address .table tbody td.text-right {
-        display: block !important;
-        text-align: right !important;
-        padding: 0 !important
+        display: flex !important;
+        justify-content: flex-end !important;
+        align-items: center !important;
+        gap: 8px !important;
+        padding: 0 !important;
+        width: 100% !important;
+        box-sizing: border-box !important
     }
     #account-address .table td.text-right .btn,
     #account-address .table td.text-right a.btn {
@@ -1026,85 +1033,15 @@ body.ansei-page-ready.popup-open {
         min-width: auto !important;
         height: 36px !important;
         padding: 0 14px !important;
-        font-size: 13px !important
+        font-size: 13px !important;
+        flex-shrink: 0 !important
     }
     #account-address #content > form.form-horizontal,
     #account-address-form #content > form.form-horizontal,
     #account-address-form form.form-horizontal,
     body[class*="route-account-address-add"] #content > form.form-horizontal,
     body[class*="route-account-address-add"] form.form-horizontal,
-    body[class*="route-account-address-edit"] #content > form.form-horizontal,
-    body[class*="route-account-address-edit"] form.form-horizontal {
-        padding: 24px 18px;
-        border-radius: 16px
-    }
-    #account-address .form-group,
-    #account-address-form .form-group,
-    body[class*="route-account-address-add"] .form-group,
-    body[class*="route-account-address-edit"] .form-group {
-        margin-bottom: 16px
-    }
-    #account-address #content > form.form-horizontal .buttons,
-    #account-address-form .buttons,
-    body[class*="route-account-address-add"] .buttons,
-    body[class*="route-account-address-edit"] .buttons {
-        flex-direction: row !important;
-        justify-content: space-between !important;
-        align-items: center !important;
-        gap: 12px;
-        margin-top: 22px
-    }
-    #account-address #content > form.form-horizontal .buttons .pull-left,
-    #account-address #content > form.form-horizontal .buttons .pull-right,
-    #account-address-form .buttons .pull-left,
-    #account-address-form .buttons .pull-right,
-    body[class*="route-account-address-add"] .buttons .pull-left,
-    body[class*="route-account-address-add"] .buttons .pull-right,
-    body[class*="route-account-address-edit"] .buttons .pull-left,
-    body[class*="route-account-address-edit"] .buttons .pull-right {
-        width: auto !important;
-        margin: 0 !important
-    }
-    #account-address #content > form.form-horizontal .buttons .pull-left .btn,
-    #account-address #content > form.form-horizontal .buttons .pull-right .btn,
-    #account-address-form .buttons .pull-left .btn,
-    #account-address-form .buttons .pull-right .btn,
-    body[class*="route-account-address-add"] .buttons .pull-left .btn,
-    body[class*="route-account-address-add"] .buttons .pull-right .btn,
-    body[class*="route-account-address-edit"] .buttons .pull-left .btn,
-    body[class*="route-account-address-edit"] .buttons .pull-right .btn {
-        display: inline-flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        height: 40px !important;
-        min-height: 40px !important;
-        line-height: 1 !important;
-        width: auto !important;
-        min-width: 88px !important;
-        padding: 0 16px !important;
-        font-size: 14px !important
-    }
-    #account-address .col-sm-2, #account-address .col-sm-10, #account-address .col-sm-12,
-    #account-address .col-md-2, #account-address .col-md-10, #account-address .col-md-12,
-    #account-address-form .col-sm-2, #account-address-form .col-sm-10,
-    #account-address-form .col-sm-12, #account-address-form .col-md-2,
-    #account-address-form .col-md-10, #account-address-form .col-md-12,
-    body[class*="route-account-address-add"] .col-sm-2,
-    body[class*="route-account-address-add"] .col-sm-10,
-    body[class*="route-account-address-add"] .col-sm-12,
-    body[class*="route-account-address-edit"] .col-sm-2,
-    body[class*="route-account-address-edit"] .col-sm-10,
-    body[class*="route-account-address-edit"] .col-sm-12 {
-        width: 100% !important;
-        max-width: 100% !important;
-        float: none !important
-    }
-    #account-address .control-label,
-    #account-address-form .control-label,
-    body[class*="route-account-address-add"] .control-label,
-    body[class*="route-account-address-edit"] .control-label {
-        margin-bottom: 6px
-    }
+    body[class*="route-account-address-edit"] #conte
     /* ===== 商品頁 ===== */
     #product-product #content {
         padding-left: 20px !important;
