@@ -920,10 +920,15 @@ body[class*="route-account-address-edit"] .btn:active {
     #account-address #content > .table-responsive + .buttons.clearfix .pull-left .btn,
     #account-address #content > .table-responsive + .buttons.clearfix .pull-right .btn {
         min-width: 0 !important;
+        width: auto !important;
         height: 40px !important;
         min-height: 40px !important;
+        line-height: 40px !important;
         padding: 0 16px !important;
-        font-size: 14px !important
+        font-size: 14px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important
     }
 }
 /* =================================================================================== */
