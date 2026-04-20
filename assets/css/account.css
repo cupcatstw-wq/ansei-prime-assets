@@ -877,6 +877,55 @@ body[class*="route-account-address-edit"] .btn:active {
     outline: none !important;
     text-decoration: none !important
 }
+@media (max-width: 767px) {
+    #account-address .table tbody td.text-right {
+        display: flex !important;
+        justify-content: flex-end !important;
+        align-items: center !important;
+        gap: 8px !important;
+        padding: 0 !important;
+        width: 100% !important;
+        white-space: normal !important;
+        box-sizing: border-box !important
+    }
+    #account-address .table tbody td.text-right .btn,
+    #account-address .table tbody td.text-right a.btn {
+        min-width: 0 !important;
+        width: auto !important;
+        height: 36px !important;
+        padding: 0 14px !important;
+        font-size: 13px !important;
+        margin: 0 !important;
+        flex-shrink: 0 !important
+    }
+    #account-address #content > .buttons .pull-left,
+    #account-address #content > .buttons .pull-right,
+    #account-address #content > .buttons.clearfix .pull-left,
+    #account-address #content > .buttons.clearfix .pull-right,
+    #account-address #content > .table-responsive + .buttons .pull-left,
+    #account-address #content > .table-responsive + .buttons .pull-right,
+    #account-address #content > .table-responsive + .buttons.clearfix .pull-left,
+    #account-address #content > .table-responsive + .buttons.clearfix .pull-right {
+        display: flex !important;
+        align-items: center !important;
+        float: none !important;
+        margin: 0 !important
+    }
+    #account-address #content > .buttons .pull-left .btn,
+    #account-address #content > .buttons .pull-right .btn,
+    #account-address #content > .buttons.clearfix .pull-left .btn,
+    #account-address #content > .buttons.clearfix .pull-right .btn,
+    #account-address #content > .table-responsive + .buttons .pull-left .btn,
+    #account-address #content > .table-responsive + .buttons .pull-right .btn,
+    #account-address #content > .table-responsive + .buttons.clearfix .pull-left .btn,
+    #account-address #content > .table-responsive + .buttons.clearfix .pull-right .btn {
+        min-width: 0 !important;
+        height: 40px !important;
+        min-height: 40px !important;
+        padding: 0 16px !important;
+        font-size: 14px !important
+    }
+}
 /* =================================================================================== */
 /* A-9. Newsletter/Edit/Download/Return/Recurring/Reward/Affiliate/Tracking/Password   */
 /* =================================================================================== */
