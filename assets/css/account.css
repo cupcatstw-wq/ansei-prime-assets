@@ -898,6 +898,16 @@ body[class*="route-account-address-edit"] .btn:active {
         margin: 0 !important;
         flex-shrink: 0 !important
     }
+    #account-address #content > .buttons,
+    #account-address #content > .buttons.clearfix,
+    #account-address #content > .table-responsive + .buttons,
+    #account-address #content > .table-responsive + .buttons.clearfix {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 10px !important
+    }
     #account-address #content > .buttons .pull-left,
     #account-address #content > .buttons .pull-right,
     #account-address #content > .buttons.clearfix .pull-left,
@@ -911,24 +921,20 @@ body[class*="route-account-address-edit"] .btn:active {
         float: none !important;
         margin: 0 !important
     }
-    #account-address #content > .buttons .pull-left .btn,
-    #account-address #content > .buttons .pull-right .btn,
-    #account-address #content > .buttons.clearfix .pull-left .btn,
-    #account-address #content > .buttons.clearfix .pull-right .btn,
-    #account-address #content > .table-responsive + .buttons .pull-left .btn,
-    #account-address #content > .table-responsive + .buttons .pull-right .btn,
-    #account-address #content > .table-responsive + .buttons.clearfix .pull-left .btn,
-    #account-address #content > .table-responsive + .buttons.clearfix .pull-right .btn {
+    #account-address #content > .buttons .btn,
+    #account-address #content > .buttons.clearfix .btn,
+    #account-address #content > .table-responsive + .buttons .btn,
+    #account-address #content > .table-responsive + .buttons.clearfix .btn {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
         min-width: 0 !important;
         width: auto !important;
         height: 40px !important;
         min-height: 40px !important;
-        line-height: 40px !important;
+        line-height: 1 !important;
         padding: 0 16px !important;
-        font-size: 14px !important;
-        display: inline-flex !important;
-        align-items: center !important;
-        justify-content: center !important
+        font-size: 14px !important
     }
 }
 /* =================================================================================== */
