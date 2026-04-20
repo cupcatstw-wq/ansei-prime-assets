@@ -613,7 +613,7 @@ body[class*="route-account-address-edit"] h1 {
 }
 #account-address #content .table.table-hover > tbody > tr:hover > td,
 #account-address #content .table.table-hover > tbody > tr:hover > th {
-    background-color: #F7F6F4 !important
+    background-color: transparent !important
 }
 #account-address .table tbody tr:active td,
 #account-address .table tbody tr:active th {
