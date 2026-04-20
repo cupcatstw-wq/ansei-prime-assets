@@ -996,7 +996,7 @@ body.ansei-page-ready.popup-open {
     }
     #account-address .table tbody td.text-right {
         display: flex !important;
-        justify-content: center !important;
+        justify-content: flex-end !important;
         gap: 10px !important;
         padding: 0 !important
     }
