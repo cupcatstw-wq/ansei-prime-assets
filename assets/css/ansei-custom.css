@@ -1042,6 +1042,21 @@ body.ansei-page-ready.popup-open {
     body[class*="route-account-address-add"] #content > form.form-horizontal,
     body[class*="route-account-address-add"] form.form-horizontal,
     body[class*="route-account-address-edit"] #conte
+    #account-address .table tbody td.text-right .btn,
+    #account-address .table tbody td.text-right a.btn {
+        min-width: 0 !important;
+        margin: 0 !important
+    }
+    #account-address .table tbody td.text-right {
+        display: flex !important;
+        justify-content: flex-end !important;
+        align-items: center !important;
+        gap: 8px !important;
+        padding: 0 !important;
+        width: 100% !important;
+        box-sizing: border-box !important
+    }
+    
     /* ===== 商品頁 ===== */
     #product-product #content {
         padding-left: 20px !important;
