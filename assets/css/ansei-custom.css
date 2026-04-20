@@ -992,7 +992,7 @@ body.ansei-page-ready.popup-open {
         background: #transparent !important
     }
     #account-address .table tbody td.text-left {
-        margin-bottom: 10px
+        margin-bottom: 20px
     }
     #account-address .table tbody td.text-right {
         text-align: right !important
