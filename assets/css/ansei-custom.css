@@ -926,59 +926,11 @@ body.ansei-page-ready.popup-open {
     #account-wishlist .table tbody tr:last-child td {
         border-bottom: none;
     }
-    /* ===== Address ===== */
+   /* ===== Address ===== */
     #account-address #content > p {
         border-radius: 16px 16px 0 0;
         padding: 24px 18px 14px;
         font-size: 14px
-    }
-    #account-address #content > .buttons,
-    #account-address #content > .buttons.clearfix,
-    #account-address #content > .table-responsive + .buttons,
-    #account-address #content > .table-responsive + .buttons.clearfix,
-    #account-address #content > .table-bordered + .buttons,
-    #account-address #content > .table + .buttons,
-    #account-address #content > p + .buttons {
-        border-radius: 0 0 16px 16px;
-        padding: 14px 16px 18px;
-        display: flex !important;
-        flex-direction: row !important;
-        justify-content: space-between !important;
-        align-items: center !important;
-        gap: 10px;
-        min-height: 60px !important;
-    }
-    #account-address #content > .buttons .pull-left,
-    #account-address #content > .buttons .pull-right,
-    #account-address #content > .buttons.clearfix .pull-left,
-    #account-address #content > .buttons.clearfix .pull-right,
-    #account-address #content > .table-responsive + .buttons .pull-left,
-    #account-address #content > .table-responsive + .buttons .pull-right,
-    #account-address #content > .table-responsive + .buttons.clearfix .pull-left,
-    #account-address #content > .table-responsive + .buttons.clearfix .pull-right {
-        float: none !important;
-        margin: 0 !important;
-        display: flex !important;
-        align-items: center !important
-    }
-    #account-address #content > .buttons .pull-left .btn,
-    #account-address #content > .buttons .pull-right .btn,
-    #account-address #content > .buttons.clearfix .pull-left .btn,
-    #account-address #content > .buttons.clearfix .pull-right .btn,
-    #account-address #content > .table-responsive + .buttons .pull-left .btn,
-    #account-address #content > .table-responsive + .buttons .pull-right .btn,
-    #account-address #content > .table-responsive + .buttons.clearfix .pull-left .btn,
-    #account-address #content > .table-responsive + .buttons.clearfix .pull-right .btn {
-        display: inline-flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        height: 40px !important;
-        min-height: 40px !important;
-        line-height: 1 !important;
-        width: auto !important;
-        min-width: 88px !important;
-        padding: 0 16px !important;
-        font-size: 14px !important
     }
     #account-address #content > .table-responsive,
     #account-address #content > .table-bordered,
@@ -1024,41 +976,22 @@ body.ansei-page-ready.popup-open {
         gap: 8px !important;
         padding: 0 !important;
         width: 100% !important;
+        white-space: normal !important;
         box-sizing: border-box !important
     }
-    #account-address .table td.text-right .btn,
-    #account-address .table td.text-right a.btn {
+    #account-address .table tbody td.text-right .btn,
+    #account-address .table tbody td.text-right a.btn {
         display: inline-flex !important;
         align-items: center !important;
         justify-content: center !important;
         width: auto !important;
-        min-width: auto !important;
+        min-width: 0 !important;
         height: 36px !important;
         padding: 0 14px !important;
         font-size: 13px !important;
-        flex-shrink: 0 !important
-    }
-    #account-address #content > form.form-horizontal,
-    #account-address-form #content > form.form-horizontal,
-    #account-address-form form.form-horizontal,
-    body[class*="route-account-address-add"] #content > form.form-horizontal,
-    body[class*="route-account-address-add"] form.form-horizontal,
-    body[class*="route-account-address-edit"] #conte
-    #account-address .table tbody td.text-right .btn,
-    #account-address .table tbody td.text-right a.btn {
-        min-width: 0 !important;
+        flex-shrink: 0 !important;
         margin: 0 !important
     }
-    #account-address .table tbody td.text-right {
-        display: flex !important;
-        justify-content: flex-end !important;
-        align-items: center !important;
-        gap: 8px !important;
-        padding: 0 !important;
-        width: 100% !important;
-        box-sizing: border-box !important
-    }
-    
     /* ===== 商品頁 ===== */
     #product-product #content {
         padding-left: 20px !important;
