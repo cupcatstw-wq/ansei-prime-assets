@@ -1,4 +1,4 @@
-/* ANSEI PRIME — Custom CSS | Journal 3.1.8 + OpenCart 3.0.3.8 | 2026/04/14 */
+/* ANSEI PRIME — Custom CSS | Journal 3.1.8 + OpenCart 3.0.3.8 | 2026/04/21 */
 /* ===== Modules ===== */
 @import url('https://cdn.jsdelivr.net/gh/cupcatstw-wq/ansei-prime-assets@main/assets/css/product.css');
 @import url('https://cdn.jsdelivr.net/gh/cupcatstw-wq/ansei-prime-assets@main/assets/css/account.css');
@@ -362,7 +362,7 @@ body.ansei-page-ready.popup-open {
     line-height: 1.5
 }
 /* 聯絡我們：資訊項目間距 */
-#information-contact .module-info_blocks-194 .module-item { margin-bottom: 20px !important; }
+#information-contact .module-info_blocks-194 .module-item { margin-bottom: 20px !important }
 /* ======================================== */
 /* 6. 產品列表工具列                        */
 /* ======================================== */
@@ -616,7 +616,7 @@ body.ansei-page-ready.popup-open {
     padding: 20px 0 !important
 }
 .module-info_blocks-321 .module-item {
-    flex: 0 0 50% !important; /* ← 桌機 2x2 */
+    flex: 0 0 50% !important;
     max-width: 50% !important;
     text-align: center !important;
     margin-bottom: 24px !important
@@ -660,32 +660,28 @@ body.ansei-page-ready.popup-open {
         opacity: 0;
         display: block !important;
         visibility: visible !important;
-        z-index: 999999 !important;
+        z-index: 999999 !important
     }
-    .scroll-top.is-visible {
-        opacity: 1 !important;
-    }
+    .scroll-top.is-visible { opacity: 1 !important }
     /* ===== Footer：手機版間距壓縮 + 標題顏色 ===== */
     footer .module ul {
         margin: 0 !important;
         padding: 0 !important;
-        list-style: none !important;
+        list-style: none !important
     }
     footer .module ul li {
         margin-bottom: 0 !important;
         padding: 0 !important;
-        line-height: 1 !important;
+        line-height: 1 !important
     }
     footer .module a {
         display: block !important;
         padding: 4px 0 !important;
         line-height: 1.4 !important;
         font-size: 13px !important;
-        color: #888 !important;
+        color: #888 !important
     }
-    footer .module a:hover {
-        color: #C8A96A !important;
-    }
+    footer .module a:hover { color: #C8A96A !important }
     footer .module h3,
     footer .module h4,
     footer .module h5,
@@ -697,71 +693,47 @@ body.ansei-page-ready.popup-open {
         letter-spacing: 0.06em !important;
         margin: 0 0 6px !important;
         padding-bottom: 0 !important;
-        line-height: 1.4 !important;
+        line-height: 1.4 !important
     }
-    footer .title-divider {
-        display: none !important;
-    }
-    footer .title-module h3 {
-        display: block !important;
-        width: 100% !important;
-    }
-    footer .title-module .title-divider {
-        display: none !important;
-    }
-    footer .title-module .subtitle {
-        display: block !important;
-        width: 100% !important;
-    }
-    footer .title-module .subtitle a {
-        display: block !important;
-        width: 100% !important;
-    }
-    /* ===== Trust Bar 手機單欄，保持置中 ===== */
+    footer .title-divider { display: none !important }
+    footer .title-module h3 { display: block !important; width: 100% !important }
+    footer .title-module .title-divider { display: none !important }
+    footer .title-module .subtitle { display: block !important; width: 100% !important }
+    footer .title-module .subtitle a { display: block !important; width: 100% !important }
+    /* ===== Trust Bar 手機單欄 ===== */
     .module-info_blocks-321 .module-body {
         flex-direction: column !important;
         gap: 40px !important;
-        padding: 0 !important;
+        padding: 0 !important
     }
     .module-info_blocks-321 .module-item {
         margin: 0 !important;
         padding: 0 !important;
-        text-align: center !important;
+        text-align: center !important
     }
-    .module-info_blocks-321 .info-block {
-        padding: 0 !important;
-        text-align: center !important;
-    }
-    .module-info_blocks-321 .info-block-content {
-        align-items: center !important;
-        text-align: center !important;
-    }
+    .module-info_blocks-321 .info-block { padding: 0 !important; text-align: center !important }
+    .module-info_blocks-321 .info-block-content { align-items: center !important; text-align: center !important }
     .module-info_blocks-321 .info-block-title {
         font-size: 13px !important;
         font-weight: 600 !important;
         line-height: 1.6 !important;
         letter-spacing: 0.08em !important;
-        margin: 0 0 6px !important;
+        margin: 0 0 6px !important
     }
-    .module-info_blocks-321 .info-block-title::after {
-        content: "" !important;
-        display: block !important;
-    }
+    .module-info_blocks-321 .info-block-title::after { content: "" !important; display: block !important }
     .module-info_blocks-321 .info-block-text {
         font-size: 13px !important;
         line-height: 1.9 !important;
         margin: 0 !important;
-        max-width: 100% !important;
+        max-width: 100% !important
     }
     /* ===== 三大品牌價值手機單欄 ===== */
-    .module-info_blocks:not(.module-info_blocks-321) .module-body {
-        flex-direction: column !important;
-    }
+    .module-info_blocks:not(.module-info_blocks-321) .module-body { flex-direction: column !important }
     .module-info_blocks:not(.module-info_blocks-321) .module-body .module-item {
         padding-bottom: 24px !important;
         width: 100% !important;
         max-width: 100% !important;
-        flex: none !important;
+        flex: none !important
     }
     /* ===== 會員頁標題 ===== */
     #account-login h1, #account-register h1, #account-forgotten h1,
@@ -772,25 +744,22 @@ body.ansei-page-ready.popup-open {
     #account-reset h1, #account-recurring h1, #account-reward h1,
     #account-affiliate h1, #account-tracking h1,
     #information-contact h1,
-    #information-contact .page-title h1 {
-        font-size: 32px;
-    }
+    #information-contact .page-title h1 { font-size: 32px }
     /* ===== 會員頁左右 padding ===== */
     #account-login #content, #account-register #content, #account-forgotten #content,
     #account-success #content, #account-logout #content, #common-success #content,
     #account-order #content, #account-wishlist #content, #account-address #content,
     #account-address-form #content, #account-newsletter #content, #account-edit #content,
     #account-password #content, #account-reset #content, #account-affiliate #content,
-    #account-tracking #content,
-    #information-contact #content {
+    #account-tracking #content, #information-contact #content {
         padding-left: 16px;
-        padding-right: 16px;
+        padding-right: 16px
     }
     /* ===== Login ===== */
     #account-login .login-box {
         display: flex !important;
         flex-direction: column !important;
-        gap: 20px !important;
+        gap: 20px !important
     }
     #account-login .login-box > .col-sm-6,
     #account-login .login-box > [class*="col-"] {
@@ -800,28 +769,22 @@ body.ansei-page-ready.popup-open {
         float: none !important;
         padding-left: 0 !important;
         padding-right: 0 !important;
-        margin-bottom: 0 !important;
+        margin-bottom: 0 !important
     }
     #account-login .login-box .well {
         width: 100% !important;
         min-height: auto !important;
         padding: 24px 18px !important;
-        border-radius: 16px !important;
+        border-radius: 16px !important
     }
-    #account-login .login-box .well form {
-        display: block !important;
-        height: auto !important;
-    }
+    #account-login .login-box .well form { display: block !important; height: auto !important }
     #account-login .login-box .well .buttons,
     #account-login .login-box .well .pull-right,
     #account-login .login-box .well .text-right {
         margin-top: 20px !important;
-        padding-top: 0 !important;
+        padding-top: 0 !important
     }
-    #account-login .btn {
-        width: 100% !important;
-        min-width: 100% !important;
-    }
+    #account-login .btn { width: 100% !important; min-width: 100% !important }
     /* ===== 卡片圓角縮小 ===== */
     #account-register #content > form, #account-register form,
     #account-forgotten #content > form, #account-forgotten form,
@@ -838,95 +801,53 @@ body.ansei-page-ready.popup-open {
     #account-tracking #content > form, #account-tracking form,
     #account-tracking #content > div:not(.breadcrumb),
     #information-contact .module-body form.form-horizontal,
-    #information-contact form.form-horizontal {
-        padding: 24px 18px;
-        border-radius: 16px;
-    }
+    #information-contact form.form-horizontal { padding: 24px 18px; border-radius: 16px }
     #account-download #content, #account-return #content,
-    #account-recurring #content {
-        padding: 24px 18px;
-        border-radius: 16px;
-    }
-    #account-reward #content {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
+    #account-recurring #content { padding: 24px 18px; border-radius: 16px }
+    #account-reward #content { padding-left: 16px; padding-right: 16px }
     /* ===== Register ===== */
-    #account-register .buttons {
-        gap: 24px;
-        align-items: stretch;
-    }
-    #account-register .buttons .pull-right {
-        text-align: left !important;
-    }
+    #account-register .buttons { gap: 24px; align-items: stretch }
+    #account-register .buttons .pull-right { text-align: left !important }
     #account-register .buttons .btn,
     #account-register .buttons input[type="submit"],
     #account-register .buttons button,
-    .ansei-actions .btn {
-        width: 100%;
-        min-width: 100%;
-    }
-    #account-forgotten .btn {
-        width: auto !important;
-        min-width: 108px !important;
-    }
-    #account-register input[name="telephone"] {
-        max-width: 100%;
-    }
-    #account-register .telephone-format-tip {
-        font-size: 11px;
-        line-height: 1.7;
-    }
+    .ansei-actions .btn { width: 100%; min-width: 100% }
+    #account-forgotten .btn { width: auto !important; min-width: 108px !important }
+    #account-register input[name="telephone"] { max-width: 100% }
+    #account-register .telephone-format-tip { font-size: 11px; line-height: 1.7 }
     /* ===== Password / Reset ===== */
     #account-password .buttons, #account-reset .buttons {
         flex-direction: column;
         align-items: stretch;
-        gap: 12px;
+        gap: 12px
     }
     #account-password .buttons .pull-left, #account-password .buttons .pull-right,
     #account-reset .buttons .pull-left, #account-reset .buttons .pull-right {
         width: 100%;
-        margin: 0 !important;
+        margin: 0 !important
     }
     /* ===== Newsletter ===== */
-    #account-newsletter .buttons {
-        flex-direction: column;
-        align-items: center !important;
-        gap: 12px;
-    }
-    #account-newsletter .buttons .pull-right {
-        width: auto !important;
-        margin: 0 !important;
-    }
-    #account-newsletter .buttons .pull-right .btn {
-        width: auto !important;
-        min-width: 108px !important;
-    }
+    #account-newsletter .buttons { flex-direction: column; align-items: center !important; gap: 12px }
+    #account-newsletter .buttons .pull-right { width: auto !important; margin: 0 !important }
+    #account-newsletter .buttons .pull-right .btn { width: auto !important; min-width: 108px !important }
     /* ===== Order / Wishlist ===== */
     #account-order #content.ansei-page-card,
-    #account-wishlist #content.ansei-page-card {
-        padding: 20px 14px;
-        border-radius: 16px;
-    }
-    #account-order .table thead, #account-wishlist .table thead {
-        display: none;
-    }
+    #account-wishlist #content.ansei-page-card { padding: 20px 14px; border-radius: 16px }
+    #account-order .table thead, #account-wishlist .table thead { display: none }
     #account-order .table tbody td, #account-wishlist .table tbody td {
         display: block;
         padding: 6px 4px;
         border-bottom: none;
-        font-size: 13px;
+        font-size: 13px
     }
     #account-order .table tbody tr, #account-wishlist .table tbody tr {
         display: block;
         border-bottom: 1px solid #EEE9E2;
-        padding: 12px 0;
+        padding: 12px 0
     }
     #account-order .table tbody tr:last-child td,
-    #account-wishlist .table tbody tr:last-child td {
-        border-bottom: none;
-    }
-   /* ===== Address ===== */
+    #account-wishlist .table tbody tr:last-child td { border-bottom: none }
+    /* ===== Address ===== */
     #account-address #content > p {
         border-radius: 16px 16px 0 0;
         padding: 24px 18px 14px;
@@ -938,9 +859,7 @@ body.ansei-page-ready.popup-open {
         border-radius: 16px 16px 0 0;
         padding: 20px 14px 12px
     }
-    #account-address .table thead {
-        display: none
-    }
+    #account-address .table thead { display: none }
     #account-address .table tbody tr {
         display: block;
         padding: 14px 0;
@@ -948,9 +867,7 @@ body.ansei-page-ready.popup-open {
         background: transparent !important;
         background-color: transparent !important
     }
-    #account-address .table tbody tr:last-child {
-        border-bottom: none
-    }
+    #account-address .table tbody tr:last-child { border-bottom: none }
     #account-address .table-bordered > tbody > tr > td,
     #account-address .table-bordered > tbody > tr > th,
     #account-address .table tbody td {
@@ -966,9 +883,7 @@ body.ansei-page-ready.popup-open {
         background: transparent !important;
         background-color: transparent !important
     }
-    #account-address .table tbody td.text-left {
-        margin-bottom: 20px
-    }
+    #account-address .table tbody td.text-left { margin-bottom: 20px }
     #account-address .table tbody td.text-right {
         display: flex !important;
         justify-content: flex-end !important;
@@ -993,33 +908,21 @@ body.ansei-page-ready.popup-open {
         margin: 0 !important
     }
     /* ===== 商品頁 ===== */
-    #product-product #content {
-        padding-left: 20px !important;
-        padding-right: 20px !important;
-    }
+    #product-product #content { padding-left: 20px !important; padding-right: 20px !important }
     /* ===== 商品列表 ===== */
     .main-products.product-list .product-thumb {
         flex-direction: column !important;
         gap: 14px !important;
-        padding: 18px !important;
+        padding: 18px !important
     }
     .main-products.product-list .product-thumb .image {
         flex: none !important;
         max-width: 100% !important;
-        width: 100% !important;
+        width: 100% !important
     }
-    .main-products.product-list .product-thumb .image a {
-        min-height: 180px !important;
-    }
-    .main-products.product-list .product-thumb .caption {
-        padding: 0 !important;
-        width: 100% !important;
-    }
+    .main-products.product-list .product-thumb .image a { min-height: 180px !important }
+    .main-products.product-list .product-thumb .caption { padding: 0 !important; width: 100% !important }
     /* ===== 分頁 ===== */
     #content .pagination > li > a,
-    #content .pagination > li > span {
-        min-width: 38px;
-        min-height: 38px;
-        margin-right: 3px;
-    }
+    #content .pagination > li > span { min-width: 38px; min-height: 38px; margin-right: 3px }
 }
