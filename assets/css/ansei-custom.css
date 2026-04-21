@@ -941,10 +941,12 @@ body.ansei-page-ready.popup-open {
     #account-address #content > p + .buttons {
         border-radius: 0 0 16px 16px;
         padding: 14px 16px 18px;
+        display: flex !important;
         flex-direction: row !important;
         justify-content: space-between !important;
         align-items: center !important;
-        gap: 10px
+        gap: 10px;
+        min-height: 60px !important;
     }
     #account-address #content > .buttons .pull-left,
     #account-address #content > .buttons .pull-right,
