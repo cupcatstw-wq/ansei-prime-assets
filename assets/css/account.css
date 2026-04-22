@@ -1158,3 +1158,35 @@ body[class*="route-account-address-edit"] .btn:active {
     outline: none !important;
     transform: none !important
 }
+/* ── 購物金表格 ── */
+#account-reward .table {
+    background: transparent;
+    margin-bottom: 0;
+}
+#account-reward .table thead th {
+    border-bottom: 1px solid #E5E2DC;
+    color: #888;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px 12px;
+    background: transparent;
+}
+#account-reward .table tbody td {
+    border-bottom: 1px solid #EEE9E2;
+    padding: 14px 12px;
+    color: #444;
+    font-size: 14px;
+    vertical-align: middle;
+    background: transparent;
+}
+#account-reward .table tbody tr:last-child td {
+    border-bottom: none;
+}
+#account-reward .table-bordered {
+    border: none !important;
+}
+#account-reward .table-bordered > thead > tr > th,
+#account-reward .table-bordered > tbody > tr > td {
+    border-left: none !important;
+    border-right: none !important;
+}
