@@ -648,8 +648,48 @@ body.ansei-page-ready.popup-open {
     font-size: 14px !important;
     line-height: 1.9 !important
 }
+
 /* ======================================== */
-/* 11. Mobile ≤767px                        */
+/* 11. Checkout                             */
+/* ======================================== */
+
+#checkout-checkout .buttons,
+#checkout-checkout .buttons.clearfix,
+#collapse-payment-address .buttons,
+#collapse-shipping-address .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+#checkout-checkout .buttons .pull-left,
+#checkout-checkout .buttons .pull-right,
+#collapse-payment-address .buttons .pull-left,
+#collapse-payment-address .buttons .pull-right,
+#collapse-shipping-address .buttons .pull-left,
+#collapse-shipping-address .buttons .pull-right {
+    float: none !important;
+    display: flex;
+    align-items: center;
+    margin: 0 !important;
+}
+
+/* ⭐ 核心：統一按鈕高度 */
+#checkout-checkout .buttons .btn,
+#collapse-payment-address .buttons .btn,
+#collapse-shipping-address .buttons .btn {
+    height: 46px !important;
+    min-height: 46px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    line-height: 1 !important;
+    padding: 0 22px !important;
+}
+
+/* ======================================== */
+/* 12. Mobile ≤767px                        */
 /* ======================================== */
 @media (max-width: 767px) {
     /* GoTop 手機版位置 */
@@ -925,4 +965,27 @@ body.ansei-page-ready.popup-open {
     /* ===== 分頁 ===== */
     #content .pagination > li > a,
     #content .pagination > li > span { min-width: 38px; min-height: 38px; margin-right: 3px }
+    /* ===== checkout ===== */
+    #checkout-checkout .buttons,
+    #collapse-payment-address .buttons,
+    #collapse-shipping-address .buttons {
+        align-items: stretch !important;
+        gap: 10px !important;
+    }
+
+    #checkout-checkout .buttons .pull-left,
+    #checkout-checkout .buttons .pull-right,
+    #collapse-payment-address .buttons .pull-left,
+    #collapse-payment-address .buttons .pull-right,
+    #collapse-shipping-address .buttons .pull-left,
+    #collapse-shipping-address .buttons .pull-right {
+        align-items: stretch !important;
+    }
+
+    #checkout-checkout .buttons .btn,
+    #collapse-payment-address .buttons .btn,
+    #collapse-shipping-address .buttons .btn {
+        height: 46px !important;
+        min-height: 46px !important;
+    }
 }
