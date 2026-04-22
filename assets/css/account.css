@@ -468,7 +468,7 @@
 #account-address,
 #account-address-form {
     max-width: 980px;
-    margin: 0 auto
+    margin: 0 auto;
 }
 
 #account-address #content,
@@ -477,7 +477,7 @@ body[class*="route-account-address-add"] #content,
 body[class*="route-account-address-edit"] #content {
     max-width: 900px;
     margin: 0 auto;
-    padding: 12px 0 40px
+    padding: 12px 0 40px;
 }
 
 #account-address h1,
@@ -487,10 +487,10 @@ body[class*="route-account-address-edit"] h1 {
     margin: 10px 0 26px;
     font-size: 44px;
     text-align: center;
-    color: #222
+    color: #222;
 }
 
-/* 清單上半部卡片 */
+/* 地址列表上半部 */
 #account-address #content > p,
 #account-address #content > .table-responsive,
 #account-address #content > .table-bordered,
@@ -500,7 +500,7 @@ body[class*="route-account-address-edit"] h1 {
     border-bottom: 0 !important;
     border-radius: 22px 22px 0 0;
     box-shadow: 0 10px 28px rgba(0, 0, 0, .05);
-    margin-bottom: 0
+    margin-bottom: 0;
 }
 
 #account-address #content > p {
@@ -508,17 +508,17 @@ body[class*="route-account-address-edit"] h1 {
     color: #888;
     font-size: 15px;
     line-height: 1.9;
-    text-align: center
+    text-align: center;
 }
 
 #account-address #content > .table-responsive,
 #account-address #content > .table-bordered,
 #account-address #content > .table {
     padding: 28px 26px 10px;
-    overflow: hidden
+    overflow: hidden;
 }
 
-/* 清單底部按鈕區 */
+/* 地址列表底部按鈕區 */
 #account-address #content > .buttons,
 #account-address #content > .buttons.clearfix,
 #account-address #content > .table-responsive + .buttons,
@@ -536,7 +536,7 @@ body[class*="route-account-address-edit"] h1 {
     border-radius: 0 0 22px 22px;
     box-shadow: 0 10px 28px rgba(0, 0, 0, .05);
     padding: 18px 30px 28px;
-    margin: 0
+    margin: 0;
 }
 
 #account-address #content > .buttons .pull-left,
@@ -554,8 +554,10 @@ body[class*="route-account-address-edit"] h1 {
 #account-address #content > p + .buttons .pull-left,
 #account-address #content > p + .buttons .pull-right {
     float: none !important;
+    display: flex;
+    align-items: center;
     margin: 0 !important;
-    padding: 0 !important
+    padding: 0;
 }
 
 #account-address #content > .buttons .pull-left,
@@ -565,7 +567,7 @@ body[class*="route-account-address-edit"] h1 {
 #account-address #content > .table-bordered + .buttons .pull-left,
 #account-address #content > .table + .buttons .pull-left,
 #account-address #content > p + .buttons .pull-left {
-    margin-right: auto !important
+    margin-right: auto !important;
 }
 
 #account-address #content > .buttons .pull-right,
@@ -575,14 +577,14 @@ body[class*="route-account-address-edit"] h1 {
 #account-address #content > .table-bordered + .buttons .pull-right,
 #account-address #content > .table + .buttons .pull-right,
 #account-address #content > p + .buttons .pull-right {
-    margin-left: auto !important
+    margin-left: auto !important;
 }
 
 /* 表格 */
 #account-address .table {
     width: 100%;
     margin-bottom: 0;
-    background: transparent
+    background: transparent;
 }
 
 #account-address .table thead th {
@@ -590,7 +592,7 @@ body[class*="route-account-address-edit"] h1 {
     color: #888;
     font-size: 13px;
     font-weight: 500;
-    padding: 10px 12px
+    padding: 10px 12px;
 }
 
 #account-address .table tbody td {
@@ -599,44 +601,44 @@ body[class*="route-account-address-edit"] h1 {
     color: #444;
     font-size: 14px;
     vertical-align: middle;
-    background: transparent !important
+    background: transparent !important;
 }
 
 #account-address .table tbody tr:last-child td {
-    border-bottom: none
+    border-bottom: none;
 }
 
 #account-address .table-hover > tbody > tr:hover,
 #account-address .table-hover > tbody > tr:hover > td,
 #account-address .table-hover > tbody > tr:hover > th {
     background-color: transparent !important;
-    background: transparent !important
+    background: transparent !important;
 }
 
 #account-address .table tbody tr:active td,
 #account-address .table tbody tr:active th {
-    background-color: transparent !important
+    background-color: transparent !important;
 }
 
 #account-address .table tbody tr {
-    -webkit-tap-highlight-color: transparent
+    -webkit-tap-highlight-color: transparent;
 }
 
 #account-address .table tbody td.text-left {
-    width: auto
+    width: auto;
 }
 
 #account-address .table tbody td.text-right {
     width: 1%;
     white-space: nowrap;
-    text-align: right !important
+    text-align: right !important;
 }
 
 #account-address .table tbody td.text-right .btn,
 #account-address .table tbody td.text-right a.btn,
 #account-address .table tbody td.text-right button.btn,
 #account-address .table tbody td.text-right input.btn {
-    margin: 0 0 0 8px
+    margin: 0 0 0 8px;
 }
 
 #account-address .table .btn,
@@ -654,7 +656,8 @@ body[class*="route-account-address-edit"] h1 {
     font-size: 13px !important;
     line-height: 1 !important;
     margin: 0 !important;
-    vertical-align: top !important
+    vertical-align: top !important;
+    box-sizing: border-box !important;
 }
 
 /* 地址新增 / 編輯表單 */
@@ -670,14 +673,14 @@ body[class*="route-account-address-edit"] #content > form.form-horizontal,
     box-shadow: 0 10px 28px rgba(0, 0, 0, .05);
     padding: 34px 30px;
     max-width: 760px;
-    margin: 10px auto 0
+    margin: 10px auto 0;
 }
 
 #account-address .form-group,
 #account-address-form .form-group,
 body[class*="route-account-address-add"] .form-group,
 body[class*="route-account-address-edit"] .form-group {
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
 #account-address .control-label,
@@ -690,14 +693,14 @@ body[class*="route-account-address-edit"] .control-label,
 body[class*="route-account-address-edit"] label {
     color: #555;
     font-size: 14px;
-    font-weight: 500
+    font-weight: 500;
 }
 
 #account-address .required,
 #account-address-form .required,
 body[class*="route-account-address-add"] .required,
 body[class*="route-account-address-edit"] .required {
-    color: #C8A96A
+    color: #C8A96A;
 }
 
 #account-address input[type="text"],
@@ -737,7 +740,7 @@ body[class*="route-account-address-edit"] .form-control {
     -webkit-text-fill-color: #333 !important;
     font-size: 14px;
     padding: 10px 14px;
-    box-shadow: none
+    box-shadow: none;
 }
 
 #account-address select,
@@ -745,7 +748,7 @@ body[class*="route-account-address-edit"] .form-control {
 body[class*="route-account-address-add"] select,
 body[class*="route-account-address-edit"] select {
     padding-right: 36px;
-    appearance: auto
+    appearance: auto;
 }
 
 #account-address input::placeholder,
@@ -756,7 +759,7 @@ body[class*="route-account-address-add"] input::placeholder,
 body[class*="route-account-address-add"] textarea::placeholder,
 body[class*="route-account-address-edit"] input::placeholder,
 body[class*="route-account-address-edit"] textarea::placeholder {
-    color: #9A9A9A
+    color: #9A9A9A;
 }
 
 #account-address input:focus,
@@ -777,7 +780,7 @@ body[class*="route-account-address-edit"] textarea:focus,
 body[class*="route-account-address-edit"] .form-control:focus {
     border-color: rgba(200, 169, 106, .65);
     box-shadow: 0 0 0 3px rgba(200, 169, 106, .10);
-    outline: none
+    outline: none;
 }
 
 #account-address .text-danger,
@@ -787,7 +790,7 @@ body[class*="route-account-address-edit"] .text-danger {
     margin-top: 6px;
     font-size: 12px;
     line-height: 1.6;
-    color: #9A9A9A
+    color: #9A9A9A;
 }
 
 #account-address .has-error input,
@@ -803,7 +806,7 @@ body[class*="route-account-address-edit"] .has-error input,
 body[class*="route-account-address-edit"] .has-error select,
 body[class*="route-account-address-edit"] .has-error textarea {
     border-color: #E3DCD2;
-    box-shadow: none
+    box-shadow: none;
 }
 
 /* 表單底部按鈕 */
@@ -817,7 +820,7 @@ body[class*="route-account-address-edit"] .buttons {
     gap: 14px;
     margin-top: 28px;
     padding-top: 10px;
-    border-top: 1px solid #ECE7DF
+    border-top: 1px solid #ECE7DF;
 }
 
 #account-address #content > form.form-horizontal .buttons .pull-left,
@@ -829,24 +832,24 @@ body[class*="route-account-address-add"] .buttons .pull-right,
 body[class*="route-account-address-edit"] .buttons .pull-left,
 body[class*="route-account-address-edit"] .buttons .pull-right {
     float: none !important;
-    margin: 0 !important
+    margin: 0 !important;
 }
 
 #account-address #content > form.form-horizontal .buttons .pull-left,
 #account-address-form .buttons .pull-left,
 body[class*="route-account-address-add"] .buttons .pull-left,
 body[class*="route-account-address-edit"] .buttons .pull-left {
-    margin-right: auto !important
+    margin-right: auto !important;
 }
 
 #account-address #content > form.form-horizontal .buttons .pull-right,
 #account-address-form .buttons .pull-right,
 body[class*="route-account-address-add"] .buttons .pull-right,
 body[class*="route-account-address-edit"] .buttons .pull-right {
-    margin-left: auto !important
+    margin-left: auto !important;
 }
 
-/* 全區按鈕統一樣式 */
+/* 全區按鈕統一 */
 #account-address .btn,
 #account-address a.btn,
 #account-address button.btn,
@@ -881,7 +884,7 @@ body[class*="route-account-address-edit"] input.btn {
     text-decoration: none;
     vertical-align: top !important;
     margin: 0 !important;
-    box-sizing: border-box !important
+    box-sizing: border-box !important;
 }
 
 #account-address .btn:hover,
@@ -904,7 +907,7 @@ body[class*="route-account-address-edit"] input.btn:hover {
     border-color: rgba(200, 169, 106, .55);
     color: #222;
     transform: translateY(-1px);
-    text-decoration: none
+    text-decoration: none;
 }
 
 #account-address .btn:focus,
@@ -932,7 +935,7 @@ body[class*="route-account-address-edit"] .btn:active {
     color: #333 !important;
     box-shadow: none !important;
     outline: none !important;
-    text-decoration: none !important
+    text-decoration: none !important;
 }
 
 /* 手機版 */
@@ -945,7 +948,7 @@ body[class*="route-account-address-edit"] .btn:active {
         padding: 0 !important;
         width: 100% !important;
         white-space: normal !important;
-        box-sizing: border-box !important
+        box-sizing: border-box !important;
     }
 
     #account-address .table tbody td.text-right .btn,
@@ -959,7 +962,7 @@ body[class*="route-account-address-edit"] .btn:active {
         padding: 0 14px !important;
         font-size: 13px !important;
         margin: 0 !important;
-        flex-shrink: 0 !important
+        flex-shrink: 0 !important;
     }
 
     #account-address #content > .buttons,
@@ -969,11 +972,8 @@ body[class*="route-account-address-edit"] .btn:active {
     #account-address #content > .table-bordered + .buttons,
     #account-address #content > .table + .buttons,
     #account-address #content > p + .buttons {
-        display: flex !important;
-        flex-direction: row !important;
-        align-items: stretch !important;
-        justify-content: space-between !important;
-        gap: 10px !important
+        align-items: stretch;
+        gap: 10px;
     }
 
     #account-address #content > .buttons .pull-left,
@@ -990,18 +990,10 @@ body[class*="route-account-address-edit"] .btn:active {
     #account-address #content > .table + .buttons .pull-right,
     #account-address #content > p + .buttons .pull-left,
     #account-address #content > p + .buttons .pull-right {
-        display: flex !important;
-        align-items: stretch !important;
-        float: none !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        width: auto !important;
-        max-width: none !important;
-        flex: 0 0 auto !important;
-        height: auto !important
+        align-items: stretch;
     }
 
-    /* 手機版底部兩顆按鈕：統一高度，強制齊平 */
+    /* 手機版底部兩顆按鈕保持與桌機同高度 */
     #account-address #content > .buttons .btn,
     #account-address #content > .buttons a.btn,
     #account-address #content > .buttons button.btn,
@@ -1030,18 +1022,9 @@ body[class*="route-account-address-edit"] .btn:active {
     #account-address #content > p + .buttons a.btn,
     #account-address #content > p + .buttons button.btn,
     #account-address #content > p + .buttons input.btn {
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        width: auto !important;
-        min-width: 0 !important;
         height: 46px !important;
         min-height: 46px !important;
-        line-height: 1 !important;
         padding: 0 16px !important;
-        margin: 0 !important;
-        vertical-align: top !important;
-        box-sizing: border-box !important
     }
 }
 /* =================================================================================== */
