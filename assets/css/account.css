@@ -527,7 +527,7 @@ body[class*="route-account-address-edit"] h1 {
 #account-address #content > .table + .buttons,
 #account-address #content > p + .buttons {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
     gap: 14px;
     background: #F7F6F4;
@@ -555,7 +555,7 @@ body[class*="route-account-address-edit"] h1 {
 #account-address #content > p + .buttons .pull-right {
     float: none !important;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     margin: 0 !important;
     padding: 0;
 }
@@ -972,28 +972,9 @@ body[class*="route-account-address-edit"] .btn:active {
     #account-address #content > .table-bordered + .buttons,
     #account-address #content > .table + .buttons,
     #account-address #content > p + .buttons {
-        align-items: stretch;
         gap: 10px;
     }
 
-    #account-address #content > .buttons .pull-left,
-    #account-address #content > .buttons .pull-right,
-    #account-address #content > .buttons.clearfix .pull-left,
-    #account-address #content > .buttons.clearfix .pull-right,
-    #account-address #content > .table-responsive + .buttons .pull-left,
-    #account-address #content > .table-responsive + .buttons .pull-right,
-    #account-address #content > .table-responsive + .buttons.clearfix .pull-left,
-    #account-address #content > .table-responsive + .buttons.clearfix .pull-right,
-    #account-address #content > .table-bordered + .buttons .pull-left,
-    #account-address #content > .table-bordered + .buttons .pull-right,
-    #account-address #content > .table + .buttons .pull-left,
-    #account-address #content > .table + .buttons .pull-right,
-    #account-address #content > p + .buttons .pull-left,
-    #account-address #content > p + .buttons .pull-right {
-        align-items: stretch;
-    }
-
-    /* 手機版底部兩顆按鈕保持與桌機同高度 */
     #account-address #content > .buttons .btn,
     #account-address #content > .buttons a.btn,
     #account-address #content > .buttons button.btn,
@@ -1022,9 +1003,15 @@ body[class*="route-account-address-edit"] .btn:active {
     #account-address #content > p + .buttons a.btn,
     #account-address #content > p + .buttons button.btn,
     #account-address #content > p + .buttons input.btn {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
         height: 46px !important;
         min-height: 46px !important;
         padding: 0 16px !important;
+        line-height: 1 !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
     }
 }
 /* =================================================================================== */
