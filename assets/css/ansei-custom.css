@@ -650,11 +650,10 @@ body.ansei-page-ready.popup-open {
 }
 
 /* ======================================== */
-/* 11. Checkout                             */
+/* 11. Checkout（修正版）                    */
 /* ======================================== */
-
 #checkout-checkout .buttons,
-#checkout-checkout .buttons.clearfix,
+#checkout-checkout .panel-body .buttons,
 #collapse-payment-address .buttons,
 #collapse-shipping-address .buttons {
     display: flex;
@@ -675,10 +674,13 @@ body.ansei-page-ready.popup-open {
     margin: 0 !important;
 }
 
-/* ⭐ 核心：統一按鈕高度 */
+/* ⭐ 核心：統一高度（含 input / a） */
 #checkout-checkout .buttons .btn,
+#checkout-checkout .buttons input,
 #collapse-payment-address .buttons .btn,
-#collapse-shipping-address .buttons .btn {
+#collapse-payment-address .buttons input,
+#collapse-shipping-address .buttons .btn,
+#collapse-shipping-address .buttons input {
     height: 46px !important;
     min-height: 46px !important;
     display: inline-flex !important;
@@ -687,7 +689,6 @@ body.ansei-page-ready.popup-open {
     line-height: 1 !important;
     padding: 0 22px !important;
 }
-
 /* ======================================== */
 /* 12. Mobile ≤767px                        */
 /* ======================================== */
