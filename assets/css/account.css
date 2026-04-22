@@ -1158,12 +1158,11 @@ body[class*="route-account-address-edit"] .btn:active {
     outline: none !important;
     transform: none !important
 }
-/* ── 購物金表格 ── */
-#account-reward .table.table-bordered.table-hover thead tr td,
-#account-reward .table.table-bordered.table-hover thead tr th,
-#account-reward .table thead tr,
-#account-reward .table thead td,
-#account-reward .table thead th {
+/* ── 購物金／交易記錄表格 ── */
+#account-reward .table-responsive .table thead tr td,
+#account-reward .table-responsive .table thead tr th,
+#account-transaction .table-responsive .table thead tr td,
+#account-transaction .table-responsive .table thead tr th {
     background: #F7F6F4 !important;
     background-color: #F7F6F4 !important;
     color: #888 !important;
@@ -1175,9 +1174,8 @@ body[class*="route-account-address-edit"] .btn:active {
     border-right: none !important;
     padding: 10px 12px !important;
 }
-#account-reward .table.table-bordered.table-hover tbody tr td,
-#account-reward .table tbody tr td,
-#account-reward .table tbody td {
+#account-reward .table-responsive .table tbody tr td,
+#account-transaction .table-responsive .table tbody tr td {
     background: transparent !important;
     background-color: transparent !important;
     color: #444 !important;
@@ -1188,6 +1186,7 @@ body[class*="route-account-address-edit"] .btn:active {
     border-right: none !important;
     padding: 14px 12px !important;
 }
-#account-reward .table tbody tr:last-child td {
+#account-reward .table-responsive .table tbody tr:last-child td,
+#account-transaction .table-responsive .table tbody tr:last-child td {
     border-bottom: none !important;
 }
