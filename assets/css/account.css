@@ -1159,39 +1159,35 @@ body[class*="route-account-address-edit"] .btn:active {
     transform: none !important
 }
 /* ── 購物金表格 ── */
-#account-reward .table {
-    background: transparent !important;
-    margin-bottom: 0;
-}
+#account-reward .table.table-bordered.table-hover thead tr td,
+#account-reward .table.table-bordered.table-hover thead tr th,
 #account-reward .table thead tr,
+#account-reward .table thead td,
 #account-reward .table thead th {
-    border-bottom: 1px solid #E5E2DC !important;
+    background: #F7F6F4 !important;
+    background-color: #F7F6F4 !important;
     color: #888 !important;
     font-size: 13px !important;
     font-weight: 500 !important;
+    border-bottom: 1px solid #E5E2DC !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
     padding: 10px 12px !important;
+}
+#account-reward .table.table-bordered.table-hover tbody tr td,
+#account-reward .table tbody tr td,
+#account-reward .table tbody td {
     background: transparent !important;
     background-color: transparent !important;
-}
-#account-reward .table tbody tr,
-#account-reward .table tbody td {
-    border-bottom: 1px solid #EEE9E2 !important;
-    padding: 14px 12px !important;
     color: #444 !important;
     font-size: 14px !important;
-    vertical-align: middle !important;
-    background: transparent !important;
-    background-color: transparent !important;
+    border-bottom: 1px solid #EEE9E2 !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    padding: 14px 12px !important;
 }
 #account-reward .table tbody tr:last-child td {
     border-bottom: none !important;
-}
-#account-reward .table-bordered,
-#account-reward .table-bordered > thead > tr > th,
-#account-reward .table-bordered > tbody > tr > td {
-    border: none !important;
-    border-bottom: 1px solid #EEE9E2 !important;
-}
-#account-reward .table-bordered > thead > tr > th {
-    border-bottom: 1px solid #E5E2DC !important;
 }
