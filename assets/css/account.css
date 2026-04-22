@@ -1159,25 +1159,26 @@ body[class*="route-account-address-edit"] .btn:active {
     transform: none !important
 }
 /* ── 購物金／交易記錄表格 ── */
-#account-reward .table-responsive .table thead tr td,
-#account-reward .table-responsive .table thead tr th,
-#account-transaction .table-responsive .table thead tr td,
-#account-transaction .table-responsive .table thead tr th {
+#account-reward .table-responsive > table.table-bordered > thead > tr > td,
+#account-reward .table-responsive > table.table-bordered > thead > tr > th,
+#account-transaction .table-responsive > table.table-bordered > thead > tr > td,
+#account-transaction .table-responsive > table.table-bordered > thead > tr > th {
     background: #F7F6F4 !important;
     background-color: #F7F6F4 !important;
     color: #888 !important;
     font-size: 13px !important;
     font-weight: 500 !important;
+    text-transform: none !important;
     border-bottom: 1px solid #E5E2DC !important;
     border-top: none !important;
     border-left: none !important;
     border-right: none !important;
     padding: 10px 12px !important;
 }
-#account-reward .table-responsive .table tbody tr td,
-#account-transaction .table-responsive .table tbody tr td {
-    background: transparent !important;
-    background-color: transparent !important;
+#account-reward .table-responsive > table.table-bordered > tbody > tr > td,
+#account-transaction .table-responsive > table.table-bordered > tbody > tr > td {
+    background: #fff !important;
+    background-color: #fff !important;
     color: #444 !important;
     font-size: 14px !important;
     border-bottom: 1px solid #EEE9E2 !important;
@@ -1186,7 +1187,7 @@ body[class*="route-account-address-edit"] .btn:active {
     border-right: none !important;
     padding: 14px 12px !important;
 }
-#account-reward .table-responsive .table tbody tr:last-child td,
-#account-transaction .table-responsive .table tbody tr:last-child td {
+#account-reward .table-responsive > table.table-bordered > tbody > tr:last-child > td,
+#account-transaction .table-responsive > table.table-bordered > tbody > tr:last-child > td {
     border-bottom: none !important;
 }
