@@ -254,25 +254,28 @@ html body #content .product-blocks-bottom {
     position: relative !important;
     padding-bottom: 10px !important;
     margin-bottom: 24px !important;
-}
-.product-product .product_extra .title.module-title::after {
-    content: '' !important;
-    position: absolute !important;
-    bottom: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: .5px !important;
-    background: #ECE8E2 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0 !important;
 }
 .product-product .product_extra .title.module-title::before {
     content: '' !important;
-    position: absolute !important;
-    bottom: 0 !important;
-    left: 0 !important;
-    width: 60px !important;
+    display: inline-block !important;
+    width: 28px !important;
     height: 1.5px !important;
     background: #C8A96A !important;
-    z-index: 1 !important;
+    flex-shrink: 0 !important;
+    order: 2 !important;
+    position: static !important;
+}
+.product-product .product_extra .title.module-title::after {
+    content: '' !important;
+    display: block !important;
+    flex: 1 !important;
+    height: 1px !important;
+    background: #ECE8E2 !important;
+    order: 3 !important;
+    position: static !important;
 }
 /* 購買按鈕區上方線 */
 .product-product .button-group-page {
