@@ -244,11 +244,6 @@
     border-top: 1px solid #e8e4df !important;
     opacity: 1 !important;
 }
-/* 隱藏類似商品、評論、tab 模組 */
-html body #content .product-blocks-244,
-html body #content .product-blocks-bottom {
-    display: none !important;
-}
 /* 商品額外資訊標題線 */
 .product-product .product_extra .title.module-title {
     position: relative !important;
