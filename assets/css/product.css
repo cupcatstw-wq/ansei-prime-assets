@@ -247,25 +247,29 @@
 /* 商品額外資訊標題線 */
 .product-product .product_extra .title.module-title {
     position: relative !important;
-    padding-bottom: 0 !important;
+    padding-bottom: 12px !important;
     margin-bottom: 24px !important;
-    display: flex !important;
-    align-items: center !important;
-    white-space: nowrap !important;
-    gap: 8px !important;
+    display: block !important;
+}
+.product-product .product_extra .title.module-title::before {
+    content: '' !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 28px !important;
+    height: 2px !important;
+    background: #C8A96A !important;
+    z-index: 1 !important;
 }
 .product-product .product_extra .title.module-title::after {
     content: '' !important;
-    display: block !important;
-    flex: 1 !important;
+    position: absolute !important;
+    bottom: 0.75px !important;
+    left: 0 !important;
+    width: 100% !important;
     height: 1px !important;
-    background: linear-gradient(to right, #C8A96A 28px, #ECE8E2 28px) !important;
-    position: static !important;
-    min-width: 0 !important;
-}
-.product-product .product_extra .title.module-title::before {
-    display: none !important;
-    content: none !important;
+    background: #ECE8E2 !important;
+    z-index: 0 !important;
 }
 /* 購買按鈕區上方線 */
 .product-product .button-group-page {
