@@ -689,11 +689,11 @@ body.ansei-page-ready.popup-open {
     line-height: 1 !important;
     padding: 0 22px !important;
 }
-/* ========================================== */
-/* 12. ROW 6 - 品牌故事區 Brand Story (#323)   */
-/* ========================================== */
+/* ============================================================
+   12. ROW 6 - 品牌故事區 Brand Story (#323)
+   ============================================================ */
+
 .module-info_blocks-323 .module-body {
-    display: block !important;
     padding: 72px 40px !important;
     background: #fff !important;
 }
@@ -703,11 +703,13 @@ body.ansei-page-ready.popup-open {
     flex-direction: row !important;
     align-items: center !important;
     gap: 56px !important;
+    width: 100% !important;
 }
 
 .module-info_blocks-323 .info-blocks-image {
     flex: 0 0 45% !important;
     max-width: 45% !important;
+    width: 45% !important;
 }
 
 .module-info_blocks-323 .info-block-img {
@@ -720,7 +722,8 @@ body.ansei-page-ready.popup-open {
 }
 
 .module-info_blocks-323 .info-block-content {
-    flex: 1 !important;
+    flex: 1 1 0% !important;
+    min-width: 0 !important;
     text-align: left !important;
     padding: 0 !important;
 }
