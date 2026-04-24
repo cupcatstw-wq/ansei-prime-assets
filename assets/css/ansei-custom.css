@@ -547,27 +547,27 @@ body.ansei-page-ready.popup-open {
 .category-grid .category-layout { transition: transform .3s ease !important }
 .category-grid .category-layout:hover { transform: translateY(-4px) !important }
 /* ======================================== */
-/* 8. 三大品牌價值（排除 Trust Bar #321）   */
+/* 8. 三大品牌價值（排除 Trust Bar #321 和品牌故事 #323） */
 /* ======================================== */
-.module-info_blocks:not(.module-info_blocks-321) .info-block {
+.module-info_blocks:not(.module-info_blocks-321):not(.module-info_blocks-323) .info-block {
     flex-direction: row !important;
     align-items: flex-start !important;
     text-align: left !important;
     padding: 0 30px !important;
     gap: 14px !important
 }
-.module-info_blocks:not(.module-info_blocks-321) .info-block-content {
+.module-info_blocks:not(.module-info_blocks-321):not(.module-info_blocks-323) .info-block-content {
     display: flex !important;
     flex-direction: column !important
 }
-.module-info_blocks:not(.module-info_blocks-321) .info-block-title {
+.module-info_blocks:not(.module-info_blocks-321):not(.module-info_blocks-323) .info-block-title {
     font-size: 16px !important;
     font-weight: 600 !important;
     color: #222 !important;
     margin-bottom: 8px !important;
     line-height: 1.4 !important
 }
-.module-info_blocks:not(.module-info_blocks-321) .info-block-text {
+.module-info_blocks:not(.module-info_blocks-321):not(.module-info_blocks-323) .info-block-text {
     font-size: 14px !important;
     color: #888 !important;
     line-height: 1.7 !important
@@ -829,8 +829,8 @@ body.ansei-page-ready.popup-open {
         max-width: 100% !important
     }
     /* ===== 三大品牌價值手機單欄 ===== */
-    .module-info_blocks:not(.module-info_blocks-321) .module-body { flex-direction: column !important }
-    .module-info_blocks:not(.module-info_blocks-321) .module-body .module-item {
+    .module-info_blocks:not(.module-info_blocks-321):not(.module-info_blocks-323) .module-body { flex-direction: column !important }
+    .module-info_blocks:not(.module-info_blocks-321):not(.module-info_blocks-323) .module-body .module-item {
         padding-bottom: 24px !important;
         width: 100% !important;
         max-width: 100% !important;
