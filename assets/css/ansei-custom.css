@@ -699,16 +699,15 @@ body.ansei-page-ready.popup-open {
 }
 
 .module-info_blocks-323 .info-block {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
+    display: grid !important;
+    grid-template-columns: 45% 1fr !important;
     gap: 56px !important;
+    align-items: center !important;
     width: 100% !important;
 }
 
 .module-info_blocks-323 .info-block-img {
-    flex: 0 0 45% !important;
-    width: 45% !important;
+    width: 100% !important;
     height: 380px !important;
     object-fit: cover !important;
     object-position: center top !important;
@@ -717,7 +716,6 @@ body.ansei-page-ready.popup-open {
 }
 
 .module-info_blocks-323 .info-block-content {
-    flex: 1 1 0% !important;
     min-width: 0 !important;
     text-align: left !important;
     padding: 0 !important;
