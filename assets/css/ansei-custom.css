@@ -706,14 +706,9 @@ body.ansei-page-ready.popup-open {
     width: 100% !important;
 }
 
-.module-info_blocks-323 .info-blocks-image {
-    flex: 0 0 45% !important;
-    max-width: 45% !important;
-    width: 45% !important;
-}
-
 .module-info_blocks-323 .info-block-img {
-    width: 100% !important;
+    flex: 0 0 45% !important;
+    width: 45% !important;
     height: 380px !important;
     object-fit: cover !important;
     object-position: center top !important;
@@ -1062,13 +1057,9 @@ body.ansei-page-ready.popup-open {
         padding: 48px 24px !important;
     }
 
-    .module-info_blocks-323 .info-blocks-image {
-        flex: none !important;
-        max-width: 100% !important;
-        width: 100% !important;
-    }
-
     .module-info_blocks-323 .info-block-img {
+        flex: none !important;
+        width: 100% !important;
         height: 220px !important;
         border-radius: 12px !important;
     }
