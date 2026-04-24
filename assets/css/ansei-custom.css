@@ -689,70 +689,63 @@ body.ansei-page-ready.popup-open {
     line-height: 1 !important;
     padding: 0 22px !important;
 }
-/* ============================================================
-   12. ROW 6 - 品牌故事區 Brand Story
-   ============================================================ */
-
-/* 外層容器：左右分欄 */
-.j-info-blocks.brand-story-block .j-info-block {
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center !important;
-  gap: 64px !important;
-  padding: 80px 40px !important;
-  background-color: #ffffff;
+/* ========================================== */
+/* 12. ROW 6 - 品牌故事區 Brand Story (#323)   */
+/* ========================================== */
+.module-info_blocks-323 .module-body {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 56px !important;
+    padding: 72px 40px !important;
+    background: #fff !important;
 }
 
-/* 圖片區：固定 45% 寬度 */
-.j-info-blocks.brand-story-block .j-info-block-image {
-  flex: 0 0 45% !important;
-  max-width: 45% !important;
+.module-info_blocks-323 .module-item {
+    flex: 0 0 45% !important;
+    max-width: 45% !important;
+    margin: 0 !important;
 }
 
-.j-info-blocks.brand-story-block .j-info-block-image img {
-  width: 100% !important;
-  height: 340px !important;
-  object-fit: cover !important;
-  object-position: center !important;
-  border-radius: 16px !important;
-  display: block !important;
+.module-info_blocks-323 .info-block-image img {
+    width: 100% !important;
+    height: 380px !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+    border-radius: 16px !important;
+    display: block !important;
 }
 
-/* 文字區 */
-.j-info-blocks.brand-story-block .j-info-block-content {
-  flex: 1 !important;
-  text-align: left !important;
-  padding: 0 !important;
+.module-info_blocks-323 .info-block-content {
+    flex: 1 !important;
+    text-align: left !important;
+    padding: 0 !important;
 }
 
-/* Text 1：主標題 */
-.j-info-blocks.brand-story-block .j-info-block-text1 {
-  font-size: 24px !important;
-  font-weight: 400 !important;
-  color: #222222 !important;
-  line-height: 1.7 !important;
-  letter-spacing: 0.05em !important;
-  margin-bottom: 20px !important;
+.module-info_blocks-323 .info-block-content::before {
+    content: '' !important;
+    display: block !important;
+    width: 32px !important;
+    height: 1px !important;
+    background-color: #C8A96A !important;
+    margin-bottom: 16px !important;
 }
 
-/* Text 2：內文 */
-.j-info-blocks.brand-story-block .j-info-block-text2 {
-  font-size: 13px !important;
-  color: #888888 !important;
-  line-height: 2 !important;
-  letter-spacing: 0.04em !important;
+.module-info_blocks-323 .info-block-title {
+    font-size: 24px !important;
+    font-weight: 400 !important;
+    color: #222222 !important;
+    line-height: 1.7 !important;
+    letter-spacing: 0.05em !important;
+    margin-bottom: 20px !important;
 }
 
-/* 金色裝飾線 */
-.j-info-blocks.brand-story-block .j-info-block-content::before {
-  content: '';
-  display: block;
-  width: 32px;
-  height: 1px;
-  background-color: #C8A96A;
-  margin-bottom: 16px;
+.module-info_blocks-323 .info-block-text {
+    font-size: 13px !important;
+    color: #888888 !important;
+    line-height: 2 !important;
+    letter-spacing: 0.04em !important;
 }
-
 /* ======================================== */
 /* 13. Mobile ≤767px                        */
 /* ======================================== */
@@ -1054,24 +1047,24 @@ body.ansei-page-ready.popup-open {
         min-height: 46px !important;
     }
     /* ===== ROW 6 - 品牌故事區 Mobile ===== */
-  .j-info-blocks.brand-story-block .j-info-block {
-    flex-direction: column !important;
-    gap: 24px !important;
-    padding: 48px 24px !important;
-  }
+    .module-info_blocks-323 .module-body {
+        flex-direction: column !important;
+        gap: 24px !important;
+        padding: 48px 24px !important;
+    }
 
-  .j-info-blocks.brand-story-block .j-info-block-image {
-    flex: none !important;
-    max-width: 100% !important;
-    width: 100% !important;
-  }
+    .module-info_blocks-323 .module-item {
+        flex: none !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
 
-  .j-info-blocks.brand-story-block .j-info-block-image img {
-    height: 220px !important;
-    border-radius: 12px !important;
-  }
+    .module-info_blocks-323 .info-block-image img {
+        height: 220px !important;
+        border-radius: 12px !important;
+    }
 
-  .j-info-blocks.brand-story-block .j-info-block-text1 {
-    font-size: 20px !important;
-  }
+    .module-info_blocks-323 .info-block-title {
+        font-size: 20px !important;
+    }
 }
