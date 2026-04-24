@@ -716,9 +716,16 @@ body.ansei-page-ready.popup-open {
 }
 
 .module-info_blocks-323 .info-block-content {
+    flex-basis: auto !important;
+    flex-grow: 1 !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    flex-wrap: wrap !important;
     min-width: 0 !important;
     text-align: left !important;
     padding: 0 !important;
+    width: auto !important;
 }
 
 .module-info_blocks-323 .info-block-content::before {
