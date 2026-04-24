@@ -707,7 +707,7 @@ body.ansei-page-ready.popup-open {
     margin: 0 !important;
 }
 
-.module-info_blocks-323 .info-block-image img {
+.module-info_blocks-323 .info-block-img {
     width: 100% !important;
     height: 380px !important;
     object-fit: cover !important;
@@ -1059,7 +1059,7 @@ body.ansei-page-ready.popup-open {
         width: 100% !important;
     }
 
-    .module-info_blocks-323 .info-block-image img {
+    .module-info_blocks-323 .info-block-img {
         height: 220px !important;
         border-radius: 12px !important;
     }
