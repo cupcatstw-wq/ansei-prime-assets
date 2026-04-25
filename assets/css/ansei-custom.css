@@ -1062,17 +1062,29 @@ body.ansei-page-ready.popup-open {
     }
     /* ===== ROW 6 - 品牌故事區 Mobile ===== */
     .module-info_blocks-323 .module-body {
-        padding: 48px 20px !important;
+        padding: 40px 20px !important;
     }
 
     .module-info_blocks-323 .info-block {
-        grid-template-columns: 1fr !important;
-        gap: 28px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 24px !important;
+        width: 100% !important;
     }
 
     .module-info_blocks-323 .info-block-img {
-        height: 240px !important;
+        width: 100% !important;
+        height: 220px !important;
+        object-fit: cover !important;
         object-position: center center !important;
+        border-radius: 12px !important;
+        order: 1 !important;
+    }
+
+    .module-info_blocks-323 .info-block-content {
+        order: 2 !important;
+        width: 100% !important;
+        padding: 0 !important;
     }
 
     .module-info_blocks-323 .info-block-title {
