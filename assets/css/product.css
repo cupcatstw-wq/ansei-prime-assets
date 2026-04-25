@@ -424,7 +424,6 @@
     border: 1px solid rgba(212,207,201,1) !important;
     border-radius: 12px !important;
     overflow: hidden !important;
-    background: #fff !important;
 }
 #checkout-cart .stepper input.form-control {
     position: absolute !important;
