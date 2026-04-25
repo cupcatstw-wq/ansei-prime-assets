@@ -501,6 +501,12 @@
 #checkout-cart .stepper > span i.fa-angle-down:hover::after {
     color: #C8A96A !important;
 }
+/* 購物車明細與總計區塊之間的分隔線 */
+#checkout-cart .cart-bottom {
+    border-top: 0.5px solid #e0ddd8 !important;
+    padding-top: 32px !important;
+    margin-top: 16px !important;
+}
 /* ======================================== */
 /* Mobile ≤767px                            */
 /* ======================================== */
