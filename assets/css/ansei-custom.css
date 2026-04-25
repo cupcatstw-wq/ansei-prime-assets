@@ -689,9 +689,9 @@ body.ansei-page-ready.popup-open {
     line-height: 1 !important;
     padding: 0 22px !important;
 }
-/* ============================================================
-   12. ROW 6 - 品牌故事區 Brand Story (#323)
-   ============================================================ */
+/* ======================================== */
+/* 12. ROW 6 - 品牌故事區 Brand Story (#323) */
+/* ======================================== */
 .module-info_blocks-323 .module-body {
     padding: 72px 40px !important;
     background: #fff !important;
@@ -762,7 +762,37 @@ body.ansei-page-ready.popup-open {
     text-align: justify !important;
 }
 /* ======================================== */
-/* 13. Mobile ≤767px                        */
+/* 13. Blog 文章頁排版                       */
+/* ======================================== */
+.blog-post-description {
+    font-size: 15px !important;
+    color: #555555 !important;
+    line-height: 2 !important;
+    letter-spacing: 0.04em !important;
+}
+.blog-post-description p {
+    margin-bottom: 1.6em !important;
+}
+.blog-post-description h3 {
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    color: #222222 !important;
+    letter-spacing: 0.06em !important;
+    margin-top: 2.4em !important;
+    margin-bottom: 0.8em !important;
+    padding-bottom: 8px !important;
+    border-bottom: 1px solid #eeebe6 !important;
+}
+.blog-post-description h4 {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: #333333 !important;
+    letter-spacing: 0.06em !important;
+    margin-top: 1.8em !important;
+    margin-bottom: 0.6em !important;
+}
+/* ======================================== */
+/* 14. Mobile ≤767px                        */
 /* ======================================== */
 @media (max-width: 767px) {
     /* GoTop 手機版位置 */
