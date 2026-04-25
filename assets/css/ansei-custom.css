@@ -769,8 +769,12 @@ body.ansei-page-ready.popup-open {
     color: #555555 !important;
     line-height: 2.2 !important;
     letter-spacing: 0.04em !important;
+    max-width: 760px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
-.post-content p {
+.post-content p,
+.post-content p * {
     margin-bottom: 1.6em !important;
     text-align: justify !important;
 }
