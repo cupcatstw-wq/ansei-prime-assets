@@ -764,17 +764,20 @@ body.ansei-page-ready.popup-open {
 /* ======================================== */
 /* 13. Blog 文章頁排版                       */
 /* ======================================== */
-.blog-post-description {
+.post-content {
     font-size: 15px !important;
     color: #555555 !important;
     line-height: 2.2 !important;
     letter-spacing: 0.04em !important;
 }
-.blog-post-description p {
-    margin-bottom: 2em !important;
+.post-content p {
+    margin-bottom: 1.6em !important;
     text-align: justify !important;
 }
-.blog-post-description h3 {
+.post-content p:empty {
+    display: none !important;
+}
+.post-content h3 {
     font-size: 20px !important;
     font-weight: 400 !important;
     color: #222222 !important;
@@ -784,7 +787,7 @@ body.ansei-page-ready.popup-open {
     padding-bottom: 10px !important;
     border-bottom: 1px solid #eeebe6 !important;
 }
-.blog-post-description h4 {
+.post-content h4 {
     font-size: 15px !important;
     font-weight: 600 !important;
     color: #333333 !important;
