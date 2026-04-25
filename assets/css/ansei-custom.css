@@ -823,9 +823,16 @@ body.ansei-page-ready.popup-open {
     padding-bottom: 10px;
     margin-bottom: 16px;
 }
-/* 購物車數量欄內部間距 */
-#checkout-cart .td-qty .input-group {
-    gap: 8px !important;
+/* 數量欄：stepper 與更新/刪除按鈕間距 */
+#checkout-cart .td-qty .input-group.btn-block {
+    gap: 10px !important;
+    align-items: center !important;
+}
+/* 更新/刪除按鈕不要被 input-group 壓縮 */
+#checkout-cart .td-qty .input-group-btn {
+    width: auto !important;
+    display: inline-flex !important;
+    gap: 4px !important;
 }
 /* ======================================== */
 /* 15. Mobile ≤767px                        */
