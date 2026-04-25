@@ -767,20 +767,21 @@ body.ansei-page-ready.popup-open {
 .blog-post-description {
     font-size: 15px !important;
     color: #555555 !important;
-    line-height: 2 !important;
+    line-height: 2.2 !important;
     letter-spacing: 0.04em !important;
 }
 .blog-post-description p {
-    margin-bottom: 1.6em !important;
+    margin-bottom: 2em !important;
+    text-align: justify !important;
 }
 .blog-post-description h3 {
     font-size: 20px !important;
     font-weight: 400 !important;
     color: #222222 !important;
     letter-spacing: 0.06em !important;
-    margin-top: 2.4em !important;
-    margin-bottom: 0.8em !important;
-    padding-bottom: 8px !important;
+    margin-top: 3em !important;
+    margin-bottom: 1.2em !important;
+    padding-bottom: 10px !important;
     border-bottom: 1px solid #eeebe6 !important;
 }
 .blog-post-description h4 {
@@ -788,8 +789,8 @@ body.ansei-page-ready.popup-open {
     font-weight: 600 !important;
     color: #333333 !important;
     letter-spacing: 0.06em !important;
-    margin-top: 1.8em !important;
-    margin-bottom: 0.6em !important;
+    margin-top: 2em !important;
+    margin-bottom: 0.8em !important;
 }
 /* ======================================== */
 /* 14. Mobile ≤767px                        */
