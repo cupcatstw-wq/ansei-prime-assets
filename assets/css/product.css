@@ -235,7 +235,7 @@
 .product-product .product-blocks hr::before { display: none !important; content: none !important; }
 .product-product .product-blocks hr {
     border: none !important;
-    border-top: .5px solid #ECE8E2 !important;
+    border-top: 1px solid #ECE8E2 !important;
     margin: 32px 0 !important;
 }
 /* 商品頁所有 hr 統一暖灰色 */
@@ -503,7 +503,7 @@
 }
 /* 購物車明細與總計區塊之間的分隔線 */
 #checkout-cart .cart-bottom {
-    border-top: 0.5px solid #e0ddd8 !important;
+    border-top: 1px solid #ECE8E2 !important;
     padding-top: 32px !important;
     margin-top: 16px !important;
 }
