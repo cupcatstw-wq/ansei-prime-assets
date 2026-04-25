@@ -692,12 +692,10 @@ body.ansei-page-ready.popup-open {
 /* ============================================================
    12. ROW 6 - 品牌故事區 Brand Story (#323)
    ============================================================ */
-
 .module-info_blocks-323 .module-body {
     padding: 72px 40px !important;
     background: #fff !important;
 }
-
 .module-info_blocks-323 .info-block {
     display: grid !important;
     grid-template-columns: 42% 1fr !important;
@@ -705,7 +703,6 @@ body.ansei-page-ready.popup-open {
     align-items: center !important;
     width: 100% !important;
 }
-
 .module-info_blocks-323 .info-block-img {
     width: 100% !important;
     height: 380px !important;
@@ -714,7 +711,6 @@ body.ansei-page-ready.popup-open {
     border-radius: 16px !important;
     display: block !important;
 }
-
 .module-info_blocks-323 .info-block-content {
     flex-basis: auto !important;
     flex-grow: 1 !important;
@@ -723,28 +719,29 @@ body.ansei-page-ready.popup-open {
     padding: 0 !important;
     width: auto !important;
 }
-
-/* OUR STORY 英文副標（::before 注入） */
-.module-info_blocks-323 .info-block-content::before {
-    content: 'OUR STORY' !important;
-    display: block !important;
+/* OUR STORY 金線與文字同行 */
+.module-info_blocks-323 .info-block-content .ansei-eyebrow {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
     font-size: 10px !important;
     letter-spacing: 0.2em !important;
     color: #C8A96A !important;
     font-weight: 400 !important;
-    margin-bottom: 14px !important;
+    margin-bottom: 16px !important;
 }
-
-/* 金線改用 .info-block-title::before 注入 */
-.module-info_blocks-323 .info-block-title::before {
+.module-info_blocks-323 .info-block-content .ansei-eyebrow::before {
     content: '' !important;
     display: block !important;
     width: 32px !important;
+    min-width: 32px !important;
     height: 1px !important;
     background-color: #C8A96A !important;
-    margin-bottom: 16px !important;
 }
-
+/* title::before 清除（金線已移至 eyebrow）*/
+.module-info_blocks-323 .info-block-title::before {
+    display: none !important;
+}
 .module-info_blocks-323 .info-block-title {
     font-size: 24px !important;
     font-weight: 400 !important;
@@ -753,7 +750,6 @@ body.ansei-page-ready.popup-open {
     letter-spacing: 0.05em !important;
     margin-bottom: 20px !important;
 }
-
 .module-info_blocks-323 .info-block-text {
     font-size: 13px !important;
     color: #888888 !important;
