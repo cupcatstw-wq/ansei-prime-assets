@@ -800,30 +800,32 @@ body.ansei-page-ready.popup-open {
     margin-bottom: 0.8em !important;
 }
 /* ======================================== */
-/* 14. CART PAGE — 卡片化                        */
+/* 14. CART PAGE — 卡片化                   */
 /* ======================================== */
 /* 左側購物車表格卡片 */
 #cart-products {
-  background: #ffffff;
-  border: 0.5px solid #e0ddd8;
-  border-radius: 22px;
-  padding: 8px 0;
-  overflow: hidden;
+    background: #ffffff;
+    border: 0.5px solid #e0ddd8;
+    border-radius: 22px;
+    padding: 8px 0;
+    overflow: hidden;
 }
-
 /* 右側總計區卡片 */
 #cart-totals {
-  background: #ffffff;
-  border: 0.5px solid #e0ddd8;
-  border-radius: 22px;
-  padding: 24px 28px;
+    background: #ffffff;
+    border: 0.5px solid #e0ddd8;
+    border-radius: 22px;
+    padding: 24px 28px;
 }
-
 /* 下一步標題金色底線 */
 #cart-totals h4 {
-  border-bottom: 1.5px solid #C8A96A;
-  padding-bottom: 10px;
-  margin-bottom: 16px;
+    border-bottom: 1.5px solid #C8A96A;
+    padding-bottom: 10px;
+    margin-bottom: 16px;
+}
+/* 購物車數量欄內部間距 */
+#checkout-cart .td-qty .input-group {
+    gap: 8px !important;
 }
 /* ======================================== */
 /* 15. Mobile ≤767px                        */
