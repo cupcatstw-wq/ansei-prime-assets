@@ -708,7 +708,10 @@ body.ansei-page-ready.popup-open {
     height: 380px !important;
     object-fit: cover !important;
     object-position: center top !important;
-    border-radius: 16px !important;
+    border-top-left-radius: 16px !important;
+    border-top-right-radius: 16px !important;
+    border-bottom-right-radius: 16px !important;
+    border-bottom-left-radius: 16px !important;
     display: block !important;
 }
 .module-info_blocks-323 .info-block-content {
