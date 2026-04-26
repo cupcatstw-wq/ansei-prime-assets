@@ -1164,4 +1164,7 @@ body.ansei-page-ready.popup-open {
     .module-info_blocks-323 .info-block-title {
         font-size: 20px !important;
     }
+    .module-info_blocks-323 img {
+        border-radius: 12px !important;
+    }
 }
