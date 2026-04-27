@@ -463,6 +463,17 @@
     background: rgba(200,169,106,0.04)
 }
 /* ======================================== */
+/* A-7b. 空狀態文字置中                     */
+/* ======================================== */
+#account-order #content.ansei-page-card > p,
+#account-wishlist #content.ansei-page-card > p,
+#account-download #content > p,
+#account-return #content > p,
+#account-recurring #content > p {
+    text-align: center !important;
+    color: #888888 !important;
+}
+/* ======================================== */
 /* A-8. Address                             */
 /* ======================================== */
 #account-address,
