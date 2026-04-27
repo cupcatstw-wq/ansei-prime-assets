@@ -325,6 +325,7 @@
         width: 100% !important;
     }
 }
+#product-category #content .main-products-wrapper .buttons { justify-content: center; }
 /* ======================================== */
 /* P-5. 空分類頁提示                        */
 /* ======================================== */
@@ -338,7 +339,85 @@
     letter-spacing: .12em;
     margin-bottom: 32px !important;
 }
-#product-category #content .main-products-wrapper .buttons { justify-content: center; }
+/* ======================================== */
+/* P-5b. 空分類頁「探索其他系列」卡片       */
+/* ======================================== */
+#product-category .category-empty-card {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 40px 48px;
+    background: #fff;
+    border: .5px solid #ECE8E2;
+    border-radius: 22px;
+    text-align: center;
+    max-width: 420px;
+    width: 100%;
+}
+#product-category .category-empty-card .empty-icon {
+    font-size: 28px;
+    margin-bottom: 16px;
+    color: #C8A96A;
+    letter-spacing: .08em;
+}
+#product-category .category-empty-card .empty-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: #222;
+    letter-spacing: .08em;
+    margin-bottom: 8px;
+}
+#product-category .category-empty-card .empty-desc {
+    font-size: 13px;
+    color: #9A9A9A;
+    letter-spacing: .08em;
+    line-height: 1.9;
+    margin-bottom: 28px;
+}
+#product-category .category-empty-card .empty-btn {
+    display: inline-block;
+    padding: 10px 28px;
+    border: 1px solid #d4cfc9;
+    border-radius: 12px;
+    font-size: 13px;
+    color: #555;
+    letter-spacing: .08em;
+    text-decoration: none;
+    transition: border-color .2s ease, color .2s ease;
+}
+#product-category .category-empty-card .empty-btn:hover {
+    border-color: #8a8480;
+    color: #333;
+}
+
+/* ======================================== */
+/* P-5c. 空購物車卡片                       */
+/* ======================================== */
+#checkout-cart #content > div:first-child {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px 80px;
+}
+#checkout-cart #content > div:first-child > p {
+    display: inline-block;
+    padding: 40px 48px;
+    background: #fff;
+    border: .5px solid #ECE8E2;
+    border-radius: 22px;
+    font-size: 14px;
+    color: #9A9A9A;
+    letter-spacing: .08em;
+    line-height: 1.9;
+    text-align: center;
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    #checkout-cart #content > div:first-child > p {
+        padding: 32px 24px;
+        width: 100%;
+    }
+}
+
 /* ======================================== */
 /* P-6. 首頁精選商品卡片                    */
 /* ======================================== */
