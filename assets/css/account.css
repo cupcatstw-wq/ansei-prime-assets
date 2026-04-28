@@ -456,7 +456,16 @@
 #account-wishlist .table tbody tr:hover td {
     background: rgba(200,169,106,0.04)
 }
-
+/* 推薦報表：覆蓋紅色 */
+#account-order .table tbody td {
+    color: #555555 !important;
+    font-size: 14px !important;
+}
+#account-order .table,
+#account-order .table thead,
+#account-order .table tbody tr {
+    border-color: #E5E2DC !important;
+}
 /* ======================================== */
 /* A-7b. 空狀態小卡片（JS 注入後套用）      */
 /* ======================================== */
