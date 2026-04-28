@@ -1209,41 +1209,21 @@ body[class*="route-account-address-edit"] .btn:active {
     #account-wishlist #content.ansei-page-card { padding: 20px 14px; border-radius: 16px }
     #account-order #content.ansei-page-card .table thead,
     #account-wishlist .table thead { display: none }
-    #account-order .table tbody td, #account-wishlist .table tbody td {
+    #account-order #content.ansei-page-card .table tbody td,
+    #account-wishlist #content.ansei-page-card .table tbody td {
         display: block;
         padding: 6px 4px;
         border-bottom: none;
         font-size: 13px
     }
-    #account-order .table tbody tr, #account-wishlist .table tbody tr {
+    #account-order #content.ansei-page-card .table tbody tr,
+    #account-wishlist #content.ansei-page-card .table tbody tr {
         display: block;
         border-bottom: 1px solid #EEE9E2;
         padding: 12px 0
     }
-    #account-order .table tbody tr:last-child td,
-    #account-wishlist .table tbody tr:last-child td { border-bottom: none }
-
-    /* A-7b. 空狀態小卡片 */
-    #account-order #content.ansei-empty-card,
-    #account-wishlist #content.ansei-empty-card,
-    #account-download #content.ansei-empty-card,
-    #account-return #content.ansei-empty-card,
-    #account-recurring #content.ansei-empty-card {
-        max-width: calc(100% - 32px) !important;
-        margin: 0 16px 40px !important;
-        padding: 32px 24px !important;
-        background: #F7F6F4 !important;
-        border: 1px solid #E5E2DC !important;
-        border-radius: 22px !important;
-        box-shadow: 0 10px 28px rgba(0,0,0,.05) !important;
-        text-align: center !important
-    }
-    .ansei-empty-card-inner {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        text-align: center !important
-    }
+    #account-order #content.ansei-page-card .table tbody tr:last-child td,
+    #account-wishlist #content.ansei-page-card .table tbody tr:last-child td { border-bottom: none }
 
     /* A-8. Address */
     #account-address #content > p {
