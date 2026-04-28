@@ -1207,7 +1207,8 @@ body[class*="route-account-address-edit"] .btn:active {
     /* A-7. Order / Wishlist（有資料時） */
     #account-order #content.ansei-page-card,
     #account-wishlist #content.ansei-page-card { padding: 20px 14px; border-radius: 16px }
-    #account-order .table thead, #account-wishlist .table thead { display: none }
+    #account-order #content.ansei-page-card .table thead,
+    #account-wishlist .table thead { display: none }
     #account-order .table tbody td, #account-wishlist .table tbody td {
         display: block;
         padding: 6px 4px;
