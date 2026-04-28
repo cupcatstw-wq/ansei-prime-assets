@@ -1199,16 +1199,12 @@ body[class*="route-account-address-edit"] .btn:active {
         padding-right: 22px !important;
         line-height: 1 !important
     }
-    /* A-9. Newsletter */
-    #account-newsletter .buttons { flex-direction: column; align-items: center !important; gap: 12px }
-    #account-newsletter .buttons .pull-right { width: auto !important; margin: 0 !important }
-    #account-newsletter .buttons .pull-right .btn { width: auto !important; min-width: 108px !important }
-
+    
     /* A-7. Order / Wishlist（有資料時） */
     #account-order #content.ansei-page-card,
     #account-wishlist #content.ansei-page-card { padding: 20px 14px; border-radius: 16px }
     #account-order #content.ansei-page-card .table thead,
-    #account-wishlist .table thead { display: none }
+    #account-wishlist #content.ansei-page-card .table thead { display: none }
     #account-order #content.ansei-page-card .table tbody td,
     #account-wishlist #content.ansei-page-card .table tbody td {
         display: block;
@@ -1224,7 +1220,13 @@ body[class*="route-account-address-edit"] .btn:active {
     }
     #account-order #content.ansei-page-card .table tbody tr:last-child td,
     #account-wishlist #content.ansei-page-card .table tbody tr:last-child td { border-bottom: none }
-
+    /* 推薦報表 select 高度 */
+    #account-order select.form-control {
+        height: 44px !important;
+        min-height: 44px !important;
+        padding: 0 12px !important;
+        color: #555 !important
+    }
     /* A-8. Address */
     #account-address #content > p {
         border-radius: 16px 16px 0 0;
@@ -1317,4 +1319,8 @@ body[class*="route-account-address-edit"] .btn:active {
         flex-shrink: 0 !important;
         margin: 0 !important
     }
+    /* A-9. Newsletter */
+    #account-newsletter .buttons { flex-direction: column; align-items: center !important; gap: 12px }
+    #account-newsletter .buttons .pull-right { width: auto !important; margin: 0 !important }
+    #account-newsletter .buttons .pull-right .btn { width: auto !important; min-width: 108px !important }
 }
