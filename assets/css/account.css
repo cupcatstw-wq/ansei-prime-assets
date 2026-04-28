@@ -463,18 +463,7 @@
     background: rgba(200,169,106,0.04)
 }
 /* ======================================== */
-/* A-7b. 空狀態文字置中（有資料時也適用）   */
-/* ======================================== */
-#account-order #content.ansei-page-card > p,
-#account-wishlist #content.ansei-page-card > p,
-#account-download #content > p,
-#account-return #content > p,
-#account-recurring #content > p {
-    text-align: center !important;
-    color: #888888 !important;
-}
-/* ======================================== */
-/* A-7c. 空狀態小卡片（JS 注入 class 後套用）*/
+/* A-7b. 空狀態小卡片（JS 注入後套用）      */
 /* ======================================== */
 #account-order #content.ansei-empty-card,
 #account-wishlist #content.ansei-empty-card,
@@ -492,34 +481,11 @@
     height: fit-content !important;
     align-self: flex-start !important;
 }
-#account-order #content.ansei-empty-card > p,
-#account-wishlist #content.ansei-empty-card > p,
-#account-download #content.ansei-empty-card > p,
-#account-return #content.ansei-empty-card > p,
-#account-recurring #content.ansei-empty-card > p {
-    text-align: center !important;
-    color: #222222 !important;
-    margin-bottom: 20px !important;
-}
-/* 空狀態按鈕：暖灰底 + hover */
-#account-order #content.ansei-empty-card .btn,
-#account-wishlist #content.ansei-empty-card .btn,
-#account-download #content.ansei-empty-card .btn,
-#account-return #content.ansei-empty-card .btn,
-#account-recurring #content.ansei-empty-card .btn {
-    background: #F7F6F4 !important;
-    border-color: #D8D2CA !important;
-    color: #666 !important;
-    transition: all .22s ease !important;
-}
-#account-order #content.ansei-empty-card .btn:hover,
-#account-wishlist #content.ansei-empty-card .btn:hover,
-#account-download #content.ansei-empty-card .btn:hover,
-#account-return #content.ansei-empty-card .btn:hover,
-#account-recurring #content.ansei-empty-card .btn:hover {
-    background: #F8F5F0 !important;
-    border-color: #8a8480 !important;
-    color: #333 !important;
+.ansei-empty-card-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
 }
 @media (max-width: 767px) {
     #account-order #content.ansei-empty-card,
@@ -1098,17 +1064,6 @@ body[class*="route-account-address-edit"] .btn:active {
     border-radius: 22px;
     box-shadow: 0 10px 28px rgba(0,0,0,.05);
     padding: 34px 30px
-}
-#account-download #content,
-#account-return #content,
-#account-recurring #content {
-    padding: 34px 30px;
-    background: #F7F6F4;
-    border: 1px solid #E5E2DC;
-    border-radius: 22px;
-    box-shadow: 0 10px 28px rgba(0,0,0,.05);
-    height: fit-content;
-    align-self: flex-start
 }
 #account-reward #content,
 #account-transaction #content {
