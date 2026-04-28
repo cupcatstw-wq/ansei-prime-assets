@@ -1151,17 +1151,25 @@ body[class*="route-account-address-edit"] .btn:active {
     #account-register .telephone-format-tip { font-size: 11px; line-height: 1.7 }
 
     /* A-5. Password / Reset */
-    #account-password .buttons, #account-reset .buttons {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 12px
+    #account-password .buttons,
+    #account-reset .buttons {
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 10px
     }
-    #account-password .buttons .pull-left, #account-password .buttons .pull-right,
-    #account-reset .buttons .pull-left, #account-reset .buttons .pull-right {
-        width: 100%;
+    #account-password .buttons .pull-left,
+    #account-password .buttons .pull-right,
+    #account-reset .buttons .pull-left,
+    #account-reset .buttons .pull-right {
+        width: auto !important;
+        flex: 0 0 auto !important;
         margin: 0 !important
     }
-
+    #account-password .buttons .pull-left,
+    #account-reset .buttons .pull-left  { margin-right: auto !important }
+    #account-password .buttons .pull-right,
+    #account-reset .buttons .pull-right { margin-left: auto !important }
     /* A-9. Newsletter */
     #account-newsletter .buttons { flex-direction: column; align-items: center !important; gap: 12px }
     #account-newsletter .buttons .pull-right { width: auto !important; margin: 0 !important }
