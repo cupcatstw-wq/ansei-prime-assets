@@ -444,7 +444,7 @@
 #account-wishlist .table tbody td {
     border-bottom: 1px solid #EEE9E2;
     padding: 14px 12px;
-    color: #444;
+    color: #555555 !important;
     font-size: 14px;
     vertical-align: middle
 }
@@ -456,15 +456,14 @@
 #account-wishlist .table tbody tr:hover td {
     background: rgba(200,169,106,0.04)
 }
-/* 推薦報表：覆蓋紅色 */
-#account-order .table tbody td {
-    color: #555555 !important;
-    font-size: 14px !important;
-}
+/* 推薦報表：修正顏色 */
 #account-order .table,
 #account-order .table thead,
 #account-order .table tbody tr {
-    border-color: #E5E2DC !important;
+    border-color: #E5E2DC !important
+}
+#account-order select.form-control {
+    color: #555 !important
 }
 /* ======================================== */
 /* A-7b. 空狀態小卡片（JS 注入後套用）      */
