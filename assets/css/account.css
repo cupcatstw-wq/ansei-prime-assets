@@ -1164,6 +1164,8 @@ body[class*="route-account-address-edit"] .btn:active {
     #account-reset .buttons .pull-right {
         width: auto !important;
         flex: 0 0 auto !important;
+        align-items: center !important;
+        align-self: center !important;
         margin: 0 !important
     }
     #account-password .buttons .pull-left,
@@ -1177,14 +1179,11 @@ body[class*="route-account-address-edit"] .btn:active {
         display: inline-flex !important;
         align-items: center !important;
         justify-content: center !important;
-        line-height: 1 !important;
-    }
-    #account-password .buttons .pull-left,
-    #account-password .buttons .pull-right,
-    #account-reset .buttons .pull-left,
-    #account-reset .buttons .pull-right {
-        align-items: center !important;
-        align-self: center !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        padding-left: 22px !important;
+        padding-right: 22px !important;
+        line-height: 1 !important
     }
     /* A-9. Newsletter */
     #account-newsletter .buttons { flex-direction: column; align-items: center !important; gap: 12px }
