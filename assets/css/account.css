@@ -427,6 +427,16 @@
     height: fit-content;
     align-self: flex-start
 }
+/* 推薦報表卡片（JS 注入 ansei-affiliate-report class） */
+#account-order #content.ansei-affiliate-report {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    padding: 32px 30px;
+    background: #F7F6F4;
+    border: 1px solid #E5E2DC;
+    border-radius: 22px;
+    box-shadow: 0 10px 28px rgba(0,0,0,.05)
+}
 #account-order .table,
 #account-wishlist .table {
     background: transparent;
@@ -465,6 +475,7 @@
 #account-order select.form-control {
     color: #555 !important
 }
+
 /* ======================================== */
 /* A-7b. 空狀態小卡片（JS 注入後套用）      */
 /* ======================================== */
@@ -971,9 +982,8 @@ body[class*="route-account-address-edit"] .btn:active {
 #account-transaction .table tbody td,
 #account-reward .table tbody td {
     color: #555555 !important;
-    font-size: 14px !important;
+    font-size: 14px !important
 }
-
 /* Password fieldset */
 #account-password fieldset {
     margin-bottom: 28px;
@@ -1199,7 +1209,12 @@ body[class*="route-account-address-edit"] .btn:active {
         padding-right: 22px !important;
         line-height: 1 !important
     }
-    
+
+    /* A-9. Newsletter */
+    #account-newsletter .buttons { flex-direction: column; align-items: center !important; gap: 12px }
+    #account-newsletter .buttons .pull-right { width: auto !important; margin: 0 !important }
+    #account-newsletter .buttons .pull-right .btn { width: auto !important; min-width: 108px !important }
+
     /* A-7. Order / Wishlist（有資料時） */
     #account-order #content.ansei-page-card,
     #account-wishlist #content.ansei-page-card { padding: 20px 14px; border-radius: 16px }
@@ -1220,6 +1235,34 @@ body[class*="route-account-address-edit"] .btn:active {
     }
     #account-order #content.ansei-page-card .table tbody tr:last-child td,
     #account-wishlist #content.ansei-page-card .table tbody tr:last-child td { border-bottom: none }
+
+    /* A-7b. 空狀態小卡片 */
+    #account-order #content.ansei-empty-card,
+    #account-wishlist #content.ansei-empty-card,
+    #account-download #content.ansei-empty-card,
+    #account-return #content.ansei-empty-card,
+    #account-recurring #content.ansei-empty-card {
+        max-width: calc(100% - 32px) !important;
+        margin: 0 16px 40px !important;
+        padding: 32px 24px !important;
+        background: #F7F6F4 !important;
+        border: 1px solid #E5E2DC !important;
+        border-radius: 22px !important;
+        box-shadow: 0 10px 28px rgba(0,0,0,.05) !important;
+        text-align: center !important
+    }
+    .ansei-empty-card-inner {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important
+    }
+
+    /* 推薦報表 手機版卡片 */
+    #account-order #content.ansei-affiliate-report {
+        padding: 20px 14px !important;
+        border-radius: 16px !important
+    }
     /* 推薦報表 select 高度 */
     #account-order select.form-control {
         height: 44px !important;
@@ -1227,6 +1270,7 @@ body[class*="route-account-address-edit"] .btn:active {
         padding: 0 12px !important;
         color: #555 !important
     }
+
     /* A-8. Address */
     #account-address #content > p {
         border-radius: 16px 16px 0 0;
@@ -1319,8 +1363,4 @@ body[class*="route-account-address-edit"] .btn:active {
         flex-shrink: 0 !important;
         margin: 0 !important
     }
-    /* A-9. Newsletter */
-    #account-newsletter .buttons { flex-direction: column; align-items: center !important; gap: 12px }
-    #account-newsletter .buttons .pull-right { width: auto !important; margin: 0 !important }
-    #account-newsletter .buttons .pull-right .btn { width: auto !important; min-width: 108px !important }
 }
