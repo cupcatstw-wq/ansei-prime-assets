@@ -1170,6 +1170,15 @@ body[class*="route-account-address-edit"] .btn:active {
     #account-reset .buttons .pull-left  { margin-right: auto !important }
     #account-password .buttons .pull-right,
     #account-reset .buttons .pull-right { margin-left: auto !important }
+    #account-password .buttons .btn,
+    #account-reset .buttons .btn {
+        height: 46px !important;
+        min-height: 46px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        line-height: 1 !important;
+    }
     /* A-9. Newsletter */
     #account-newsletter .buttons { flex-direction: column; align-items: center !important; gap: 12px }
     #account-newsletter .buttons .pull-right { width: auto !important; margin: 0 !important }
