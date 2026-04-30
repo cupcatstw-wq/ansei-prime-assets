@@ -1443,4 +1443,13 @@ body[class*="route-account-address-edit"] .btn:active {
         align-items: center !important;
         flex-shrink: 0 !important
     }
+    /* Reward / Transaction */
+    #account-reward #content,
+    #account-transaction #content {
+        padding: 24px 18px !important;
+        border-radius: 16px !important;
+        margin-left: 16px !important;
+        margin-right: 16px !important;
+        max-width: calc(100% - 32px) !important
+    }
 }
