@@ -29,7 +29,11 @@ body[class*="route-account-address-edit"] .buttons .pull-right .btn {
     box-sizing: border-box !important;
     display: inline-flex !important;
     align-items: center !important;
-    justify-content: center !important
+    justify-content: center !important;
+    background: #fff !important;
+    border: 1.5px solid #D8D2CA !important;
+    color: #666 !important;
+    text-decoration: none !important
 }
 /* ======================================== */
 /* A-1. 共用：標題 / 輸入框 / 自動填入      */
