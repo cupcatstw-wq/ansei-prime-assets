@@ -1017,6 +1017,9 @@ body.ansei-page-ready.popup-open {
         justify-content: center !important;
         line-height: 1 !important
     }
+    #account-newsletter .radio-inline + .radio-inline {
+        margin-left: 24px !important
+    }
     /* ===== Order / Wishlist ===== */
     #account-order #content.ansei-page-card,
     #account-wishlist #content.ansei-page-card { padding: 20px 14px; border-radius: 16px }
