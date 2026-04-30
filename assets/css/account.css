@@ -35,6 +35,29 @@ body[class*="route-account-address-edit"] .buttons .pull-right .btn {
     color: #666 !important;
     text-decoration: none !important
 }
+#account-newsletter .buttons .pull-left .btn:hover,
+#account-newsletter .buttons .pull-right .btn:hover,
+#account-password .buttons .pull-left .btn:hover,
+#account-password .buttons .pull-right .btn:hover,
+#account-reset .buttons .pull-left .btn:hover,
+#account-reset .buttons .pull-right .btn:hover,
+#account-affiliate .buttons .pull-left .btn:hover,
+#account-affiliate .buttons .pull-right .btn:hover,
+#account-tracking .buttons .pull-left .btn:hover,
+#account-tracking .buttons .pull-right .btn:hover,
+#account-address #content > .buttons .pull-left .btn:hover,
+#account-address #content > .buttons .pull-right .btn:hover,
+#account-address-form .buttons .pull-left .btn:hover,
+#account-address-form .buttons .pull-right .btn:hover,
+body[class*="route-account-address-add"] .buttons .pull-left .btn:hover,
+body[class*="route-account-address-add"] .buttons .pull-right .btn:hover,
+body[class*="route-account-address-edit"] .buttons .pull-left .btn:hover,
+body[class*="route-account-address-edit"] .buttons .pull-right .btn:hover {
+    background: #F8F5F0 !important;
+    border-color: rgba(200,169,106,.55) !important;
+    color: #222 !important;
+    transform: translateY(-1px)
+}
 /* ======================================== */
 /* A-1. 共用：標題 / 輸入框 / 自動填入      */
 /* ======================================== */
