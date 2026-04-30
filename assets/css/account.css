@@ -1222,7 +1222,9 @@ body[class*="route-account-address-edit"] .btn:active {
         float: none !important;
         margin: 0 !important;
         display: flex !important;
-        align-items: center !important
+        align-items: center !important;
+        flex-wrap: nowrap !important;
+        flex-shrink: 0 !important
     }
     #account-newsletter .buttons .btn {
         height: 46px !important;
