@@ -1017,18 +1017,26 @@ body.ansei-page-ready.popup-open {
         margin: 0 !important
     }
     /* ===== Newsletter ===== */
-#account-newsletter .buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 12px
-}
-#account-newsletter .buttons .pull-left,
-#account-newsletter .buttons .pull-right {
-    float: none !important;
-    margin: 0 !important
-}
+    #account-newsletter .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px
+    }
+    #account-newsletter .buttons .pull-left,
+    #account-newsletter .buttons .pull-right {
+        float: none !important;
+        margin: 0 !important
+    }
+    #account-newsletter .buttons .btn {
+        height: 46px !important;
+        min-height: 46px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        line-height: 1 !important
+    }
     /* ===== Order / Wishlist ===== */
     #account-order #content.ansei-page-card,
     #account-wishlist #content.ansei-page-card { padding: 20px 14px; border-radius: 16px }
