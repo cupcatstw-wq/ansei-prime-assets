@@ -1062,6 +1062,11 @@ body[class*="route-account-address-edit"] .btn:active {
 #account-newsletter .radio-inline + .radio-inline {
     margin-left: 24px !important
 }
+#account-newsletter .buttons .pull-right button.btn-primary {
+    background: #fff !important;
+    border: 1.5px solid #D8D2CA !important;
+    color: #666 !important
+}
 /* Tracking button */
 #account-tracking .btn,
 #account-tracking a.btn,
