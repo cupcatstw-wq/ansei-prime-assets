@@ -1016,7 +1016,11 @@ body[class*="route-account-address-edit"] .btn:active {
 #account-transaction #content {
     max-width: 900px;
     margin: 0 auto;
-    padding: 12px 0 24px
+    padding: 34px 30px;
+    background: #F7F6F4;
+    border: 1px solid #E5E2DC;
+    border-radius: 22px;
+    box-shadow: 0 10px 28px rgba(0,0,0,.05)
 }
 #account-reward #content > .row,
 #account-reward #content > p,
@@ -1026,16 +1030,11 @@ body[class*="route-account-address-edit"] .btn:active {
 #account-transaction #content > p,
 #account-transaction #content > .table-responsive,
 #account-transaction #content > .table {
-    background: #F7F6F4;
-    border: 1px solid #E5E2DC;
-    border-radius: 22px;
-    box-shadow: 0 10px 28px rgba(0,0,0,.05);
-    padding: 34px 30px
-}
-#account-transaction .table tbody td,
-#account-reward .table tbody td {
-    color: #555555 !important;
-    font-size: 14px !important
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0
 }
 /* Password fieldset */
 #account-password fieldset {
