@@ -1014,7 +1014,7 @@ body[class*="route-account-address-edit"] .btn:active {
 /* Reward / Transaction */
 #account-reward #content,
 #account-transaction #content {
-    max-width: 900px;
+    max-width: 760px;
     margin: 0 auto;
     padding: 34px 30px;
     background: #F7F6F4;
@@ -1035,6 +1035,16 @@ body[class*="route-account-address-edit"] .btn:active {
     border-radius: 0;
     box-shadow: none;
     padding: 0
+}
+#account-reward #content > .buttons,
+#account-transaction #content > .buttons {
+    text-align: center;
+    margin-top: 20px
+}
+#account-reward #content > .buttons .pull-right,
+#account-transaction #content > .buttons .pull-right {
+    float: none !important;
+    display: inline-block
 }
 /* Password fieldset */
 #account-password fieldset {
