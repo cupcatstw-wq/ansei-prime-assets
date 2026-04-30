@@ -1,4 +1,4 @@
-/* ANSEI PRIME — Custom CSS | Journal 3.1.8 + OpenCart 3.0.3.8 | 2026/04/21 */
+/* ANSEI PRIME — Custom CSS | Journal 3.1.8 + OpenCart 3.0.3.8 | 2026/04/30 */
 /* ===== Modules ===== */
 @import url('https://cdn.jsdelivr.net/gh/cupcatstw-wq/ansei-prime-assets@main/assets/css/product.css');
 @import url('https://cdn.jsdelivr.net/gh/cupcatstw-wq/ansei-prime-assets@main/assets/css/account.css');
@@ -199,7 +199,7 @@ body.ansei-page-ready.popup-open {
     padding: 12px 0 40px
 }
 #information-contact h1,
-#information-contact .title.page-title,
+#information-contact .title-page-title,
 #information-contact .page-title h1 {
     color: #222;
     text-align: center;
@@ -648,9 +648,8 @@ body.ansei-page-ready.popup-open {
     font-size: 14px !important;
     line-height: 1.9 !important
 }
-
 /* ======================================== */
-/* 11. Checkout（修正版）                    */
+/* 11. Checkout                             */
 /* ======================================== */
 #checkout-checkout .buttons,
 #checkout-checkout .panel-body .buttons,
@@ -659,9 +658,8 @@ body.ansei-page-ready.popup-open {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 14px;
+    gap: 14px
 }
-
 #checkout-checkout .buttons .pull-left,
 #checkout-checkout .buttons .pull-right,
 #collapse-payment-address .buttons .pull-left,
@@ -671,10 +669,8 @@ body.ansei-page-ready.popup-open {
     float: none !important;
     display: flex;
     align-items: center;
-    margin: 0 !important;
+    margin: 0 !important
 }
-
-/* ⭐ 核心：統一高度（含 input / a） */
 #checkout-checkout .buttons .btn,
 #checkout-checkout .buttons input,
 #collapse-payment-address .buttons .btn,
@@ -687,10 +683,10 @@ body.ansei-page-ready.popup-open {
     align-items: center !important;
     justify-content: center !important;
     line-height: 1 !important;
-    padding: 0 22px !important;
+    padding: 0 22px !important
 }
 /* ======================================== */
-/* 12. Blog 文章頁排版                       */
+/* 12. Blog 文章頁排版                      */
 /* ======================================== */
 .post-content {
     font-size: 15px !important;
@@ -699,16 +695,14 @@ body.ansei-page-ready.popup-open {
     letter-spacing: 0.04em !important;
     max-width: 760px !important;
     margin-left: auto !important;
-    margin-right: auto !important;
+    margin-right: auto !important
 }
 .post-content p,
 .post-content p * {
     margin-bottom: 1.6em !important;
-    text-align: justify !important;
+    text-align: justify !important
 }
-.post-content p:empty {
-    display: none !important;
-}
+.post-content p:empty { display: none !important }
 .post-content h3 {
     font-size: 20px !important;
     font-weight: 400 !important;
@@ -717,7 +711,7 @@ body.ansei-page-ready.popup-open {
     margin-top: 3em !important;
     margin-bottom: 1.2em !important;
     padding-bottom: 10px !important;
-    border-bottom: 1px solid #eeebe6 !important;
+    border-bottom: 1px solid #eeebe6 !important
 }
 .post-content h4 {
     font-size: 15px !important;
@@ -725,67 +719,59 @@ body.ansei-page-ready.popup-open {
     color: #333333 !important;
     letter-spacing: 0.06em !important;
     margin-top: 2em !important;
-    margin-bottom: 0.8em !important;
+    margin-bottom: 0.8em !important
 }
 /* ======================================== */
-/* 13. CART PAGE — 卡片化                   */
+/* 13. Cart Page — 卡片化                   */
 /* ======================================== */
-/* 左側購物車表格卡片 */
 #cart-products {
     background: #ffffff;
     border: 0.5px solid #e0ddd8;
     border-radius: 22px;
     padding: 8px 0;
-    overflow: hidden;
+    overflow: hidden
 }
-/* 右側總計區卡片 */
 #cart-totals {
     background: #ffffff;
     border: 0.5px solid #e0ddd8;
     border-radius: 22px;
-    padding: 24px 28px;
+    padding: 24px 28px
 }
-/* 下一步標題金色底線 */
 #cart-totals h4 {
     border-bottom: 1.5px solid #C8A96A;
     padding-bottom: 10px;
-    margin-bottom: 16px;
+    margin-bottom: 16px
 }
-/* 數量欄：stepper 與更新/刪除按鈕間距 */
 #checkout-cart .td-qty .input-group.btn-block {
     gap: 10px !important;
-    align-items: center !important;
+    align-items: center !important
 }
-/* 更新/刪除按鈕不要被 input-group 壓縮 */
 #checkout-cart .td-qty .input-group-btn {
     width: auto !important;
     display: inline-flex !important;
-    gap: 4px !important;
+    gap: 4px !important
 }
 /* ======================================== */
-/* 14. ROW 6 - 品牌故事區 Brand Story (#323) */
+/* 14. Brand Story (#323)                   */
 /* ======================================== */
 .module-info_blocks-323 .module-body {
     padding: 72px 40px !important;
-    background: #fff !important;
+    background: #fff !important
 }
 .module-info_blocks-323 .info-block {
     display: grid !important;
     grid-template-columns: 42% 1fr !important;
     gap: 56px !important;
     align-items: center !important;
-    width: 100% !important;
+    width: 100% !important
 }
 .module-info_blocks-323 .info-block-img {
     width: 100% !important;
     height: 380px !important;
     object-fit: cover !important;
     object-position: center top !important;
-    border-top-left-radius: 16px !important;
-    border-top-right-radius: 16px !important;
-    border-bottom-right-radius: 16px !important;
-    border-bottom-left-radius: 16px !important;
-    display: block !important;
+    border-radius: 16px !important;
+    display: block !important
 }
 .module-info_blocks-323 .info-block-content {
     flex-basis: auto !important;
@@ -793,9 +779,8 @@ body.ansei-page-ready.popup-open {
     min-width: 0 !important;
     text-align: left !important;
     padding: 0 !important;
-    width: auto !important;
+    width: auto !important
 }
-/* OUR STORY 金線與文字同行 */
 .module-info_blocks-323 .info-block-content .ansei-eyebrow {
     display: flex !important;
     align-items: center !important;
@@ -805,7 +790,7 @@ body.ansei-page-ready.popup-open {
     color: #C8A96A !important;
     font-weight: 400 !important;
     margin-bottom: 16px !important;
-    line-height: 1 !important;
+    line-height: 1 !important
 }
 .module-info_blocks-323 .info-block-content .ansei-eyebrow::before {
     content: '' !important;
@@ -815,34 +800,29 @@ body.ansei-page-ready.popup-open {
     height: 1px !important;
     background-color: #C8A96A !important;
     flex-shrink: 0 !important;
-    margin-top: 0 !important;
-    align-self: center !important;
+    align-self: center !important
 }
-/* title::before 清除（金線已移至 eyebrow）*/
-.module-info_blocks-323 .info-block-title::before {
-    display: none !important;
-}
+.module-info_blocks-323 .info-block-title::before { display: none !important }
 .module-info_blocks-323 .info-block-title {
     font-size: 24px !important;
     font-weight: 400 !important;
     color: #222222 !important;
     line-height: 1.7 !important;
     letter-spacing: 0.05em !important;
-    margin-bottom: 20px !important;
+    margin-bottom: 20px !important
 }
 .module-info_blocks-323 .info-block-text {
     font-size: 13px !important;
     color: #888888 !important;
     line-height: 2 !important;
     letter-spacing: 0.04em !important;
-    text-align: justify !important;
+    text-align: justify !important
 }
-
 /* ======================================== */
 /* 15. Mobile ≤767px                        */
 /* ======================================== */
 @media (max-width: 767px) {
-    /* GoTop 手機版位置 */
+    /* ===== GoTop ===== */
     #product-product .scroll-top,
     .scroll-top {
         bottom: 90px !important;
@@ -853,7 +833,7 @@ body.ansei-page-ready.popup-open {
         z-index: 999999 !important
     }
     .scroll-top.is-visible { opacity: 1 !important }
-    /* ===== Footer：手機版間距壓縮 + 標題顏色 ===== */
+    /* ===== Footer ===== */
     footer .module ul {
         margin: 0 !important;
         padding: 0 !important;
@@ -1018,11 +998,11 @@ body.ansei-page-ready.popup-open {
     }
     /* ===== Newsletter ===== */
     #account-newsletter .buttons {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: 12px
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        gap: 12px !important
     }
     #account-newsletter .buttons .pull-left,
     #account-newsletter .buttons .pull-right {
@@ -1132,60 +1112,46 @@ body.ansei-page-ready.popup-open {
     /* ===== 分頁 ===== */
     #content .pagination > li > a,
     #content .pagination > li > span { min-width: 38px; min-height: 38px; margin-right: 3px }
-    /* ===== checkout ===== */
+    /* ===== Checkout ===== */
     #checkout-checkout .buttons,
     #collapse-payment-address .buttons,
     #collapse-shipping-address .buttons {
         align-items: stretch !important;
-        gap: 10px !important;
+        gap: 10px !important
     }
-
     #checkout-checkout .buttons .pull-left,
     #checkout-checkout .buttons .pull-right,
     #collapse-payment-address .buttons .pull-left,
     #collapse-payment-address .buttons .pull-right,
     #collapse-shipping-address .buttons .pull-left,
-    #collapse-shipping-address .buttons .pull-right {
-        align-items: stretch !important;
-    }
-
+    #collapse-shipping-address .buttons .pull-right { align-items: stretch !important }
     #checkout-checkout .buttons .btn,
     #collapse-payment-address .buttons .btn,
     #collapse-shipping-address .buttons .btn {
         height: 46px !important;
-        min-height: 46px !important;
+        min-height: 46px !important
     }
-    /* ===== ROW 6 - 品牌故事區 Mobile ===== */
-    .module-info_blocks-323 .module-body {
-        padding: 40px 20px !important;
-    }
-
+    /* ===== Brand Story Mobile ===== */
+    .module-info_blocks-323 .module-body { padding: 40px 20px !important }
     .module-info_blocks-323 .info-block {
         display: flex !important;
         flex-direction: column !important;
         gap: 24px !important;
-        width: 100% !important;
+        width: 100% !important
     }
-
     .module-info_blocks-323 .info-block-img {
         width: 100% !important;
         height: 220px !important;
         object-fit: cover !important;
         object-position: center center !important;
         border-radius: 12px !important;
-        order: 1 !important;
+        order: 1 !important
     }
-
     .module-info_blocks-323 .info-block-content {
         order: 2 !important;
         width: 100% !important;
-        padding: 0 !important;
+        padding: 0 !important
     }
-
-    .module-info_blocks-323 .info-block-title {
-        font-size: 20px !important;
-    }
-    .module-info_blocks-323 img {
-        border-radius: 12px !important;
-    }
+    .module-info_blocks-323 .info-block-title { font-size: 20px !important }
+    .module-info_blocks-323 img { border-radius: 12px !important }
 }
