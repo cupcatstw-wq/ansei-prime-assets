@@ -1,5 +1,4 @@
 /* ===== Account Pages ===== */
-
 /* ======================================== */
 /* A-1. 共用：標題 / 輸入框 / 自動填入      */
 /* ======================================== */
@@ -79,7 +78,6 @@
     -webkit-text-fill-color: #333 !important;
     box-shadow: 0 0 0 1000px #fff inset !important
 }
-
 /* ======================================== */
 /* A-2. Login                               */
 /* ======================================== */
@@ -161,7 +159,6 @@
     text-align: center;
     float: none !important
 }
-
 /* ======================================== */
 /* A-3. Register                            */
 /* ======================================== */
@@ -290,7 +287,6 @@
     outline: none !important;
     box-shadow: none !important
 }
-
 /* ======================================== */
 /* A-4. Forgotten Password                  */
 /* ======================================== */
@@ -324,7 +320,6 @@
     margin-top: 26px;
     text-align: center
 }
-
 /* ======================================== */
 /* A-5. Reset Password                      */
 /* ======================================== */
@@ -368,7 +363,6 @@
 }
 #account-reset .buttons .pull-left  { margin-right: auto !important }
 #account-reset .buttons .pull-right { margin-left: auto !important }
-
 /* ======================================== */
 /* A-6. Success / Logout                    */
 /* ======================================== */
@@ -399,7 +393,6 @@
     height: fit-content;
     align-self: flex-start
 }
-
 /* ======================================== */
 /* A-7. Order / Wishlist（有資料時）        */
 /* ======================================== */
@@ -475,7 +468,6 @@
 #account-order select.form-control {
     color: #555 !important
 }
-
 /* ======================================== */
 /* A-7b. 空狀態小卡片（JS 注入後套用）      */
 /* ======================================== */
@@ -501,7 +493,6 @@
     align-items: center;
     gap: 4px
 }
-
 /* ======================================== */
 /* A-8. Address                             */
 /* ======================================== */
@@ -888,7 +879,6 @@ body[class*="route-account-address-edit"] .btn:active {
     outline: none !important;
     text-decoration: none !important
 }
-
 /* ======================================== */
 /* A-9. Newsletter / Edit / Affiliate /     */
 /*      Tracking / Password /               */
@@ -1042,6 +1032,26 @@ body[class*="route-account-address-edit"] .btn:active {
 #account-password .buttons .pull-right {
     margin-left: auto !important
 }
+/* Newsletter 按鈕：覆蓋 ui.scss .buttons .pull-left .btn */
+#account-newsletter .buttons .pull-left .btn,
+#account-newsletter .buttons .pull-right .btn {
+    height: 44px !important;
+    min-height: 44px !important;
+    max-height: 44px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 22px !important;
+    padding-right: 22px !important;
+    line-height: 1 !important;
+    box-sizing: border-box !important;
+    vertical-align: middle !important
+}
+#account-newsletter .radio-inline + .radio-inline {
+    margin-left: 24px !important
+}
 /* Tracking button */
 #account-tracking .btn,
 #account-tracking a.btn,
@@ -1084,12 +1094,10 @@ body[class*="route-account-address-edit"] .btn:active {
     outline: none !important;
     transform: none !important
 }
-
 /* ======================================== */
 /* Mobile ≤767px                            */
 /* ======================================== */
 @media (max-width: 767px) {
-
     /* A-2. Login */
     #account-login .login-box {
         display: flex !important;
@@ -1120,7 +1128,6 @@ body[class*="route-account-address-edit"] .btn:active {
         padding-top: 0 !important
     }
     #account-login .btn { width: 100% !important; min-width: 100% !important }
-
     /* 共用：頁面 padding */
     #account-login #content, #account-register #content, #account-forgotten #content,
     #account-success #content, #account-logout #content, #common-success #content,
@@ -1131,7 +1138,6 @@ body[class*="route-account-address-edit"] .btn:active {
         padding-left: 16px;
         padding-right: 16px
     }
-
     /* 共用：頁面標題 */
     #account-login h1, #account-register h1, #account-forgotten h1,
     #account-success h1, #account-logout h1, #common-success h1,
@@ -1142,7 +1148,6 @@ body[class*="route-account-address-edit"] .btn:active {
     #account-tracking h1, #account-password h1, #account-reset h1,
     #information-contact h1,
     #information-contact .page-title h1 { font-size: 32px }
-
     /* 共用：卡片圓角縮小 */
     #account-register #content > form, #account-register form,
     #account-forgotten #content > form, #account-forgotten form,
@@ -1163,7 +1168,6 @@ body[class*="route-account-address-edit"] .btn:active {
     #account-download #content, #account-return #content,
     #account-recurring #content { padding: 24px 18px; border-radius: 16px }
     #account-reward #content { padding-left: 16px; padding-right: 16px }
-
     /* A-3. Register */
     #account-register .buttons { gap: 24px; align-items: stretch }
     #account-register .buttons .pull-right { text-align: left !important }
@@ -1173,7 +1177,6 @@ body[class*="route-account-address-edit"] .btn:active {
     #account-forgotten .btn { width: auto !important; min-width: 108px !important }
     #account-register input[name="telephone"] { max-width: 100% }
     #account-register .telephone-format-tip { font-size: 11px; line-height: 1.7 }
-
     /* A-5. Password / Reset */
     #account-password .buttons,
     #account-reset .buttons {
@@ -1209,7 +1212,6 @@ body[class*="route-account-address-edit"] .btn:active {
         padding-right: 22px !important;
         line-height: 1 !important
     }
-
     /* A-7. Order / Wishlist（有資料時） */
     #account-order #content.ansei-page-card,
     #account-wishlist #content.ansei-page-card { padding: 20px 14px; border-radius: 16px }
@@ -1230,7 +1232,6 @@ body[class*="route-account-address-edit"] .btn:active {
     }
     #account-order #content.ansei-page-card .table tbody tr:last-child td,
     #account-wishlist #content.ansei-page-card .table tbody tr:last-child td { border-bottom: none }
-
     /* A-7b. 空狀態小卡片 */
     #account-order #content.ansei-empty-card,
     #account-wishlist #content.ansei-empty-card,
@@ -1252,7 +1253,6 @@ body[class*="route-account-address-edit"] .btn:active {
         align-items: center !important;
         text-align: center !important
     }
-
     /* 推薦報表 手機版卡片 */
     #account-order #content.ansei-affiliate-report {
         padding: 20px 14px !important;
@@ -1265,7 +1265,6 @@ body[class*="route-account-address-edit"] .btn:active {
         padding: 0 12px !important;
         color: #555 !important
     }
-
     /* A-8. Address */
     #account-address #content > p {
         border-radius: 16px 16px 0 0;
@@ -1379,24 +1378,5 @@ body[class*="route-account-address-edit"] .btn:active {
         display: flex !important;
         align-items: center !important;
         flex-shrink: 0 !important
-    }
-    #account-newsletter .buttons .pull-left .btn,
-    #account-newsletter .buttons .pull-right .btn {
-        height: 44px !important;
-        min-height: 44px !important;
-        max-height: 44px !important;
-        display: inline-flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
-        padding-left: 22px !important;
-        padding-right: 22px !important;
-        line-height: 1 !important;
-        box-sizing: border-box !important;
-        vertical-align: middle !important
-    }
-    #account-newsletter .radio-inline + .radio-inline {
-        margin-left: 24px !important
     }
 }
