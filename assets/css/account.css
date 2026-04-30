@@ -3,8 +3,26 @@
 /* 全域：覆蓋 Journal ui.scss               */
 /* .buttons .pull-left .btn padding 問題    */
 /* ======================================== */
-#content .buttons .pull-left .btn,
-#content .buttons .pull-right .btn {
+#account-newsletter .buttons .pull-left .btn,
+#account-newsletter .buttons .pull-right .btn,
+#account-edit .buttons .pull-left .btn,
+#account-edit .buttons .pull-right .btn,
+#account-affiliate .buttons .pull-left .btn,
+#account-affiliate .buttons .pull-right .btn,
+#account-password .buttons .pull-left .btn,
+#account-password .buttons .pull-right .btn,
+#account-reset .buttons .pull-left .btn,
+#account-reset .buttons .pull-right .btn,
+#account-tracking .buttons .pull-left .btn,
+#account-tracking .buttons .pull-right .btn,
+#account-address #content > .buttons .pull-left .btn,
+#account-address #content > .buttons .pull-right .btn,
+#account-address-form .buttons .pull-left .btn,
+#account-address-form .buttons .pull-right .btn,
+body[class*="route-account-address-add"] .buttons .pull-left .btn,
+body[class*="route-account-address-add"] .buttons .pull-right .btn,
+body[class*="route-account-address-edit"] .buttons .pull-left .btn,
+body[class*="route-account-address-edit"] .buttons .pull-right .btn {
     height: 46px !important;
     min-height: 46px !important;
     padding-top: 0 !important;
@@ -19,8 +37,26 @@
     color: #666 !important;
     text-decoration: none !important
 }
-#content .buttons .pull-left .btn:hover,
-#content .buttons .pull-right .btn:hover {
+#account-newsletter .buttons .pull-left .btn:hover,
+#account-newsletter .buttons .pull-right .btn:hover,
+#account-edit .buttons .pull-left .btn:hover,
+#account-edit .buttons .pull-right .btn:hover,
+#account-affiliate .buttons .pull-left .btn:hover,
+#account-affiliate .buttons .pull-right .btn:hover,
+#account-password .buttons .pull-left .btn:hover,
+#account-password .buttons .pull-right .btn:hover,
+#account-reset .buttons .pull-left .btn:hover,
+#account-reset .buttons .pull-right .btn:hover,
+#account-tracking .buttons .pull-left .btn:hover,
+#account-tracking .buttons .pull-right .btn:hover,
+#account-address #content > .buttons .pull-left .btn:hover,
+#account-address #content > .buttons .pull-right .btn:hover,
+#account-address-form .buttons .pull-left .btn:hover,
+#account-address-form .buttons .pull-right .btn:hover,
+body[class*="route-account-address-add"] .buttons .pull-left .btn:hover,
+body[class*="route-account-address-add"] .buttons .pull-right .btn:hover,
+body[class*="route-account-address-edit"] .buttons .pull-left .btn:hover,
+body[class*="route-account-address-edit"] .buttons .pull-right .btn:hover {
     background: #F8F5F0 !important;
     border-color: rgba(200,169,106,.55) !important;
     color: #222 !important;
