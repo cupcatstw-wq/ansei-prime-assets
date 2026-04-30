@@ -1,5 +1,32 @@
 /* ===== Account Pages ===== */
 /* ======================================== */
+/* 全域：覆蓋 Journal ui.scss               */
+/* .buttons .pull-left .btn padding 問題    */
+/* ======================================== */
+#account-newsletter .buttons .pull-left .btn,
+#account-newsletter .buttons .pull-right .btn,
+#account-password .buttons .pull-left .btn,
+#account-password .buttons .pull-right .btn,
+#account-reset .buttons .pull-left .btn,
+#account-reset .buttons .pull-right .btn,
+#account-affiliate .buttons .pull-left .btn,
+#account-affiliate .buttons .pull-right .btn,
+#account-tracking .buttons .pull-left .btn,
+#account-tracking .buttons .pull-right .btn,
+#account-address #content > .buttons .pull-left .btn,
+#account-address #content > .buttons .pull-right .btn,
+#account-address-form .buttons .pull-left .btn,
+#account-address-form .buttons .pull-right .btn,
+body[class*="route-account-address-add"] .buttons .pull-left .btn,
+body[class*="route-account-address-add"] .buttons .pull-right .btn,
+body[class*="route-account-address-edit"] .buttons .pull-left .btn,
+body[class*="route-account-address-edit"] .buttons .pull-right .btn {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    line-height: 1 !important;
+    box-sizing: border-box !important
+}
+/* ======================================== */
 /* A-1. 共用：標題 / 輸入框 / 自動填入      */
 /* ======================================== */
 #account-login h1,
@@ -1031,23 +1058,6 @@ body[class*="route-account-address-edit"] .btn:active {
 #account-tracking .buttons .pull-right,
 #account-password .buttons .pull-right {
     margin-left: auto !important
-}
-/* Newsletter 按鈕：覆蓋 ui.scss .buttons .pull-left .btn */
-#account-newsletter .buttons .pull-left .btn,
-#account-newsletter .buttons .pull-right .btn {
-    height: 44px !important;
-    min-height: 44px !important;
-    max-height: 44px !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-    padding-left: 22px !important;
-    padding-right: 22px !important;
-    line-height: 1 !important;
-    box-sizing: border-box !important;
-    vertical-align: middle !important
 }
 #account-newsletter .radio-inline + .radio-inline {
     margin-left: 24px !important
