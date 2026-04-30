@@ -1241,6 +1241,36 @@ body[class*="route-account-address-edit"] .btn:active {
     #account-newsletter .radio-inline + .radio-inline {
         margin-left: 24px !important
     }
+    #account-newsletter #content > form,
+    #account-newsletter form {
+        padding: 24px 18px !important
+    }
+    #account-newsletter .buttons {
+        width: 100% !important;
+        box-sizing: border-box !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        flex-wrap: nowrap !important;
+        gap: 12px
+    }
+    #account-newsletter .buttons .pull-left,
+    #account-newsletter .buttons .pull-right {
+        float: none !important;
+        margin: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        flex-shrink: 0 !important
+    }
+    #account-newsletter .buttons .btn {
+        height: 46px !important;
+        min-height: 46px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        line-height: 1 !important;
+        box-sizing: border-box !important
+    }
     /* A-7. Order / Wishlist（有資料時） */
     #account-order #content.ansei-page-card,
     #account-wishlist #content.ansei-page-card { padding: 20px 14px; border-radius: 16px }
