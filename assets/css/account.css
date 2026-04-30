@@ -1213,7 +1213,7 @@ body[class*="route-account-address-edit"] .btn:active {
     /* A-9. Newsletter */
     #account-newsletter #content > form,
     #account-newsletter form {
-        padding: 24px 18px !important
+        padding: 24px 16px !important
     }
     #account-newsletter .buttons {
         width: 100% !important;
