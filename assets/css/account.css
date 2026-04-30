@@ -21,10 +21,15 @@ body[class*="route-account-address-add"] .buttons .pull-left .btn,
 body[class*="route-account-address-add"] .buttons .pull-right .btn,
 body[class*="route-account-address-edit"] .buttons .pull-left .btn,
 body[class*="route-account-address-edit"] .buttons .pull-right .btn {
+    height: 46px !important;
+    min-height: 46px !important;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     line-height: 1 !important;
-    box-sizing: border-box !important
+    box-sizing: border-box !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important
 }
 /* ======================================== */
 /* A-1. 共用：標題 / 輸入框 / 自動填入      */
