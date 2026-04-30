@@ -1046,6 +1046,12 @@ body[class*="route-account-address-edit"] .btn:active {
     float: none !important;
     display: inline-block
 }
+#account-reward #content,
+#account-transaction #content {
+    height: auto !important;
+    min-height: 0 !important;
+    align-self: flex-start !important
+}
 /* Password fieldset */
 #account-password fieldset {
     margin-bottom: 28px;
