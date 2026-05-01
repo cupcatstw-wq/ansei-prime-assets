@@ -214,7 +214,8 @@ body[class*="route-account-address-edit"] .buttons .pull-right .btn:hover {
 #account-login .buttons {
     margin-top: auto;
     padding-top: 24px;
-    text-align: center
+    display: flex !important;
+    justify-content: center !important
 }
 #account-login .well .pull-right,
 #account-login .well .text-right {
@@ -455,6 +456,12 @@ body[class*="route-account-address-edit"] .buttons .pull-right .btn:hover {
     text-align: center;
     height: fit-content;
     align-self: flex-start
+}
+#account-success #content.ansei-success-card .buttons,
+#account-logout #content.ansei-success-card .buttons,
+#common-success #content.ansei-success-card .buttons {
+    display: flex !important;
+    justify-content: center !important
 }
 /* ======================================== */
 /* A-7. Order / Wishlist（有資料時）        */
