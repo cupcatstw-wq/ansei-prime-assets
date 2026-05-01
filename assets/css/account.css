@@ -1252,9 +1252,10 @@ body #account-affiliate input.form-control::placeholder {
     /* A-3. Register */
     #account-register .buttons { gap: 24px; align-items: stretch }
     #account-register .buttons .pull-right { text-align: left !important }
-    #account-register .buttons .btn,
+    #account-register .buttons .btn:not(.ansei-back-btn),
     #account-register .buttons input[type="submit"],
-    #account-register .buttons button { width: 100%; min-width: 100% }
+    #account-register .buttons button[type="submit"] { width: 100%; min-width: 100% }
+    #account-register .buttons .ansei-back-btn { width: auto !important; min-width: 108px !important }
     #account-forgotten .btn { width: auto !important; min-width: 108px !important }
     #account-register input[name="telephone"] { max-width: 100% }
     #account-register .telephone-format-tip { font-size: 11px; line-height: 1.7 }
