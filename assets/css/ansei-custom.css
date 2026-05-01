@@ -1153,6 +1153,135 @@ body.ansei-page-ready.popup-open {
     /* ===== 分頁 ===== */
     #content .pagination > li > a,
     #content .pagination > li > span { min-width: 38px; min-height: 38px; margin-right: 3px }
+    /* ===== Cart ===== */
+    #cart-products {
+        border-radius: 16px !important;
+        padding: 0 !important;
+        overflow: hidden !important
+    }
+    #checkout-cart #cart-products table thead {
+        display: none !important
+    }
+    #checkout-cart #cart-products table tbody tr {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        align-items: flex-start !important;
+        padding: 16px 14px !important;
+        border-bottom: 1px solid #EEEAE4 !important;
+        position: relative !important
+    }
+    #checkout-cart #cart-products table tbody tr:last-child {
+        border-bottom: none !important
+    }
+    #checkout-cart #cart-products table tbody td {
+        display: none !important;
+        border: none !important;
+        padding: 0 !important;
+        background: transparent !important
+    }
+    /* 商品圖片 */
+    #checkout-cart #cart-products table tbody td.text-center:first-child,
+    #checkout-cart #cart-products table tbody td.td-image {
+        display: block !important;
+        width: 80px !important;
+        flex: 0 0 80px !important;
+        margin-right: 12px !important
+    }
+    #checkout-cart #cart-products table tbody td.td-image img,
+    #checkout-cart #cart-products table tbody td.text-center:first-child img {
+        width: 80px !important;
+        height: 80px !important;
+        object-fit: contain !important;
+        border-radius: 10px !important;
+        background: #FAFAF9 !important;
+        display: block !important
+    }
+    /* 商品名稱 */
+    #checkout-cart #cart-products table tbody td.text-left,
+    #checkout-cart #cart-products table tbody td.td-name {
+        display: block !important;
+        flex: 1 1 0 !important;
+        min-width: 0 !important;
+        padding-right: 28px !important;
+        padding-bottom: 10px !important
+    }
+    #checkout-cart #cart-products table tbody td.text-left a,
+    #checkout-cart #cart-products table tbody td.td-name a {
+        font-size: 14px !important;
+        font-weight: 500 !important;
+        color: #222 !important;
+        text-decoration: none !important;
+        line-height: 1.5 !important;
+        display: block !important;
+        margin-bottom: 4px !important
+    }
+    /* 數量 stepper */
+    #checkout-cart #cart-products table tbody td.td-qty {
+        display: block !important;
+        width: calc(100% - 92px) !important;
+        margin-left: 92px !important;
+        padding-bottom: 8px !important
+    }
+    /* 單價欄隱藏 */
+    #checkout-cart #cart-products table tbody td.text-right.td-price {
+        display: none !important
+    }
+    /* 小計 */
+    #checkout-cart #cart-products table tbody td.text-right.td-total,
+    #checkout-cart #cart-products table tbody td:last-of-type.text-right {
+        display: block !important;
+        width: calc(100% - 92px) !important;
+        margin-left: 92px !important;
+        font-size: 14px !important;
+        font-weight: 500 !important;
+        color: #C8A96A !important;
+        padding-top: 2px !important
+    }
+    /* 刪除按鈕 */
+    #checkout-cart #cart-products table tbody td .btn-danger {
+        position: absolute !important;
+        top: 14px !important;
+        right: 12px !important;
+        width: 28px !important;
+        height: 28px !important;
+        min-width: 0 !important;
+        padding: 0 !important;
+        border-radius: 50% !important;
+        border: 1px solid #E2DDD6 !important;
+        background: #fff !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        font-size: 12px !important;
+        color: #9A9A9A !important;
+        line-height: 1 !important
+    }
+    #checkout-cart #cart-products table tbody td .btn-danger:hover {
+        border-color: rgba(200,169,106,.5) !important;
+        color: #555 !important
+    }
+    /* 總計區塊 */
+    #cart-totals {
+        border-radius: 16px !important;
+        padding: 20px 18px !important;
+        margin-top: 12px !important
+    }
+    /* 底部按鈕 */
+    #checkout-cart .cart-bottom .buttons.clearfix {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 10px !important;
+        padding-top: 14px !important
+    }
+    #checkout-cart .cart-bottom .buttons .pull-left,
+    #checkout-cart .cart-bottom .buttons .pull-right {
+        width: 100% !important;
+        margin: 0 !important
+    }
+    #checkout-cart .cart-bottom .buttons .btn {
+        width: 100% !important;
+        justify-content: center !important
+    }
     /* ===== Checkout ===== */
     #checkout-checkout .buttons,
     #collapse-payment-address .buttons,
