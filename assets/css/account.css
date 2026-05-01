@@ -1060,7 +1060,7 @@ body[class*="route-account-address-edit"] .btn:active {
 /* Affiliate placeholder */
 #account-affiliate input::placeholder,
 #account-affiliate textarea::placeholder {
-    color: #C0C0C0 !important;
+    color: #D8D8D8 !important;
     font-size: 13px !important;
     font-weight: 400 !important;
 }
