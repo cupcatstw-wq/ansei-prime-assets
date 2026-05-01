@@ -1060,9 +1060,13 @@ body[class*="route-account-address-edit"] .btn:active {
 /* Affiliate placeholder */
 #account-affiliate input::placeholder,
 #account-affiliate textarea::placeholder {
-    color: #E8E8E8 !important;
+    color: #C0C0C0 !important;
     font-size: 13px !important;
     font-weight: 400 !important;
+}
+#account-affiliate input[type="text"],
+#account-affiliate input[type="url"] {
+    background: #fff !important;
 }
 /* Password fieldset */
 #account-password fieldset {
