@@ -757,6 +757,7 @@ body.ansei-page-ready.popup-open {
     justify-content: center !important;
     height: 46px !important;
     min-height: 46px !important;
+    min-width: 120px !important;
     padding: 0 22px !important;
     border-radius: 12px !important;
     border: 1.5px solid #D8D2CA !important;
