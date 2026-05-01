@@ -751,6 +751,20 @@ body.ansei-page-ready.popup-open {
     display: inline-flex !important;
     gap: 4px !important
 }
+#checkout-cart .cart-bottom .buttons.clearfix {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding-top: 16px !important;
+    margin-top: 8px !important
+}
+#checkout-cart .cart-bottom .buttons .pull-left,
+#checkout-cart .cart-bottom .buttons .pull-right {
+    float: none !important;
+    display: flex !important;
+    align-items: center !important;
+    margin: 0 !important
+}
 #checkout-cart .cart-bottom .buttons .btn {
     display: inline-flex !important;
     align-items: center !important;
