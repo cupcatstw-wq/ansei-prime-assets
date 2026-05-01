@@ -1231,7 +1231,6 @@ body[class*="route-account-address-edit"] .btn:active {
     #information-contact form.form-horizontal { padding: 24px 18px; border-radius: 16px }
     #account-download #content, #account-return #content,
     #account-recurring #content { padding: 24px 18px; border-radius: 16px }
-    #account-reward #content { padding-left: 16px; padding-right: 16px }
     /* A-3. Register */
     #account-register .buttons { gap: 24px; align-items: stretch }
     #account-register .buttons .pull-right { text-align: left !important }
