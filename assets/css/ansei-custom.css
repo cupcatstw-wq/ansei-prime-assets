@@ -1268,6 +1268,7 @@ body.ansei-page-ready.popup-open {
     }
     /* 底部按鈕 */
     #checkout-cart .cart-bottom .buttons.clearfix {
+        display: flex !important;
         flex-direction: row !important;
         align-items: center !important;
         justify-content: center !important;
@@ -1276,9 +1277,12 @@ body.ansei-page-ready.popup-open {
     }
     #checkout-cart .cart-bottom .buttons .pull-left,
     #checkout-cart .cart-bottom .buttons .pull-right {
+        float: none !important;
         width: auto !important;
         flex: 0 0 auto !important;
-        margin: 0 !important
+        margin: 0 !important;
+        display: flex !important;
+        align-items: center !important
     }
     #checkout-cart .cart-bottom .buttons .btn {
         width: auto !important;
