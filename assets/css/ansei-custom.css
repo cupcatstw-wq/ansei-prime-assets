@@ -751,21 +751,21 @@ body.ansei-page-ready.popup-open {
     display: inline-flex !important;
     gap: 4px !important
 }
-#checkout-cart .cart-bottom .buttons.clearfix {
+#checkout-cart .cart-bottom .buttons:last-child {
     display: flex !important;
     justify-content: space-between !important;
     align-items: center !important;
     padding-top: 16px !important;
     margin-top: 8px !important
 }
-#checkout-cart .cart-bottom .buttons .pull-left,
-#checkout-cart .cart-bottom .buttons .pull-right {
+#checkout-cart .cart-bottom .buttons:last-child .pull-left,
+#checkout-cart .cart-bottom .buttons:last-child .pull-right {
     float: none !important;
     display: flex !important;
     align-items: center !important;
     margin: 0 !important
 }
-#checkout-cart .cart-bottom .buttons .btn {
+#checkout-cart .cart-bottom .buttons:last-child .btn {
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -783,7 +783,7 @@ body.ansei-page-ready.popup-open {
     transition: all .22s ease !important;
     text-decoration: none !important
 }
-#checkout-cart .cart-bottom .buttons .btn:hover {
+#checkout-cart .cart-bottom .buttons:last-child .btn:hover {
     background: #F8F5F0 !important;
     border-color: rgba(200,169,106,.55) !important;
     color: #222 !important;
@@ -1267,7 +1267,7 @@ body.ansei-page-ready.popup-open {
         margin-top: 12px !important
     }
     /* 底部按鈕 */
-    #checkout-cart .cart-bottom .buttons.clearfix {
+    #checkout-cart .cart-bottom .buttons:last-child {
         display: flex !important;
         flex-direction: row !important;
         align-items: center !important;
@@ -1275,8 +1275,8 @@ body.ansei-page-ready.popup-open {
         gap: 12px !important;
         padding-top: 14px !important
     }
-    #checkout-cart .cart-bottom .buttons .pull-left,
-    #checkout-cart .cart-bottom .buttons .pull-right {
+    #checkout-cart .cart-bottom .buttons:last-child .pull-left,
+    #checkout-cart .cart-bottom .buttons:last-child .pull-right {
         float: none !important;
         width: auto !important;
         flex: 0 0 auto !important;
@@ -1285,19 +1285,15 @@ body.ansei-page-ready.popup-open {
         align-items: center !important;
         align-self: center !important
     }
-    #checkout-cart .cart-bottom .buttons .btn {
+    #checkout-cart .cart-bottom .buttons:last-child .btn {
         width: auto !important;
         min-width: 120px !important;
         height: 46px !important;
         min-height: 46px !important;
-        justify-content: center !important;
         display: inline-flex !important;
-        align-items: center !important
-    }
-    #checkout-cart .cart-bottom .buttons .btn {
-        width: auto !important;
-        min-width: 120px !important;
-        justify-content: center !important
+        align-items: center !important;
+        justify-content: center !important;
+        box-sizing: border-box !important
     }
     /* ===== Checkout ===== */
     #checkout-checkout .buttons,
