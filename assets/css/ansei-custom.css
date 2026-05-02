@@ -1273,7 +1273,7 @@ body.ansei-page-ready.popup-open {
         margin-top: 12px !important
     }
     /* 底部按鈕 */
-    #checkout-cart .cart-bottom .buttons:last-child {
+    #checkout-cart .cart-bottom .buttons.clearfix {
         display: flex !important;
         flex-direction: row !important;
         align-items: center !important;
@@ -1281,8 +1281,8 @@ body.ansei-page-ready.popup-open {
         gap: 12px !important;
         padding-top: 14px !important
     }
-    #checkout-cart .cart-bottom .buttons:last-child .pull-left,
-    #checkout-cart .cart-bottom .buttons:last-child .pull-right {
+    #checkout-cart .cart-bottom .buttons.clearfix .pull-left,
+    #checkout-cart .cart-bottom .buttons.clearfix .pull-right {
         float: none !important;
         width: auto !important;
         flex: 0 0 auto !important;
@@ -1291,15 +1291,24 @@ body.ansei-page-ready.popup-open {
         align-items: center !important;
         align-self: center !important
     }
-    #checkout-cart .cart-bottom .buttons:last-child .btn {
+    #checkout-cart .cart-bottom .buttons.clearfix .btn {
         width: auto !important;
         min-width: 120px !important;
         height: 46px !important;
         min-height: 46px !important;
+        max-height: 46px !important;
         display: inline-flex !important;
         align-items: center !important;
         justify-content: center !important;
-        box-sizing: border-box !important
+        box-sizing: border-box !important;
+        padding: 0 22px !important;
+        line-height: 1 !important
+    }
+    #checkout-cart .cart-bottom .buttons.clearfix .btn span {
+        display: inline !important;
+        line-height: 1 !important;
+        padding: 0 !important;
+        margin: 0 !important
     }
     /* ===== Checkout ===== */
     #checkout-checkout .buttons,
