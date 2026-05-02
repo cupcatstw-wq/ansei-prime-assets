@@ -1268,18 +1268,21 @@ body.ansei-page-ready.popup-open {
     }
     /* 底部按鈕 */
     #checkout-cart .cart-bottom .buttons.clearfix {
-        flex-direction: column !important;
-        align-items: stretch !important;
-        gap: 10px !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 12px !important;
         padding-top: 14px !important
     }
     #checkout-cart .cart-bottom .buttons .pull-left,
     #checkout-cart .cart-bottom .buttons .pull-right {
-        width: 100% !important;
+        width: auto !important;
+        flex: 0 0 auto !important;
         margin: 0 !important
     }
     #checkout-cart .cart-bottom .buttons .btn {
-        width: 100% !important;
+        width: auto !important;
+        min-width: 120px !important;
         justify-content: center !important
     }
     /* ===== Checkout ===== */
