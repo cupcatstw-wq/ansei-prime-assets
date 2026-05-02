@@ -789,6 +789,12 @@ body.ansei-page-ready.popup-open {
     color: #222 !important;
     transform: translateY(-1px) !important
 }
+#checkout-cart .cart-bottom .buttons:last-child .btn span {
+        display: inline !important;
+        line-height: 1 !important;
+        padding: 0 !important;
+        margin: 0 !important
+}
 /* ======================================== */
 /* 14. Brand Story (#323)                   */
 /* ======================================== */
