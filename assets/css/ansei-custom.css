@@ -1282,6 +1282,16 @@ body.ansei-page-ready.popup-open {
         flex: 0 0 auto !important;
         margin: 0 !important;
         display: flex !important;
+        align-items: center !important;
+        align-self: center !important
+    }
+    #checkout-cart .cart-bottom .buttons .btn {
+        width: auto !important;
+        min-width: 120px !important;
+        height: 46px !important;
+        min-height: 46px !important;
+        justify-content: center !important;
+        display: inline-flex !important;
         align-items: center !important
     }
     #checkout-cart .cart-bottom .buttons .btn {
