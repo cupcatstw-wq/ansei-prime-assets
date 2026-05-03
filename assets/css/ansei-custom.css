@@ -912,7 +912,37 @@ body.ansei-page-ready.popup-open {
     text-align: justify !important
 }
 /* ======================================== */
-/* 15. Mobile ≤767px                        */
+/* 15. 訂單成功頁按鈕                       */
+/* ======================================== */
+.ansei-success-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 46px !important;
+    min-width: 120px !important;
+    padding: 0 28px !important;
+    border: 1.5px solid #D8D2CA !important;
+    border-radius: 12px !important;
+    background: #fff !important;
+    font-size: 14px !important;
+    color: #666 !important;
+    letter-spacing: .08em !important;
+    text-decoration: none !important;
+}
+.ansei-success-btn:hover {
+    background: #F8F5F0 !important;
+    border-color: rgba(200,169,106,.55) !important;
+    color: #222 !important;
+}
+.ansei-success-btnrow {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 12px !important;
+    flex-wrap: wrap !important;
+    margin-top: 4px !important;
+}
+/* ======================================== */
+/* 16. Mobile ≤767px                        */
 /* ======================================== */
 @media (max-width: 767px) {
     /* ===== GoTop ===== */
