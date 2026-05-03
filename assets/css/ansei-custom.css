@@ -615,6 +615,22 @@ body.ansei-page-ready.popup-open {
     display: block !important
 }
 .module-categories .button-group { display: none !important }
+/* 分類導購區：圖片滿版 */
+.module-categories .category-thumb .image {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important
+}
+.module-categories .category-thumb .image a {
+    display: block !important;
+    width: 100% !important
+}
+.module-categories .category-thumb .image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important
+}
 /* ======================================== */
 /* 10. 品牌信任區（Trust Bar #321）         */
 /* ======================================== */
