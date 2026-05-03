@@ -734,6 +734,17 @@ body.ansei-page-ready.popup-open {
 #checkout-success #content > p:first-of-type {
     margin-top: 48px !important;
 }
+/* Checkout：條款警告文字 */
+#checkout-checkout .checkbox .text-danger {
+    font-size: 0 !important;
+    color: transparent !important;
+}
+#checkout-checkout .checkbox .text-danger::before {
+    content: '請先勾選同意會員條款以繼續結帳';
+    font-size: 12px !important;
+    color: #9A8E7E !important;
+    letter-spacing: .05em !important;
+}
 /* ======================================== */
 /* 12. Blog 文章頁排版                      */
 /* ======================================== */
