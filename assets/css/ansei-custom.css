@@ -725,12 +725,12 @@ body.ansei-page-ready.popup-open {
     margin-top: 48px !important
 }
 /* Checkout：條款警告文字 */
-#checkout-checkout .checkbox .text-danger {
+.quick-checkout-wrapper .checkbox .text-danger {
     visibility: hidden !important;
     position: relative !important;
     font-size: 12px !important
 }
-#checkout-checkout .checkbox .text-danger::after {
+.quick-checkout-wrapper .checkbox .text-danger::after {
     content: '請先勾選同意會員條款以繼續結帳';
     visibility: visible !important;
     position: absolute !important;
