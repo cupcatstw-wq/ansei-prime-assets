@@ -584,9 +584,16 @@ body.ansei-page-ready.popup-open {
 /* ======================================== */
 /* 9. 分類導購區                            */
 /* ======================================== */
+.module-categories .category-thumb {
+    border-radius: 22px !important;
+    overflow: hidden !important;
+    background: #fff !important;
+    border: 0.5px solid #E5E2DC !important;
+    box-shadow: none !important
+}
 .module-categories .category-thumb .image {
-    border-radius: 16px !important;
-    overflow: hidden !important
+    border-radius: 0 !important;
+    overflow: visible !important
 }
 .module-categories .caption {
     background: transparent !important;
@@ -605,16 +612,6 @@ body.ansei-page-ready.popup-open {
     display: block !important
 }
 .module-categories .button-group { display: none !important }
-/* 分類導購區：移除 Journal 原生 hover 背景 */
-.module-categories .category-thumb:hover {
-    background: transparent !important;
-    background-color: transparent !important
-}
-/* 分類導購區：白底卡片圓角 */
-.module-categories .category-thumb {
-    border-radius: 22px !important;
-    overflow: hidden !important
-}
 /* ======================================== */
 /* 10. 品牌信任區（Trust Bar #321）         */
 /* ======================================== */
