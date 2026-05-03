@@ -635,6 +635,10 @@ body.ansei-page-ready.popup-open {
     object-fit: cover !important;
     display: block !important
 }
+/* 分類導購區：文字區塊內距 */
+.module-categories .category-thumb .caption {
+    padding: 12px 16px 16px !important
+}
 /* ======================================== */
 /* 10. 品牌信任區（Trust Bar #321）         */
 /* ======================================== */
