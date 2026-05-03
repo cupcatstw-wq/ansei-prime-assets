@@ -1409,6 +1409,12 @@ body.ansei-page-ready.popup-open {
         height: 46px !important;
         min-height: 46px !important
     }
+    /* 訂單成功頁手機版左右間距 */
+    #checkout-success #content.ansei-success-card,
+    #common-success #content.ansei-success-card {
+        margin-left: 16px !important;
+        margin-right: 16px !important;
+    }
     /* ===== Brand Story Mobile ===== */
     .module-info_blocks-323 .module-body { padding: 40px 20px !important }
     .module-info_blocks-323 .info-block {
