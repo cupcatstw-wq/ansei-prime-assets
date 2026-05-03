@@ -544,13 +544,11 @@ body.ansei-page-ready.popup-open {
     border: 0 !important
 }
 .category-grid .category-layout {
-    transition: transform .3s ease, box-shadow .3s ease !important;
-    border-radius: 16px !important;
-    overflow: hidden !important
+    transition: transform .3s ease !important;
+    border-radius: 16px !important
 }
 .category-grid .category-layout:hover {
-    transform: translateY(-2px) !important;
-    box-shadow: 0 8px 28px rgba(0,0,0,.07) !important
+    transform: translateY(-2px) !important
 }
 .category-grid .category-layout:hover .caption .name a {
     color: #222 !important
