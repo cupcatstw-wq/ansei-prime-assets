@@ -1,4 +1,4 @@
-/* ANSEI PRIME — Custom CSS | Journal 3.1.8 + OpenCart 3.0.3.8 | 2026/04/30 */
+/* ANSEI PRIME — Custom CSS | Journal 3.1.8 + OpenCart 3.0.3.8 | 2026/05/03 */
 /* ===== Modules ===== */
 @import url('https://cdn.jsdelivr.net/gh/cupcatstw-wq/ansei-prime-assets@0053819/assets/css/account.css');
 @import url('https://cdn.jsdelivr.net/gh/cupcatstw-wq/ansei-prime-assets@0b02461/assets/css/product.css');
@@ -547,12 +547,8 @@ body.ansei-page-ready.popup-open {
     transition: transform .3s ease !important;
     border-radius: 16px !important
 }
-.category-grid .category-layout:hover {
-    transform: translateY(-2px) !important
-}
-.category-grid .category-layout:hover .caption .name a {
-    color: #222 !important
-}
+.category-grid .category-layout:hover { transform: translateY(-2px) !important }
+.category-grid .category-layout:hover .caption .name a { color: #222 !important }
 /* ======================================== */
 /* 8. 三大品牌價值（排除 Trust Bar #321 和品牌故事 #323） */
 /* ======================================== */
@@ -582,16 +578,14 @@ body.ansei-page-ready.popup-open {
 /* ======================================== */
 /* 9. 分類導購區                            */
 /* ======================================== */
-.module-categories-37 .category-thumb {
-    padding: 0 !important
-}
+.module-categories-37 .category-thumb { padding: 0 !important }
 .module-categories .category-thumb {
     border-radius: 22px !important;
     overflow: hidden !important;
     background: #fff !important;
     border: 0.5px solid #E5E2DC !important;
     box-shadow: none !important;
-    transition: border-color .3s ease, box-shadow .3s ease !important
+    transition: border-color .3s ease, box-shadow .3s ease !important;
     padding: 0 !important
 }
 .module-categories .category-thumb:hover {
@@ -619,7 +613,6 @@ body.ansei-page-ready.popup-open {
     display: block !important
 }
 .module-categories .button-group { display: none !important }
-/* 分類導購區：圖片滿版 */
 .module-categories .category-thumb .image {
     width: 100% !important;
     margin: 0 !important;
@@ -635,10 +628,7 @@ body.ansei-page-ready.popup-open {
     object-fit: cover !important;
     display: block !important
 }
-/* 分類導購區：文字區塊內距 */
-.module-categories .category-thumb .caption {
-    padding: 12px 16px 24px !important
-}
+.module-categories .category-thumb .caption { padding: 12px 16px 24px !important }
 /* ======================================== */
 /* 10. 品牌信任區（Trust Bar #321）         */
 /* ======================================== */
@@ -732,18 +722,18 @@ body.ansei-page-ready.popup-open {
 #checkout-success #content > div:first-of-type,
 #checkout-success #content > .ansei-success-card,
 #checkout-success #content > p:first-of-type {
-    margin-top: 48px !important;
+    margin-top: 48px !important
 }
 /* Checkout：條款警告文字 */
 #checkout-checkout .checkbox .text-danger {
     font-size: 0 !important;
-    color: transparent !important;
+    color: transparent !important
 }
 #checkout-checkout .checkbox .text-danger::before {
     content: '請先勾選同意會員條款以繼續結帳';
     font-size: 12px !important;
     color: #9A8E7E !important;
-    letter-spacing: .05em !important;
+    letter-spacing: .05em !important
 }
 /* ======================================== */
 /* 12. Blog 文章頁排版                      */
@@ -850,10 +840,10 @@ body.ansei-page-ready.popup-open {
     transform: translateY(-1px) !important
 }
 #checkout-cart .cart-bottom .buttons:last-child .btn span {
-        display: inline !important;
-        line-height: 1 !important;
-        padding: 0 !important;
-        margin: 0 !important
+    display: inline !important;
+    line-height: 1 !important;
+    padding: 0 !important;
+    margin: 0 !important
 }
 /* ======================================== */
 /* 14. Brand Story (#323)                   */
@@ -938,19 +928,19 @@ body.ansei-page-ready.popup-open {
     font-size: 14px !important;
     color: #666 !important;
     letter-spacing: .08em !important;
-    text-decoration: none !important;
+    text-decoration: none !important
 }
 .ansei-success-btn:hover {
     background: #F8F5F0 !important;
     border-color: rgba(200,169,106,.55) !important;
-    color: #222 !important;
+    color: #222 !important
 }
 .ansei-success-btnrow {
     display: flex !important;
     justify-content: center !important;
     gap: 12px !important;
     flex-wrap: wrap !important;
-    margin-top: 4px !important;
+    margin-top: 4px !important
 }
 /* ======================================== */
 /* 16. Mobile ≤767px                        */
@@ -1151,9 +1141,7 @@ body.ansei-page-ready.popup-open {
         justify-content: center !important;
         line-height: 1 !important
     }
-    #account-newsletter .radio-inline + .radio-inline {
-        margin-left: 48px !important
-    }
+    #account-newsletter .radio-inline + .radio-inline { margin-left: 48px !important }
     /* ===== Order / Wishlist ===== */
     #account-order #content.ansei-page-card,
     #account-wishlist #content.ansei-page-card { padding: 20px 14px; border-radius: 16px }
@@ -1255,9 +1243,7 @@ body.ansei-page-ready.popup-open {
         padding: 0 !important;
         overflow: hidden !important
     }
-    #checkout-cart #cart-products table thead {
-        display: none !important
-    }
+    #checkout-cart #cart-products table thead { display: none !important }
     #checkout-cart #cart-products table tbody tr {
         display: flex !important;
         flex-wrap: wrap !important;
@@ -1266,16 +1252,13 @@ body.ansei-page-ready.popup-open {
         border-bottom: 1px solid #EEEAE4 !important;
         position: relative !important
     }
-    #checkout-cart #cart-products table tbody tr:last-child {
-        border-bottom: none !important
-    }
+    #checkout-cart #cart-products table tbody tr:last-child { border-bottom: none !important }
     #checkout-cart #cart-products table tbody td {
         display: none !important;
         border: none !important;
         padding: 0 !important;
         background: transparent !important
     }
-    /* 商品圖片 */
     #checkout-cart #cart-products table tbody td.text-center:first-child,
     #checkout-cart #cart-products table tbody td.td-image {
         display: block !important;
@@ -1292,7 +1275,6 @@ body.ansei-page-ready.popup-open {
         background: #FAFAF9 !important;
         display: block !important
     }
-    /* 商品名稱 */
     #checkout-cart #cart-products table tbody td.text-left,
     #checkout-cart #cart-products table tbody td.td-name {
         display: block !important;
@@ -1311,18 +1293,13 @@ body.ansei-page-ready.popup-open {
         display: block !important;
         margin-bottom: 4px !important
     }
-    /* 數量 stepper */
     #checkout-cart #cart-products table tbody td.td-qty {
         display: block !important;
         width: calc(100% - 92px) !important;
         margin-left: 92px !important;
         padding-bottom: 8px !important
     }
-    /* 單價欄隱藏 */
-    #checkout-cart #cart-products table tbody td.text-right.td-price {
-        display: none !important
-    }
-    /* 小計 */
+    #checkout-cart #cart-products table tbody td.text-right.td-price { display: none !important }
     #checkout-cart #cart-products table tbody td.text-right.td-total,
     #checkout-cart #cart-products table tbody td:last-of-type.text-right {
         display: block !important;
@@ -1333,7 +1310,6 @@ body.ansei-page-ready.popup-open {
         color: #C8A96A !important;
         padding-top: 2px !important
     }
-    /* 刪除按鈕 */
     #checkout-cart #cart-products table tbody td .btn-danger {
         position: absolute !important;
         top: 14px !important;
@@ -1356,13 +1332,11 @@ body.ansei-page-ready.popup-open {
         border-color: rgba(200,169,106,.5) !important;
         color: #555 !important
     }
-    /* 總計區塊 */
     #cart-totals {
         border-radius: 16px !important;
         padding: 20px 18px !important;
         margin-top: 12px !important
     }
-    /* 底部按鈕 */
     #checkout-cart .cart-bottom .buttons.clearfix {
         display: flex !important;
         flex-direction: row !important;
@@ -1424,7 +1398,7 @@ body.ansei-page-ready.popup-open {
     #checkout-success #content.ansei-success-card,
     #common-success #content.ansei-success-card {
         margin-left: 16px !important;
-        margin-right: 16px !important;
+        margin-right: 16px !important
     }
     /* ===== Brand Story Mobile ===== */
     .module-info_blocks-323 .module-body { padding: 40px 20px !important }
