@@ -546,20 +546,14 @@ body.ansei-page-ready.popup-open {
 .category-grid .category-layout {
     transition: transform .3s ease, box-shadow .3s ease !important;
     border-radius: 16px !important;
-    overflow: hidden !important;
+    overflow: hidden !important
 }
 .category-grid .category-layout:hover {
     transform: translateY(-2px) !important;
-    box-shadow: 0 8px 28px rgba(0,0,0,.07) !important;
-}
-.category-grid .category-layout .image img {
-    transition: transform .4s ease !important;
-}
-.category-grid .category-layout:hover .image img {
-    transform: scale(1.03) !important;
+    box-shadow: 0 8px 28px rgba(0,0,0,.07) !important
 }
 .category-grid .category-layout:hover .caption .name a {
-    color: #222 !important;
+    color: #222 !important
 }
 /* ======================================== */
 /* 8. 三大品牌價值（排除 Trust Bar #321 和品牌故事 #323） */
