@@ -582,6 +582,9 @@ body.ansei-page-ready.popup-open {
 /* ======================================== */
 /* 9. 分類導購區                            */
 /* ======================================== */
+.module-categories-37 .category-thumb {
+    padding: 0 !important
+}
 .module-categories .category-thumb {
     border-radius: 22px !important;
     overflow: hidden !important;
