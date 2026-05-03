@@ -594,12 +594,24 @@
 /* ======================================== */
 /* P-7b. 快速結帳頁 Stepper 修正           */
 /* ======================================== */
+#content .quick-checkout-wrapper .td-qty .input-group.btn-block {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+}
+#content .quick-checkout-wrapper .input-group-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    width: auto !important;
+}
 #content .quick-checkout-wrapper .stepper {
     position: relative !important;
     display: inline-flex !important;
     width: 116px !important;
-    height: 40px !important;
-    min-height: unset !important;
+    height: 35px !important;
+    min-height: 35px !important;
+    max-height: 35px !important;
     border: 1px solid rgba(212,207,201,1) !important;
     border-radius: 12px !important;
     overflow: hidden !important;
@@ -609,7 +621,8 @@
     left: 36px !important;
     top: 0 !important;
     width: 44px !important;
-    height: 40px !important;
+    height: 35px !important;
+    min-height: 35px !important;
     padding: 0 !important;
     border-left: 1px solid rgba(212,207,201,1) !important;
     border-right: 1px solid rgba(212,207,201,1) !important;
@@ -639,7 +652,7 @@
     align-items: center !important;
     justify-content: center !important;
     width: 36px !important;
-    height: 40px !important;
+    height: 35px !important;
     cursor: pointer !important;
     z-index: 1 !important;
     pointer-events: auto !important;
@@ -675,30 +688,6 @@
 #content .quick-checkout-wrapper .stepper > span i.fa-angle-up:hover::after,
 #content .quick-checkout-wrapper .stepper > span i.fa-angle-down:hover::after {
     color: #C8A96A !important;
-}
-/* 快速結帳：stepper 高度對齊更新/刪除按鈕，並拉開間距 */
-#content .quick-checkout-wrapper .td-qty .input-group.btn-block {
-    display: flex !important;
-    align-items: center !important;
-    gap: 10px !important;
-}
-#content .quick-checkout-wrapper .stepper {
-    height: 40px !important;
-    min-height: 40px !important;
-    max-height: 40px !important;
-}
-#content .quick-checkout-wrapper .stepper input.form-control {
-    height: 40px !important;
-}
-#content .quick-checkout-wrapper .stepper > span i.fa-angle-up,
-#content .quick-checkout-wrapper .stepper > span i.fa-angle-down {
-    height: 40px !important;
-}
-#content .quick-checkout-wrapper .input-group-btn {
-    display: inline-flex !important;
-    align-items: center !important;
-    gap: 6px !important;
-    width: auto !important;
 }
 /* ======================================== */
 /* Mobile ≤767px                            */
