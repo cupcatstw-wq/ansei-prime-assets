@@ -605,6 +605,11 @@ body.ansei-page-ready.popup-open {
     display: block !important
 }
 .module-categories .button-group { display: none !important }
+/* 分類導購區：移除 Journal 原生 hover 背景 */
+.module-categories .category-thumb:hover {
+    background: transparent !important;
+    background-color: transparent !important
+}
 /* ======================================== */
 /* 10. 品牌信任區（Trust Bar #321）         */
 /* ======================================== */
