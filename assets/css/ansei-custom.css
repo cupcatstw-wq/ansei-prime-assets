@@ -838,14 +838,6 @@ body.ansei-page-ready.popup-open {
         padding: 0 !important;
         margin: 0 !important
 }
-/* 購物車 popup：移除結帳按鈕箭頭 */
-.cart-content .checkout-btn::before,
-.cart-content .checkout-btn::after,
-.mini-cart .checkout-btn::before,
-.mini-cart .checkout-btn::after {
-    display: none !important;
-    content: none !important
-}
 /* ======================================== */
 /* 14. Brand Story (#323)                   */
 /* ======================================== */
