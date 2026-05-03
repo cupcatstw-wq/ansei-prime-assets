@@ -692,8 +692,8 @@
 #content .quick-checkout-wrapper .stepper > span i.fa-angle-down:hover::after {
     color: #C8A96A !important;
 }
-/* 快速結帳：確認/送出訂單按鈕置中 */
-#content .quick-checkout-wrapper .quick-checkout-payment .buttons {
+/* 快速結帳：送出訂單按鈕置中 */
+#content .quick-checkout-wrapper .section-body .buttons {
     display: flex !important;
     justify-content: center !important;
 }
