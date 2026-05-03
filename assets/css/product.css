@@ -488,9 +488,10 @@
 .module-products .product-thumb .button-group { display: none !important; }
 
 /* ======================================== */
-/* P-7. 購物車 Stepper（同產品頁樣式）      */
+/* P-7. 購物車 & 結帳 Stepper              */
 /* ======================================== */
-#checkout-cart .stepper {
+#checkout-cart .stepper,
+#checkout-checkout .stepper {
     position: relative !important;
     display: inline-flex !important;
     flex-direction: row !important;
@@ -502,7 +503,8 @@
     border-radius: 12px !important;
     overflow: hidden !important;
 }
-#checkout-cart .stepper input.form-control {
+#checkout-cart .stepper input.form-control,
+#checkout-checkout .stepper input.form-control {
     position: absolute !important;
     left: 36px !important;
     top: 0 !important;
@@ -520,7 +522,8 @@
     box-shadow: none !important;
     z-index: 2 !important;
 }
-#checkout-cart .stepper > span {
+#checkout-cart .stepper > span,
+#checkout-checkout .stepper > span {
     position: absolute !important;
     top: 0 !important;
     left: 0 !important;
@@ -531,7 +534,8 @@
     align-items: center !important;
     pointer-events: none !important;
 }
-#checkout-cart .stepper > span i.fa-angle-down {
+#checkout-cart .stepper > span i.fa-angle-down,
+#checkout-checkout .stepper > span i.fa-angle-down {
     position: absolute !important;
     left: 0 !important;
     top: 0 !important;
@@ -545,7 +549,8 @@
     z-index: 1 !important;
     pointer-events: auto !important;
 }
-#checkout-cart .stepper > span i.fa-angle-up {
+#checkout-cart .stepper > span i.fa-angle-up,
+#checkout-checkout .stepper > span i.fa-angle-up {
     position: absolute !important;
     right: 0 !important;
     top: 0 !important;
@@ -559,22 +564,27 @@
     z-index: 1 !important;
     pointer-events: auto !important;
 }
-#checkout-cart .stepper > span i.fa-angle-down::after {
+#checkout-cart .stepper > span i.fa-angle-down::after,
+#checkout-checkout .stepper > span i.fa-angle-down::after {
     content: '−' !important;
     font-size: 18px !important;
     font-family: inherit !important;
     color: #555 !important;
 }
-#checkout-cart .stepper > span i.fa-angle-up::after {
+#checkout-cart .stepper > span i.fa-angle-up::after,
+#checkout-checkout .stepper > span i.fa-angle-up::after {
     content: '+' !important;
     font-size: 18px !important;
     font-family: inherit !important;
     color: #555 !important;
 }
 #checkout-cart .stepper > span i.fa-angle-up:hover::after,
-#checkout-cart .stepper > span i.fa-angle-down:hover::after {
+#checkout-cart .stepper > span i.fa-angle-down:hover::after,
+#checkout-checkout .stepper > span i.fa-angle-up:hover::after,
+#checkout-checkout .stepper > span i.fa-angle-down:hover::after {
     color: #C8A96A !important;
 }
+
 /* 購物車明細與總計區塊之間的分隔線 */
 #checkout-cart .cart-bottom {
     border-top: 1px solid #ECE8E2 !important;
