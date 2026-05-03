@@ -610,6 +610,11 @@ body.ansei-page-ready.popup-open {
     background: transparent !important;
     background-color: transparent !important
 }
+/* 分類導購區：白底卡片圓角 */
+.module-categories .category-thumb {
+    border-radius: 22px !important;
+    overflow: hidden !important
+}
 /* ======================================== */
 /* 10. 品牌信任區（Trust Bar #321）         */
 /* ======================================== */
