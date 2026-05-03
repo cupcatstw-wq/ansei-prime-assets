@@ -592,6 +592,32 @@
     margin-top: 16px !important;
 }
 /* ======================================== */
+/* P-7b. 結帳頁 Stepper 修正               */
+/* ======================================== */
+#checkout-checkout .stepper > span i.fa-angle-up::before,
+#checkout-checkout .stepper > span i.fa-angle-down::before {
+    display: none !important;
+    content: none !important;
+}
+#checkout-checkout .stepper > span i.fa-angle-up::after {
+    content: '+' !important;
+    font-size: 18px !important;
+    font-family: inherit !important;
+    color: #555 !important;
+    line-height: 1 !important;
+}
+#checkout-checkout .stepper > span i.fa-angle-down::after {
+    content: '−' !important;
+    font-size: 18px !important;
+    font-family: inherit !important;
+    color: #555 !important;
+    line-height: 1 !important;
+}
+#checkout-checkout .stepper > span i.fa-angle-up:hover::after,
+#checkout-checkout .stepper > span i.fa-angle-down:hover::after {
+    color: #C8A96A !important;
+}
+/* ======================================== */
 /* Mobile ≤767px                            */
 /* ======================================== */
 @media (max-width: 767px) {
