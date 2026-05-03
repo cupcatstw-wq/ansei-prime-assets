@@ -566,7 +566,7 @@ body[class*="route-account-address-edit"] .buttons .pull-right .btn:hover {
 /* ======================================== */
 /* A-7c. 訂單明細頁                         */
 /* ======================================== */
-#account-order-info #content .buttons {
+#content.ansei-page-card .buttons {
     display: flex !important;
     justify-content: center !important
 }
