@@ -564,6 +564,13 @@ body[class*="route-account-address-edit"] .buttons .pull-right .btn:hover {
     gap: 4px
 }
 /* ======================================== */
+/* A-7c. 訂單明細頁                         */
+/* ======================================== */
+#account-order-info #content .buttons {
+    display: flex !important;
+    justify-content: center !important
+}
+/* ======================================== */
 /* A-8. Address                             */
 /* ======================================== */
 #account-address,
