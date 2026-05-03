@@ -728,6 +728,12 @@ body.ansei-page-ready.popup-open {
     line-height: 1 !important;
     padding: 0 22px !important
 }
+/* 結帳完成頁卡片上方間距 */
+#checkout-success #content > div:first-of-type,
+#checkout-success #content > .ansei-success-card,
+#checkout-success #content > p:first-of-type {
+    margin-top: 48px !important;
+}
 /* ======================================== */
 /* 12. Blog 文章頁排版                      */
 /* ======================================== */
