@@ -983,14 +983,15 @@ body.ansei-page-ready.popup-open {
 /* ======================================== */
 /* 16. 品牌故事頁面排版                      */
 /* ======================================== */
-#information #content .content h3,
-#information #content .content h4,
-#information #content .content p {
+#content .ansei-brand-story h3,
+#content .ansei-brand-story h4,
+#content .ansei-brand-story p {
   font-family: inherit;
   letter-spacing: 0.05em;
   line-height: 1.9;
 }
-#information #content .content h3 {
+
+#content .ansei-brand-story h3 {
   font-size: 20px;
   font-weight: 600;
   color: #222222;
@@ -999,23 +1000,27 @@ body.ansei-page-ready.popup-open {
   padding-bottom: 10px;
   border-bottom: 1px solid #ECE8E2;
 }
-#information #content .content h4 {
+
+#content .ansei-brand-story h4 {
   font-size: 15px;
   font-weight: 600;
   color: #222222;
   margin-top: 28px;
   margin-bottom: 10px;
 }
-#information #content .content p {
+
+#content .ansei-brand-story p {
   font-size: 14px;
   color: #555555;
   margin-bottom: 16px;
 }
-#information #content .content strong {
+
+#content .ansei-brand-story strong {
   color: #333333;
   font-weight: 600;
 }
-#information #content .content {
+
+#content .ansei-brand-story {
   max-width: 720px;
   margin: 0 auto;
   padding: 0 20px 60px;
