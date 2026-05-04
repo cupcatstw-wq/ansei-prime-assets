@@ -749,6 +749,15 @@ body.ansei-page-ready.popup-open {
     letter-spacing: .05em !important;
     white-space: nowrap !important
 }
+/* 結帳頁 radio label 高度 */
+.quick-checkout-wrapper .section-body .radio label {
+    min-height: 32px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    line-height: 1.5 !important;
+    cursor: pointer !important
+}
 /* ======================================== */
 /* 12. Blog 文章頁排版                      */
 /* ======================================== */
