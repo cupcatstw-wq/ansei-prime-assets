@@ -758,6 +758,12 @@ body.ansei-page-ready.popup-open {
     line-height: 1.5 !important;
     cursor: pointer !important
 }
+/* 結帳頁常用地址下拉選單寬度 */
+.quick-checkout-wrapper #payment-existing,
+.quick-checkout-wrapper #shipping-existing {
+    width: 100% !important;
+    max-width: 100% !important
+}
 /* ======================================== */
 /* 12. Blog 文章頁排版                      */
 /* ======================================== */
