@@ -116,24 +116,6 @@
     border-bottom: none !important;
     padding-bottom: 0 !important;
 }
-/* 數量 stepper */
-.product-product .stepper {
-    border: 1px solid rgba(212,207,201,1) !important;
-    border-radius: 12px !important;
-    overflow: hidden !important;
-    background: #fff !important;
-    box-shadow: none !important;
-}
-.product-product .stepper .control-label { display: none !important; }
-.product-product .stepper input.form-control {
-    color: #222222 !important;
-    -webkit-text-fill-color: #222222 !important;
-    background: #ffffff !important;
-    box-shadow: none !important;
-    text-align: center !important;
-    font-size: 14px !important;
-    opacity: 1 !important;
-}
 /* 商品頁 content padding */
 .product-product #content {
     padding-top: 48px !important;
@@ -377,69 +359,49 @@
 }
 .module-products .product-thumb .button-group { display: none !important; }
 /* ======================================== */
-/* P-7. 購物車 & 結帳 Stepper              */
+/* P-7. 產品頁 / 購物車 / 結帳 Stepper 統一 */
 /* ======================================== */
-#checkout-cart .stepper,
-#checkout-checkout .stepper {
-    border: 1px solid rgba(212,207,201,1) !important;
-    border-radius: 12px !important;
-    overflow: hidden !important;
-    background: #fff !important;
-    box-shadow: none !important;
-}
-#checkout-cart .stepper input.form-control,
-#checkout-checkout .stepper input.form-control {
-    color: #222222 !important;
-    -webkit-text-fill-color: #222222 !important;
-    background: #ffffff !important;
-    box-shadow: none !important;
-    text-align: center !important;
-    font-size: 14px !important;
-    opacity: 1 !important;
-}
-/* 購物車明細與總計區塊之間的分隔線 */
-#checkout-cart .cart-bottom {
-    border-top: 1px solid #ECE8E2 !important;
-    padding-top: 32px !important;
-    margin-top: 16px !important;
-}
-/* ======================================== */
-/* P-7b. 快速結帳頁 Stepper 修正           */
-/* ======================================== */
-#content .quick-checkout-wrapper .stepper {
-    border: 1px solid rgba(212,207,201,1) !important;
-    border-radius: 12px !important;
-    overflow: hidden !important;
-    background: #fff !important;
-    box-shadow: none !important;
-}
-#content .quick-checkout-wrapper .stepper input.form-control {
-    color: #222222 !important;
-    -webkit-text-fill-color: #222222 !important;
-    background: #ffffff !important;
-    box-shadow: none !important;
-    text-align: center !important;
-    font-size: 14px !important;
-    opacity: 1 !important;
-}
-/* 數量框高度調整為 34px */
+
+/* Stepper 外框統一 */
+.product-product .stepper,
 #checkout-cart .stepper,
 #checkout-checkout .stepper,
 #content .quick-checkout-wrapper .stepper {
+    border: 1px solid rgba(212,207,201,1) !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    background: #fff !important;
+    box-shadow: none !important;
     height: 34px !important;
     min-height: 34px !important;
 }
 
+/* Stepper 輸入框統一 */
+.product-product .stepper input.form-control,
 #checkout-cart .stepper input.form-control,
 #checkout-checkout .stepper input.form-control,
 #content .quick-checkout-wrapper .stepper input.form-control {
+    color: #222222 !important;
+    -webkit-text-fill-color: #222222 !important;
+    background: #ffffff !important;
+    box-shadow: none !important;
+    text-align: center !important;
+    font-size: 14px !important;
+    opacity: 1 !important;
     height: 34px !important;
     min-height: 34px !important;
     line-height: 34px !important;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 }
+
+/* 商品頁數量 label 隱藏 */
+.product-product .stepper .control-label {
+    display: none !important;
+}
+
 /* Stepper 上下箭頭高度同步 */
+.product-product .stepper .input-group-btn .btn,
 #checkout-cart .stepper .input-group-btn .btn,
 #checkout-checkout .stepper .input-group-btn .btn,
 #content .quick-checkout-wrapper .stepper .input-group-btn .btn {
@@ -448,16 +410,27 @@
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     line-height: 17px !important;
+    box-shadow: none !important;
 }
+
+/* 購物車明細與總計區塊之間的分隔線 */
+#checkout-cart .cart-bottom {
+    border-top: 1px solid #ECE8E2 !important;
+    padding-top: 32px !important;
+    margin-top: 16px !important;
+}
+
 /* 快速結帳：送出訂單按鈕置中 */
 #content .quick-checkout-wrapper .section-body .buttons {
     display: flex !important;
     justify-content: center !important;
 }
+
 /* ======================================== */
-/* P-7c. 購物車 & 結帳 數量按鈕間距修正     */
+/* P-7b. 購物車 & 結帳 數量按鈕間距修正     */
 /* ======================================== */
-/* 購物車頁：數量框、更新、刪除按鈕不要貼在一起 */
+
+/* 購物車 / 結帳：數量框、更新、刪除按鈕不要貼在一起 */
 #checkout-cart td .input-group,
 #checkout-checkout td .input-group,
 #content .quick-checkout-wrapper td .input-group {
