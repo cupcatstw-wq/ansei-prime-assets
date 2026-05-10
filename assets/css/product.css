@@ -135,7 +135,8 @@
     opacity: 1 !important;
 }
 .product-product .stepper > span {
-    border-left: 1px solid rgba(212,207,201,1) !important;
+    border-color: rgba(212,207,201,1) !important;
+    border-style: solid !important;
     background: #fff !important;
 }
 .product-product .stepper > span i {
