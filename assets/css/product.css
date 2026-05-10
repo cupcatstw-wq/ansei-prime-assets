@@ -422,6 +422,33 @@
     font-size: 14px !important;
     opacity: 1 !important;
 }
+/* 數量框高度調整為 34px */
+#checkout-cart .stepper,
+#checkout-checkout .stepper,
+#content .quick-checkout-wrapper .stepper {
+    height: 34px !important;
+    min-height: 34px !important;
+}
+
+#checkout-cart .stepper input.form-control,
+#checkout-checkout .stepper input.form-control,
+#content .quick-checkout-wrapper .stepper input.form-control {
+    height: 34px !important;
+    min-height: 34px !important;
+    line-height: 34px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+/* Stepper 上下箭頭高度同步 */
+#checkout-cart .stepper .input-group-btn .btn,
+#checkout-checkout .stepper .input-group-btn .btn,
+#content .quick-checkout-wrapper .stepper .input-group-btn .btn {
+    height: 17px !important;
+    min-height: 17px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    line-height: 17px !important;
+}
 /* 快速結帳：送出訂單按鈕置中 */
 #content .quick-checkout-wrapper .section-body .buttons {
     display: flex !important;
