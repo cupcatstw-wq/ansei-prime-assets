@@ -400,7 +400,7 @@
     display: none !important;
 }
 
-/* Stepper 上下箭頭高度同步 */
+/* Stepper 上下箭頭高度同步，並移除內部分隔線 */
 .product-product .stepper .input-group-btn .btn,
 #checkout-cart .stepper .input-group-btn .btn,
 #checkout-checkout .stepper .input-group-btn .btn,
@@ -411,6 +411,8 @@
     padding-bottom: 0 !important;
     line-height: 17px !important;
     box-shadow: none !important;
+    border: none !important;
+    background: #ffffff !important;
 }
 
 /* 購物車明細與總計區塊之間的分隔線 */
