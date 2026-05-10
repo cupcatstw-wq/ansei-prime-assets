@@ -135,7 +135,11 @@
     font-size: 14px !important;
     opacity: 1 !important;
 }
+.product-product .stepper > span {
+    border-radius: 0 !important;
+}
 .product-product .stepper > span i {
+    border-radius: 0 !important;
     background-color: transparent !important;
     background: transparent !important;
 }
