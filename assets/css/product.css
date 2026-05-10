@@ -471,6 +471,65 @@
     margin-left: 0 !important;
 }
 /* ======================================== */
+/* P-7c. 購物車 / 結帳 Stepper 內部分隔線移除 */
+/* ======================================== */
+
+/* 移除 stepper 內部所有按鈕與包裹元素的線條 */
+#checkout-cart .stepper .input-group-btn,
+#checkout-checkout .stepper .input-group-btn,
+#content .quick-checkout-wrapper .stepper .input-group-btn,
+#checkout-cart .stepper .btn,
+#checkout-checkout .stepper .btn,
+#content .quick-checkout-wrapper .stepper .btn,
+#checkout-cart .stepper button,
+#checkout-checkout .stepper button,
+#content .quick-checkout-wrapper .stepper button {
+    border: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+    box-shadow: none !important;
+    background: #ffffff !important;
+    background-image: none !important;
+}
+
+/* 移除可能由偽元素產生的線 */
+#checkout-cart .stepper .btn::before,
+#checkout-cart .stepper .btn::after,
+#checkout-checkout .stepper .btn::before,
+#checkout-checkout .stepper .btn::after,
+#content .quick-checkout-wrapper .stepper .btn::before,
+#content .quick-checkout-wrapper .stepper .btn::after,
+#checkout-cart .stepper button::before,
+#checkout-cart .stepper button::after,
+#checkout-checkout .stepper button::before,
+#checkout-checkout .stepper button::after,
+#content .quick-checkout-wrapper .stepper button::before,
+#content .quick-checkout-wrapper .stepper button::after {
+    display: none !important;
+    content: none !important;
+    border: 0 !important;
+    background: none !important;
+    box-shadow: none !important;
+}
+
+/* 移除 input 與箭頭區之間的分隔線 */
+#checkout-cart .stepper input.form-control,
+#checkout-checkout .stepper input.form-control,
+#content .quick-checkout-wrapper .stepper input.form-control {
+    border: 0 !important;
+    border-right: 0 !important;
+    box-shadow: none !important;
+}
+
+/* 保留最外層外框 */
+#checkout-cart .stepper,
+#checkout-checkout .stepper,
+#content .quick-checkout-wrapper .stepper {
+    border: 1px solid rgba(212,207,201,1) !important;
+}
+/* ======================================== */
 /* Mobile ≤767px                            */
 /* ======================================== */
 @media (max-width: 767px) {
