@@ -428,6 +428,34 @@
     justify-content: center !important;
 }
 /* ======================================== */
+/* P-7c. 購物車 & 結帳 數量按鈕間距修正     */
+/* ======================================== */
+/* 購物車頁：數量框、更新、刪除按鈕不要貼在一起 */
+#checkout-cart td .input-group,
+#checkout-checkout td .input-group,
+#content .quick-checkout-wrapper td .input-group {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    flex-wrap: nowrap !important;
+}
+
+/* 更新、刪除按鈕之間增加距離 */
+#checkout-cart td .input-group-btn,
+#checkout-checkout td .input-group-btn,
+#content .quick-checkout-wrapper td .input-group-btn {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+/* 避免原本 Bootstrap 的 margin 造成擠壓 */
+#checkout-cart td .input-group-btn .btn,
+#checkout-checkout td .input-group-btn .btn,
+#content .quick-checkout-wrapper td .input-group-btn .btn {
+    margin-left: 0 !important;
+}
+/* ======================================== */
 /* Mobile ≤767px                            */
 /* ======================================== */
 @media (max-width: 767px) {
