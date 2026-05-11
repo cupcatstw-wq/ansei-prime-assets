@@ -546,13 +546,13 @@
     border: 1px solid rgba(212,207,201,1) !important;
 }
 /* ======================================== */
-/* P-7d. 商品頁 Stepper 箭頭位置最終修正    */
+/* P-7d. 商品頁 Stepper 箭頭大小與位置修正 */
 /* ======================================== */
 
 /* 商品頁 Stepper 右側箭頭區 */
 .product-info .button-group-page .stepper > span {
-    width: 24px !important;
-    min-width: 24px !important;
+    width: 22px !important;
+    min-width: 22px !important;
     height: 34px !important;
     min-height: 34px !important;
 
@@ -561,38 +561,36 @@
     align-items: center !important;
     justify-content: center !important;
 
+    gap: 0 !important;
     padding: 0 !important;
     margin: 0 !important;
-    gap: 0 !important;
 
-    font-size: 10px !important;
-    line-height: 1 !important;
     background: transparent !important;
+    line-height: 1 !important;
 }
 
-/* 商品頁上下箭頭：直接往左移 */
-.product-info .button-group-page .stepper > span > i.fa,
+/* 商品頁上下箭頭：只縮小，不改圖示內容 */
 .product-info .button-group-page .stepper > span > i.fa-angle-up,
 .product-info .button-group-page .stepper > span > i.fa-angle-down {
     display: block !important;
-    width: 10px !important;
-    height: 9px !important;
-    font-size: 10px !important;
-    line-height: 9px !important;
-    text-align: center !important;
+    width: 12px !important;
+    height: 11px !important;
 
+    font-size: 10px !important;
+    line-height: 11px !important;
+
+    text-align: center !important;
     margin: 0 !important;
     padding: 0 !important;
 
-    transform: translateX(-4px) !important;
+    transform: none !important;
 }
 
-/* Font Awesome 圖示本體 */
-.product-info .button-group-page .stepper > span > i.fa::before,
+/* 只控制 Font Awesome 圖示大小，不強制改 content */
 .product-info .button-group-page .stepper > span > i.fa-angle-up::before,
 .product-info .button-group-page .stepper > span > i.fa-angle-down::before {
     font-size: 10px !important;
-    line-height: 9px !important;
+    line-height: 11px !important;
 }
 /* ======================================== */
 /* Mobile ≤767px                            */
