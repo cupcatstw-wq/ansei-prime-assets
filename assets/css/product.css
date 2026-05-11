@@ -546,6 +546,37 @@
     border: 1px solid rgba(212,207,201,1) !important;
 }
 /* ======================================== */
+/* P-7d. 商品頁 Stepper 箭頭強制同步購物車 */
+/* ======================================== */
+
+/* 商品頁右側箭頭區 */
+.product-product .product-info .button-group-page .stepper > span {
+    width: 22px !important;
+    min-width: 22px !important;
+    font-size: 10px !important;
+    line-height: 1 !important;
+}
+
+/* 商品頁上下箭頭 icon */
+.product-product .product-info .button-group-page .stepper > span i,
+.product-product .product-info .button-group-page .stepper > span i.fa,
+.product-product .product-info .button-group-page .stepper > span i.fa-angle-up,
+.product-product .product-info .button-group-page .stepper > span i.fa-angle-down,
+.product-product .product-info .button-group-page .stepper > span i::before,
+.product-product .product-info .button-group-page .stepper > span i.fa::before,
+.product-product .product-info .button-group-page .stepper > span i.fa-angle-up::before,
+.product-product .product-info .button-group-page .stepper > span i.fa-angle-down::before {
+    font-size: 10px !important;
+    line-height: 10px !important;
+}
+
+/* 商品頁上下箭頭排列 */
+.product-product .product-info .button-group-page .stepper > span i {
+    display: block !important;
+    height: 10px !important;
+    line-height: 10px !important;
+}
+/* ======================================== */
 /* Mobile ≤767px                            */
 /* ======================================== */
 @media (max-width: 767px) {
