@@ -576,6 +576,16 @@
     height: 10px !important;
     line-height: 10px !important;
 }
+
+/* 商品頁 Stepper 箭頭視覺縮小 */
+.product-product .product-info .button-group-page .stepper > span i {
+    display: block !important;
+    font-size: 10px !important;
+    line-height: 10px !important;
+    height: 10px !important;
+    transform: scale(0.8) !important;
+    transform-origin: center center !important;
+}
 /* ======================================== */
 /* Mobile ≤767px                            */
 /* ======================================== */
