@@ -435,12 +435,15 @@
 #content .quick-checkout-wrapper .stepper .input-group-btn {
     border: none !important;
 }
-/* Stepper 箭頭圖示縮小 */
-.product-product .stepper > span i,
+/* Stepper 箭頭圖示縮小：產品頁 / 購物車 / 結帳統一 */
+.product-product .product-info .button-group-page .stepper span i.fa,
+.product-product .product-info .button-group-page .stepper span i.fa-angle-up,
+.product-product .product-info .button-group-page .stepper span i.fa-angle-down,
 #checkout-cart .stepper > span i,
 #checkout-checkout .stepper > span i,
 #content .quick-checkout-wrapper .stepper > span i {
     font-size: 10px !important;
+    line-height: 10px !important;
 }
 /* 快速結帳：送出訂單按鈕置中 */
 #content .quick-checkout-wrapper .section-body .buttons {
