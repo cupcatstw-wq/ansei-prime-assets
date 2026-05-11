@@ -546,31 +546,42 @@
     border: 1px solid rgba(212,207,201,1) !important;
 }
 /* ======================================== */
-/* P-7d. 商品頁 Stepper 箭頭大小與置中修正 */
+/* P-7d. 商品頁 Stepper 箭頭位置最終修正    */
 /* ======================================== */
 
-/* 商品頁 Stepper 右側箭頭區：改成完整高度並垂直置中 */
+/* 商品頁 Stepper 右側箭頭區 */
 .product-info .button-group-page .stepper > span {
-    width: 22px !important;
-    min-width: 22px !important;
-    height: 100% !important;
+    width: 24px !important;
+    min-width: 24px !important;
+    height: 34px !important;
+    min-height: 34px !important;
+
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
+
     gap: 0 !important;
+    padding: 0 2px 0 0 !important;
+    box-sizing: border-box !important;
+
     font-size: 10px !important;
     line-height: 1 !important;
+    background: transparent !important;
 }
 
-/* 商品頁上下箭頭：維持 10px，不再額外縮放 */
+/* 商品頁上下箭頭 */
 .product-info .button-group-page .stepper > span > i.fa,
 .product-info .button-group-page .stepper > span > i.fa-angle-up,
 .product-info .button-group-page .stepper > span > i.fa-angle-down {
     display: block !important;
+    width: 10px !important;
+    height: 9px !important;
     font-size: 10px !important;
-    line-height: 10px !important;
-    height: 10px !important;
+    line-height: 9px !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
     transform: none !important;
 }
 
@@ -579,7 +590,7 @@
 .product-info .button-group-page .stepper > span > i.fa-angle-up::before,
 .product-info .button-group-page .stepper > span > i.fa-angle-down::before {
     font-size: 10px !important;
-    line-height: 10px !important;
+    line-height: 9px !important;
 }
 /* ======================================== */
 /* Mobile ≤767px                            */
