@@ -361,16 +361,15 @@
 /* ======================================== */
 /* P-7. 產品頁 / 購物車 / 結帳 Stepper 統一 */
 /* ======================================== */
-
 /* Stepper 外框統一 */
 .product-product .stepper,
 #checkout-cart .stepper,
 #checkout-checkout .stepper,
 #content .quick-checkout-wrapper .stepper {
-    border: 1px solid rgba(212,207,201,1) !important;
+    border: 1px solid rgba(212, 207, 201, 1) !important;
     border-radius: 12px !important;
     overflow: hidden !important;
-    background: #fff !important;
+    background: #ffffff !important;
     box-shadow: none !important;
     height: 34px !important;
     min-height: 34px !important;
@@ -421,6 +420,7 @@
     padding-top: 32px !important;
     margin-top: 16px !important;
 }
+
 /* 強制移除購物車 / 結帳 Stepper 內部線條 */
 #checkout-cart .stepper .btn,
 #checkout-checkout .stepper .btn,
@@ -435,24 +435,22 @@
 #content .quick-checkout-wrapper .stepper .input-group-btn {
     border: none !important;
 }
-/* Stepper 箭頭圖示縮小：產品頁 / 購物車 / 結帳統一 */
-.product-product .product-info .button-group-page .stepper span i.fa,
-.product-product .product-info .button-group-page .stepper span i.fa-angle-up,
-.product-product .product-info .button-group-page .stepper span i.fa-angle-down,
+
+/* Stepper 箭頭圖示縮小 */
+.product-product .stepper > span i,
 #checkout-cart .stepper > span i,
 #checkout-checkout .stepper > span i,
 #content .quick-checkout-wrapper .stepper > span i {
     font-size: 10px !important;
-    line-height: 10px !important;
 }
+
 /* 快速結帳：送出訂單按鈕置中 */
 #content .quick-checkout-wrapper .section-body .buttons {
     display: flex !important;
     justify-content: center !important;
 }
-
 /* ======================================== */
-/* P-7b. 購物車 & 結帳 數量按鈕間距修正     */
+/* P-7b. 購物車 & 結帳 數量按鈕間距修正 */
 /* ======================================== */
 
 /* 購物車 / 結帳：數量框、更新、刪除按鈕不要貼在一起 */
@@ -480,6 +478,8 @@
 #content .quick-checkout-wrapper td .input-group-btn .btn {
     margin-left: 0 !important;
 }
+
+
 /* ======================================== */
 /* P-7c. 購物車 / 結帳 Stepper 內部分隔線移除 */
 /* ======================================== */
@@ -532,6 +532,7 @@
     border-right: 0 !important;
     box-shadow: none !important;
 }
+
 /* 移除 span 容器的左邊分隔線 */
 #checkout-cart .stepper > span,
 #checkout-checkout .stepper > span,
@@ -539,58 +540,12 @@
     border: none !important;
     border-width: 0 !important;
 }
+
 /* 保留最外層外框 */
 #checkout-cart .stepper,
 #checkout-checkout .stepper,
 #content .quick-checkout-wrapper .stepper {
-    border: 1px solid rgba(212,207,201,1) !important;
-}
-/* ======================================== */
-/* P-7d. 商品頁 Stepper 箭頭大小與位置修正 */
-/* ======================================== */
-
-/* 商品頁 Stepper 右側箭頭區 */
-.product-info .button-group-page .stepper > span {
-    width: 22px !important;
-    min-width: 22px !important;
-    height: 34px !important;
-    min-height: 34px !important;
-
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-
-    gap: 0 !important;
-    padding: 0 !important;
-    margin: 0 !important;
-
-    background: transparent !important;
-    line-height: 1 !important;
-}
-
-/* 商品頁上下箭頭：只縮小，不改圖示內容 */
-.product-info .button-group-page .stepper > span > i.fa-angle-up,
-.product-info .button-group-page .stepper > span > i.fa-angle-down {
-    display: block !important;
-    width: 12px !important;
-    height: 11px !important;
-
-    font-size: 10px !important;
-    line-height: 11px !important;
-
-    text-align: center !important;
-    margin: 0 !important;
-    padding: 0 !important;
-
-    transform: none !important;
-}
-
-/* 只控制 Font Awesome 圖示大小，不強制改 content */
-.product-info .button-group-page .stepper > span > i.fa-angle-up::before,
-.product-info .button-group-page .stepper > span > i.fa-angle-down::before {
-    font-size: 10px !important;
-    line-height: 11px !important;
+    border: 1px solid rgba(212, 207, 201, 1) !important;
 }
 /* ======================================== */
 /* Mobile ≤767px                            */
