@@ -441,6 +441,9 @@
 #content .quick-checkout-wrapper .stepper > span i {
     font-size: 10px !important;
 }
+.product-product .stepper > span i {
+    font-size: 10px !important;
+}
 /* 快速結帳：送出訂單按鈕置中 */
 #content .quick-checkout-wrapper .section-body .buttons {
     display: flex !important;
