@@ -522,7 +522,13 @@
     border-right: 0 !important;
     box-shadow: none !important;
 }
-
+/* 移除 span 容器的左邊分隔線 */
+#checkout-cart .stepper > span,
+#checkout-checkout .stepper > span,
+#content .quick-checkout-wrapper .stepper > span {
+    border: none !important;
+    border-width: 0 !important;
+}
 /* 保留最外層外框 */
 #checkout-cart .stepper,
 #checkout-checkout .stepper,
