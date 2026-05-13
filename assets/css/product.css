@@ -437,8 +437,7 @@
 }
 
 /* Stepper 箭頭圖示縮小 */
-.product-info .button-group-page .stepper > span i,
-.product-info .product-details .stepper > span i,
+.product-product .stepper > span i,
 #checkout-cart .stepper > span i,
 #checkout-checkout .stepper > span i,
 #content .quick-checkout-wrapper .stepper > span i {
