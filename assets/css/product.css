@@ -437,16 +437,11 @@
 }
 
 /* Stepper 箭頭圖示縮小 */
-.product-info .button-group-page .stepper > span i,
-.product-info .product-details .stepper > span i {
-    font-size: 10px !important;
-}
+#product-product .stepper > span i,
 #checkout-cart .stepper > span i,
 #checkout-checkout .stepper > span i,
 #content .quick-checkout-wrapper .stepper > span i {
     font-size: 10px !important;
-    border: none !important;
-    border-width: 0 !important;
 }
 
 /* 快速結帳：送出訂單按鈕置中 */
